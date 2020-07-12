@@ -8852,7 +8852,7 @@ textarea.form-control {
       right: -30px;
       z-index: 1; } }
   .play-video span {
-    color: #fff; }
+    color: orange; }
 
 .staff {
   overflow: hidden;
