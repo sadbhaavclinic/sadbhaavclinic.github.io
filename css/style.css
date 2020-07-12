@@ -8976,7 +8976,7 @@ textarea.form-control {
     width: 100%;
     content: '';
     opacity: .95;
-    background: orange; }
+    background: #E64A19; }
   .ftco-appointment .half {
     width: 100%; }
     .ftco-appointment .half h2 {
@@ -9172,7 +9172,7 @@ textarea.form-control {
   -webkit-animation: 1.6s ease infinite wheel-up-down;
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
-  color: #fff; }
+  color: #E64A19; }
   .mouse-wheel span {
     font-size: 20px; }
 
