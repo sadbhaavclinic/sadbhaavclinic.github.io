@@ -9572,16 +9572,16 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #cbb88c;
+      color: orange;
       text-align: center;
       display: inline-block;
       width: 40px;
       height: 40px;
       line-height: 40px;
       border-radius: 50%;
-      border: 1px solid #e6e6e6; }
+      border: 1px solid orange; }
     .block-27 ul li.active a, .block-27 ul li.active span {
-      background: #cbb88c;
+      background: orange;
       color: #fff;
       border: 1px solid transparent; }
 
