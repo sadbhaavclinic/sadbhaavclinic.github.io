@@ -8149,10 +8149,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #cbb88c; }
+  color: white; }
   a:hover, a:focus {
     text-decoration: none;
-    color: #cbb88c;
+    color: brown;
     outline: none !important; }
 
 h1, h2, h3, h4, h5,
@@ -8752,7 +8752,7 @@ h1, h2, h3, h4, h5,
       font-size: 30px;
       color: orange; }
     .services .icon.icon-2 {
-      background: #333c44; }
+      background: brown; }
   .services .text {
     width: calc(100% - 50px); }
     .services .text h2 {
@@ -9067,7 +9067,7 @@ textarea.form-control {
   .ftco-footer p {
     color: rgba(255, 255, 255, 0.9); }
   .ftco-footer a {
-    color: #fff; }
+    color: white; }
     .ftco-footer a:hover {
       color: #cbb88c; }
   .ftco-footer .ftco-heading-2 {
@@ -9083,10 +9083,10 @@ textarea.form-control {
     height: 50px;
     width: 50px;
     display: block;
-    background: #1d2227;
+    background: brown;
     border-radius: 50%;
     position: relative;
-    color: #cbb88c; }
+    color: white; }
     .ftco-footer-social li a span {
       position: absolute;
       font-size: 22px;
@@ -9095,7 +9095,7 @@ textarea.form-control {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      color: #cbb88c !important; }
+      color: white !important; }
     .ftco-footer-social li a:hover {
       color: #fff; }
 
