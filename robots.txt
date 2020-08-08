@@ -1,0 +1,4 @@
+User-agent: Googlebot,Googlebot-Image, Baiduspider, Bingbot
+Disallow: /cgi-bin/
+Disallow: /images/
+Disallow: /pages/thankyou.html
