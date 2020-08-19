@@ -9814,9 +9814,9 @@ textarea.form-control {
 
 .categories li, .sidelink li {
   position: relative;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid orange;
   list-style: none; }
   .categories li:last-child, .sidelink li:last-child {
     margin-bottom: 0;
@@ -9829,7 +9829,7 @@ textarea.form-control {
       position: absolute;
       right: 0;
       top: 0;
-      color: #ccc; }
+      color: orange; }
     .categories li a:hover, .categories li a:focus, .sidelink li a:hover, .sidelink li a:focus {
       outline: none;
       color: orange; }
