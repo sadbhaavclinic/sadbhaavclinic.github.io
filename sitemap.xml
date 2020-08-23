@@ -1,51 +1,297 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-<loc>https://www.sadbhaavclinic.com</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>1.0</priority>
+  <loc>https://www.sadbhaavclinic.com/</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/index.html</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/index.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/aboutus</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/aboutus.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/eyedepartment</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/eyedepartment.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/dentaldepartment</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/dentaldepartment.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/cases</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/cases.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/testimonials</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/patientzone.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-<loc>https://www.sadbhaavclinic.com/contactus</loc>
-<lastmod>2020-08-09T05:15:39+00:00</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.80</priority>
+  <loc>https://www.sadbhaavclinic.com/ophthalmology.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/testimonials.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/contactus.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/clinicupdates.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/netragyan.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/eyeinformation.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/gargsirrounds.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/slitlamplaserlens.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/lasercomplications.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/ffaindications.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/pvr.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/eales.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/uveitis.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/dmd.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/keratoconus.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/ddls.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/glaucomatutorials.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/blepharoptosis.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/oculoplastyvideos.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/phacotips.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/neurotutorials.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/bob.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/eyeexam.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/inotes.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/conjunctivitis.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/cataractgujarati.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/glaucomagujarati.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/atropinemyopiagujarati.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/dryeyes.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/pterygium.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/diabeteseye.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/eyedrops.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/eyepersons.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/presbyopia.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/floaters.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/blepharitis.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/stye.html</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/colorvision.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/cataractenglish.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/glaucomaenglish.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/atropinemyopia.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/contactlenscare.html</loc>
+  <lastmod>2020-08-22T00:35:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/phaco.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-cornea.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-retina.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-glaucoma.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-lens.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-strabismus.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-uvea.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://www.sadbhaavclinic.com/images/inotes-instruments_investigations.pdf</loc>
+  <lastmod>2020-08-22T00:35:07+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
 </urlset>
