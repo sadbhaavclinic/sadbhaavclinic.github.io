@@ -8151,9 +8151,9 @@ a {
   transition: .3s all ease;
   color: black; }
   a:hover, a:focus {
-    text-decoration: none;
+    text-decoration: underline;
     color: cyan;
-    outline: none !important; }
+    outline: none !important;}
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
