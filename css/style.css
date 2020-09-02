@@ -8376,8 +8376,6 @@ h1, h2, h3, h4, h5,
        }}
 
 
-
-
   .hero-wrap .overlay {
     width: 100%;
     height: 600px;
@@ -8405,12 +8403,16 @@ h1, h2, h3, h4, h5,
       opacity: .5; }
           @media (min-width: 576px) {
     .hero-wrap-2{
-      background-size: contain;
+      background-size: cover;
        }}
 
 
     .hero-wrap.hero-wrap-2 .slider-text {
       height: 400px !important; }
+          @media (min-width: 576px) {
+    .hero-wrap.hero-wrap-2 .slider-text {
+      background-size: cover;
+       }}
 
 
 .slider-text {
