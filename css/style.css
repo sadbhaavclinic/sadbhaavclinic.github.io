@@ -7970,13 +7970,13 @@ button.bg-dark:focus {
   text-transform: capitalize !important; }
 
 .font-weight-light {
-  font-weight: 300 !important; }
+  font-weight: 250 !important; }
 
 .font-weight-lighter {
   font-weight: lighter !important; }
 
 .font-weight-normal {
-  font-weight: 400 !important; }
+  font-weight: 300 !important; }
 
 .font-weight-bold {
   font-weight: 700 !important; }
@@ -8135,9 +8135,9 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Roboto", Arial, sans-serif;
   background: #fff;
-  font-size: 17px;
-  line-height: 1.8;
-  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
   color: black; }
   body.menu-show {
     overflow: hidden;
