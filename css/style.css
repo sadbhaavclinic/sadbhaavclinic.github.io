@@ -8161,6 +8161,12 @@ h1, h2, h3, h4, h5,
   color: brown;
   font-weight: 300; }
 
+/* Reusable icon accent colors — replaces repeated inline style="color: orange/brown" */
+.icon-accent-orange {
+  color: orange; }
+.icon-accent-brown {
+  color: brown; }
+
 .wrap {
   position: relative;
   z-index: 0;
