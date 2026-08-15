@@ -8189,6 +8189,25 @@ h1, h2, h3, h4, h5,
 .related-posts ul li a:hover {
   color: var(--brand-accent); }
 
+/* Author credentials box — real E-E-A-T signal on every RPC Rounds post,
+   replacing the old one-line unlinked signature. */
+.author-box {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0; }
+.author-box-photo {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: top center; }
+.author-box-text p {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem; }
+.author-box-text a {
+  color: var(--brand-accent); }
+
 /* Large section heading — replaces repeated inline style="font-size:40px;" */
 .treatment-heading {
   font-size: 40px; }
