@@ -8176,6 +8176,19 @@ h1, h2, h3, h4, h5,
 .icon-accent-brown {
   color: var(--brand-secondary); }
 
+/* Related Posts block — links between topically related RPC Rounds posts,
+   sourced from the site's own existing category hub-page groupings. */
+.related-posts {
+  border-top: 1px solid #eee;
+  padding-top: 1.5rem; }
+.related-posts ul li {
+  margin-bottom: 0.5rem; }
+.related-posts ul li a {
+  color: var(--brand-secondary);
+  font-weight: 500; }
+.related-posts ul li a:hover {
+  color: var(--brand-accent); }
+
 /* Large section heading — replaces repeated inline style="font-size:40px;" */
 .treatment-heading {
   font-size: 40px; }
