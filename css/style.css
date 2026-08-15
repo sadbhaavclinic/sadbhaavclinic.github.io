@@ -8167,6 +8167,10 @@ h1, h2, h3, h4, h5,
 .icon-accent-brown {
   color: brown; }
 
+/* Large section heading — replaces repeated inline style="font-size:40px;" */
+.treatment-heading {
+  font-size: 40px; }
+
 .wrap {
   position: relative;
   z-index: 0;
@@ -8784,9 +8788,28 @@ h1, h2, h3, h4, h5,
     width: 100%;
     height: 320px;
     position: relative;
+    overflow: hidden;
     z-index: 1; }
+    /* Real <img> layer behind the hover tint + text overlay (an <img> can't contain child elements,
+       so the photo sits as an absolutely-positioned layer instead of a CSS background-image) */
+    .case-wrap .img .case-thumb {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1; }
+    .case-wrap .text .case-label {
+      display: inline-block;
+      color: orange;
+      font-weight: 500;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px; }
     .case-wrap .img:after {
-      position: relative;
+      position: absolute;
       top: 0;
       left: 0;
       right: 0;
@@ -8794,7 +8817,7 @@ h1, h2, h3, h4, h5,
       content: '';
       background: orange;
       opacity: 0;
-      z-index: -1;
+      z-index: 2;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
       -webkit-transition: all 0.3s ease;
@@ -8805,6 +8828,7 @@ h1, h2, h3, h4, h5,
     bottom: 20px;
     left: 20px;
     right: 20px;
+    z-index: 3;
     color: rgba(255, 255, 255, 0.6);
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
@@ -8890,6 +8914,13 @@ textarea.form-control {
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease; }
+  /* Same visual box as .staff .img-wrap .img, for real <img> tags (native lazy loading + alt text) */
+  .staff .img-wrap .tech-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block; }
   .staff .text {
     position: relative;
     -moz-transition: all 0.3s ease;
