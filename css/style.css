@@ -5,6 +5,15 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  /* Sadbhaav brand colors — change once here to re-theme the whole site.
+     Note: --brand-loader-accent is currently a slightly different orange
+     (#F96D00) than --brand-accent (the CSS keyword "orange"). Kept separate
+     for now so this change doesn't alter how anything currently looks —
+     worth unifying into one value later if you want true one-edit theming. */
+  --brand-accent: orange;
+  --brand-secondary: brown;
+  --brand-loader-accent: #F96D00;
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -8158,14 +8167,14 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: brown;
+  color: var(--brand-secondary);
   font-weight: 300; }
 
-/* Reusable icon accent colors — replaces repeated inline style="color: orange/brown" */
+/* Reusable icon accent colors — replaces repeated inline style="color: var(--brand-accent)/brown" */
 .icon-accent-orange {
-  color: orange; }
+  color: var(--brand-accent); }
 .icon-accent-brown {
-  color: brown; }
+  color: var(--brand-secondary); }
 
 /* Large section heading — replaces repeated inline style="font-size:40px;" */
 .treatment-heading {
@@ -8184,7 +8193,7 @@ h1, h2, h3, h4, h5,
   .wrap .phone {
     z-index: 1; }
     .wrap .phone span {
-      color: orange; }
+      color: var(--brand-accent); }
     .wrap .phone a {
       color: #fff;
       font-size: 12px; }
@@ -8199,7 +8208,7 @@ h1, h2, h3, h4, h5,
       color: white; }
     .social-media p a:hover {
       background: orange;
-      border-color: orange; }
+      border-color: var(--brand-accent); }
       .social-media p a:hover span {
         color: #fff; }
 
@@ -8216,7 +8225,7 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-brand {
     color: #fff; }
     .ftco-navbar-light .navbar-brand:hover {
-      color: brown; }
+      color: var(--brand-secondary); }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
@@ -8233,7 +8242,7 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: brown; }
+      color: var(--brand-secondary); }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -8288,10 +8297,10 @@ h1, h2, h3, h4, h5,
     border: 1px solid #01d28e;
     background: #01d28e !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: brown; }
+    color: var(--brand-secondary); }
   @media (max-width: 991.98px) {
     .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-      color: orange; } }
+      color: var(--brand-accent); } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
     color: rgba(255, 255, 255, 0.5) !important;
@@ -8302,7 +8311,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: .1em; }
     .ftco-navbar-light .navbar-toggler:hover, .ftco-navbar-light .navbar-toggler:focus {
       text-decoration: none;
-      color: orange;
+      color: var(--brand-accent);
       outline: none !important; }
   .ftco-navbar-light.scrolled {
     position: fixed;
@@ -8319,7 +8328,7 @@ h1, h2, h3, h4, h5,
         padding-right: 0 !important;
         padding-bottom: 0 !important; } }
     .ftco-navbar-light.scrolled .nav-item.active > a {
-      color: orange !important; }
+      color: var(--brand-accent) !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
       color: #fff !important;
       background: orange;
@@ -8337,7 +8346,7 @@ h1, h2, h3, h4, h5,
         display: inline-block;
         color: #fff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta.cta-colored span {
-      border-color: orange; }
+      border-color: var(--brand-accent); }
     @media (max-width: 991.98px) {
       .ftco-navbar-light.scrolled .navbar-nav {
         background: none;
@@ -8358,7 +8367,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0.9rem !important;
       color: #000000 !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
-        color: orange !important; }
+        color: var(--brand-accent) !important; }
     .ftco-navbar-light.scrolled.awake {
       margin-top: 0px;
       -webkit-transition: .3s all ease-out;
@@ -8369,7 +8378,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: brown; }
+      color: var(--brand-secondary); }
 
 .navbar-brand {
   font-weight: 700;
@@ -8454,7 +8463,7 @@ h1, h2, h3, h4, h5,
         width: 50px;
         height: 50px; } }
     .slider-text .img-video span {
-      color: orange;
+      color: var(--brand-accent);
       font-size: 24px; }
   .slider-text p {
     font-size: 18px;
@@ -8474,9 +8483,9 @@ h1, h2, h3, h4, h5,
       .slider-text .breadcrumbs span a {
         color: rgba(255, 255, 255, 0.7); }
         .slider-text .breadcrumbs span a:hover, .slider-text .breadcrumbs span a:focus {
-          color: orange; }
+          color: var(--brand-accent); }
           .slider-text .breadcrumbs span a:hover i, .slider-text .breadcrumbs span a:focus i {
-            color: orange; }
+            color: var(--brand-accent); }
   .slider-text .bread {
     font-weight: 500 !important;
     position: relative; }
@@ -8498,7 +8507,7 @@ h1, h2, h3, h4, h5,
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       margin-top: -10px;
-      color: orange !important;
+      color: var(--brand-accent) !important;
       -moz-transition: all 0.7s ease;
       -o-transition: all 0.7s ease;
       -webkit-transition: all 0.7s ease;
@@ -8589,11 +8598,11 @@ h1, h2, h3, h4, h5,
     .btn.btn-primary:hover {
       border: 1px solid orange;
       background: transparent;
-      color: orange; }
+      color: var(--brand-accent); }
     .btn.btn-primary.btn-outline-primary {
       border: 1px solid orange;
       background: transparent;
-      color: orange; }
+      color: var(--brand-accent); }
       .btn.btn-primary.btn-outline-primary:hover {
         border: 1px solid transparent;
         background: #orange;
@@ -8605,7 +8614,7 @@ h1, h2, h3, h4, h5,
     .btn.btn-white:hover {
       border: 1px solid orange;
       background: transparent;
-      color: orange; }
+      color: var(--brand-accent); }
     .btn.btn-white.btn-outline-white {
       border: 1px solid white !important;
       background: transparent !important;
@@ -8774,7 +8783,7 @@ h1, h2, h3, h4, h5,
     background: #fff; }
     .services .icon span {
       font-size: 30px;
-      color: orange; }
+      color: var(--brand-accent); }
     .services .icon.icon-2 {
       background: brown; }
   .services .text {
@@ -8783,7 +8792,7 @@ h1, h2, h3, h4, h5,
       font-size: 18px !important;
       font-weight: 500;
       margin-bottom: 2px;
-      color: orange; }
+      color: var(--brand-accent); }
 
 .case-wrap {
   width: 100%;
@@ -8806,7 +8815,7 @@ h1, h2, h3, h4, h5,
       z-index: 1; }
     .case-wrap .text .case-label {
       display: inline-block;
-      color: orange;
+      color: var(--brand-accent);
       font-weight: 500;
       font-size: 14px;
       text-transform: uppercase;
@@ -8944,7 +8953,7 @@ textarea.form-control {
       color: #000000;
       margin-bottom: 5px; }
     .staff .text .position {
-      color: orange;
+      color: var(--brand-accent);
       display: block;
       font-weight: 500;
       display: inline-block;
@@ -8969,7 +8978,7 @@ textarea.form-control {
       height: 30px;
       position: relative; }
       .staff .ftco-social li a {
-        color: orange;
+        color: var(--brand-accent);
         width: 30px;
         height: 30px;
         background: #1d2227;
@@ -8986,7 +8995,7 @@ textarea.form-control {
   .staff:hover .img, .staff:focus .img {
     margin-top: -10px; }
   .staff:hover .text h3, .staff:focus .text h3 {
-    color: orange; }
+    color: var(--brand-accent); }
 
 .ftco-social {
   padding: 0; }
@@ -9107,9 +9116,9 @@ textarea.form-control {
         font-size: 14px;
         color: rgba(255, 255, 255, 0.7); }
       .ftco-footer .ftco-footer-widget ul li a:hover {
-        color: brown; }
+        color: var(--brand-secondary); }
         .ftco-footer .ftco-footer-widget ul li a:hover span {
-          color: brown; }
+          color: var(--brand-secondary); }
   .ftco-footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
     border: 2px solid #fff !important; }
@@ -9121,7 +9130,7 @@ textarea.form-control {
   .ftco-footer a {
     color: white; }
     .ftco-footer a:hover {
-      color: orange; }
+      color: var(--brand-accent); }
   .ftco-footer .ftco-heading-2 {
     font-size: 17px;
     font-weight: 300;
@@ -9156,12 +9165,12 @@ textarea.form-control {
   .footer-small-nav > li a {
     margin: 0 10px 10px 0; }
     .footer-small-nav > li a:hover, .footer-small-nav > li a:focus {
-      color: orange; }
+      color: var(--brand-accent); }
 
 .media .ftco-icon {
   width: 100px; }
   .media .ftco-icon span {
-    color: orange; }
+    color: var(--brand-accent); }
 
 .ftco-media {
   background: #fff;
@@ -9185,7 +9194,7 @@ textarea.form-control {
   .ftco-media .icon {
     font-size: 50px;
     display: block;
-    color: orange; }
+    color: var(--brand-accent); }
   .ftco-media.text-center .ftco-icon {
     margin: 0 auto; }
 
@@ -9284,7 +9293,7 @@ textarea.form-control {
   font-size: 18px;
   display: inline-block;
   margin-bottom: 0;
-  color: orange;
+  color: var(--brand-accent);
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 2px;
@@ -9504,7 +9513,7 @@ textarea.form-control {
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
       font-size: 50px;
-      color: orange; }
+      color: var(--brand-accent); }
   .ftco-counter .text strong.number {
     font-weight: 500;
     font-size: 30px;
@@ -9595,7 +9604,7 @@ textarea.form-control {
       .blog-entry .text .heading a {
         color: #000000; }
         .blog-entry .text .heading a:hover, .blog-entry .text .heading a:focus, .blog-entry .text .heading a:active {
-          color: orange; }
+          color: var(--brand-accent); }
   .blog-entry .meta {
     width: 100px;
     height: 100px;
@@ -9613,7 +9622,7 @@ textarea.form-control {
       line-height: 1.2; }
       .blog-entry .meta span.day {
         font-weight: 700;
-        color: orange;
+        color: var(--brand-accent);
         font-size: 30px; }
       .blog-entry .meta span.mos {
         font-size: 16px;
@@ -9651,7 +9660,7 @@ textarea.form-control {
       width: 40px;
       font-size: 18px;
       padding-top: 2px;
-      color: brown !important; }
+      color: var(--brand-secondary) !important; }
 
 .block-6 .media-body p {
   font-size: 16px; }
@@ -9664,7 +9673,7 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: orange;
+      color: var(--brand-accent);
       text-align: center;
       display: inline-block;
       width: 40px;
@@ -9715,7 +9724,7 @@ textarea.form-control {
     width: 100%; }
 
 .contactForm .label {
-  color: orange !important;
+  color: var(--brand-accent) !important;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600; }
@@ -9747,7 +9756,7 @@ textarea.form-control {
     /* Firefox 18- */
     color: rgba(0, 0, 0, 0.5) !important; }
   .contactForm .form-control:focus, .contactForm .form-control:active {
-    border-color: orange !important; }
+    border-color: var(--brand-accent) !important; }
 
 .contactForm textarea.form-control {
   height: inherit !important; }
@@ -9773,7 +9782,7 @@ textarea.form-control {
     .block-21 .text .heading a {
       color: #000000; }
       .block-21 .text .heading a:hover, .block-21 .text .heading a:active, .block-21 .text .heading a:focus {
-        color: orange; }
+        color: var(--brand-accent); }
   .block-21 .text .meta > div {
     display: inline-block;
     font-size: 14px;
@@ -9863,7 +9872,7 @@ textarea.form-control {
         font-size: 20px; }
       .comment-list li .comment-body .meta {
         font-size: 15px;
-        color: orange; }
+        color: var(--brand-accent); }
       .comment-list li .comment-body .reply {
         padding: 5px 10px;
         background: #e6e6e6;
@@ -9921,14 +9930,14 @@ textarea.form-control {
       position: absolute;
       right: 0;
       top: 0;
-      color: orange; }
+      color: var(--brand-accent); }
     .categories li a:hover, .categories li a:focus, .sidelink li a:hover, .sidelink li a:focus {
       outline: none;
-      color: orange; }
+      color: var(--brand-accent); }
   .categories li.active a, .sidelink li.active a {
-    color: orange; }
+    color: var(--brand-accent); }
     .categories li.active a span, .sidelink li.active a span {
-      color: orange; }
+      color: var(--brand-accent); }
 
 #ftco-loader {
   position: fixed;
@@ -10020,3 +10029,9 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+/* Loader spinner accent — overrides the inline stroke="#F96D00" attribute
+   baked into every page's loader SVG, so it now follows the theme variable
+   too, without needing to touch any of the 149 HTML files. */
+#ftco-loader .path {
+  stroke: var(--brand-loader-accent) !important; }

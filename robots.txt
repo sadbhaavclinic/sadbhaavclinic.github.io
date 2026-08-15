@@ -1,4 +1,4 @@
-User-agent: Googlebot,Googlebot-Image, Baiduspider, Bingbot
-Disallow: /cgi-bin/
-Disallow: /pages/thankyou.html
+User-agent: *
+Allow: /
+
 Sitemap: https://www.sadbhaavclinic.com/sitemap.xml
