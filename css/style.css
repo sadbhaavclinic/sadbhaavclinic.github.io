@@ -8208,6 +8208,22 @@ h1, h2, h3, h4, h5,
 .author-box-text a {
   color: var(--brand-accent); }
 
+/* Contextual "book an appointment" CTA on RPC Rounds posts — links resident
+   teaching content to the actual clinical service pages. */
+.rpc-cta {
+  background: #fdf6ec;
+  border-left: 3px solid var(--brand-accent);
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+.rpc-cta p {
+  margin-bottom: 0; }
+.rpc-cta a {
+  color: var(--brand-secondary);
+  font-weight: 600; }
+.rpc-cta a:hover {
+  color: var(--brand-accent); }
+
 /* Large section heading — replaces repeated inline style="font-size:40px;" */
 .treatment-heading {
   font-size: 40px; }
