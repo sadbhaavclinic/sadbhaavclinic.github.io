@@ -224,3 +224,15 @@
 
 })(jQuery);
 
+// Auto-updating "years of experience" text — Dr. Dhaval Patel's medical
+// career began in 2010 (MBBS graduation). This calculates the current
+// figure every time the page loads, so it never needs manual editing again.
+(function () {
+  var CAREER_START_YEAR = 2010;
+  var years = new Date().getFullYear() - CAREER_START_YEAR;
+  var spans = document.querySelectorAll('.exp-years');
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].textContent = years;
+  }
+})();
+
