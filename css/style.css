@@ -8,9 +8,9 @@
   /* Sadbhaav brand colors — change once here to re-theme the whole site.
      Updated to Option 2 "classic medical blue" — all three variables now
      unified under one blue palette, including the loader accent. */
-  --brand-accent: #185FA5;
-  --brand-secondary: #5F5E5A;
-  --brand-loader-accent: #185FA5;
+ --brand-accent: #FF9933;        /* India Saffron */
+  --brand-secondary: #138808;     /* India Green */
+  --brand-loader-accent: #000080; /* Ashoka Chakra navy */
 
   --blue: #007bff;
   --indigo: #6610f2;
