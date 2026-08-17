@@ -6,11 +6,11 @@
  */
 :root {
   /* Sadbhaav brand colors — change once here to re-theme the whole site.
-     Updated to Option 2 "classic medical blue" — all three variables now
-     unified under one blue palette, including the loader accent. */
- --brand-accent: #FF9933;        /* India Saffron */
-  --brand-secondary: #138808;     /* India Green */
-  --brand-loader-accent: #000080; /* Ashoka Chakra navy */
+     Tiranga theme: India Saffron accent, India Green secondary,
+     Ashoka Chakra navy for the loader spinner. */
+  --brand-accent: #FF9933;
+  --brand-secondary: #138808;
+  --brand-loader-accent: #000080;
 
   --blue: #007bff;
   --indigo: #6610f2;
