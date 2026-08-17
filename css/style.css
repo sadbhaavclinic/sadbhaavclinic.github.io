@@ -8453,7 +8453,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     opacity: .2;
-    background: #FF8C00; }
+    background: var(--brand-accent); }
 
   .hero-wrap.hero-wrap-2 {
     height: 400px !important;
@@ -8468,7 +8468,7 @@ h1, h2, h3, h4, h5,
       bottom: 0;
       content: '';
       opacity: .2;
-      background: #FF8C00; }
+      background: var(--brand-accent); }
 
 
     .hero-wrap.hero-wrap-2 .slider-text {
@@ -9083,7 +9083,7 @@ textarea.form-control {
     width: 100%;
     content: '';
     opacity: .95;
-    background: #E64A19; }
+    background: var(--brand-accent); }
   .ftco-appointment .half {
     width: 100%; }
     .ftco-appointment .half h2 {
@@ -9279,7 +9279,7 @@ textarea.form-control {
   -webkit-animation: 1.6s ease infinite wheel-up-down;
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
-  color: #E64A19; }
+  color: var(--brand-accent); }
   .mouse-wheel span {
     font-size: 20px; }
 
@@ -9388,7 +9388,7 @@ textarea.form-control {
     right: 0;
     content: '';
     height: 400px;
-    background: #E64A19;
+    background: var(--brand-accent);
     opacity: .95; }
   .testimony-section .owl-carousel {
     margin: 0; }
