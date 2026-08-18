@@ -147,6 +147,30 @@
 		} , { offset: '95%' } );
 
 	}
+	// Auto-updating homepage counters — each grows automatically every year
+	// from its 2026 baseline, so these never need manual updating again.
+	var updateCounters = function() {
+		var BASELINE_YEAR = 2026;
+		var currentYear = new Date().getFullYear();
+		var yearsElapsed = Math.max(0, currentYear - BASELINE_YEAR);
+
+		var counters = [
+			{ id: 'counter-patients', base: 40000, perYear: 3000 },
+			{ id: 'counter-eye-procedures', base: 25000, perYear: 1500 },
+			{ id: 'counter-dental-procedures', base: 25000, perYear: 2000 },
+			{ id: 'counter-social', base: 5000, perYear: 300 }
+		];
+
+		counters.forEach(function(c) {
+			var el = document.getElementById(c.id);
+			if (el) {
+				var value = c.base + (yearsElapsed * c.perYear);
+				el.setAttribute('data-number', value);
+			}
+		});
+	};
+	updateCounters();
+
 	counter();
 
 
