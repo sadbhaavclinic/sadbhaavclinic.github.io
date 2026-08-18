@@ -8746,6 +8746,10 @@ h1, h2, h3, h4, h5,
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  .services-2 h3 a {
+    color: #000000; }
+    .services-2 h3 a:hover, .services-2 h3 a:focus, .services-2 h3 a:active {
+      color: var(--brand-accent); }
   .services-2 .icon-wrap {
     position: relative;
     width: 170px;
