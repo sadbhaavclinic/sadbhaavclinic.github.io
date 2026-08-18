@@ -10117,3 +10117,84 @@ textarea.form-control {
     left: 15px; }
   .whatsapp-float .fa-whatsapp {
     font-size: 26px; } }
+
+/* Visit Journey timeline — numbered, icon-badged, connected steps */
+.journey-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  padding: 40px 36px;
+  width: 100%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease; }
+.journey-card:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px); }
+.journey-card .journey-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px; }
+.journey-card .journey-title .journey-icon-lg {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--brand-accent);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-right: 12px;
+  vertical-align: middle; }
+.journey-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative; }
+.journey-steps li {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  padding-bottom: 28px;
+  padding-left: 2px; }
+.journey-steps li:last-child {
+  padding-bottom: 0; }
+.journey-steps li .journey-badge {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--brand-accent);
+  color: var(--brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  z-index: 1;
+  transition: background 0.25s ease, color 0.25s ease; }
+.journey-steps li:hover .journey-badge {
+  background: var(--brand-accent);
+  color: #fff; }
+.journey-steps li:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 38px;
+  bottom: 0;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--brand-accent) 0, var(--brand-accent) 4px, transparent 4px, transparent 9px);
+  opacity: 0.5; }
+.journey-steps li .journey-text {
+  padding-left: 16px;
+  padding-top: 7px;
+  font-size: 15px;
+  color: #3d3d3d; }
+.journey-steps li .journey-text .journey-note {
+  display: block;
+  font-size: 12.5px;
+  color: #999;
+  margin-top: 2px; }
+@media (max-width: 767px) {
+  .journey-card {
+    padding: 28px 20px; } }
