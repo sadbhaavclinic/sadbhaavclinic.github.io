@@ -6,11 +6,10 @@
  */
 :root {
   /* Sadbhaav brand colors — change once here to re-theme the whole site.
-     Tiranga theme: India Saffron accent, India Green secondary,
-     Ashoka Chakra navy for the loader spinner. */
-  --brand-accent: #FF9933;
-  --brand-secondary: #138808;
-  --brand-loader-accent: #000080;
+     Reverted to the original orange-brown theme. */
+  --brand-accent: orange;
+  --brand-secondary: brown;
+  --brand-loader-accent: #F96D00;
 
   --blue: #007bff;
   --indigo: #6610f2;
