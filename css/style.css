@@ -10084,3 +10084,36 @@ textarea.form-control {
    too, without needing to touch any of the 149 HTML files. */
 #ftco-loader .path {
   stroke: var(--brand-loader-accent) !important; }
+
+/* Floating WhatsApp button — persistent across every page. Positioned
+   bottom-left specifically to avoid overlapping the Tawk.to live chat
+   widget (bottom-right by default) that currently sits on index.html only. */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 998;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.whatsapp-float:hover, .whatsapp-float:focus {
+  transform: scale(1.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  color: #ffffff; }
+.whatsapp-float .fa-whatsapp {
+  color: #ffffff;
+  font-size: 30px; }
+@media (max-width: 767px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    left: 15px; }
+  .whatsapp-float .fa-whatsapp {
+    font-size: 26px; } }
