@@ -168,6 +168,16 @@
 				el.setAttribute('data-number', value);
 			}
 		});
+
+		// Big homepage "Years of Experience" counter — same 2010 baseline
+		// used by the .exp-years text elsewhere on the site, kept self-contained
+		// here so it doesn't depend on load order with that logic further below.
+		var expEl = document.getElementById('counter-years-experience');
+		if (expEl) {
+			var CAREER_START_YEAR_LOCAL = 2010;
+			var expYears = currentYear - CAREER_START_YEAR_LOCAL;
+			expEl.setAttribute('data-number', expYears);
+		}
 	};
 	updateCounters();
 
