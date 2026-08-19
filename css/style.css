@@ -10259,3 +10259,23 @@ textarea.form-control {
   font-size: 15px;
   color: #5a5a5a;
   line-height: 1.7; }
+
+.btn-book-appt {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--brand-accent);
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: opacity .2s ease; }
+  .btn-book-appt:hover {
+    opacity: .88;
+    color: #fff !important; }
+  .btn-book-appt-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px; }
