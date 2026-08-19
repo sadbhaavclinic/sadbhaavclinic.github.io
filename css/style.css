@@ -10198,3 +10198,50 @@ textarea.form-control {
 @media (max-width: 767px) {
   .journey-card {
     padding: 28px 20px; } }
+
+/* FAQ accordion — custom styled, using Bootstrap's collapse JS underneath */
+.faq-accordion {
+  margin-top: 20px; }
+.faq-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden; }
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  background: #fff;
+  border: none;
+  padding: 18px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3d3d3d;
+  cursor: pointer;
+  transition: background 0.2s ease; }
+.faq-question:hover, .faq-question:focus {
+  background: #faf7f4;
+  color: var(--brand-accent);
+  outline: none; }
+.faq-question .faq-icon {
+  flex-shrink: 0;
+  margin-left: 16px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1.5px solid var(--brand-accent);
+  color: var(--brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  transition: transform 0.3s ease; }
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(45deg); }
+.faq-answer {
+  padding: 0 22px 20px;
+  font-size: 15px;
+  color: #5a5a5a;
+  line-height: 1.7; }

@@ -270,3 +270,18 @@
   }
 })();
 
+// Auto-updating root canal count — Dr. Dhara Patel's current total is
+// 3000+ as of 2026, growing by roughly 500 per year. Calculates fresh
+// every page load, so it never needs manual editing again.
+(function () {
+  var RCT_BASELINE_YEAR = 2026;
+  var RCT_BASE_COUNT = 3000;
+  var RCT_PER_YEAR = 500;
+  var yearsElapsed = Math.max(0, new Date().getFullYear() - RCT_BASELINE_YEAR);
+  var count = RCT_BASE_COUNT + (yearsElapsed * RCT_PER_YEAR);
+  var spans = document.querySelectorAll('.rct-count');
+  for (var i = 0; i < spans.length; i++) {
+    spans[i].textContent = count;
+  }
+})();
+
