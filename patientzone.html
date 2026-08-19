@@ -271,8 +271,8 @@
             <li class="nav-item dropdown cta">
               <a href="#" class="nav-link dropdown-toggle" id="bookApptDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Book Appointment</span></a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bookApptDropdown">
-                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Eye%20Department." target="_blank" rel="noopener"><i class="fa fa-eye mr-2"></i>Eye Appointment</a>
-                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Dental%20Department." target="_blank" rel="noopener"><i class="fa fa-tooth mr-2"></i>Dental Appointment</a>
+                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Eye%20Department." target="_blank" rel="noopener" onclick="gtag('event','book_appointment_click',{'department':'eye','click_location':'nav_dropdown'});"><i class="fa fa-eye mr-2"></i>Eye Appointment</a>
+                <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Dental%20Department." target="_blank" rel="noopener" onclick="gtag('event','book_appointment_click',{'department':'dental','click_location':'nav_dropdown'});"><i class="fa fa-tooth mr-2"></i>Dental Appointment</a>
               </div>
             </li>
           </ul>
@@ -463,8 +463,8 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Have a Question?</h2>
               <div class="btn-book-appt-group">
-                <a href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Eye%20Department." target="_blank" rel="noopener" class="btn-book-appt"><i class="fa fa-eye"></i> Eye Appointment</a>
-                <a href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Dental%20Department." target="_blank" rel="noopener" class="btn-book-appt"><i class="fa fa-tooth"></i> Dental Appointment</a>
+                <a href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Eye%20Department." target="_blank" rel="noopener" class="btn-book-appt" onclick="gtag('event','book_appointment_click',{'department':'eye','click_location':'footer'});"><i class="fa fa-eye"></i> Eye Appointment</a>
+                <a href="https://api.whatsapp.com/send?phone=917016912180&text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20with%20the%20Dental%20Department." target="_blank" rel="noopener" class="btn-book-appt" onclick="gtag('event','book_appointment_click',{'department':'dental','click_location':'footer'});"><i class="fa fa-tooth"></i> Dental Appointment</a>
               </div>
               <div class="block-23 mb-3">
                 <ul>
