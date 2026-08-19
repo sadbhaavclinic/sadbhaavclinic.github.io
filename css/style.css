@@ -2699,6 +2699,12 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: transparent;
   border: 0; }
+
+.ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
+  padding: 0.35rem 1.25rem;
+  font-size: 14px;
+  line-height: 1.35;
+  white-space: normal; }
   .dropdown-item:hover, .dropdown-item:focus {
     color: #16181b;
     text-decoration: none;
@@ -8299,7 +8305,15 @@ h1, h2, h3, h4, h5,
     background: #fff;
     -webkit-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
     -moz-box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
-    box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41); }
+    box-shadow: 0px 10px 34px -20px rgba(0, 0, 0, 0.41);
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
+    .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu::-webkit-scrollbar {
+      width: 6px; }
+    .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 3px; }
   .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
     position: relative;
     margin-left: 14px;
