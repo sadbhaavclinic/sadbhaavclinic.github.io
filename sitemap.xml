@@ -1183,12 +1183,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.sadbhaavclinic.com/iol-a-constant-reference.html</loc>
-    <lastmod>2026-08-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.sadbhaavclinic.com/types-of-eye-drops-guide.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
@@ -1220,6 +1214,12 @@
   </url>
   <url>
     <loc>https://www.sadbhaavclinic.com/yag-laser-capsulotomy.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.sadbhaavclinic.com/keratoconus-c3r-treatment.html</loc>
     <lastmod>2026-08-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
