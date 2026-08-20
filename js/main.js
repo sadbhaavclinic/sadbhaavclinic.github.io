@@ -33,6 +33,7 @@
 	loader();
 
 	var carousel = function() {
+		if (typeof $.fn.owlCarousel !== 'function') { return; }
 		$('.carousel-testimony').owlCarousel({
 			center: true,
 			loop: true,
@@ -58,6 +59,9 @@
 
 	};
 	carousel();
+	// Note: carousel() safely no-ops if owl-carousel isn't loaded on this page
+	// (only gallery.html, testimonials.html, aboutus.html, and opticals.html load it —
+	// every other page skips those files entirely for a faster load).
 
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
