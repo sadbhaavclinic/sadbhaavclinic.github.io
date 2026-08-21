@@ -7,7 +7,6 @@
 .proverb-card{border-radius:10px;padding:18px 22px;margin-bottom:16px;border-left:5px solid;border-radius:0 10px 10px 0}
 .proverb-card p{margin-bottom:8px}
 .proverb-card p:last-child{margin-bottom:0}
-.proverb-card .quote-mark{font-size:1.6rem;line-height:1;opacity:.3;display:block;margin-bottom:2px;font-family:Georgia,serif}
 .proverb-1{background:#FFF3E0;border-left-color:#F96D00}
 .proverb-2{background:#E0F7F4;border-left-color:#0F9E8E}
 .proverb-3{background:#F1EAFB;border-left-color:#6f42c1}
