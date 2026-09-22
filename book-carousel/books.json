@@ -4,258 +4,295 @@
     "subtitle": "A Story Based Journey Through Microbiology and Infectious Diseases",
     "cover": "images/cobmicro.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGX3W9NQ",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Signal Empire",
     "subtitle": "Neuroanatomy Storybook",
     "cover": "images/cobneuro.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGWBZNWP",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "Kingdom of Sight",
     "subtitle": "A Story-Based Journey Through Eye Anatomy, Physiology & Disease",
     "cover": "images/cobeye.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGV8T2K5",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Republic of Rhythm",
     "subtitle": "A Story-Based Journey Through Cardiac Anatomy, Physiology & Disease",
     "cover": "images/cobcardio.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGWKPM3T",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "Eyes That Remember",
     "subtitle": "Stories from an Ophthalmologist's Clinic",
     "cover": "images/etr.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGY94DMK",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Filtration Colony",
     "subtitle": "A Story-Based Journey Through Renal Physiology, Acid-Base Balance & Disease",
     "cover": "images/cobrenal.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGY182WL",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Breath Kingdom",
     "subtitle": "A Story-Based Journey Through Respiratory Physiology & Disease",
     "cover": "images/cobrespi.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGY7866T",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Trade Route",
     "subtitle": "A Story-Based Journey Through Gastrointestinal & Hepatic Physiology & Disease",
     "cover": "images/cobgi.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0H6L2KCDR",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "ગીતાની વાતો",
     "subtitle": "વાર્તાઓમાં ભગવદ ગીતા",
     "cover": "images/geeta.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH8GW6PF",
-    "category": "General Readers"
+    "category": "General Readers",
+    "featured": true
   },
   {
     "title": "The Hormone Court (Endocrinology)",
     "subtitle": "A Story-Based Journey Through Endocrine Physiology & Disease",
     "cover": "images/cobendo.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9FSWWQ",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Crimson Legion",
     "subtitle": "A Story-Based Journey Through Hematology & Disease",
     "cover": "images/cobhemat.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9K71B7",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Structural Guard (Musculoskeletal & Rheumatology)",
     "subtitle": "A Story-Based Journey Through Musculoskeletal & Rheumatologic Disease",
     "cover": "images/cobmus.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9TCKLM",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Lineage Court",
     "subtitle": "A Story-Based Journey Through Reproductive Physiology, Pregnancy & Disease",
     "cover": "images/cobrepro.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9R44PF",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Outer Wall",
     "subtitle": "A Story-Based Journey Through Dermatologic Physiology & Disease",
     "cover": "images/cobderma.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HHB5952N",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Molecular Envoy (Pharmacology - General Principles)",
     "subtitle": "A Story-Based Journey Through the Principles of Pharmacology",
     "cover": "images/cobpharmac.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9ZTLDJ",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Mind's Parliament",
     "subtitle": "A Story-Based Journey Through Psychiatric Neuroscience & Clinical Practice",
     "cover": "images/cobpsy.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9W24SX",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Loyalty Office",
     "subtitle": "A Story-Based Journey Through Immunology & Disease",
     "cover": "images/cobimmunology.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9VMP6G",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The First Blueprint",
     "subtitle": "A Story-Based Journey Through Genetics & Embryology",
     "cover": "images/cobgene.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH9YTYBN",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "Beyond the Blindfold",
     "subtitle": "The Truth About Seeing Without Sight",
     "cover": "images/btb.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ2V2FVN",
-    "category": "Patients"
+    "category": "Patients",
+    "featured": false
   },
   {
     "title": "When the Blind See",
     "subtitle": "The Secret World of Visual Hallucinations",
     "cover": "images/wtbs.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ2TPR6Z",
-    "category": "Patients"
+    "category": "Patients",
+    "featured": false
   },
   {
     "title": "Ophthalmology Explorer",
     "subtitle": "A High-Yield Clinical Reference for Ophthalmology Residents, Fellows & Board Exams",
     "cover": "images/oe2.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ1Q47XS",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Threshold Ports (Otolaryngology/ENT)",
     "subtitle": "A Story-Based Journey Through Otolaryngology & Disease",
     "cover": "images/cobent.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQ9B56T",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Evidence Office (Biostatistics & Epidemiology)",
     "subtitle": "A Story-Based Journey Through Biostatistics & Epidemiology",
     "cover": "images/cobbio.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQNQKLY",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The First Response (General & Systemic Pathology)",
     "subtitle": "A Story-Based Journey Through General & Systemic Pathology",
     "cover": "images/cobpath.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQ2LDJF",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Vital Rations (Nutrition & Metabolism)",
     "subtitle": "A Story-Based Journey Through Nutrition & Metabolism",
     "cover": "images/cobnut.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQDDVZV",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "OphthalMIND",
     "subtitle": "The ophthalmology you studied, and ophthalmology you didn't?",
     "cover": "images/ophthalmind.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ8GB9WY",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": true
   },
   {
     "title": "Most Commons in Ophthalmology",
     "subtitle": "5001 Most Commons facts in Ophthalmology",
     "cover": "images/mco.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGLGNJ4N",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": true
   },
   {
     "title": "The Eye Court - Ophthal Adalat",
     "subtitle": "Courtroom drama approach to ophthalmology diagnosis",
     "cover": "images/theeyecourt.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKHK1PW2",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": true
   },
   {
     "title": "Ophthalmonics",
     "subtitle": "Ophthalmology mnemonics, a readers favorite",
     "cover": "images/ophthalmonics.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGSXCV7L",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "Most Commons in Biochemistry",
     "subtitle": "A Complete Exam-Ready Reference",
     "cover": "images/mcbiochem.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKJW1RMJ",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "Ophthal GITA",
     "subtitle": "A Complete Course in Ophthalmology, in Verse",
     "cover": "images/ophthalgita.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKJZTYJF",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": true
   },
   {
     "title": "iNotes 2027: Lens",
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inoteslens.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJTS5WP2",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "iNotes 2027: Glaucoma",
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotesglaucoma.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJT7FTPW",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "iNotes 2027: Cornea and Refractive",
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotescornea.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJSZGK5Y",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "iNotes 2027: Basic Science & Optics",
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotesbasicscience.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJT7PGT4",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   },
   {
     "title": "The Eyes Know First",
     "subtitle": "How Your Eyes Warn You Before Your Body Does",
     "cover": "images/theeyes.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJRYWVYQ",
-    "category": "Patients"
+    "category": "Patients",
+    "featured": true
   },
   {
     "title": "The Penetrating Gaze (Radiology & Medical Imaging)",
     "subtitle": "A Story-Based Journey Through Radiology & Medical Imaging",
     "cover": "images/cobradio.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQ896R8",
-    "category": "Medical Students"
+    "category": "Medical Students",
+    "featured": false
   }
 ]

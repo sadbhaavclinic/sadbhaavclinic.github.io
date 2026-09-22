@@ -13,11 +13,12 @@
    top, save, upload. Every page updates automatically —
    you never touch this file or any page again.
 
-   This widget only rotates through the newest FEATURED_COUNT
-   books (set below) plus one permanent "See all X books" slide
-   linking to the full catalog page (CATALOG_URL, below) — so it
-   stays compact even as your book list grows. The full list is
-   always shown on mykindlebooks.html.
+   This widget rotates through books marked "featured": true in
+   books.json (up to FEATURED_COUNT of them), plus one permanent
+   "See all X books" slide linking to the full catalog page
+   (CATALOG_URL, below). If no book is marked featured, it falls
+   back to showing the newest FEATURED_COUNT books instead. The
+   full list is always shown on mykindlebooks.html regardless.
    ========================================================= */
 
 (function () {
@@ -214,7 +215,8 @@
       if (!allBooks || !allBooks.length) return;
 
       var totalCount = allBooks.length;
-      var books = allBooks.slice(0, FEATURED_COUNT); // newest N only (books.json lists newest first)
+      var featuredBooks = allBooks.filter(function (b) { return b.featured === true; });
+      var books = (featuredBooks.length > 0 ? featuredBooks : allBooks).slice(0, FEATURED_COUNT);
       var totalSlides = books.length + 1; // +1 for the permanent "see all" slide
 
       books.forEach(function (book, i) {
