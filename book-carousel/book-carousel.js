@@ -16,9 +16,20 @@
 
 (function () {
   // Figure out the right relative path to books.json regardless
-  // of which folder this script was loaded from.
-  var scripts = document.getElementsByTagName("script");
-  var thisScript = scripts[scripts.length - 1];
+  // of which folder this script was loaded from. document.currentScript
+  // reliably points to THIS script tag (unlike scanning all <script>
+  // tags, which breaks if other scripts load after this one).
+  var thisScript = document.currentScript;
+  if (!thisScript) {
+    // Fallback for older browsers: find the tag whose src ends in book-carousel.js
+    var scripts = document.getElementsByTagName("script");
+    for (var i = scripts.length - 1; i >= 0; i--) {
+      if (/book-carousel\.js(\?.*)?$/.test(scripts[i].src)) {
+        thisScript = scripts[i];
+        break;
+      }
+    }
+  }
   var basePath = thisScript.src.replace(/book-carousel\.js(\?.*)?$/, "");
   var DATA_URL = basePath + "books.json";
   var AUTO_ROTATE_MS = 4500;
