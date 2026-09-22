@@ -13,6 +13,13 @@
     "amazonUrl": "https://www.amazon.in/dp/B0HGLGNJ4N",
     "category": "Medical Students"
   },
+    {
+    "title": "The Eye Court - Ophthal Adalat",
+    "subtitle": "Quick-review facts for entrance exams",
+    "cover": "images/theeyecourt.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HKHK1PW2",
+    "category": "Medical Students"
+  },
   {
     "title": "Ophthalmonics",
     "subtitle": "Ophthalmology mnemonics, a reader favorite",
