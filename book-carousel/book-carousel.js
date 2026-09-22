@@ -186,7 +186,7 @@
 
   var tab = document.createElement("button");
   tab.id = "bcw-tab";
-  tab.setAttribute("aria-label", "My Kindle Books");
+  tab.setAttribute("aria-label", "My Books");
   tab.innerHTML = "📚";
   document.body.appendChild(tab);
 
@@ -244,7 +244,7 @@
       seeAllSlide.className = "bcw-slide";
       seeAllSlide.innerHTML =
         '<div class="bcw-seeall-icon">📚</div>' +
-        '<p class="bcw-seeall-title">See all ' + totalCount + ' books</p>' +
+        '<p class="bcw-seeall-title">See all my books</p>' +
         '<p class="bcw-seeall-sub">Browse the full categorized list</p>' +
         '<a class="bcw-seeall-btn" href="' + CATALOG_URL + '">Browse All Books</a>';
       slidesEl.appendChild(seeAllSlide);
