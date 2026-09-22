@@ -1,0 +1,23 @@
+[
+  {
+    "title": "OphthalMIND",
+    "subtitle": "The ophthalmology you studied, didn't you?",
+    "cover": "images/ophthalmind.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HJ8GB9WY",
+    "category": "Medical Students"
+  },
+  {
+    "title": "Most Commons in Ophthalmology",
+    "subtitle": "Quick-review facts for entrance exams",
+    "cover": "images/mco.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HGLGNJ4N",
+    "category": "Medical Students"
+  },
+  {
+    "title": "Ophthalmonics",
+    "subtitle": "Ophthalmology mnemonics, a reader favorite",
+    "cover": "images/ophthalmonics.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HGSXCV7L",
+    "category": "Medical Students"
+  }
+]
