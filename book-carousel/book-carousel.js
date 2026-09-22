@@ -12,6 +12,12 @@
    Open book-carousel/books.json, add one new entry at the
    top, save, upload. Every page updates automatically —
    you never touch this file or any page again.
+
+   This widget only rotates through the newest FEATURED_COUNT
+   books (set below) plus one permanent "See all X books" slide
+   linking to the full catalog page (CATALOG_URL, below) — so it
+   stays compact even as your book list grows. The full list is
+   always shown on mykindlebooks.html.
    ========================================================= */
 
 (function () {
@@ -33,6 +39,8 @@
   var basePath = thisScript.src.replace(/book-carousel\.js(\?.*)?$/, "");
   var DATA_URL = basePath + "books.json";
   var AUTO_ROTATE_MS = 4500;
+  var FEATURED_COUNT = 6; // how many books to rotate in the small floating widget
+  var CATALOG_URL = "mykindlebooks.html"; // the full, categorized book list
 
   var style = document.createElement("style");
   style.textContent = `
@@ -141,6 +149,33 @@
       cursor: pointer;
     }
     .bcw-dot.bcw-active-dot { background: var(--brand-accent, #F96D00); }
+    .bcw-seeall-icon {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+    .bcw-seeall-title {
+      font-size: 13.5px;
+      font-weight: 600;
+      margin: 4px 0 2px 0;
+      color: #222;
+    }
+    .bcw-seeall-sub {
+      font-size: 11.5px;
+      color: #777;
+      margin: 0 0 10px 0;
+      min-height: 28px;
+    }
+    .bcw-seeall-btn {
+      display: inline-block;
+      background: var(--brand-secondary, #6b4423);
+      color: #fff !important;
+      text-decoration: none !important;
+      font-size: 12.5px;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 4px;
+    }
+    .bcw-seeall-btn:hover { opacity: .88; }
     @media (max-width: 480px) {
       #bcw-tab { bottom: 84px; right: 16px; width: 50px; height: 50px; font-size: 22px; }
       #bcw-panel { bottom: 142px; right: 16px; }
@@ -175,8 +210,12 @@
 
   fetch(DATA_URL)
     .then(function (res) { return res.json(); })
-    .then(function (books) {
-      if (!books || !books.length) return;
+    .then(function (allBooks) {
+      if (!allBooks || !allBooks.length) return;
+
+      var totalCount = allBooks.length;
+      var books = allBooks.slice(0, FEATURED_COUNT); // newest N only (books.json lists newest first)
+      var totalSlides = books.length + 1; // +1 for the permanent "see all" slide
 
       books.forEach(function (book, i) {
         var slide = document.createElement("div");
@@ -197,6 +236,23 @@
         dotsEl.appendChild(dot);
       });
 
+      // Permanent final slide: always present, links to the full catalog page.
+      var seeAllIndex = books.length;
+      var seeAllSlide = document.createElement("div");
+      seeAllSlide.className = "bcw-slide";
+      seeAllSlide.innerHTML =
+        '<div class="bcw-seeall-icon">📚</div>' +
+        '<p class="bcw-seeall-title">See all ' + totalCount + ' books</p>' +
+        '<p class="bcw-seeall-sub">Browse the full categorized list</p>' +
+        '<a class="bcw-seeall-btn" href="' + CATALOG_URL + '">Browse All Books</a>';
+      slidesEl.appendChild(seeAllSlide);
+
+      var seeAllDot = document.createElement("span");
+      seeAllDot.className = "bcw-dot";
+      seeAllDot.setAttribute("aria-label", "See all books");
+      seeAllDot.addEventListener("click", function () { showSlide(seeAllIndex); });
+      dotsEl.appendChild(seeAllDot);
+
       var current = 0;
       var slideEls = slidesEl.querySelectorAll(".bcw-slide");
       var dotEls = dotsEl.querySelectorAll(".bcw-dot");
@@ -209,9 +265,9 @@
         dotEls[current].classList.add("bcw-active-dot");
       }
 
-      if (books.length > 1) {
+      if (totalSlides > 1) {
         setInterval(function () {
-          showSlide((current + 1) % books.length);
+          showSlide((current + 1) % totalSlides);
         }, AUTO_ROTATE_MS);
       }
     })
