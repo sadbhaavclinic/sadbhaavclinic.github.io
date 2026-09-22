@@ -20,7 +20,7 @@
     "subtitle": "A Story-Based Journey Through Eye Anatomy, Physiology & Disease",
     "cover": "images/cobeye.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGV8T2K5",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": false
   },
   {
@@ -37,7 +37,7 @@
     "cover": "images/etr.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGY94DMK",
     "category": "Medical Students",
-    "featured": false
+    "featured": true
   },
   {
     "title": "The Filtration Colony",
@@ -69,7 +69,7 @@
     "cover": "images/geeta.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HH8GW6PF",
     "category": "General Readers",
-    "featured": true
+    "featured": false
   },
   {
     "title": "The Hormone Court (Endocrinology)",
@@ -164,8 +164,8 @@
     "subtitle": "A High-Yield Clinical Reference for Ophthalmology Residents, Fellows & Board Exams",
     "cover": "images/oe2.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ1Q47XS",
-    "category": "Medical Students",
-    "featured": false
+    "category": "Ophthalmology Students",
+    "featured": true
   },
   {
     "title": "The Threshold Ports (Otolaryngology/ENT)",
@@ -204,7 +204,7 @@
     "subtitle": "The ophthalmology you studied, and ophthalmology you didn't?",
     "cover": "images/ophthalmind.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ8GB9WY",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": true
   },
   {
@@ -212,7 +212,7 @@
     "subtitle": "5001 Most Commons facts in Ophthalmology",
     "cover": "images/mco.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGLGNJ4N",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": true
   },
   {
@@ -220,7 +220,7 @@
     "subtitle": "Courtroom drama approach to ophthalmology diagnosis",
     "cover": "images/theeyecourt.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKHK1PW2",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": true
   },
   {
@@ -228,8 +228,8 @@
     "subtitle": "Ophthalmology mnemonics, a readers favorite",
     "cover": "images/ophthalmonics.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HGSXCV7L",
-    "category": "Medical Students",
-    "featured": false
+    "category": "Ophthalmology Students",
+    "featured": true
   },
   {
     "title": "Most Commons in Biochemistry",
@@ -244,15 +244,15 @@
     "subtitle": "A Complete Course in Ophthalmology, in Verse",
     "cover": "images/ophthalgita.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKJZTYJF",
-    "category": "Medical Students",
-    "featured": true
+    "category": "Ophthalmology Students",
+    "featured": false
   },
   {
     "title": "iNotes 2027: Lens",
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inoteslens.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJTS5WP2",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": false
   },
   {
@@ -260,7 +260,7 @@
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotesglaucoma.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJT7FTPW",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": false
   },
   {
@@ -268,7 +268,7 @@
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotescornea.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJSZGK5Y",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": false
   },
   {
@@ -276,7 +276,7 @@
     "subtitle": "Ophthalmology Postgraduate Exam Notes",
     "cover": "images/inotesbasicscience.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJT7PGT4",
-    "category": "Medical Students",
+    "category": "Ophthalmology Students",
     "featured": false
   },
   {
@@ -285,7 +285,7 @@
     "cover": "images/theeyes.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJRYWVYQ",
     "category": "Patients",
-    "featured": true
+    "featured": false
   },
   {
     "title": "The Penetrating Gaze (Radiology & Medical Imaging)",
