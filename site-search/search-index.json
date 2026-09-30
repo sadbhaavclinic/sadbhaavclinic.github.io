@@ -1175,9 +1175,9 @@
   "desc": "What does 6/60, 3/60 or 1/60 vision mean? Clear explanation of visual acuity numbers by Dr. Dhaval Patel, MD (AIIMS New Delhi), at Sadbhaav "
  },
  {
-  "title": "Visual Impairment Categories India",
+  "title": "Visual Impairment Categories: 6/60, 3/60 & 20/60 Explained",
   "url": "visualimpairment.html",
-  "desc": "Visual Impairment Categories India: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching b"
+  "desc": "What 6/60, 3/60, and 20/60 vision mean, and current legal blindness definitions in India, the US, and WHO/ICD-11."
  },
  {
   "title": "Vogt-Koyanagi-Harada Disease",
@@ -1203,5 +1203,20 @@
   "title": "Start Here: A New Reader's Guide to RPC Rounds",
   "url": "start-here.html",
   "desc": "New to RPC Rounds? A curated guide to the highest-yield articles and how to navigate the blog."
+ },
+ {
+  "title": "LRI Calculator: Nomograms for Limbal Relaxing Incisions",
+  "url": "lricalculator.html",
+  "desc": "LRI nomograms explained: Nichamin NAPA, Gills, Donnenfeld, and Wortz-Gupta, plus links to established free online LRI calculators."
+ },
+ {
+  "title": "Post-Refractive Surgery IOL Calculation: A Practical Guide",
+  "url": "post-refractive-iol-calculation.html",
+  "desc": "IOL power calculation after LASIK, PRK, or RK: why standard formulas fail, and current evidence on Barrett True-K and the ASCRS calculator."
+ },
+ {
+  "title": "SRK II, SRK/T, Hoffer Q & Holladay 1 Compared",
+  "url": "iol-formula-comparison.html",
+  "desc": "The four classic IOL power formulas compared, with a working educational SRK II calculator."
  }
 ]
