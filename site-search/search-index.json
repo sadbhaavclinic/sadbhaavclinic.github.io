@@ -1218,5 +1218,250 @@
   "title": "SRK II, SRK/T, Hoffer Q & Holladay 1 Compared",
   "url": "iol-formula-comparison.html",
   "desc": "The four classic IOL power formulas compared, with a working educational SRK II calculator."
+ },
+ {
+  "title": "Landmark Trials in Ophthalmology: High-Yield Summary",
+  "url": "landmark-trials.html",
+  "desc": "Landmark ophthalmology trials in one place: glaucoma, diabetic retinopathy, AMD, vein occlusion, cornea, neuro and paediatric trials with ke"
+ },
+ {
+  "title": "Ophthalmic Emergencies on Call: A Resident's Survival Guide",
+  "url": "ophthalmic-emergencies.html",
+  "desc": "The ophthalmic emergencies every resident must recognise on call: chemical injury, retrobulbar haemorrhage, CRAO, angle closure, open globe,"
+ },
+ {
+  "title": "Lateral Canthotomy, AC Paracentesis and Pupil Examination: How-To for Residents",
+  "url": "resident-procedures.html",
+  "desc": "Step-by-step lateral canthotomy and cantholysis, anterior chamber paracentesis, and a proper pupil examination with RAPD grading and pharmac"
+ },
+ {
+  "title": "Spot the Diagnosis: 15 Ophthalmology Case Quizzes",
+  "url": "spot-the-diagnosis.html",
+  "desc": "Fifteen short ophthalmology case vignettes with hidden answers. Test your diagnostic reflexes on classic exam clues, from Shafer sign to INO"
+ },
+ {
+  "title": "Ophthalmology Abbreviations: A Complete List for Residents and Students",
+  "url": "ophthalmology-abbreviations.html",
+  "desc": "Ophthalmology abbreviations explained: vision and refraction, examination, diagnoses, procedures and investigations, plus ambiguous and erro"
+ },
+ {
+  "title": "How to Read an OCT: Hard-Core Tips and Tricks",
+  "url": "oct-interpretation-tips.html",
+  "desc": "Expert OCT reading tips: quality checks, RNFL red and green disease, GCIPL patterns in glaucoma and chiasmal disease, macular fluid, MNV sig"
+ },
+ {
+  "title": "How to Read Corneal Topography and Tomography: Hard-Core Tips",
+  "url": "corneal-topography-tips.html",
+  "desc": "Expert tips for reading Placido topography and Pentacam tomography: map choice, scales, elevation and pachymetry, keratoconus screening, LAS"
+ },
+ {
+  "title": "How to Read a Visual Field: Hard-Core Perimetry Tips",
+  "url": "perimetry-interpretation-tips.html",
+  "desc": "Expert tips for reading Humphrey visual fields: reliability, total vs pattern deviation, GHT, MD, PSD, VFI, artifacts, glaucoma and neuro pa"
+ },
+ {
+  "title": "Diabetic Retinopathy: Classification and Management for Residents",
+  "url": "diabetic-retinopathy-guide.html",
+  "desc": "Diabetic retinopathy for residents: screening, ICDR grading, the 4-2-1 rule, high-risk PDR, CSME and centre-involving DME, and a trial-based"
+ },
+ {
+  "title": "Retinal Detachment: Types, Lincoff Rules and Surgery Choice",
+  "url": "retinal-detachment-guide.html",
+  "desc": "Retinal detachment for residents: rhegmatogenous, tractional and exudative types, Lincoff rules, macula-on urgency, choosing pneumatic, buck"
+ },
+ {
+  "title": "Endophthalmitis: Types, Organisms and Management",
+  "url": "endophthalmitis-guide.html",
+  "desc": "Endophthalmitis for residents: post-operative, post-injection, traumatic, bleb-related and endogenous types, organisms, TASS, intravitreal a"
+ },
+ {
+  "title": "Thyroid Eye Disease: Activity, Severity and Treatment",
+  "url": "thyroid-eye-disease.html",
+  "desc": "Thyroid eye disease for residents: signs, Clinical Activity Score, EUGOGO severity, dysthyroid optic neuropathy, IV steroids, teprotumumab, "
+ },
+ {
+  "title": "Uveitis Work-up: A Targeted Approach for Residents",
+  "url": "uveitis-workup.html",
+  "desc": "A targeted uveitis work-up for residents: SUN classification and grading, baseline tests, pattern-based investigations, masquerade syndromes"
+ },
+ {
+  "title": "Phacoemulsification Step by Step: A Beginner's Guide",
+  "url": "phaco-steps-beginners.html",
+  "desc": "Phaco for beginners: incisions, OVD, capsulorhexis, hydrodissection, nucleus removal, I/A and IOL, machine settings, and how to handle commo"
+ },
+ {
+  "title": "Keratoplasty Types: PK vs DALK vs DSAEK vs DMEK",
+  "url": "keratoplasty-types.html",
+  "desc": "Corneal transplant types compared for residents: PK, DALK, DSAEK and DMEK indications, rejection risk, visual recovery, DALK big-bubble pear"
+ },
+ {
+  "title": "Refractive Surgery for Residents: PRK, LASIK, SMILE and ICL",
+  "url": "refractive-surgery-residents.html",
+  "desc": "Refractive surgery for residents: PRK, LASIK, SMILE, ICL and lens exchange compared, candidate selection, ectasia risk factors, flap complic"
+ },
+ {
+  "title": "Ocular Tumours: Eyelid, Conjunctiva, Uvea and Orbit",
+  "url": "ocular-tumours.html",
+  "desc": "Ocular tumours for residents: eyelid BCC and sebaceous carcinoma, OSSN, uveal melanoma risk factors (TFSOM-UHHD), choroidal metastasis, reti"
+ },
+ {
+  "title": "Ocular Pharmacology: High-Yield Guide for Residents",
+  "url": "ocular-pharmacology.html",
+  "desc": "Ocular pharmacology for residents: glaucoma drug classes, steroids, NSAIDs, antibiotics, fortified drops, antifungals, antivirals, cyclopleg"
+ },
+ {
+  "title": "Strabismus Surgery Basics for Residents",
+  "url": "strabismus-surgery-basics.html",
+  "desc": "Strabismus surgery for residents: measurement, spiral of Tillaux, recession and resection principles, thyroid and paralytic strabismus, ocul"
+ },
+ {
+  "title": "How to Take an Ophthalmic History and Present a Case",
+  "url": "ophthalmic-history-case-presentation.html",
+  "desc": "How to take an ophthalmic history, examine in the right order, and present a case to your consultant clearly, with a one-line summary templa"
+ },
+ {
+  "title": "AIOS-OKAT Exam Guide: Modules, Eligibility and Study Plan",
+  "url": "aios-okat-exam-guide.html",
+  "desc": "AIOS-OKAT explained: eligibility, the three modules, attempts and awards, registration, and a module-by-module study plan with free RPC Roun"
+ },
+ {
+  "title": "Best Ophthalmology Exam Preparation Resources",
+  "url": "ophthalmology-exam-resources.html",
+  "desc": "The ophthalmology study resources trainees use worldwide, from question banks and AAO board prep to EyeGuru, EyeWiki and podcasts, plus a pr"
+ },
+ {
+  "title": "Angle Kappa vs Angle Alpha: Why They Matter for Multifocal IOLs",
+  "url": "angle-kappa-alpha-multifocal-iol.html",
+  "desc": "Angle kappa (chord mu) and angle alpha (chord alpha) explained for multifocal IOL selection: definitions, which is more reliable, practical "
+ },
+ {
+  "title": "Toric IOL Pearls: Rotation, Posterior Corneal Astigmatism and Marking",
+  "url": "toric-iol-pearls.html",
+  "desc": "Toric IOL pearls: 3.3% loss of correction per degree of rotation, posterior corneal astigmatism, upright marking, preventing rotation and wh"
+ },
+ {
+  "title": "Positive vs Negative Dysphotopsia After Cataract Surgery",
+  "url": "dysphotopsia-after-cataract-surgery.html",
+  "desc": "Positive and negative dysphotopsia after cataract surgery: symptoms, incidence, proposed causes, and treatments including reverse optic capt"
+ },
+ {
+  "title": "Sulcus IOL Power Adjustment: How Much to Reduce and When Not To",
+  "url": "sulcus-iol-power-adjustment.html",
+  "desc": "How much to reduce IOL power for sulcus placement, why optic capture changes the rule, and why single-piece acrylic IOLs should not go in th"
+ },
+ {
+  "title": "Monovision in Cataract Surgery: Targets and Patient Selection",
+  "url": "monovision-cataract-surgery.html",
+  "desc": "Monovision in cataract surgery: mini vs full monovision targets, which eye for distance, who is a good candidate, and practical tips."
+ },
+ {
+  "title": "Biometry Rules of Thumb: Axial Length, Keratometry and Red Flags",
+  "url": "biometry-rules-of-thumb.html",
+  "desc": "Biometry rules of thumb: how much refractive error a 1 mm axial length or 1 D keratometry error causes, red flags for rechecking, and optica"
+ },
+ {
+  "title": "Refractive Surprise After Cataract Surgery: Causes and Management",
+  "url": "refractive-surprise-after-cataract-surgery.html",
+  "desc": "Refractive surprise after cataract surgery: how to find the cause, capsular block syndrome, and choosing between glasses, laser, IOL exchang"
+ },
+ {
+  "title": "Cataract Surgery in Pseudoexfoliation: Pearls and Pitfalls",
+  "url": "pseudoexfoliation-cataract-surgery.html",
+  "desc": "Cataract surgery in pseudoexfoliation: warning signs, pupil expansion, capsulorhexis size, capsular tension rings, and late IOL dislocation."
+ },
+ {
+  "title": "How to Set a Target IOP in Glaucoma",
+  "url": "target-iop-glaucoma.html",
+  "desc": "How to set a target IOP in glaucoma: baseline, stage, rate of progression and risk factors, a practical starting framework, and when to revi"
+ },
+ {
+  "title": "Gonioscopy Grading: Shaffer, Scheie and Spaeth Systems",
+  "url": "gonioscopy-grading.html",
+  "desc": "Gonioscopy grading explained: Shaffer, Scheie and Spaeth systems, indentation gonioscopy for synechial closure, technique pearls and the Van"
+ },
+ {
+  "title": "Optic Disc Haemorrhage in Glaucoma: Significance and Management",
+  "url": "disc-haemorrhage-glaucoma.html",
+  "desc": "Optic disc haemorrhage in glaucoma: how to recognise it, why it signals progression, other causes to exclude, and what to do when you find o"
+ },
+ {
+  "title": "Central Corneal Thickness and IOP: Why There Is No Correction Formula",
+  "url": "cct-and-iop.html",
+  "desc": "How central corneal thickness affects IOP readings, why correction formulas are unreliable, CCT as a risk factor from OHTS, and corneal hyst"
+ },
+ {
+  "title": "Bleb Grading and Hypotony After Trabeculectomy",
+  "url": "bleb-grading-hypotony.html",
+  "desc": "Trabeculectomy bleb grading (Indiana and Moorfields), bleb types, hypotony and hypotony maculopathy, finding the cause, and treating bleb le"
+ },
+ {
+  "title": "Macular Hole Staging: Gass vs IVTS Classification",
+  "url": "macular-hole-staging.html",
+  "desc": "Macular hole staging explained: Gass stages 1–4 and the OCT-based IVTS classification by size, measuring the hole, and surgical management."
+ },
+ {
+  "title": "Treat-and-Extend Anti-VEGF Regimen Explained",
+  "url": "treat-and-extend-anti-vegf.html",
+  "desc": "Treat-and-extend anti-VEGF explained: how it compares with fixed and PRN dosing, a typical protocol, what counts as disease activity, and lo"
+ },
+ {
+  "title": "OCT Biomarkers in Diabetic Macular Oedema",
+  "url": "dme-oct-biomarkers.html",
+  "desc": "OCT biomarkers in diabetic macular oedema: CST, intraretinal and subretinal fluid, hyperreflective foci, DRIL, EZ/ELM integrity, and how the"
+ },
+ {
+  "title": "Valsalva vs Terson vs Purtscher Retinopathy",
+  "url": "valsalva-terson-purtscher-retinopathy.html",
+  "desc": "Valsalva retinopathy, Terson syndrome and Purtscher retinopathy compared: triggers, mechanisms, fundus findings, management and prognosis."
+ },
+ {
+  "title": "Optic Neuritis vs NAION vs Arteritic AION: How to Tell Them Apart",
+  "url": "optic-neuritis-vs-naion-vs-aaion.html",
+  "desc": "Optic neuritis vs NAION vs arteritic AION compared: age, pain, onset, disc appearance, field defects, tests, treatment and prognosis, plus r"
+ },
+ {
+  "title": "Optic Disc Drusen vs Papilloedema: How to Tell Them Apart",
+  "url": "disc-drusen-vs-papilloedema.html",
+  "desc": "Optic disc drusen vs papilloedema: clinical differences, and when to use autofluorescence, B-scan ultrasound, enhanced-depth OCT and angiogr"
+ },
+ {
+  "title": "Retinoscopy Tips: With vs Against Movement and Working Distance",
+  "url": "retinoscopy-tips.html",
+  "desc": "Retinoscopy tips for residents: with vs against movement, neutrality, working distance correction with examples, finding astigmatism, and co"
+ },
+ {
+  "title": "Jackson Cross-Cylinder: How to Refine Axis and Power",
+  "url": "jackson-cross-cylinder.html",
+  "desc": "How to use the Jackson cross-cylinder: refining axis first and then power, 'follow the red', keeping the spherical equivalent constant, and "
+ },
+ {
+  "title": "Prentice's Rule: Induced Prism With Worked Examples",
+  "url": "prentices-rule.html",
+  "desc": "Prentice's rule explained: the formula, base direction for plus and minus lenses, worked examples including anisometropic vertical imbalance"
+ },
+ {
+  "title": "Vertex Distance: Formula, Examples and When It Matters",
+  "url": "vertex-distance.html",
+  "desc": "Vertex distance explained: the formula, worked examples for converting glasses to contact lenses, and when it matters clinically."
+ },
+ {
+  "title": "Duochrome (Red-Green) Test: How It Works and RAM GAP",
+  "url": "duochrome-test.html",
+  "desc": "The duochrome (red-green) test explained: chromatic aberration, RAM GAP (Red Add Minus, Green Add Plus), technique, end point and limitation"
+ },
+ {
+  "title": "MS/DNB Ophthalmology Thesis: Choosing a Topic and Example Ideas",
+  "url": "ophthalmology-thesis-topics.html",
+  "desc": "How to choose a feasible MS or DNB ophthalmology thesis topic, example ideas by subspecialty, ethics and CTRI registration, and a realistic "
+ },
+ {
+  "title": "How to Write an Ophthalmology Case Report",
+  "url": "how-to-write-case-report.html",
+  "desc": "How to write and publish an ophthalmology case report: choosing a case, CARE structure, patient consent, images, choosing a journal and avoi"
+ },
+ {
+  "title": "Clinical Pearls for Ophthalmology Residents",
+  "url": "clinical-pearls.html",
+  "desc": "Clinical Pearls: focused answers to the questions ophthalmology residents search most, from angle kappa and toric IOLs to gonioscopy, macula"
  }
 ]
