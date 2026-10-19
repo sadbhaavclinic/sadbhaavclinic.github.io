@@ -350,7 +350,7 @@
   </url>
   <url>
     <loc>https://www.sadbhaavclinic.com/eyeriddles.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1466,7 +1466,7 @@
   </url>
   <url>
     <loc>https://www.sadbhaavclinic.com/start-here.html</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1616,7 +1616,7 @@
   </url>
   <url>
     <loc>https://www.sadbhaavclinic.com/ophthalmology-exam-resources.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -1779,6 +1779,18 @@
   <url>
     <loc>https://www.sadbhaavclinic.com/clinical-pearls.html</loc>
     <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.sadbhaavclinic.com/resident-learning-dashboard.html</loc>
+    <lastmod>2026-10-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.sadbhaavclinic.com/international-ophthalmology-exams.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

@@ -1463,5 +1463,15 @@
   "title": "Clinical Pearls for Ophthalmology Residents",
   "url": "clinical-pearls.html",
   "desc": "Clinical Pearls: focused answers to the questions ophthalmology residents search most, from angle kappa and toric IOLs to gonioscopy, macula"
+ },
+ {
+  "title": "Resident Learning Dashboard: Filter RPC Rounds by Subspecialty and Purpose",
+  "url": "resident-learning-dashboard.html",
+  "desc": "Filter every RPC Rounds ophthalmology article by subspecialty and purpose (gradings, viva, surgery, imaging, emergencies, quizzes) and track"
+ },
+ {
+  "title": "OKAP, FRCOphth and ICO Exams: Formats and How to Prepare with RPC Rounds",
+  "url": "international-ophthalmology-exams.html",
+  "desc": "OKAP, FRCOphth and ICO ophthalmology exams compared: official formats, the 13 BCSC sections, FRCOphth parts and ICO papers, mapped honestly "
  }
 ]

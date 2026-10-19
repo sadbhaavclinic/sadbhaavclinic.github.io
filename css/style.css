@@ -16,3 +16,33 @@
 .proverb-card ul{margin-bottom:0}
 .proverb-card ul li{list-style:none;margin-bottom:8px;padding-left:0}
 .proverb-card ul li:last-child{margin-bottom:0}
+/* mobile: keep long hero titles inside the viewport */
+@media (max-width:575.98px){.hero-wrap .bread{font-size:34px;overflow-wrap:break-word;hyphens:auto}}
+
+/* desktop: keep the 12-item menu inside the viewport */
+@media (min-width:992px){#ftco-navbar .navbar-nav{flex-wrap:wrap;justify-content:flex-end}#ftco-navbar .navbar-nav>.nav-item>.nav-link{padding-left:9px!important;padding-right:9px!important}#ftco-navbar .navbar-collapse{min-width:0}}
+
+/* self-test quizzes and flip cards */
+.selftest{border:1px solid #e6dccf;border-radius:8px;padding:18px 18px 8px;margin:28px 0;background:#fffdf9}
+.selftest h3{margin-top:0}
+.st-q{margin-bottom:18px}
+.st-stem{font-weight:600;margin-bottom:8px;color:#333}
+.st-opts{display:grid;gap:6px}
+.st-opt{text-align:left;border:1px solid #d9d2c7;background:#fff;border-radius:6px;padding:8px 12px;font-size:15px;color:#333;cursor:pointer}
+.st-opt:hover:not(:disabled){border-color:var(--brand-accent,#a52a2a)}
+.st-opt:disabled{cursor:default}
+.st-right{background:#e7f6ea!important;border-color:#2e8b57!important}
+.st-wrong{background:#fdecea!important;border-color:#c0392b!important}
+.st-expl{margin:8px 0 0;font-size:14.5px;color:#444}
+.st-bar,.st-nav{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:6px 0 12px}
+.st-score{margin:0;font-weight:600}
+.st-reset{border:1px solid #d9d2c7;background:#fff;border-radius:6px;padding:6px 12px;font-size:14px;cursor:pointer}
+.st-card{display:block;width:100%;min-height:180px;border:2px solid var(--brand-accent,#a52a2a);border-radius:10px;background:#fff;padding:20px;text-align:left;cursor:pointer;font-size:15px;color:#333}
+.st-front{font-size:19px;font-weight:600;text-align:center;padding-top:40px}
+.st-front::after{content:"Tap to reveal";display:block;font-size:13px;font-weight:400;color:#888;margin-top:14px}
+.st-back{display:none}
+.st-flipped .st-front{display:none}
+.st-flipped .st-back{display:block}
+.st-line{padding:4px 0;border-bottom:1px dashed #eee}
+.st-count{font-size:14px;color:#666}
+.st-btitle{font-weight:600;color:var(--brand-accent,#a52a2a);margin-bottom:6px}
