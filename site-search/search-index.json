@@ -10,9 +10,9 @@
   "desc": "Meet Dr. Dhaval Patel (MD, AIIMS New Delhi) and the team at Sadbhaav Eye &amp; Dental Clinic, Motera — our qualifications, experience, and a"
  },
  {
-  "title": "Ocular ADRs",
+  "title": "Ocular Side Effects of Systemic Drugs (ADRs): Modern and Classic",
   "url": "adrs.html",
-  "desc": "Ocular ADRs - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Ocular adverse drug reactions in two tables: modern high-yield associations (HCQ, topiramate, tamsulosin, vigabatrin, MEK) and the classic textbook list."
  },
  {
   "title": "Anti-Elevation Syndrome",
@@ -20,9 +20,9 @@
   "desc": "Anti-Elevation Syndrome - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Amblyopia Classification",
+  "title": "Amblyopia: Classification, Severity and PEDIG Treatment Lessons",
   "url": "amblyopia.html",
-  "desc": "Amblyopia Classification - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Amblyopia in tables: types (strabismic, anisometropic, deprivation, meridional), severity bands used in PEDIG trials and the treatment lessons they changed."
  },
  {
   "title": "AMD: The Current Anti-VEGF Landscape",
@@ -135,9 +135,9 @@
   "desc": "Basic Phaco Chop techniques - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Classifications in Ophthalmology",
+  "title": "Classifications in Ophthalmology: 53 Systems in Tables",
   "url": "classifications.html",
-  "desc": "Classifications in Ophthalmology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching blo"
+  "desc": "53 ophthalmology classifications as quick tables: IC3D dystrophies, ISGEO angle closure, CONAN, SUN, BETT, Chandler, NOSPECS, CGRN and more, with flip cards."
  },
  {
   "title": "Sadbhaav Clinic Updates",
@@ -165,9 +165,9 @@
   "desc": "COMS Study findings - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Confusers in Ophthalmology",
+  "title": "Confusers in Ophthalmology: 17 Look-Alike Terms Explained",
   "url": "confusers.html",
-  "desc": "Confusers in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Seventeen pairs of confusing ophthalmology terms side by side: phacolytic vs phacomorphic, downgrowth vs ingrowth, iridis vs iridum, lid lag vs von Graefe and more."
  },
  {
   "title": "Congenital Cataract: Timing & Management",
@@ -200,9 +200,9 @@
   "desc": "Contact Sadbhaav Eye &amp; Dental Clinic, Motera — address, phone, OPD timings, and how to book an appointment with our doctors."
  },
  {
-  "title": "Contrast Features in Ophthalmology",
+  "title": "Contrast Features in Ophthalmology: 20 Look-Alike Pairs",
   "url": "contrastfeatures.html",
-  "desc": "Contrast Features in Ophthalmology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching b"
+  "desc": "Twenty \"in contrast to\" pairs as tables: preseptal vs orbital cellulitis, papillae vs follicles, PMD vs keratoconus, NAION vs optic neuritis and more."
  },
  {
   "title": "Cornea",
@@ -215,9 +215,9 @@
   "desc": "Corneal topography in Ahmedabad by Dr. Dhaval Patel, MD (AIIMS New Delhi), for keratoconus detection & LASIK planning at Sadbhaav Clinic."
  },
  {
-  "title": "Diagnostic Criteria in Ophthalmology",
+  "title": "Diagnostic Criteria in Ophthalmology: Marfan, VKH, NF1, NMOSD and More",
   "url": "criteria.html",
-  "desc": "Diagnostic Criteria in Ophthalmology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching"
+  "desc": "Current diagnostic criteria in tables: revised Ghent (Marfan), VKH, NF1 2021, NMOSD 2015, ADA diabetes and eye screening, DR photography fields and lamellar holes."
  },
  {
   "title": "Central Serous Chorioretinopathy: Current Treatment",
@@ -305,9 +305,9 @@
   "desc": "Descemet’s membrane detachment classification: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's"
  },
  {
-  "title": "Dots &amp; Spots in Ophthalmology",
+  "title": "Dots & Spots in Ophthalmology: 19 Named Signs in Tables",
   "url": "dotsspots.html",
-  "desc": "Dots &amp; Spots in Ophthalmology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching bl"
+  "desc": "Named dots and spots of the eye in two tables: Bitot, Horner–Trantas, Krachmer, Mittendorf, cotton wool, Roth, cherry-red, Elschnig, Fuchs, Dalen–Fuchs and more"
  },
  {
   "title": "Downloads",
@@ -460,9 +460,9 @@
   "desc": "Riddles in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Famous People with Eye Problems",
+  "title": "Famous People with Eye Disease: What an Ophthalmologist Sees",
   "url": "famouspeople.html",
-  "desc": "Famous People with Eye Problems: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching blog"
+  "desc": "Famous people who lived with blindness or eye disease, from Monet and Milton to Stevie Wonder and Bocelli, with the likely diagnosis and its teaching point."
  },
  {
   "title": "Frequently Asked Questions",
@@ -470,9 +470,9 @@
   "desc": "Common questions about eye and dental care at Sadbhaav Eye & Dental Clinic, Motera, Ahmedabad — booking, timings, procedures, and more."
  },
  {
-  "title": "Fathers in Ophthalmology",
+  "title": "Fathers of Ophthalmology: Who Founded What",
   "url": "fathers.html",
-  "desc": "Fathers in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "The \"fathers\" of ophthalmology in tables: Sushruta, Daviel, Ridley, Kelman, Gonin, Schepens, Machemer, Parks, Gass and more, with what each one founded."
  },
  {
   "title": "FFA Indications",
@@ -520,9 +520,9 @@
   "desc": "Take a photo tour of Sadbhaav Eye & Dental Clinic in Motera, Ahmedabad — reception, OPDs, operation theatre, optical shop, and patient rooms"
  },
  {
-  "title": "Retina Rounds in Unit 1",
+  "title": "Retina Rounds in Unit 1: Pearls, Macular Numbers and Occlusions",
   "url": "gargsirrounds.html",
-  "desc": "Retina Rounds in Unit 1 - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Teaching pearls from retina rounds in Unit 1, updated to current practice, with macular anatomy numbers and retinal vascular occlusion facts in tables."
  },
  {
   "title": "Giant Cell Arteritis: The Emergency You Can't Miss",
@@ -530,9 +530,9 @@
   "desc": "Giant cell arteritis for residents: current 2022 ACR/EULAR classification criteria, temporal artery ultrasound vs biopsy, and why steroids s"
  },
  {
-  "title": "Genes & Eye Diseases",
+  "title": "Genes & Eye Diseases: High-Yield List by Chromosome",
   "url": "genes.html",
-  "desc": "Genes & Eye Diseases - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Inherited eye diseases and their genes in tables: the 25 most-asked gene facts, then a full list by chromosome including X-linked and mitochondrial disorders."
  },
  {
   "title": "Glaucoma Treatment in Ahmedabad",
@@ -555,9 +555,9 @@
   "desc": "Glaucoma Tutorials - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Grading & Classification Systems in Ophthalmology: 71 Tables",
+  "title": "Grading & Classification Systems in Ophthalmology: 77 Tables",
   "url": "gradings.html",
-  "desc": "71 ophthalmology grading and classification systems as quick tables: Roper-Hall and Dua, Keith-Wagener-Barker, ICDR, Shaffer, ERM, PVD, ICROP3 and more."
+  "desc": "77 ophthalmology grading and classification systems as quick tables: Roper-Hall and Dua, Keith-Wagener-Barker, ICDR, Shaffer, ERM, PVD, ICROP3 and more."
  },
  {
   "title": "Gum Disease Treatment Ahmedabad",
@@ -575,9 +575,9 @@
   "desc": "High IOP in Retinal Detachment: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching blog."
  },
  {
-  "title": "Important History in Ophthalmology",
+  "title": "History of Ophthalmology: Timelines, Pioneers and Eponyms",
   "url": "history.html",
-  "desc": "Important History in Ophthalmology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching b"
+  "desc": "The history of ophthalmology as timelines by subspecialty (cataract, retina, glaucoma, cornea, strabismus), pioneers with dates and the people behind the eponyms."
  },
  {
   "title": "Traumatic Hyphema: Current Management",
@@ -645,9 +645,9 @@
   "desc": "Types of Iridectomy - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
  },
  {
-  "title": "Iris Nodules and Its Pathology",
+  "title": "Iris Nodules and Spots: Koeppe, Busacca, Lisch and More",
   "url": "irisnodules.html",
-  "desc": "Iris Nodules and Its Pathology: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching blog."
+  "desc": "Iris nodules and spots in two tables: Koeppe, Busacca, roseola, pearls, Lisch, JXG, Brushfield, mammillations, naevus, melanoma and cysts, with their associations."
  },
  {
   "title": "Intravitreal & Intracameral Drug Doses: Antibiotics, Antivirals, Anti-VEGF",
@@ -670,9 +670,9 @@
   "desc": "C3R (corneal collagen cross-linking) for keratoconus at Sadbhaav Eye &amp; Dental Clinic, Motera — a proven procedure to halt corneal thinni"
  },
  {
-  "title": "Keratoconus",
+  "title": "Keratoconus: Signs, Indices, Staging, Progression and Treatment",
   "url": "keratoconus.html",
-  "desc": "Keratoconus - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Keratoconus for residents: key facts, signs, tomography indices, Amsler–Krumeich and KSS staging, progression criteria, CXL protocols and stepwise management."
  },
  {
   "title": "Complications of Laser Photocoagulations",
@@ -680,9 +680,9 @@
   "desc": "Complications of Laser Photocoagulations: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teac"
  },
  {
-  "title": "Lasers in Ophthalmology",
+  "title": "Lasers in Ophthalmology: Wavelengths, Settings and Safety",
   "url": "lasers.html",
-  "desc": "Lasers in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Ophthalmic laser reference: milestones, wavelengths of diagnostic and therapeutic lasers, typical starting settings for glaucoma and retina, physics and safety."
  },
  {
   "title": "LASIK Treatment FAQ",
@@ -700,14 +700,14 @@
   "desc": "LASIK vs ICL comparison by Dr. Dhaval Patel, MD (AIIMS New Delhi) — which vision correction option suits your eyes, at Sadbhaav Eye &amp; De"
  },
  {
-  "title": "Laws in Ophthalmology",
+  "title": "Laws in Ophthalmology: Hering to Poiseuille in Tables",
   "url": "laws.html",
-  "desc": "Laws in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Laws of ophthalmology in tables: Hering, Sherrington, Listing, Donders, Alexander, Snell, Knapp, Weber, Bloch, Ricco and Poiseuille, with what each means clinically."
  },
  {
-  "title": "Layers in Ophthalmology",
+  "title": "Layers in Ophthalmology: Cornea to LGN in Tables",
   "url": "layers.html",
-  "desc": "Layers in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Layers of the eye in tables: cornea (with Dua layer), sclera, iris, trabecular meshwork, choroid, Bruch membrane, retina, tear film, muscles and LGN."
  },
  {
   "title": "Lens",
@@ -725,9 +725,9 @@
   "desc": "What low vision, legal blindness and total blindness mean, the current Indian definitions under the RPwD Act 2016, and how disability certification works."
  },
  {
-  "title": "Lines & Rings in Ophthalmology: Ferry, Hudson-Stähli, Kayser-Fleischer",
+  "title": "Lines & Rings in Ophthalmology: 25 Named Signs in Tables",
   "url": "linesrings.html",
-  "desc": "Every eponymous line and ring in ophthalmology in one list: Ferry, Hudson-Stähli, Stocker and Fleischer lines, Kayser-Fleischer ring and more, for residents."
+  "desc": "Named lines and rings of the eye in tables: Hudson–Stähli, Stocker, Ferry, Khodadoust, Vogt, Haab, Fleischer, Kayser–Fleischer, Vossius, Soemmering, Weiss and more."
  },
  {
   "title": "Uveitis Masquerade Syndromes",
@@ -820,9 +820,9 @@
   "desc": "The role of OCT angiography in detecting early diabetic retinopathy, explained by Sadbhaav Eye &amp; Dental Clinic, Ahmedabad."
  },
  {
-  "title": "OCT Review",
+  "title": "OCT Technologies Compared: TD, SD, EDI, Swept-Source and OCTA",
   "url": "octreview.html",
-  "desc": "OCT Review - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "OCT technologies compared in one table: time-domain, spectral-domain, EDI, swept-source, OCTA and anterior segment OCT, with speeds, resolution and limits."
  },
  {
   "title": "Ocular Siderosis Facts",
@@ -895,9 +895,9 @@
   "desc": "Papilledema vs pseudopapilledema for residents: OCT differentiation, optic disc drusen, autofluorescence, and when to still worry despite kn"
  },
  {
-  "title": "Pathognomonic Meaning & 25+ Pathognomonic Signs in Ophthalmology",
+  "title": "Pathognomonic Signs in Ophthalmology: True and Near-Pathognomonic",
   "url": "pathognomonic.html",
-  "desc": "What pathognomonic means, plus 25+ high-yield pathognomonic signs in ophthalmology, from Fuchs heterochromic iridocyclitis KPs to jaw claudication in GCA."
+  "desc": "Pathognomonic signs in ophthalmology in tables, from Herbert pits and radial keratoneuritis to snowbanks, plus the signs often wrongly called pathognomonic."
  },
  {
   "title": "Patients' Zone",
@@ -1030,9 +1030,9 @@
   "desc": "Retina: quick-reference notes for ophthalmology residents and fellows — RPC Rounds, Sadbhaav Clinic's teaching blog."
  },
  {
-  "title": "Retinal Layers Diagram: The 10 Layers of the Retina Explained",
+  "title": "Retinal Layers: The 10 Layers and Which Layer Holds What",
   "url": "retinallayers.html",
-  "desc": "The 10 layers of the retina from ILM to RPE, what each layer contains, and high-yield facts on Müller cells, photoreceptor nuclei and the nerve fibre layer."
+  "desc": "The 10 layers of the retina in a table, plus a quick \"which layer?\" revision table for cells, synapses, haemorrhages and exudates, linked to OCT made easy."
  },
  {
   "title": "Root Canal Treatment Ahmedabad",
@@ -1060,9 +1060,9 @@
   "desc": "Professional teeth scaling and polishing in Ahmedabad by Dr. Dhara Patel. Remove plaque and tartar for healthier gums at Sadbhaav Eye & Dent"
  },
  {
-  "title": "Slit Lamp Laser Lens",
+  "title": "Slit-Lamp Laser Lenses: Magnification and Spot Size Factors",
   "url": "slitlamplaserlens.html",
-  "desc": "Slit Lamp Laser Lens - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Slit-lamp laser contact lenses compared: image magnification and laser spot factors for Goldmann, Mainster, Area Centralis, SuperQuad, plus Abraham and Wise lenses."
  },
  {
   "title": "Squint (Strabismus) Treatment Ahmedabad",
@@ -1110,9 +1110,9 @@
   "desc": "Tooth extraction in Ahmedabad by Dr. Dhara Patel. Safe, comfortable removal of damaged or impacted teeth at Sadbhaav Eye & Dental Clinic, Mo"
  },
  {
-  "title": "Triads in Ophthalmology",
+  "title": "Triads in Ophthalmology: 30 Classic Triads by Subspecialty",
   "url": "triads.html",
-  "desc": "Triads in Ophthalmology - notes and tips on RPC Rounds, a free ophthalmology blog for residents and fellows."
+  "desc": "Thirty classic ophthalmology triads in tables by subspecialty, from Horner and Kearns–Sayre to UGH and Schwartz syndromes, with the clue that clinches each."
  },
  {
   "title": "Trivia in Ophthalmology",

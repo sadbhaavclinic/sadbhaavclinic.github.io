@@ -446,3 +446,34 @@ body.theme-blog .book-box { background: #F3F7FC; }
 .quiz-case.qc-flash{box-shadow:0 0 0 3px #F2B134}
 @media (max-width:767px){.qc-progress{flex-wrap:wrap}}
 @media print{.qc-tools{display:none}}
+
+/* ---------- RPC Rounds navbar and top strip ---------- */
+.rpc-strip a{white-space:nowrap}
+.rpc-strip strong{font-weight:700}
+.rpc-nav .dropdown-menu{max-height:75vh;overflow-y:auto;min-width:240px}
+.rpc-nav .dropdown-item{white-space:nowrap}
+.rpc-nav .dropdown-item.active,.rpc-nav .dropdown-item:active{background:var(--brand-accent,#1D4E89);color:#fff}
+.rpc-nav .rpc-nav-search .nav-link .fa{font-size:15px}
+.rpc-for{font-size:70%;opacity:.8;font-weight:400}
+@media (max-width:991px){.rpc-strip a{display:inline-block;margin:2px 0}}
+
+/* ---------- Gradings & classifications tables (shared) ---------- */
+.grad-toc{background:#fdf6ec;border-radius:10px;padding:16px 20px;margin:0 0 28px}
+.grad-toc-title{font-weight:600;color:var(--brand-secondary);margin-bottom:.4rem}
+.grad-toc ul{columns:2;column-gap:28px;margin:0;padding-left:1.1rem}
+.grad-toc li{margin-bottom:.25rem}
+.grad-count{color:#888;font-size:13px}
+.grad-section{font-size:1.6rem;margin-top:2.2rem;padding-bottom:.4rem;border-bottom:2px solid var(--brand-accent)}
+.grad-index{font-size:14px;color:#555;padding-left:1.1rem;margin-bottom:1rem}
+.grad-index li{display:inline;margin-right:4px}
+.grad-index li:not(:last-child)::after{content:" \00B7 "}
+.grad-title{font-size:1.2rem;margin-top:1.6rem;color:var(--brand-secondary);scroll-margin-top:80px}
+.grad-section{scroll-margin-top:80px}
+.grad-table th{background:#fdf6ec;color:var(--brand-secondary);font-weight:600}
+.grad-table td,.grad-table th{font-size:14.5px;line-height:1.55;vertical-align:top}
+.grad-table td:first-child{font-weight:500;white-space:nowrap}
+.grad-note{font-size:14px;color:#555;background:#fafafa;border-left:3px solid #ddd;padding:8px 12px}
+.grad-link{font-size:14px}
+.text p a,.text li a,.text td a{color:var(--brand-secondary);text-decoration:underline;font-weight:500}
+.grad-top{text-align:right;font-size:13px}
+@media (max-width:767px){.grad-toc ul{columns:1}.grad-table td:first-child{white-space:normal}}

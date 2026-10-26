@@ -40,5 +40,22 @@
       var li = a.closest("li"); if (li) li.classList.add("rs-on");
       var d = a.closest("details"); if (d) d.open = true;
     });
+
+    // Highlight the navbar tab for this section.
+    var nav = document.querySelector(".rpc-nav");
+    if (nav) {
+      var hit = null;
+      // First look for this exact page, then for the hub in the breadcrumb.
+      [[here], targets].forEach(function (want) {
+        [].forEach.call(nav.querySelectorAll("[data-nav]"), function (li) {
+          if (hit) return;
+          [].forEach.call(li.querySelectorAll("a[href]"), function (a) {
+            if (!hit && want.indexOf(a.getAttribute("href")) >= 0) { hit = li; a.classList.add("active"); }
+          });
+        });
+      });
+      if (!hit && /okat-decoded/.test(here)) hit = nav.querySelector('[data-nav="books"]');
+      if (hit) hit.classList.add("active");
+    }
   });
 })();
