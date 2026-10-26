@@ -1230,9 +1230,9 @@
   "desc": "Step-by-step lateral canthotomy and cantholysis, anterior chamber paracentesis, and a proper pupil examination with RAPD grading and pharmac"
  },
  {
-  "title": "Spot the Diagnosis: 15 Ophthalmology Case Quizzes",
+  "title": "Spot the Diagnosis: 200 Ophthalmology Case Quizzes",
   "url": "spot-the-diagnosis.html",
-  "desc": "Fifteen short ophthalmology case vignettes with hidden answers. Test your diagnostic reflexes on classic exam clues, from Shafer sign to INO"
+  "desc": "Two hundred short ophthalmology cases with hidden answers across every subspecialty. Filter, shuffle, score yourself and revise the ones you missed."
  },
  {
   "title": "Ophthalmology Abbreviations: A Complete List for Residents and Students",
@@ -1653,5 +1653,250 @@
   "title": "OKAP Mock Test: 50 Questions Across the 13 BCSC Sections",
   "url": "okap-mock-test.html",
   "desc": "Free timed 50-question OKAP-style mock with about four questions from each BCSC section, full explanations and a section-by-section score breakdown."
+ },
+ {
+  "title": "International Patients: Eye and Dental Treatment in India | Sadbhaav",
+  "url": "international-patients.html",
+  "desc": "Eye and dental treatment in Ahmedabad, India, for patients from Africa and abroad. Send your reports for a free review and cost estimate before you travel."
+ },
+ {
+  "title": "Patients internationaux : soins des yeux et dentaires en Inde | Sadbhaav",
+  "url": "international-patients-fr.html",
+  "desc": "Soins ophtalmologiques et dentaires à Ahmedabad, Inde, pour les patients d’Afrique. Envoyez vos examens pour un avis gratuit et un devis avant de voyager."
+ },
+ {
+  "title": "Pacientes internacionais: tratamento oftalmológico e dentário na Índia | Sadbhaav",
+  "url": "international-patients-pt.html",
+  "desc": "Tratamento dos olhos e dentário em Ahmedabad, Índia, para pacientes de África. Envie os seus exames para uma avaliação gratuita e um orçamento antes de viajar."
+ },
+ {
+  "title": "Wagonjwa wa Kimataifa: Matibabu ya Macho na Meno India | Sadbhaav",
+  "url": "international-patients-sw.html",
+  "desc": "Matibabu ya macho na meno Ahmedabad, India, kwa wagonjwa kutoka Afrika. Tuma ripoti zako kwa tathmini ya bure na makadirio ya gharama kabla ya kusafiri."
+ },
+ {
+  "title": "Eye Treatment in India for International Patients | Sadbhaav Ahmedabad",
+  "url": "international-eye-treatment.html",
+  "desc": "Cataract surgery, LASIK, ICL, keratoconus, glaucoma and more in Ahmedabad for patients from Africa: typical stay, USD costs and a free review of your reports."
+ },
+ {
+  "title": "Dental Treatment in India for International Patients | Sadbhaav Ahmedabad",
+  "url": "international-dental-treatment.html",
+  "desc": "Dental implants, crowns, veneers, root canal and dentures in Ahmedabad for patients from Africa: typical stay, number of trips and a free review of your X-rays."
+ },
+ {
+  "title": "Travel Guide for International Patients: e-Medical Visa, Flights | Sadbhaav",
+  "url": "international-patients-travel-guide.html",
+  "desc": "Travelling to Ahmedabad for eye or dental treatment: India e-Medical visa, yellow fever certificate, flights from Africa, where to stay, weather and money."
+ },
+ {
+  "title": "Visual Acuity Conversion Chart: Snellen, logMAR, Decimal and Near",
+  "url": "visual-acuity-conversion-chart.html",
+  "desc": "Visual acuity converter and chart: Snellen 6/ and 20/, decimal, logMAR, ETDRS letters, CF and HM equivalents, and near vision N and M units."
+ },
+ {
+  "title": "Visual Disability Certificate Calculator (India, RPwD Act)",
+  "url": "visual-disability-certificate-calculator.html",
+  "desc": "Calculator for percentage visual impairment for disability certificates in India under the RPwD Act, with the matrix, categories and points to check."
+ },
+ {
+  "title": "Vision Standards for Driving and Jobs in India: Railways, Defence, Aviation",
+  "url": "vision-standards-driving-jobs-india.html",
+  "desc": "Eyesight standards in India for driving licences (Form 1, 1A, colour blindness) and railway medical categories, and where defence and aviation rules are set."
+ },
+ {
+  "title": "Eye Drugs in Pregnancy and Breastfeeding: Quick Reference",
+  "url": "eye-drugs-pregnancy-breastfeeding.html",
+  "desc": "Which eye drops and procedures are safer in pregnancy and breastfeeding: glaucoma drops, antibiotics, steroids, dilating drops, fluorescein and anti-VEGF."
+ },
+ {
+  "title": "Glaucoma Medications Chart: Classes, IOP Lowering, Side Effects",
+  "url": "glaucoma-medications-chart.html",
+  "desc": "Glaucoma drops at a glance: prostaglandins, beta-blockers, brimonidine, CAIs, netarsudil, pilocarpine and acetazolamide, with IOP lowering, dosing and cautions."
+ },
+ {
+  "title": "Eye Steroids and Infection Regimens: Potency, Tapers and Antiviral Doses",
+  "url": "eye-steroids-infection-regimens.html",
+  "desc": "Topical steroid potency and IOP risk, a standard taper, and regimens for conjunctivitis, chlamydia, gonorrhoea, herpes simplex and zoster and cellulitis."
+ },
+ {
+  "title": "When to Refer: Eye Referral Urgency Guide for Optometrists",
+  "url": "optometrist-referral-guide.html",
+  "desc": "Which eye findings need an ophthalmologist today, within a week or routinely: a referral urgency guide for optometrists, opticians and GPs, with what to include."
+ },
+ {
+  "title": "Spectacle Dispensing Reference: PD, Fitting Height, Tolerances",
+  "url": "spectacle-dispensing-reference.html",
+  "desc": "Spectacle dispensing quick reference: PD and fitting height, progressive and bifocal fitting, ANSI lens tolerances, and a checklist for unhappy new-glasses wearers."
+ },
+ {
+  "title": "Contact Lens Quick Reference: Vertex Table, LARS, RGP and Keratoconus",
+  "url": "contact-lens-quick-reference.html",
+  "desc": "Contact lens fitting card: spectacle-to-contact lens power table, LARS for toric lenses, RGP base curves and tear lens, keratoconus lens options and safety advice."
+ },
+ {
+  "title": "Low Vision Aids Calculator: Kestenbaum Rule and Magnification",
+  "url": "low-vision-aids-calculator.html",
+  "desc": "Low vision calculator: Kestenbaum add, magnifier power and telescope magnification from acuity, with the formulas and a guide to choosing aids for each task."
+ },
+ {
+  "title": "Colour Vision Testing: Ishihara Scoring, Other Tests and Job Rules",
+  "url": "colour-vision-testing-guide.html",
+  "desc": "How to perform and score the Ishihara test (38, 24 and 14 plates), when to use HRR, D-15 or lantern tests, acquired defects, and colour rules for jobs in India."
+ },
+ {
+  "title": "How to Read Your Glasses Prescription: SPH, CYL, AXIS, ADD | Sadbhaav",
+  "url": "how-to-read-glasses-prescription.html",
+  "desc": "What SPH, CYL, AXIS, ADD, PD, RE and LE mean on your glasses prescription, with examples, and why numbers differ between tests. Simple guide from Sadbhaav."
+ },
+ {
+  "title": "Eye Drop Timetable Maker: Printable Schedule After Eye Surgery | Sadbhaav",
+  "url": "eye-drop-timetable.html",
+  "desc": "Make a printable eye drop timetable after cataract surgery or for any eye drops: enter your drops, how often and for how long, and print a week-by-week chart."
+ },
+ {
+  "title": "After Cataract Surgery: Day-by-Day Care, Dos and Don’ts | Sadbhaav",
+  "url": "after-cataract-surgery-care.html",
+  "desc": "Day-by-day care after cataract surgery: what is normal, warning signs, eye drops, bathing, screens, prayer, travel, driving and work, printable."
+ },
+ {
+  "title": "Amsler Grid: Printable Home Test for Macular Degeneration | Sadbhaav",
+  "url": "amsler-grid-test.html",
+  "desc": "Printable Amsler grid to check your central vision at home for macular degeneration or diabetic macular changes, with simple instructions and when to call."
+ },
+ {
+  "title": "How to Put Eye Drops and Ointment Correctly: Step by Step | Sadbhaav",
+  "url": "how-to-put-eye-drops.html",
+  "desc": "Step-by-step guide to putting in eye drops and ointment, gaps between drops, tips for children and older adults, and how long to keep an opened bottle."
+ },
+ {
+  "title": "Conjunctivitis (Red Eye): Home Care and When to Return to School or Work | Sadbhaav",
+  "url": "conjunctivitis-red-eye-school-work.html",
+  "desc": "Pink eye and red eye: viral, bacterial and allergic conjunctivitis, home care, how to stop it spreading, when children can return to school, and warning signs."
+ },
+ {
+  "title": "After Tooth Extraction, Root Canal or Implant: Dental Aftercare | Sadbhaav",
+  "url": "dental-aftercare-instructions.html",
+  "desc": "Printable dental aftercare: after tooth extraction, root canal treatment, dental implants, new dentures, cleaning and whitening, and warning signs."
+ },
+ {
+  "title": "When Should My Child Have an Eye Test? Age-by-Age Guide | Sadbhaav",
+  "url": "child-eye-test-age-guide.html",
+  "desc": "Age-by-age guide to children’s eye checks from birth to school, signs that need an earlier test, myopia and screen time advice, and premature babies."
+ },
+ {
+  "title": "Ophthalmology Exams Abroad: Gulf, UK, ICO, Europe, USA, Australia",
+  "url": "ophthalmology-exams-abroad.html",
+  "desc": "Guide for Indian ophthalmologists to exams abroad: Gulf licensing, FRCOphth, FRCS Glasgow and Edinburgh, ICO, EBO, ABO and RANZCO, with free mock tests."
+ },
+ {
+  "title": "Gulf Ophthalmology Licensing Mock Test: SCFHS, DHA, DOH, MOHAP (50 MCQs)",
+  "url": "gulf-ophthalmology-licensing-mock-test.html",
+  "desc": "Free timed 50-question ophthalmology mock for Gulf licensing exams (SCFHS Saudi, DHA, DOH, MOHAP, Qatar, Oman), weighted to the SCFHS blueprint, all explained."
+ },
+ {
+  "title": "FRCOphth Part 2 Written Mock Test: 50 MCQs with UK Guidance",
+  "url": "frcophth-part-2-written-mock-test.html",
+  "desc": "Free timed 50-question FRCOphth Part 2 Written mock: applied clinical ophthalmology with NICE, RCOphth, DVLA and GMC guidance, every answer explained."
+ },
+ {
+  "title": "FRCS Ophthalmology Mock Test (Glasgow and Edinburgh): 50 MCQs",
+  "url": "frcs-ophthalmology-glasgow-edinburgh-mock-test.html",
+  "desc": "Free timed 50-question mock for FRCS Ophthalmology (RCPSG Glasgow and RCSEd Edinburgh): basic sciences applied to common eye conditions, all explained."
+ },
+ {
+  "title": "ICO Optics, Refraction and Instruments Mock Test: 50 MCQs",
+  "url": "ico-optics-refraction-instruments-mock-test.html",
+  "desc": "Free timed 50-question mock for the ICO Optics, Refraction and Instruments exam, with worked optics calculations and explanations for every answer."
+ },
+ {
+  "title": "ABO Written Qualifying Exam (WQE) Style Mock Test: 50 MCQs",
+  "url": "abo-written-qualifying-exam-mock-test.html",
+  "desc": "Free timed 50-question mock in the style of the American Board of Ophthalmology WQE and OKAP, with US practice patterns, landmark trials and explanations."
+ },
+ {
+  "title": "Eye Embryology Made Easy: Four Rules, Timeline and Anomalies",
+  "url": "eye-embryology-made-easy.html",
+  "desc": "Remember eye embryology conceptually: four germ-layer rules, the key exceptions, a colour-coded diagram, timeline, anomalies and flip cards for revision."
+ },
+ {
+  "title": "Biostatistics and Research Methods for Ophthalmologists",
+  "url": "biostatistics-for-ophthalmologists.html",
+  "desc": "Biostatistics for eye exams and journal clubs: sensitivity, predictive values, NNT, confidence intervals, study designs, bias, agreement and research ethics."
+ },
+ {
+  "title": "Ocular Toxoplasmosis: Diagnosis, When to Treat and Regimens",
+  "url": "ocular-toxoplasmosis.html",
+  "desc": "Ocular toxoplasmosis: typical and atypical lesions, diagnosis, when to treat, triple therapy, TMP-SMX, intravitreal clindamycin and prophylaxis."
+ },
+ {
+  "title": "Ocular Myasthenia Gravis: Signs, Tests and Treatment",
+  "url": "myasthenia-gravis-eye.html",
+  "desc": "Ocular myasthenia gravis: fatigable ptosis and diplopia, ice pack and antibody tests, single-fibre EMG, thymoma screening, treatment and drugs to avoid."
+ },
+ {
+  "title": "Orbital vs Preseptal Cellulitis: Chandler Classification and Management",
+  "url": "orbital-cellulitis.html",
+  "desc": "Orbital and preseptal cellulitis: telling them apart, Chandler classification, mucormycosis, when to CT, IV antibiotics and indications for surgery."
+ },
+ {
+  "title": "Orbital Anatomy Made Easy: Walls, Fissures and Muscles",
+  "url": "orbital-anatomy-made-easy.html",
+  "desc": "Orbital anatomy for exams: the walls and their bones, optic canal and fissure contents, extraocular muscle actions and nerves, and applied anatomy."
+ },
+ {
+  "title": "Ocular Anaesthesia: Blocks, Complications and Exam Essentials",
+  "url": "ocular-anaesthesia.html",
+  "desc": "Anaesthesia for eye surgery: topical, sub-Tenon, peribulbar and retrobulbar blocks, complications, drug doses, oculocardiac reflex and malignant hyperthermia."
+ },
+ {
+  "title": "Visual Pathway and Field Defects Made Easy: Five Rules",
+  "url": "visual-pathway-field-defects-made-easy.html",
+  "desc": "Localise visual field defects with five simple rules: a drawn pathway, eight classic lesion sites, the meridian rule, flip cards and a quiz."
+ },
+ {
+  "title": "Pupils Made Easy: Anisocoria, Horner, Adie and RAPD",
+  "url": "pupil-made-easy.html",
+  "desc": "Solve pupil cases with three rules: anisocoria in light and dark, the four drop tests, Horner by neuron, the large pupil and RAPD, with flip cards."
+ },
+ {
+  "title": "Ocular Motility Made Easy: Muscle Actions, Palsies, Three-Step",
+  "url": "ocular-motility-made-easy.html",
+  "desc": "Understand extraocular muscle actions from first principles: yoke pairs, the three-step test, III, IV and VI palsies, INO and restriction, with a quiz."
+ },
+ {
+  "title": "Corneal Dystrophies Made Easy: Layers, Stains and Genes",
+  "url": "corneal-dystrophies-made-easy.html",
+  "desc": "Corneal dystrophies sorted by layer: the stain mnemonic, TGFBI hotspots, the odd ones out, endothelial dystrophies and treatment by depth (IC3D 2024)."
+ },
+ {
+  "title": "Uveitis Made Easy: SUN Terms, Patterns and Work-up",
+  "url": "uveitis-made-easy.html",
+  "desc": "Approach uveitis with five rules: SUN anatomy and grading, granulomatous or not, pattern-based tests, HLA links, masquerades and treatment steps."
+ },
+ {
+  "title": "Retinal Layers and OCT Made Easy: Where Every Lesion Sits",
+  "url": "retinal-layers-oct-made-easy.html",
+  "desc": "The retina as a three-neuron relay with two blood supplies: place every haemorrhage, exudate and fluid pocket by layer and read the outer OCT bands."
+ },
+ {
+  "title": "ERG, EOG and VEP Made Easy: One Test per Level",
+  "url": "electrophysiology-made-easy.html",
+  "desc": "Read electrophysiology by level: ERG a- and b-waves, the negative ERG, EOG in Best disease, pattern ERG and VEP patterns, with drawn waveforms."
+ },
+ {
+  "title": "Clinical Optics Made Easy: Vergence, Prisms and Magnification",
+  "url": "clinical-optics-made-easy.html",
+  "desc": "Clinical optics from five ideas: vergence, far point, Prentice's rule, accommodation and magnification, with key numbers and worked examples."
+ },
+ {
+  "title": "Lasers in Ophthalmology Made Easy: Time, Colour and Use",
+  "url": "lasers-in-ophthalmology-made-easy.html",
+  "desc": "Ophthalmic lasers sorted by mechanism and wavelength: photocoagulation, photodisruption, photoablation and PDT, with settings for common procedures."
+ },
+ {
+  "title": "Made Easy Series: Ready Reckoners for Confusing Eye Topics",
+  "url": "made-easy-series.html",
+  "desc": "Ready reckoners for topics that confuse residents: embryology, orbit, fields, pupils, motility, dystrophies, uveitis, OCT, ERG, optics and lasers."
  }
 ]

@@ -155,6 +155,14 @@
     if (q.e) d.appendChild(el('p', null, q.e));
     if (q.w) { var w = el('p'); w.appendChild(el('strong', null, 'Why not the others: ')); w.appendChild(document.createTextNode(q.w)); d.appendChild(w); }
     if (q.p) { var p = el('p', 'mt-pearl'); p.appendChild(el('strong', null, 'Pearl: ')); p.appendChild(document.createTextNode(q.p)); d.appendChild(p); }
+    if (q.l) {
+      var m = el('p', 'mt-more');
+      m.appendChild(el('span', 'fa fa-book'));
+      m.appendChild(document.createTextNode(' Read more: '));
+      var a = el('a', null, q.lt || 'related page');
+      a.href = q.l; a.target = '_blank'; a.rel = 'noopener';
+      m.appendChild(a); d.appendChild(m);
+    }
     return d;
   }
 
