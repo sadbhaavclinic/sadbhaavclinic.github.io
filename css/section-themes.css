@@ -1,0 +1,301 @@
+/* =========================================================
+   Sadbhaav — Section Themes
+   ---------------------------------------------------------
+   Two audiences, two looks. Each page's <body> carries one class:
+
+     <body class="theme-clinic">  → patient-facing clinic pages
+     <body class="theme-blog">    → RPC Rounds ophthalmology blog
+
+   The whole site is coloured through two variables in style.css
+   (--brand-accent, --brand-secondary), so changing a palette
+   here re-colours navbar, footer, headings, buttons, hero
+   overlays and inline accents in one go.
+
+   Load AFTER css/style.css.
+   ========================================================= */
+
+/* ---------- CLINIC: warm, friendly, reassuring ---------- */
+:root,
+body.theme-clinic {
+  --brand-accent: #C9530C;        /* rich saffron-orange (was plain "orange") */
+  --brand-secondary: #6B2A12;     /* deep warm brown (was "brown") */
+  --brand-loader-accent: #C9530C;
+  --nav-hover: #FFE3C2;           /* light tint used on top of the accent */
+  --link-color: #B04A0A;
+}
+
+/* ---------- BLOG: calm, academic, easy to read ---------- */
+body.theme-blog {
+  --brand-accent: #1D4E89;        /* deep academic blue */
+  --brand-secondary: #0F2A47;     /* navy */
+  --brand-loader-accent: #1D4E89;
+  --nav-hover: #BFDDFF;
+  --link-color: #1D5FA8;
+}
+
+/* ---------- Shared fixes (both themes) ---------- */
+
+/* Nav links on the coloured bar: readable hover/active state
+   (previously secondary-on-accent, which was low contrast). */
+.ftco-navbar-light .navbar-brand:hover,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: var(--nav-hover) !important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  font-weight: 500;
+}
+
+/* Mobile navbar: was plain black; use the section's dark colour */
+@media (max-width: 991.98px) {
+  .ftco-navbar-light:not(.scrolled) { background: var(--brand-secondary) !important; }
+}
+
+/* Footer link hover on the coloured footer */
+.ftco-footer .ftco-footer-widget ul li a:hover,
+.ftco-footer .ftco-footer-widget ul li a:hover span,
+.ftco-footer a:hover {
+  color: var(--nav-hover) !important;
+}
+
+/* Sticky (scrolled) navbar is white: use the accent for active
+   item and a solid accent Book button there instead. */
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item.active > a,
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item > .nav-link:hover {
+  color: var(--brand-accent) !important;
+}
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item.cta > a,
+.ftco-navbar-light.scrolled .navbar-nav > .nav-item.cta > a:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* Headings on the full-colour "Why choose us" band: white */
+.ftco-appointment h2, .ftco-appointment h3, .ftco-appointment h4 {
+  color: #fff !important;
+}
+
+/* Book Appointment button in the nav: outline so it stands out
+   from the bar that shares its colour */
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  background: #fff !important;
+  border-color: #fff !important;
+  color: var(--brand-accent) !important;
+  font-weight: 500;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+  background: var(--nav-hover) !important;
+  border-color: var(--nav-hover) !important;
+}
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a span { color: inherit; }
+
+/* =========================================================
+   CLINIC — minor design touches
+   ========================================================= */
+body.theme-clinic .btn,
+body.theme-clinic .btn-book-appt,
+body.theme-clinic .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  border-radius: 999px;            /* soft pill buttons */
+}
+body.theme-clinic .dropdown-menu {
+  border-radius: 10px;
+  border-top: 3px solid var(--brand-accent);
+}
+body.theme-clinic .services-wrap,
+body.theme-clinic .faq-item {
+  border-radius: 10px;
+}
+
+/* =========================================================
+   BLOG — minor design touches
+   ========================================================= */
+
+/* Journal-style serif headings */
+body.theme-blog h1, body.theme-blog h2, body.theme-blog h3,
+body.theme-blog h4, body.theme-blog h5,
+body.theme-blog .h1, body.theme-blog .h2, body.theme-blog .h3,
+body.theme-blog .h4, body.theme-blog .h5,
+body.theme-blog .navbar-brand {
+  font-family: Georgia, "Times New Roman", "Noto Serif", serif;
+  letter-spacing: -0.01em;
+}
+body.theme-blog .navbar-brand { font-weight: 700; }
+
+/* Square, crisp buttons and menus */
+body.theme-blog .btn,
+body.theme-blog .ftco-navbar-light .navbar-nav > .nav-item.cta > a { border-radius: 4px; }
+body.theme-blog .dropdown-menu {
+  border-radius: 4px;
+  border-top: 3px solid var(--brand-accent);
+}
+
+/* Easier-to-scan links inside article text */
+body.theme-blog .ftco-section p a,
+body.theme-blog .ftco-section li a:not(.btn):not(.nav-link) {
+  color: var(--link-color);
+}
+body.theme-blog .ftco-section p a {
+  text-decoration: underline;
+  text-decoration-color: rgba(29, 95, 168, .35);
+  text-underline-offset: 2px;
+}
+body.theme-blog .ftco-section p a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Tables used throughout the notes */
+body.theme-blog .ftco-section table th,
+body.theme-blog .ftco-section table thead td {
+  background: #EAF2FB;
+  color: var(--brand-secondary);
+}
+
+/* Sidebar category dividers: lighter */
+body.theme-blog .categories li,
+body.theme-blog .sidelink li {
+  border-bottom: 1px solid #D5E3F3;
+}
+
+/* Blockquotes / callouts */
+body.theme-blog blockquote {
+  border-left: 4px solid var(--brand-accent);
+  background: #F3F7FC;
+  padding: .75rem 1rem;
+}
+
+/* Inline warm callout boxes on blog posts → cool blue to match the theme */
+body.theme-blog .rpc-cta { background: #F3F7FC !important; }
+body.theme-blog .text .table th { background: #EAF2FB; }
+
+/* Compact "get your eyes checked" box near the top of patient pages */
+.book-box { margin: 10px 0 22px; padding: 14px 18px; border-radius: 8px; border-left: 4px solid var(--brand-accent); background: #FFF6EC; font-size: 15px; line-height: 1.6; }
+body.theme-blog .book-box { background: #F3F7FC; }
+.book-box p { margin: 0 0 8px; }
+.book-box .book-actions a { display: inline-block; margin: 4px 10px 0 0; padding: 6px 14px; border-radius: 999px; background: var(--brand-accent); color: #fff !important; font-weight: 500; text-decoration: none !important; font-size: 14px; }
+.book-box .book-actions a.alt { background: #fff; color: var(--brand-accent) !important; border: 1px solid var(--brand-accent); }
+
+/* =========================================================
+   Clinic Desk Reference cards
+   ========================================================= */
+.dr-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:-6px 0 18px; }
+.dr-tag { font-size:12px; padding:3px 10px; border-radius:999px; background:#EAF2FB; color:var(--brand-secondary); font-weight:500; }
+.dr-print { font-size:13px; padding:5px 14px; border-radius:4px; border:1px solid var(--brand-accent); background:#fff; color:var(--brand-accent); cursor:pointer; }
+.dr-print:hover { background:var(--brand-accent); color:#fff; }
+.dr-note, .dr-flag { margin:14px 0 20px; padding:12px 16px; border-radius:6px; font-size:14.5px; line-height:1.6; }
+.dr-note { background:#F3F7FC; border-left:4px solid var(--brand-accent); }
+.dr-flag { background:#FFF4F4; border-left:4px solid #B42318; }
+.dr-note p, .dr-flag p { margin:0 0 6px; } .dr-note ul, .dr-flag ul { margin:4px 0 0; padding-left:20px; }
+.dr-card .table td, .dr-card .table th { font-size:14px; line-height:1.5; vertical-align:top; }
+.dr-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px; margin:18px 0 26px; }
+.dr-tile { display:block; padding:14px 16px; border:1px solid #D5E3F3; border-radius:8px; background:#fff; color:var(--brand-secondary) !important; text-decoration:none !important; transition:.2s; }
+.dr-tile:hover { border-color:var(--brand-accent); box-shadow:0 2px 10px rgba(29,78,137,.12); }
+.dr-tile strong { display:block; font-family:Georgia,serif; font-size:17px; color:var(--brand-accent); margin-bottom:4px; }
+.dr-tile span { font-size:13.5px; color:#555; }
+.dr-tool label { display:block; font-size:13px; font-weight:500; margin:6px 0 2px; }
+.dr-tool input, .dr-tool select { width:100%; padding:6px 8px; border:1px solid #c9d6e6; border-radius:4px; font-size:15px; }
+.dr-tool .row > div { margin-bottom:8px; }
+.dr-out { margin-top:12px; padding:12px 14px; background:#F3F7FC; border-radius:6px; font-size:15px; }
+
+@media print {
+  .wrap, nav.ftco_navbar, footer.ftco-footer, .sidebar, .related-posts, .rpc-cta, .author-box,
+  .sharethis-inline-share-buttons, .no-print, #ftco-loader, .breadcrumbs, .book-box,
+  .col-lg-9 > p:first-child img, .dr-print, iframe, #bcw-tab, #sadbhaav-search-btn, [id^="bcw"], .hero-wrap .overlay { display:none !important; }
+  .ftco-animate { opacity:1 !important; visibility:visible !important; transform:none !important; animation:none !important; }
+  body { font-size:11.5px; background:#fff; }
+  body, .container { min-width:0 !important; max-width:100% !important; }
+  .container { padding:0 !important; }
+  .row { margin:0 !important; }
+  .col-lg-9 { padding:0 !important; }
+  .lead { font-size:13px !important; }
+  .table-responsive { overflow:visible !important; }
+  table, .dr-note, .dr-flag, h3 { page-break-inside:avoid; }
+  h3 { page-break-after:avoid; }
+  .ftco-section { padding:0 !important; }
+  .col-lg-9 { max-width:100% !important; flex:0 0 100% !important; }
+  h1 { font-size:20px !important; margin:0 0 6px !important; }
+  h3 { font-size:14.5px !important; margin:10px 0 4px !important; }
+  .table td, .table th { padding:3px 5px !important; font-size:10.5px !important; }
+  a { color:#000 !important; text-decoration:none !important; }
+  .dr-note, .dr-flag { padding:6px 10px; margin:6px 0; font-size:11px; }
+}
+
+/* ---------- Mock tests (js/mocktest.js) ---------- */
+#mocktest{border:1px solid #d6e0ec;border-radius:10px;padding:18px;margin:24px 0;background:#fbfdff;scroll-margin-top:90px}
+.mt-title{font-size:1.25rem;margin:0 0 10px;color:var(--brand-secondary)}
+.mt-facts{margin:0 0 14px 18px;padding:0}
+.mt-facts li{margin:3px 0}
+.mt-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.mt-btn{border:1px solid var(--brand-accent);background:#fff;color:var(--brand-accent);border-radius:6px;padding:7px 14px;font-size:14.5px;cursor:pointer;line-height:1.3}
+.mt-btn:hover,.mt-btn:focus{background:#EAF1FA}
+.mt-btn.mt-primary{background:var(--brand-accent);color:#fff}
+.mt-btn.mt-primary:hover{background:var(--brand-secondary)}
+.mt-btn.mt-on{background:#FFF4D6;border-color:#B8860B;color:#7a5a00}
+.mt-muted{color:#5f6b7a;font-size:14px}
+.mt-top{position:sticky;top:70px;z-index:5;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#fbfdff;padding:8px 0 10px;border-bottom:1px solid #e3eaf3;margin-bottom:12px}
+.mt-count{font-weight:600;color:var(--brand-secondary);flex:1;min-width:180px}
+.mt-time{font:600 18px/1 ui-monospace,Menlo,Consolas,monospace;background:#EAF1FA;color:var(--brand-secondary);padding:6px 10px;border-radius:6px}
+.mt-time.mt-low{background:#FDECEA;color:#A12622}
+.mt-topic{display:inline-block;font-size:12.5px;background:#EAF1FA;color:var(--brand-secondary);border-radius:12px;padding:2px 10px;margin-bottom:8px}
+.mt-stem{font-size:16.5px;font-weight:500;color:#1b2533;margin-bottom:10px}
+.mt-opts{display:flex;flex-direction:column;gap:8px}
+.mt-opt{text-align:left;border:1px solid #cfd9e6;background:#fff;border-radius:8px;padding:10px 14px;font-size:15.5px;cursor:pointer;color:#1b2533;white-space:pre-wrap}
+.mt-opt:hover:not(:disabled){border-color:var(--brand-accent)}
+.mt-opt.mt-chosen{border:2px solid var(--brand-accent);background:#EAF1FA}
+.mt-opt.mt-right,.mt-ropts .mt-right{border-color:#2E7D32;background:#E8F5E9;color:#1B5E20}
+.mt-opt.mt-wrong,.mt-ropts .mt-wrong{border-color:#C62828;background:#FDECEA;color:#8E1B1B}
+.mt-navrow{display:flex;gap:8px;justify-content:space-between;margin:14px 0}
+.mt-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(38px,1fr));gap:5px}
+.mt-cell{border:1px solid #cfd9e6;background:#fff;border-radius:5px;padding:5px 0;font-size:13px;cursor:pointer;color:#33404f}
+.mt-cell.mt-a{background:#D6E4F5;border-color:#9DB7D8}
+.mt-cell.mt-f{box-shadow:inset 0 -4px 0 #E0A800}
+.mt-cell.mt-cur{outline:2px solid var(--brand-secondary);outline-offset:1px;font-weight:700}
+.mt-cell.mt-ok{background:#C8E6C9;border-color:#81C784}
+.mt-cell.mt-bad{background:#F8D0CD;border-color:#E57373}
+.mt-key{margin-top:8px}
+.mt-sw{display:inline-block;width:14px;height:14px;border:1px solid #cfd9e6;border-radius:3px;vertical-align:-2px;background:#fff}
+.mt-sw-a{background:#D6E4F5;border-color:#9DB7D8}
+.mt-sw-f{box-shadow:inset 0 -4px 0 #E0A800}
+.mt-expl{border-left:4px solid var(--brand-accent);background:#F3F7FC;padding:10px 14px;margin-top:12px;border-radius:4px;font-size:15px}
+.mt-expl p{margin-bottom:6px}
+.mt-verdict{font-weight:700}
+.mt-v-ok{color:#2E7D32;font-weight:700}
+.mt-v-bad{color:#A12622;font-weight:700}
+.mt-pearl{color:#33404f}
+.mt-bar{background:#E3EAF3;border-radius:4px;height:10px;overflow:hidden}
+.mt-bar span{display:block;height:100%;background:var(--brand-accent)}
+.mt-ttable td{vertical-align:middle}
+.mt-rev-h{margin-top:22px}
+.mt-ritem{border:1px solid #e3eaf3;border-left:4px solid #C62828;border-radius:6px;padding:12px 14px;margin:10px 0;background:#fff}
+.mt-ritem-ok{border-left-color:#2E7D32}
+.mt-ropts{list-style:none;padding:0;margin:0 0 6px}
+.mt-ropts li{padding:4px 8px;border-radius:4px;margin:2px 0;border:1px solid transparent}
+@media (max-width:576px){.mt-top{top:56px}.mt-stem{font-size:15.5px}.mt-opt{font-size:15px;padding:9px 11px}}
+@media print{#mocktest .mt-top,#mocktest .mt-grid,#mocktest .mt-navrow,#mocktest .mt-actions{display:none!important}}
+
+/* ---------- Book promo (OKAT Decoded) ---------- */
+.book-promo{display:flex;gap:18px;align-items:center;border:1px solid #d6e0ec;border-radius:10px;padding:16px;margin:24px 0;background:linear-gradient(135deg,#0B1B2B,#152a40);color:#E8EEF5}
+.book-promo h3,.book-promo h2{color:#fff!important;margin:0 0 6px;font-family:inherit}
+.book-promo p{color:#C9D6E3;margin:0 0 8px;font-size:15px}
+.book-promo a{color:#7FE0D3}
+.book-promo .bp-covers{display:flex;gap:6px;flex-shrink:0}
+.book-promo .bp-covers img{width:74px;height:auto;border-radius:3px;box-shadow:0 4px 12px rgba(0,0,0,.45)}
+.book-promo .bp-btns{display:flex;flex-wrap:wrap;gap:8px}
+.book-promo .bp-btn{display:inline-block;background:#3FC1B0;color:#06231f!important;font-weight:600;border-radius:6px;padding:7px 14px;font-size:14px;text-decoration:none!important}
+.book-promo .bp-btn.bp-ghost{background:transparent;border:1px solid #7FE0D3;color:#7FE0D3!important}
+@media (max-width:640px){.book-promo{flex-direction:column;align-items:flex-start}.book-promo .bp-covers img{width:64px}}
+.okat-vols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin:18px 0}
+.okat-vol{border:1px solid #d6e0ec;border-radius:10px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.okat-vol img{width:100%;height:auto;display:block}
+.okat-vol .ov-body{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.okat-vol h3{font-size:1.1rem;margin:0}
+.okat-vol p{font-size:14.5px;margin:0}
+.okat-vol .ov-btns{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;padding-top:8px}
+.ov-btn{display:inline-block;border-radius:6px;padding:6px 12px;font-size:14px;font-weight:600;text-decoration:none!important;border:1px solid var(--brand-accent);color:var(--brand-accent)!important;background:#fff}
+.ov-btn.ov-buy{background:var(--brand-accent);color:#fff!important}
+.sidebar-okat{display:block;border-radius:8px;overflow:hidden;background:#0B1B2B;color:#E8EEF5!important;text-decoration:none!important;padding:12px;margin-bottom:24px}
+.sidebar-okat .so-covers{display:flex;gap:4px;margin-bottom:8px}
+.sidebar-okat .so-covers img{width:33%;height:auto;border-radius:2px}
+.sidebar-okat strong{color:#fff;display:block;font-size:16px}
+.sidebar-okat span{font-size:13.5px;color:#C9D6E3}
+.sidebar-okat em{display:inline-block;margin-top:6px;font-style:normal;color:#7FE0D3;font-weight:600;font-size:14px}
+.st-more{font-size:14px;color:#5f6b7a;margin:4px 0 10px}

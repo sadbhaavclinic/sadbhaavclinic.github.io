@@ -46,11 +46,16 @@
     var reset = el("button", "st-reset", "Try again");
     reset.type = "button";
     reset.addEventListener("click", function () {
-      [].forEach.call(box.querySelectorAll(".st-q,.st-bar"), function (n) { n.remove(); });
+      [].forEach.call(box.querySelectorAll(".st-q,.st-bar,.st-more"), function (n) { n.remove(); });
       buildQuiz(box, data);
     });
     bar.appendChild(reset);
     box.appendChild(bar);
+    if (!box.querySelector('.st-more')) {
+      var more = el("p", "st-more");
+      more.innerHTML = 'Want a full timed test? Try the free <a href="mock-tests.html">50-question mock tests</a> for OKAT, NEET-PG, DNB/MS, FRCOphth/ICO and OKAP.';
+      box.appendChild(more);
+    }
   }
 
   function buildCards(box, data) {
