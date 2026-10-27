@@ -1,3 +1,5 @@
+/* Keep the site light: stops Chrome "auto dark mode" from repainting pages. */
+:root{color-scheme:only light}
 /* =========================================================
    Sadbhaav — Section Themes
    ---------------------------------------------------------
