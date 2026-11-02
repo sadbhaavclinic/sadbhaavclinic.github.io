@@ -1,5 +1,5 @@
 Sadbhaav / RPC Rounds - COMPLETE update (3 Nov 2026)
-This set holds every change since 2 Nov, including the fact-check.
+This set holds every change since 2 Nov, including the fact-check and the DME/British spelling pass.
 It replaces all earlier zips.
 
 Copy each file into the folder shown. Replace the existing file if asked.
@@ -14,5 +14,5 @@ Do NOT replace whole folders.
   search-index.json    ->  site-search/
   books.json           ->  book-carousel/
 
-Pages zip (509 files) -> main (root) folder. It includes sitemap.xml, manifest.webmanifest, sw.js and offline.html.
-Images zip (190 files) -> images/ folder. Copy the files in; do not replace the folder.
+Pages zip -> main (root) folder. It includes sitemap.xml, manifest.webmanifest, sw.js and offline.html.
+Images zip -> images/ folder. Copy the files in; do not replace the folder.
