@@ -557,3 +557,9 @@ body.theme-blog .book-box { background: #F3F7FC; }
 .rev-sum strong{display:flex;justify-content:space-between;font-family:Georgia,serif;font-size:17px;color:var(--brand-accent)}
 .rev-sum .rev-sum-n{font:600 13px Arial,sans-serif;color:#1D4E89}
 .rev-sum .rev-bar{margin:6px 0 2px}
+/* viva hot seat: subspecialty filter (Nov 2026) */
+.vh-filters{margin-top:10px;padding-top:10px;border-top:1px dashed #D5E3F3}
+.vh-f{font-size:13px;padding:5px 10px}
+.vh-f[aria-pressed="true"]{background:#1D4E89;color:#fff;border-color:#1D4E89}
+.vh-station[hidden]{display:none!important}
+.vh-toc p{font-size:14px;line-height:1.6}
