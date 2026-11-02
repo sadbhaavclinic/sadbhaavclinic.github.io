@@ -1,0 +1,21 @@
+{
+  "name": "RPC Rounds: Ophthalmology for Residents",
+  "short_name": "RPC Rounds",
+  "description": "Free ophthalmology teaching by Dr Dhaval Patel, MD (AIIMS): 300+ pages, flashcards, mock tests, viva stations and clinic tools. Pages you open are saved for offline reading.",
+  "start_url": "ophthalmology.html?source=app",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1D4E89",
+  "icons": [
+    {"src": "images/rpc-icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "images/rpc-icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "images/rpc-icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "Flashcard review", "url": "flashcard-review.html"},
+    {"name": "Mock tests", "url": "mock-tests.html"},
+    {"name": "Desk reference", "url": "desk-reference.html"},
+    {"name": "Revise Ophthalmology", "url": "revise-ophthalmology.html"}
+  ]
+}

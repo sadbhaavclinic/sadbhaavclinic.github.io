@@ -575,3 +575,53 @@ body.theme-blog .book-box { background: #F3F7FC; }
 .flow-dl .flow-h{font-weight:700;color:#9a6312;margin:0 0 4px}
 .flow-dl p{margin:0 0 6px;font-size:15px}
 @media (max-width:480px){.flow-thumb img{width:84px}}
+.sidebar-frc .so-covers img{width:49%}
+/* flashcard review (Nov 2026) */
+.fc-card{background:#fff;border:1px solid #D5E3F3;border-radius:12px;padding:18px 20px;margin:12px 0 18px;box-shadow:0 2px 8px rgba(29,78,137,.06)}
+.fc-meta{font-size:13px;color:#5f6b7a;margin:0 0 10px}
+.fc-front{font:600 21px/1.4 Georgia,serif;color:#1D4E89;min-height:60px}
+.fc-back{border-top:1px dashed #D5E3F3;margin-top:12px;padding-top:12px;font-size:16.5px}
+.fc-back ul{padding-left:20px;margin:0}
+.fc-btns{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.fc-btns span{display:flex;flex-wrap:wrap;gap:8px;width:100%}
+.fc-r{flex:1 1 22%;min-width:70px;border:0;border-radius:8px;padding:10px 6px;font-weight:700;color:#fff;cursor:pointer}
+.fc-r small{display:block;font-weight:400;font-size:12px;opacity:.9}
+.fc-again{background:#B3261E}.fc-hard{background:#9a6312}.fc-good{background:#1E7B45}.fc-easy{background:#1D4E89}
+/* larger text option (Nov 2026) */
+html.big-text{font-size:118%}
+html.big-text .text p,html.big-text .text li,html.big-text .text td,html.big-text .intl-page p,html.big-text .intl-page li{font-size:1.12em}
+.a11y-size{white-space:nowrap;font-weight:600;cursor:pointer}
+.a11y-float{position:fixed;left:12px;top:72px;z-index:999;background:#1D4E89;color:#fff!important;border-radius:16px;padding:4px 10px;font-size:13px;box-shadow:0 2px 6px rgba(0,0,0,.2)}
+/* topic map: related pages on the same subject (Nov 2026) */
+.topic-map{border:1px solid #E3E8EF;border-radius:8px;padding:10px 14px 4px;margin:0 0 20px;background:#FCFCFD;font-size:14.5px}
+.topic-map-h{font-weight:700;color:#5A6B7E;text-transform:uppercase;letter-spacing:.4px;font-size:12.5px;margin:0 0 4px}
+.topic-map ul{padding-left:18px;margin-bottom:6px}
+.topic-map li{margin-bottom:3px}
+
+/* ---- Review fixes Nov 2026: content visible without scroll animation, compact mobile ---- */
+.ftco-animate{opacity:1!important;visibility:visible!important}
+@media (max-width:767px){
+  /* compact top strip: keep phone, international, A+ / new-book link */
+  .phone a[href^="mailto:"],.phone a[title="Clinic hours"],
+  .rpc-strip a[href="spot-the-diagnosis.html"],.rpc-strip a[href="mock-tests.html"]{display:none!important}
+  .phone{font-size:13px;line-height:1.5}
+  .phone .topbar-intl{margin-left:.5rem!important}
+  /* shorter inner-page hero */
+  .hero-wrap.hero-wrap-2,.hero-wrap.hero-wrap-2 .slider-text{height:auto!important;min-height:0!important}
+  .hero-wrap.hero-wrap-2 .slider-text{padding:36px 0 26px!important}
+  .hero-wrap.hero-wrap-2{overflow:hidden}
+  .hero-wrap.hero-wrap-2 .overlay{height:100%!important}
+  .hero-wrap:not(.hero-wrap-2),.hero-wrap:not(.hero-wrap-2) .slider-text,.hero-wrap:not(.hero-wrap-2) .overlay{height:440px!important}
+  .hero-wrap:not(.hero-wrap-2) h1{font-size:36px!important;line-height:1.15}
+  .wrap .social-media{display:none!important}
+  .wrap{padding:4px 0}
+  .ftco-section{padding-top:2.5em}
+  .hero-wrap .bread{font-size:28px!important;hyphens:manual!important;line-height:1.2}
+  .hero-wrap-2 h2,.hero-wrap-2 .hero-subheading{font-size:20px!important;hyphens:manual!important;line-height:1.3}
+  .hero-wrap-2 h3{font-size:18px!important}
+  /* clinic pages already have the Call / WhatsApp bar: hide extra floating buttons */
+  body:has(#sadbhaav-sticky-bar) #bcw-tab,
+  body:has(#sadbhaav-sticky-bar) .whatsapp-float{display:none!important}
+  body:has(#sadbhaav-sticky-bar) #sadbhaav-search-btn{bottom:76px!important}
+}
+.topbar-intl{white-space:nowrap}

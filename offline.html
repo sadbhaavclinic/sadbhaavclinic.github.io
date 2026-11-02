@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="only light">
+<meta name="robots" content="noindex">
+<title>You are offline | RPC Rounds</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1D4E89">
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#F4F8FC;color:#1f2d3d}
+.w{max-width:640px;margin:0 auto;padding:32px 16px}
+h1{font:700 28px Georgia,serif;color:#1D4E89;margin:0 0 8px}
+p{line-height:1.5}
+ul{background:#fff;border:1px solid #D5E3F3;border-radius:10px;padding:12px 16px 12px 32px}
+li{margin:6px 0}
+a{color:#1D4E89}
+.b{display:inline-block;background:#1D4E89;color:#fff;border-radius:6px;padding:8px 14px;text-decoration:none;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="w">
+<h1>You are offline</h1>
+<p>This page has not been saved on your device yet. Pages you have opened before on RPC Rounds are available offline. Here are the ones saved on this device:</p>
+<ul id="saved"><li>Checking saved pages…</li></ul>
+<p><a class="b" href="javascript:location.reload()">Try again</a></p>
+<p style="font-size:13px;color:#5f6b7a;">Tip: open the pages you need for a shift (for example the <a href="desk-reference.html">desk reference</a> or <a href="ophthalmic-emergencies.html">emergencies</a>) while you have signal, and they will be kept for offline use.</p>
+</div>
+<script>
+(function(){var ul=document.getElementById('saved');
+if(!('caches' in window)){ul.innerHTML='<li>Offline saving is not supported in this browser.</li>';return;}
+var T={};caches.match('site-search/search-index.json',{ignoreSearch:true}).then(function(r){return r?r.json():[];}).then(function(d){(d||[]).forEach(function(x){T[x.url]=x.title.replace(/ \| .*$/,'');});}).catch(function(){}).then(function(){return caches.open('rpc-pages-v1');}).then(function(c){return c.keys();}).then(function(ks){
+ var items=ks.map(function(r){var p=new URL(r.url).pathname.replace(/^\//,'');return p;}).filter(function(p){return p&&p!=='offline.html'&&/\.html$/.test(p);});
+ if(!items.length){ul.innerHTML='<li>No pages saved yet.</li>';return;}
+ items.sort();ul.innerHTML=items.map(function(p){var t=T[p]||p.replace(/\.html$/,'').replace(/-/g,' ');return '<li><a href="'+p+'">'+t.charAt(0).toUpperCase()+t.slice(1)+'</a></li>';}).join('');
+}).catch(function(){ul.innerHTML='<li>Could not read saved pages.</li>';});})();
+</script>
+</body>
+</html>
