@@ -1,0 +1,7 @@
+Sadbhaav November 2026 update: 4 support files
+Copy each file into the folder shown, replacing the old file. Do NOT replace whole folders.
+
+  section-themes.css   ->  css/section-themes.css
+  revise.js            ->  js/revise.js            (new file)
+  rpc-sidebar.js       ->  js/rpc-sidebar.js
+  search-index.json    ->  site-search/search-index.json
