@@ -1720,9 +1720,9 @@
   "desc": "Spectacle dispensing quick reference: PD and fitting height, progressive and bifocal fitting, ANSI lens tolerances, and a checklist for unhappy new-glasses wearers."
  },
  {
-  "title": "Contact Lens Quick Reference: Vertex Table, LARS, RGP and Keratoconus",
+  "title": "Contact Lens Quick Reference and Fitting Guide: Vertex, LARS, RGP Patterns, Irregular Cornea and Scleral Lenses",
   "url": "contact-lens-quick-reference.html",
-  "desc": "Contact lens fitting card: spectacle-to-contact lens power table, LARS for toric lenses, RGP base curves and tear lens, keratoconus lens options and safety advice."
+  "desc": "Contact lens fitting guide: vertex table, LARS, RGP base curves and fluorescein patterns, lens choice for irregular corneas, scleral lens basics and common problems."
  },
  {
   "title": "Low Vision Aids Calculator: Kestenbaum Rule and Magnification",
@@ -1907,7 +1907,7 @@
  {
   "title": "Contact Lens Calculator: Soft, Toric and RGP Power, Base Curve and Tear Lens",
   "url": "contact-lens-calculator.html",
-  "desc": "Convert a spectacle prescription to a soft spherical, soft toric or RGP contact lens: vertex correction, base curve, tear lens and residual astigmatism."
+  "desc": "Contact lens calculator for both eyes: soft spherical and toric power, RGP base curve, tear lens and residual astigmatism, bitoric starting lens and over-refraction."
  },
  {
   "title": "Refraction Calculators: Near Add, AC/A Ratio, Retinoscopy and Prism",
@@ -2523,5 +2523,180 @@
   "title": "Sample Size Calculator for Ophthalmology Theses: Prevalence, Two Proportions and Two Means",
   "url": "sample-size-calculator.html",
   "desc": "Sample size calculator for MS/DNB ophthalmology theses: one proportion (prevalence), two proportions and two means, with alpha, power and dropout."
+ },
+ {
+  "title": "Geometric and Physical Optics for Optometrists: Lenses, Prisms, Interference and Polarisation",
+  "url": "optics-for-optometrists.html",
+  "desc": "Optics for B.Optom students: refraction, vergence, lens and prism formulas, aberrations, and interference, diffraction and polarisation in eye care."
+ },
+ {
+  "title": "Visual Optics for Optometrists: Schematic Eye, Purkinje Images, Pupil, Aberrations and Depth of Focus",
+  "url": "visual-optics-schematic-eye.html",
+  "desc": "Visual optics for B.Optom students: schematic and reduced eye, Purkinje images, pupil effects, depth of focus, acuity limits and refractive error."
+ },
+ {
+  "title": "Lensometer (Focimeter) Step by Step: Single Vision, Prism, Bifocals and Progressive Lenses",
+  "url": "lensometer-focimeter-guide.html",
+  "desc": "How to use a lensometer (focimeter): focusing the eyepiece, reading sphere, cylinder and axis, measuring prism, bifocal adds and progressive lenses."
+ },
+ {
+  "title": "Keratometry and Slit Lamp Illumination Techniques for Optometrists",
+  "url": "keratometry-slit-lamp-techniques.html",
+  "desc": "Keratometry principles, reading mires and irregular astigmatism, and slit lamp illuminations: diffuse, direct, retro, specular and sclerotic scatter."
+ },
+ {
+  "title": "Tonometry for Optometrists: Non-Contact, Goldmann, Rebound and Perkins, With Sources of Error",
+  "url": "tonometry-for-optometrists.html",
+  "desc": "Tonometry for B.Optom students: how NCT, Goldmann, Perkins, rebound and Schiøtz tonometers work, normal IOP, sources of error and when to refer."
+ },
+ {
+  "title": "Subjective Refraction Step by Step: Fogging, Best Sphere, Cross-Cylinder, Binocular Balance and Near Add",
+  "url": "subjective-refraction-routine.html",
+  "desc": "A complete subjective refraction routine: starting point, best sphere, JCC for axis and power, duochrome, binocular balance, near add and prescribing."
+ },
+ {
+  "title": "Cycloplegic Refraction and Refracting Children: Drugs, Technique and Prescribing",
+  "url": "cycloplegic-refraction-children.html",
+  "desc": "Cycloplegic refraction in children: when it is needed, cyclopentolate, atropine and tropicamide, side effects, retinoscopy and prescribing guidelines."
+ },
+ {
+  "title": "Anisometropia and Aniseikonia: Prescribing High and Unequal Powers",
+  "url": "anisometropia-aniseikonia.html",
+  "desc": "Anisometropia and aniseikonia for optometrists: amblyopia risk, vertical imbalance at near, spectacle magnification, contact lenses and high powers."
+ },
+ {
+  "title": "Spectacle Lens Materials and Coatings: CR-39, Polycarbonate, Trivex, High Index, Abbe Value and Blue-Cut",
+  "url": "spectacle-lens-materials-coatings.html",
+  "desc": "Spectacle lens materials: refractive index, Abbe value, density and impact resistance of CR-39, polycarbonate, Trivex and high index; coatings."
+ },
+ {
+  "title": "Spectacle Lens Designs: Aspheric, Bifocals and Progressive Lenses (Fitting and Troubleshooting)",
+  "url": "spectacle-lens-designs-progressives.html",
+  "desc": "Spectacle lens designs: best-form and aspheric lenses, bifocal and trifocal types, image jump, and progressive lens fitting and troubleshooting."
+ },
+ {
+  "title": "Frame Selection and Spectacle Fitting: Boxing System, PD, Fitting Height, Tilt and Wrap",
+  "url": "frame-selection-spectacle-fitting.html",
+  "desc": "Frame selection and fitting: boxing system, frame materials, choosing a frame for the prescription, PD, heights, tilt, wrap and adjustments."
+ },
+ {
+  "title": "Spectacle Non-Tolerance: A Step-by-Step Troubleshooting Guide for Optometrists",
+  "url": "spectacle-non-tolerance-troubleshooting.html",
+  "desc": "When new glasses do not suit: check the lenses, fitting, centration and prism, base curve and material changes, the refraction and adaptation."
+ },
+ {
+  "title": "Prisms in Practice: Prescribing, Splitting, Decentration and Fresnel Prisms",
+  "url": "prisms-in-practice.html",
+  "desc": "Prisms for optometry students: base direction, prescribing for diplopia and phorias, splitting prism, decentration, Fresnel prisms and tolerances."
+ },
+ {
+  "title": "Accommodative Anomalies and Vision Therapy: Insufficiency, Excess, Infacility and Spasm",
+  "url": "accommodative-anomalies-vision-therapy.html",
+  "desc": "Accommodative insufficiency, excess, infacility, ill-sustained accommodation and spasm: signs, tests, near adds and vision therapy."
+ },
+ {
+  "title": "Accommodation Testing: Amplitude, MEM and Nott Retinoscopy, Facility, NRA and PRA",
+  "url": "accommodation-testing.html",
+  "desc": "How to test accommodation: push-up and minus-lens amplitude, Hofstetter norms, MEM and Nott retinoscopy, flipper facility, NRA and PRA."
+ },
+ {
+  "title": "Contact Lens Materials and Care Systems: Dk/t, Water Content, FDA Groups, Solutions and Wearing Schedules",
+  "url": "contact-lens-materials-care.html",
+  "desc": "Contact lens materials and care: hydrogel, silicone hydrogel and RGP, Dk and Dk/t, FDA groups, wearing schedules, care solutions and compliance."
+ },
+ {
+  "title": "Low Vision Assessment Step by Step: History, Charts, Contrast, Magnification and Rehabilitation",
+  "url": "low-vision-assessment.html",
+  "desc": "Low vision assessment for optometry students: WHO definitions, functional history, charts, contrast and fields, magnification, aids and rehabilitation."
+ },
+ {
+  "title": "Anterior Segment Examination for Optometrists: Grading Scales (Efron, CCLRU), Staining and van Herick",
+  "url": "anterior-segment-grading-scales.html",
+  "desc": "Anterior segment examination: a systematic slit lamp routine, Efron and CCLRU grading scales, corneal staining, TBUT and van Herick grading."
+ },
+ {
+  "title": "Fundus Examination for Optometrists: Normal Variants, Disc Assessment and DR Grading for Screening",
+  "url": "fundus-examination-optometrists.html",
+  "desc": "Fundus examination for optometrists: ophthalmoscopy techniques, normal variants, optic disc assessment (ISNT, cup-disc ratio), DR grading."
+ },
+ {
+  "title": "Diagnostic Drugs for Optometrists: Mydriatics, Cycloplegics, Anaesthetics and Stains",
+  "url": "diagnostic-drugs-optometry.html",
+  "desc": "Diagnostic drugs for optometrists: tropicamide, phenylephrine, cyclopentolate, atropine, topical anaesthetics and dyes, with cautions and safety."
+ },
+ {
+  "title": "Paediatric Optometry: Vision Testing by Age, Refraction and an Amblyopia Plan for Optometrists",
+  "url": "paediatric-optometry.html",
+  "desc": "Paediatric optometry: acuity tests by age, binocular vision and stereo, cycloplegic refraction, prescribing, amblyopia management and red flags."
+ },
+ {
+  "title": "Geriatric Optometry: Ageing Eye Changes, Prescribing for Older Adults and Falls",
+  "url": "geriatric-optometry.html",
+  "desc": "Geriatric optometry: normal ageing changes, eye diseases in older adults, prescribing and dispensing for the elderly, falls and dementia."
+ },
+ {
+  "title": "Occupational and Sports Optometry: Visual Standards, Protective Eyewear and Screen Use",
+  "url": "occupational-sports-optometry.html",
+  "desc": "Occupational and sports optometry: visual task analysis, job and driving standards, protective eyewear, computer vision syndrome and sports vision."
+ },
+ {
+  "title": "Community Optometry, Public Health and Law in India: NPCBVI, School Screening, NCAHP Act and Registration",
+  "url": "community-optometry-law-india.html",
+  "desc": "Community optometry in India: causes of blindness, NPCBVI, school screening, vision centres, the NCAHP Act 2021, consumer law and ethics."
+ },
+ {
+  "title": "RPC Rounds for Optometrists: B.Optom Curriculum, Study Guide and Practical Pearls",
+  "url": "optometry.html",
+  "desc": "Free study guide for B.Optom and optometry students: subject-wise revision checklists, practical pearls, flip cards, quizzes and a 50-question mock test."
+ },
+ {
+  "title": "B.Optom Mock Test: 50 Optometry MCQs with Explanations",
+  "url": "boptom-mock-test.html",
+  "desc": "Free 50-question B.Optom mock: optics, instruments, refraction, dispensing, contact lenses, binocular vision, low vision and disease, each answer explained."
+ },
+ {
+  "title": "Spectacle Lens Types Compared: Single Vision, Bifocal, Trifocal, Progressive and Office Lenses, With an Order Checklist",
+  "url": "spectacle-lens-types-order-guide.html",
+  "desc": "Every spectacle lens type compared, which to choose for which patient, the measurements each needs, and a step-by-step checklist for taking the order."
+ },
+ {
+  "title": "Sunglasses, Polarised and Photochromic Lenses, Tints and Night-Driving Glasses: A Practical Guide",
+  "url": "sunglasses-polarised-photochromic-tints.html",
+  "desc": "Sunglasses for opticians: UV400, filter categories 0–4, tint colours, polarised and photochromic lenses, night-driving glasses, and what to recommend for each need."
+ },
+ {
+  "title": "Optometry Exams Abroad: USA (NBEO), UK (GOC), Australia (OCANZ), Canada, Ireland and Gulf Licensing for Indian Optometrists",
+  "url": "optometry-exams-abroad.html",
+  "desc": "How Indian optometrists can work abroad: eligibility, exams and registration steps for the USA, UK, Australia, New Zealand, Canada, Ireland and the Gulf."
+ },
+ {
+  "title": "Optometry Registration in India: The NCAHP Act 2021, State Councils and What Students Should Do Now",
+  "url": "optometry-registration-india-ncahp.html",
+  "desc": "How optometrists will be registered in India under the NCAHP Act 2021: the commission, state councils, draft registration rules, exit exam and current status."
+ },
+ {
+  "title": "B.Optom Practical and Viva Stations: 30 OSCE-Style Stations With Model Answers",
+  "url": "boptom-practical-viva-stations.html",
+  "desc": "30 practical exam stations for B.Optom students: refraction, instruments, binocular vision, contact lenses, dispensing, low vision and disease, with model answers."
+ },
+ {
+  "title": "Optometry Case Record and Refraction Template: Printable Case History, Refraction and Prescription Sheet",
+  "url": "optometry-case-record-template.html",
+  "desc": "Free printable optometry case record: case history, visual acuity, retinoscopy, subjective refraction, binocular vision, eye health, prescription and referral."
+ },
+ {
+  "title": "NBEO-Style Optometry Mock Test: 50 Applied Basic Science MCQs with Explanations",
+  "url": "optometry-mock-test-nbeo-style.html",
+  "desc": "Free 50-question optometry mock in the style of NBEO Part I ABS: anatomy, physiology, pharmacology, microbiology, pathology and optics applied to cases."
+ },
+ {
+  "title": "OCANZ-Style Optometry Mock Test: 50 Clinical Science MCQs with Explanations",
+  "url": "optometry-mock-test-ocanz-style.html",
+  "desc": "Free 50-question mock in the style of the OCANZ Clinical Science paper: case-based diagnosis, referral and management for Australia and New Zealand."
+ },
+ {
+  "title": "Gulf Optometry Licensing Mock Test (DHA, DOH, SCFHS, QCHP): 50 MCQs with Explanations",
+  "url": "optometry-mock-test-gulf-licensing.html",
+  "desc": "Free 50-question practice test for Gulf optometrist licensing exams (DHA, DOH, MOHAP, SCFHS, QCHP): refraction, contact lenses, dispensing and disease."
  }
 ]

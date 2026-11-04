@@ -1,11 +1,6 @@
-Sadbhaav / RPC Rounds - update of 4 Nov 2026
-This holds only the files changed after the COMPLETE set (3 Nov).
+Sadbhaav November 2026 update: 1 support file
+Copy the file into the folder shown, replacing the old file. Do NOT replace whole folders.
 
-Copy each file into the folder shown. Replace the existing file if asked.
-Do NOT replace whole folders.
+  search-index.json    ->  site-search/search-index.json
 
-  rpc-sidebar.js      ->  js/
-  search-index.json   ->  site-search/
-
-Pages zip   -> main (root) folder (includes sitemap.xml).
-Images zip  -> images/ folder (20 new share images for the new pages).
+No CSS or JS files changed in this update.
