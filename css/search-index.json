@@ -2698,5 +2698,70 @@
   "title": "Gulf Optometry Licensing Mock Test (DHA, DOH, SCFHS, QCHP): 50 MCQs with Explanations",
   "url": "optometry-mock-test-gulf-licensing.html",
   "desc": "Free 50-question practice test for Gulf optometrist licensing exams (DHA, DOH, MOHAP, SCFHS, QCHP): refraction, contact lenses, dispensing and disease."
+ },
+ {
+  "title": "IOL Injectors and Cartridges for Residents: Alcon A, B, C, D, Preloaded Systems, J&J Unfolder, Zeiss, Medicel and Indian Lenses",
+  "url": "iol-injectors-cartridges-guide.html",
+  "desc": "Which IOL cartridge for which lens: Alcon Monarch A, B, C and D, UltraSert and AutonoMe, J&J Unfolder, Zeiss and Medicel, Indian lenses, loading steps and problems."
+ },
+ {
+  "title": "Fibrin Glue for Pterygium Autograft: Reliseal, Fibroseal and Tisseel Compared, Preparation and Technique",
+  "url": "fibrin-glue-pterygium-reliseal-fibroseal-tisseel.html",
+  "desc": "Fibrin glue for conjunctival autograft: Reliseal, Fibroseal and Tisseel compared, preparing the two parts, slow vs fast thrombin, technique, pros, cons and safety."
+ },
+ {
+  "title": "Mitomycin C and 5-Fluorouracil in Eye Surgery: Dilution, Application, Timing and Safe Handling",
+  "url": "mitomycin-c-5fu-preparation-guide.html",
+  "desc": "How to dilute mitomycin C to 0.02% or 0.04% and use 5-FU in trabeculectomy, pterygium, PRK and bleb needling: doses, timing, irrigation and cytotoxic safety."
+ },
+ {
+  "title": "Intracameral Drugs in Cataract Surgery: Moxifloxacin, Cefuroxime, Adrenaline, Lignocaine and Mydrane, With Dilution Safety",
+  "url": "intracameral-drugs-preparation-guide.html",
+  "desc": "Intracameral moxifloxacin and cefuroxime doses, epi-Shugarcaine and lignocaine for small pupils, Mydrane, miotics, and how dilution errors cause TASS."
+ },
+ {
+  "title": "Surgical Dyes and Triamcinolone in Eye Surgery: Trypan Blue, ICG, Brilliant Blue and How to Prepare Them",
+  "url": "vitrectomy-dyes-triamcinolone-guide.html",
+  "desc": "Trypan blue for capsule and ERM, ICG and brilliant blue for ILM, triamcinolone for vitreous: concentrations, preparation, osmolarity, toxicity and safe use."
+ },
+ {
+  "title": "Autologous Serum Eye Drops: Indications, Step-by-Step Preparation, 20% vs 50%, Storage and Safety",
+  "url": "autologous-serum-eye-drops-preparation.html",
+  "desc": "How to prepare autologous serum eye drops: indications, clotting, centrifugation, 20% or 50% dilution, aliquots, frozen and in-use storage, and safety."
+ },
+ {
+  "title": "Botulinum Toxin in Ophthalmology: Reconstitution, Units per Site for Blepharospasm, Strabismus Doses and Side Effects",
+  "url": "botulinum-toxin-eye-reconstitution-doses.html",
+  "desc": "Botulinum toxin for blepharospasm and strabismus: reconstituting a 100-unit vial, units per site, injection points, timing, storage and side effects."
+ },
+ {
+  "title": "Ophthalmic Viscosurgical Devices (OVDs): Cohesive, Dispersive, Viscoadaptive, Brands, Soft-Shell Technique and Removal",
+  "url": "viscoelastic-ovd-guide-cataract.html",
+  "desc": "OVDs for residents: cohesive, dispersive and viscoadaptive types, common brands including HPMC, when to use which, soft-shell technique and removal."
+ },
+ {
+  "title": "Ophthalmic Blades, Knives and Trocars: Keratome Sizes, Crescent, Side-Port, MVR and Vitrectomy Gauges Explained",
+  "url": "ophthalmic-blades-knives-trocars-guide.html",
+  "desc": "Which blade for which incision: keratome sizes for phaco, crescent and keratome for SICS, 15° side-port, MVR blades, and 20, 23, 25 and 27 G vitrectomy trocars."
+ },
+ {
+  "title": "Devices for Difficult Cataracts: Capsular Tension Rings, Cionni Rings, Segments, Malyugin Ring and Iris Hooks (Sizes and Use)",
+  "url": "cataract-devices-ctr-malyugin-iris-hooks.html",
+  "desc": "Capsular tension ring sizes (Morcher 14, 14C, 14A), Cionni rings and segments for weak zonules, Malyugin ring and iris hooks for small pupils."
+ },
+ {
+  "title": "Amniotic Membrane in Eye Surgery: Which Side Is Up, Dry vs Wet Membrane, Inlay, Onlay and Fixation",
+  "url": "amniotic-membrane-handling-guide.html",
+  "desc": "Amniotic membrane for residents: uses, cryopreserved vs dried membrane, finding the epithelial and stromal sides, inlay, onlay and sandwich techniques."
+ },
+ {
+  "title": "Bandage Contact Lenses and Punctal Plugs: Indications, Choosing the Size and Type, Fitting and Follow-Up",
+  "url": "bandage-contact-lens-punctal-plugs-guide.html",
+  "desc": "Bandage contact lenses and punctal plugs: indications, silicone hydrogel lens choice and fit, plug types and sizing, insertion, removal and complications."
+ },
+ {
+  "title": "Phaco Machine Settings for Beginners: Peristaltic vs Venturi, Vacuum, Flow, Power and Fixing Surge",
+  "url": "phaco-machine-settings-fluidics.html",
+  "desc": "Phaco fluidics for residents: peristaltic vs venturi pumps, bottle height, typical settings for each step, power modes, priming, and fixing surge."
  }
 ]
