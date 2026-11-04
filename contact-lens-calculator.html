@@ -201,6 +201,25 @@
   <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#1D4E89">
 <link rel="apple-touch-icon" href="images/rpc-apple-touch-icon.png">
+<style>
+/* contact lens calculator: both eyes side by side (Nov 2026) */
+.cl-rx,.cl-res{width:100%;border-collapse:collapse;margin:4px 0 8px;font-size:14.5px}
+.cl-rx th,.cl-rx td,.cl-res th,.cl-res td{border:1px solid #d5e3f3;padding:6px 8px;vertical-align:middle}
+.cl-rx thead th,.cl-res thead th{background:#1D4E89;color:#fff;font-weight:600;text-align:center}
+.cl-rx tbody th,.cl-res tbody th{background:#fff;font-weight:600;white-space:nowrap}
+.cl-rx tbody th span{font-weight:400;color:#5a6b7d}
+.cl-rx td{background:#fff;min-width:78px}
+.cl-rx td input{text-align:center}
+.cl-res td{background:#fff;text-align:center}
+.cl-copy{width:100%;padding:7px 10px;border:1px solid #1D4E89;background:#fff;color:#1D4E89;border-radius:4px;font-size:14px;cursor:pointer}
+.cl-copy:hover{background:#1D4E89;color:#fff}
+.cl-sum{margin:10px 0 0;padding:8px 10px;background:#fff;border-left:4px solid #1D4E89;border-radius:4px}
+.cl-rx input::-webkit-outer-spin-button,.cl-rx input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.cl-rx input{-moz-appearance:textfield}
+.cl-rx .eye-s{display:none;font-weight:700;color:#1D4E89}
+@media (max-width:575px){.cl-rx,.cl-res{font-size:13px}.cl-rx th,.cl-rx td,.cl-res th,.cl-res td{padding:4px 3px}.cl-rx td{min-width:0}.cl-rx td input{padding:5px 2px;font-size:14px}.cl-rx tbody th,.cl-res tbody th{white-space:normal}.cl-rx .eye-l{display:none}.cl-rx .eye-s{display:inline}.cl-both{padding-left:10px;padding-right:10px}.cl-both .dr-out{padding:8px 6px}}
+@media print{.cl-copy,.cl-opts select{display:none}}
+</style>
 </head>
   <body class="theme-blog">
 
@@ -281,8 +300,8 @@
               <a href="#" title="Mock tests, cases and exam guides" class="nav-link dropdown-toggle" id="practiceNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Practice</a>
               <div class="dropdown-menu" aria-labelledby="practiceNavDropdown">
                 <a class="dropdown-item" href="mock-tests.html">Free Timed Mock Tests</a>
-                <a class="dropdown-item" href="spot-the-diagnosis.html">Spot the Diagnosis (200 cases)</a>
-                <a class="dropdown-item" href="viva-hot-seat.html">Viva Hot Seat (100 stations)</a>
+                <a class="dropdown-item" href="spot-the-diagnosis.html">Spot the Diagnosis (226 cases)</a>
+                <a class="dropdown-item" href="viva-hot-seat.html">Viva Hot Seat (123 stations)</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="aios-okat-exam-guide.html">AIOS-OKAT Exam Guide</a>
                 <a class="dropdown-item" href="ophthalmology-exams-abroad.html">Exams Abroad (UK, US, Gulf, ICO)</a>
@@ -333,18 +352,30 @@
 
 <div class="dr-card"><div class="dr-meta"><span class="dr-tag">Calculator</span><span class="dr-tag">Contact lenses</span><button class="dr-print no-print" onclick="window.print()">Print this card</button></div>
 <p class="lead">Convert a spectacle prescription into a first trial contact lens: soft spherical, soft toric or rigid gas-permeable (RGP). The calculator corrects for vertex distance, rounds to the steps lenses are made in, and for RGP lenses works out the base curve, tear lens and expected residual astigmatism.</p>
-<nav class="grad-toc" aria-label="On this page"><strong>Calculators</strong> <a href="#soft">Soft spherical</a> <a href="#toric">Soft toric</a> <a href="#rgp">RGP</a> <a href="#kconv">K converter</a> <a href="#rules">Rules of thumb</a></nav>
-<h3 class="mt-4" style="color: var(--brand-accent);" id="soft">1. Soft spherical lens</h3>
-<div class="dr-tool dr-note"><div class="row"><div class="col-6 col-md-3"><label for="sSph">Sphere (D)</label><input id="sSph" type="number" step="0.25" value="-5.50"></div><div class="col-6 col-md-3"><label for="sCyl">Cylinder (D)</label><input id="sCyl" type="number" step="0.25" value="-0.50"></div><div class="col-6 col-md-3"><label for="sVd">Vertex distance (mm)</label><input id="sVd" type="number" step="0.5" value="12"></div></div><div class="dr-out" id="sOut" aria-live="polite"></div></div>
-<p style="font-size:14px;">Uses the spherical equivalent (sphere + half the cylinder), converted to the corneal plane. Powers above ±6.00 D are usually made in 0.50 D steps.</p>
-<h3 class="mt-4" style="color: var(--brand-accent);" id="toric">2. Soft toric lens</h3>
-<div class="dr-tool dr-note"><div class="row"><div class="col-6 col-md-3"><label for="tSph">Sphere (D)</label><input id="tSph" type="number" step="0.25" value="-4.00"></div><div class="col-6 col-md-3"><label for="tCyl">Cylinder (D)</label><input id="tCyl" type="number" step="0.25" value="-1.75"></div><div class="col-6 col-md-3"><label for="tAx">Axis (°)</label><input id="tAx" type="number" step="1" value="175"></div><div class="col-6 col-md-3"><label for="tVd">Vertex distance (mm)</label><input id="tVd" type="number" step="0.5" value="12"></div></div><div class="dr-out" id="tOut" aria-live="polite"></div></div>
-<p style="font-size:14px;">Each principal meridian is converted separately, then the result is rounded to typical stock steps: cylinder −0.75, −1.25, −1.75, −2.25 or −2.75 D, and axis in 10° steps. Check the manufacturer's range; many brands also offer 5° axes or custom cylinders.</p>
-<h3 class="mt-4" style="color: var(--brand-accent);" id="rgp">3. Rigid gas-permeable (RGP) lens</h3>
-<div class="dr-tool dr-note"><div class="row"><div class="col-6 col-md-3"><label for="rK1">Flat K (D)</label><input id="rK1" type="number" step="0.25" value="43.00"></div><div class="col-6 col-md-3"><label for="rK2">Steep K (D)</label><input id="rK2" type="number" step="0.25" value="44.25"></div><div class="col-6 col-md-3"><label for="rSph">Spectacle sphere (D)</label><input id="rSph" type="number" step="0.25" value="-3.00"></div><div class="col-6 col-md-3"><label for="rCyl">Spectacle cylinder (D)</label><input id="rCyl" type="number" step="0.25" value="-1.00"></div><div class="col-6 col-md-3"><label for="rVd">Vertex distance (mm)</label><input id="rVd" type="number" step="0.5" value="12"></div></div><div class="dr-out" id="rOut" aria-live="polite"></div></div>
+<nav class="grad-toc" aria-label="On this page"><strong>Calculators</strong> <a href="#soft">Soft lenses (both eyes)</a> <a href="#rgp">RGP (both eyes)</a> <a href="#kconv">K converter</a> <a href="#rules">Rules of thumb</a></nav>
+<h3 class="mt-4" style="color: var(--brand-accent);" id="soft">1. Soft contact lens power: both eyes</h3>
+<p style="font-size:14.5px;">Enter the spectacle prescription for each eye, as written on the glasses prescription. Leave cylinder at 0 for a purely spherical prescription.</p>
+<div class="dr-tool dr-note cl-both">
+<div class="table-responsive"><table class="cl-rx" aria-label="Spectacle prescription, both eyes"><thead><tr><th scope="col">Spectacle Rx</th><th scope="col">Sphere (D)</th><th scope="col">Cylinder (D)</th><th scope="col">Axis (°)</th></tr></thead><tbody>
+<tr><th scope="row"><span class="eye-l">Right eye <span>(OD)</span></span><span class="eye-s">OD</span></th><td><input id="sR_s" type="number" step="0.25" value="-5.50" aria-label="Right eye sphere"></td><td><input id="sR_c" type="number" step="0.25" value="-0.50" aria-label="Right eye cylinder"></td><td><input id="sR_a" type="number" step="1" min="0" max="180" value="180" aria-label="Right eye axis"></td></tr>
+<tr><th scope="row"><span class="eye-l">Left eye <span>(OS)</span></span><span class="eye-s">OS</span></th><td><input id="sL_s" type="number" step="0.25" value="-4.00" aria-label="Left eye sphere"></td><td><input id="sL_c" type="number" step="0.25" value="-1.75" aria-label="Left eye cylinder"></td><td><input id="sL_a" type="number" step="1" min="0" max="180" value="175" aria-label="Left eye axis"></td></tr>
+</tbody></table></div>
+<div class="row cl-opts"><div class="col-6 col-md-4"><label for="sVd">Vertex distance (mm)</label><input id="sVd" type="number" step="0.5" value="12"></div><div class="col-6 col-md-4"><label for="sMode">Lens type</label><select id="sMode"><option value="auto">Suggest per eye</option><option value="sph">Spherical, both</option><option value="tor">Toric, both</option></select></div><div class="col-12 col-md-4"><label class="d-none d-md-block">&nbsp;</label><button type="button" class="cl-copy" id="sCopy">Copy right eye to left</button></div></div>
+<div class="dr-out" id="sOut" aria-live="polite"></div>
+</div>
+<p style="font-size:14px;">Spherical lenses use the spherical equivalent (sphere + half the cylinder), converted to the corneal plane. For toric lenses each principal meridian is converted separately, then rounded to typical stock steps: cylinder −0.75, −1.25, −1.75, −2.25 or −2.75 D, and axis in 10° steps. Powers above ±6.00 D are usually made in 0.50 D steps. Check the manufacturer's range; many brands also offer 5° axes or custom cylinders.</p>
+<h3 class="mt-4" style="color: var(--brand-accent);" id="rgp">2. Rigid gas-permeable (RGP) lens: both eyes</h3>
+<div class="dr-tool dr-note cl-both">
+<div class="table-responsive"><table class="cl-rx" aria-label="Keratometry and spectacle prescription, both eyes"><thead><tr><th scope="col">Eye</th><th scope="col">Flat K (D)</th><th scope="col">Steep K (D)</th><th scope="col">Sphere (D)</th><th scope="col">Cylinder (D)</th></tr></thead><tbody>
+<tr><th scope="row"><span class="eye-l">Right eye <span>(OD)</span></span><span class="eye-s">OD</span></th><td><input id="rR_k1" type="number" step="0.25" value="43.00" aria-label="Right eye flat K"></td><td><input id="rR_k2" type="number" step="0.25" value="44.25" aria-label="Right eye steep K"></td><td><input id="rR_s" type="number" step="0.25" value="-3.00" aria-label="Right eye spectacle sphere"></td><td><input id="rR_c" type="number" step="0.25" value="-1.00" aria-label="Right eye spectacle cylinder"></td></tr>
+<tr><th scope="row"><span class="eye-l">Left eye <span>(OS)</span></span><span class="eye-s">OS</span></th><td><input id="rL_k1" type="number" step="0.25" value="42.75" aria-label="Left eye flat K"></td><td><input id="rL_k2" type="number" step="0.25" value="43.50" aria-label="Left eye steep K"></td><td><input id="rL_s" type="number" step="0.25" value="-2.50" aria-label="Left eye spectacle sphere"></td><td><input id="rL_c" type="number" step="0.25" value="-0.75" aria-label="Left eye spectacle cylinder"></td></tr>
+</tbody></table></div>
+<div class="row cl-opts"><div class="col-6 col-md-4"><label for="rVd">Vertex distance (mm)</label><input id="rVd" type="number" step="0.5" value="12"></div><div class="col-6 col-md-4"><label class="d-none d-md-block">&nbsp;</label><button type="button" class="cl-copy" id="rCopy">Copy right eye to left</button></div></div>
+<div class="dr-out" id="rOut" aria-live="polite"></div>
+</div>
 <p style="font-size:14px;">Enter the cylinder in minus form. The base curve follows one common starting nomogram for a lens of about 9.0–9.6 mm diameter; manufacturers' fitting guides differ. Always confirm the fit with fluorescein and refine the power by over-refraction.</p>
 <div class="dr-flag"><p><strong>SAM-FAP:</strong> Steeper Add Minus, Flatter Add Plus. A base curve steeper than flat K creates a plus tear lens, so the lens needs that much extra minus power, and the reverse for a flatter fit.</p></div>
-<h3 class="mt-4" style="color: var(--brand-accent);" id="kconv">4. Keratometry converter</h3>
+<h3 class="mt-4" style="color: var(--brand-accent);" id="kconv">3. Keratometry converter</h3>
 <div class="dr-tool dr-note"><div class="row"><div class="col-6 col-md-3"><label for="kD">Corneal power (D)</label><input id="kD" type="number" step="0.125" value="43.50"></div><div class="col-6 col-md-3"><label for="kR">Radius (mm)</label><input id="kR" type="number" step="0.01" value="7.76"></div></div><div class="dr-out" id="kOut" aria-live="polite"></div></div>
 <p style="font-size:14px;">r (mm) = 337.5 ÷ K (D), using the standard keratometric index of 1.3375. Change either box.</p>
 <h3 class="mt-4" style="color: var(--brand-accent);" id="rules">Rules of thumb</h3>
@@ -361,44 +392,71 @@ function on(ids,fn){ids.forEach(function(i){document.getElementById(i).addEventL
 
 var CYL=[-0.75,-1.25,-1.75,-2.25,-2.75];
 function sphStep(v){return Math.abs(v)>6?0.5:0.25;}
-on(['sSph','sCyl','sVd'],function(){
- var s=num('sSph'),c=num('sCyl'),d=num('sVd')/1000,se=s+c/2,v=vc(se,d),st=sphStep(v);
- var w=(Math.abs(c)>0.75&&Math.abs(c)>Math.abs(s)/4)?'<br><span class="calc-warn">Cylinder is more than 0.75 D and over a quarter of the sphere: vision may be blurred; consider a toric lens.</span>':'';
- document.getElementById('sOut').innerHTML='<strong>Spherical equivalent:</strong> '+f(se)+' D<br><strong>Trial soft lens:</strong> '+f(v,st)+' D'+(Math.abs(v-se)>=0.125?' (after vertex correction)':'')+w;
-});
-on(['tSph','tCyl','tAx','tVd'],function(){
- var s=num('tSph'),c=num('tCyl'),a=num('tAx'),d=num('tVd')/1000;
+function softEye(s,c,a,d,mode){
  if(c>0){s=s+c;c=-c;a=a+90;}
- var m1=vc(s,d),m2=vc(s+c,d),cc=m2-m1,best=CYL[0];
+ var se=s+c/2,vse=vc(se,d),m1=vc(s,d),cc=vc(s+c,d)-m1,best=CYL[0];
  CYL.forEach(function(x){if(Math.abs(x-cc)<Math.abs(best-cc))best=x;});
- var a10=ax(Math.round(ax(a)/10)*10),out='<strong>At the cornea:</strong> '+f(m1,0.01)+' / '+f(cc,0.01)+' × '+ax(a)+'°<br>';
- if(Math.abs(cc)<0.5) out+='<strong>Suggestion:</strong> corneal-plane cylinder is under 0.50 D; a spherical lens of '+f(m1+cc/2,sphStep(m1))+' D may be enough.';
- else out+='<strong>Trial toric lens:</strong> '+f(m1,sphStep(m1))+' / '+f(best)+' × '+a10+'°'+(Math.abs(cc)>2.875?'<br><span class="calc-warn">Cylinder beyond common stock range: consider a custom toric or RGP lens.</span>':'');
- document.getElementById('tOut').innerHTML=out;
-});
-on(['rK1','rK2','rSph','rCyl','rVd'],function(){
- var k1=num('rK1'),k2=num('rK2'),s=num('rSph'),c=num('rCyl'),d=num('rVd')/1000;
+ var needT=Math.abs(c)>0.75&&Math.abs(c)>Math.abs(s)/4;
+ var type=mode==='sph'?'sph':(mode==='tor'?'tor':(needT&&Math.abs(cc)>=0.5?'tor':'sph'));
+ if(type==='tor'&&Math.abs(cc)<0.5)type='sph';
+ var r={se:f(se)+' D',corn:f(m1,0.01)+(Math.abs(cc)>=0.005?' / '+f(cc,0.01)+' × '+ax(a)+'°':' DS'),warn:''};
+ if(type==='sph'){r.type='Soft spherical';r.lens=f(vse,sphStep(vse))+' D';r.short=f(vse,sphStep(vse))+' DS';
+  if(needT)r.warn='Cylinder over 0.75 D and over a quarter of the sphere: vision may be blurred; consider a toric lens.';
+  else if(mode==='tor')r.warn='Corneal-plane cylinder under 0.50 D, so a spherical lens is suggested.';}
+ else{r.type='Soft toric';r.lens=f(m1,sphStep(m1))+' / '+f(best)+' × '+ax(Math.round(ax(a)/10)*10)+'°';r.short=r.lens;
+  if(Math.abs(cc)>2.875)r.warn='Cylinder beyond common stock range: consider a custom toric or RGP lens.';}
+ return r;
+}
+function cell(v,w){return '<td>'+v+(w?'<br><span class="calc-warn">'+w+'</span>':'')+'</td>';}
+function both(R,L,rows){var t='<div class="table-responsive"><table class="cl-res"><thead><tr><th></th><th>Right eye (OD)</th><th>Left eye (OS)</th></tr></thead><tbody>';
+ rows.forEach(function(r){t+='<tr><th scope="row">'+r[0]+'</th><td>'+R[r[1]]+'</td><td>'+L[r[1]]+'</td></tr>';});return t+'</tbody></table></div>';}
+function softCalc(){
+ var d=num('sVd')/1000,m=document.getElementById('sMode').value;
+ var R=softEye(num('sR_s'),num('sR_c'),num('sR_a'),d,m),L=softEye(num('sL_s'),num('sL_c'),num('sL_a'),d,m);
+ R.lensB='<strong>'+R.lens+'</strong>';L.lensB='<strong>'+L.lens+'</strong>';
+ var out=both(R,L,[['Spherical equivalent','se'],['At the cornea','corn'],['Lens type','type'],['Trial contact lens','lensB']]);
+ var w=[];if(R.warn)w.push('<strong>Right eye:</strong> '+R.warn);if(L.warn)w.push('<strong>Left eye:</strong> '+L.warn);
+ if(w.length)out+='<p class="calc-warn" style="margin:8px 0 0;">'+w.join('<br>')+'</p>';
+ out+='<p class="cl-sum"><strong>Trial lenses:</strong> OD '+R.short+' &nbsp;·&nbsp; OS '+L.short+'</p>';
+ document.getElementById('sOut').innerHTML=out;
+}
+on(['sR_s','sR_c','sR_a','sL_s','sL_c','sL_a','sVd'],softCalc);
+document.getElementById('sMode').addEventListener('change',softCalc);
+function rgpEye(k1,k2,s,c,d){
  if(k2<k1){var t=k1;k1=k2;k2=t;}
  if(c>0){s=s+c;c=-c;}
- var ccyl=k2-k1,stp;
+ var ccyl=k2-k1,stp,r={};
  if(ccyl<=0.5)stp=0;else if(ccyl<=1.25)stp=0.25;else if(ccyl<=2.0)stp=0.5;else if(ccyl<=3.0)stp=0.75;else stp=null;
- var out='<strong>Keratometry:</strong> '+k1.toFixed(2)+' D ('+(337.5/k1).toFixed(2)+' mm) / '+k2.toFixed(2)+' D ('+(337.5/k2).toFixed(2)+' mm); corneal cylinder '+ccyl.toFixed(2)+' D<br>';
- if(stp===null){document.getElementById('rOut').innerHTML=out+'<span class="calc-warn">Corneal cylinder over 3.00 D: a spherical RGP lens will rock and decentre; consider a back-surface or bitoric design.</span>';return;}
+ r.k=k1.toFixed(2)+' / '+k2.toFixed(2)+' D<br><small>'+(337.5/k1).toFixed(2)+' / '+(337.5/k2).toFixed(2)+' mm</small>';
+ r.cc=ccyl.toFixed(2)+' D';
+ if(stp===null){r.bc=r.tl=r.vs=r.pw=r.ra='—';r.short='bitoric design needed';r.warn='Corneal cylinder over 3.00 D: a spherical RGP lens will rock and decentre; consider a back-surface or bitoric design.';return r;}
  var bc=k1+stp,tl=bc-k1,vs=vc(s,d),vcyl=vc(s+c,d)-vs,pw=vs-tl,ra=Math.abs(vcyl)-ccyl;
- out+='<strong>Base curve:</strong> '+bc.toFixed(2)+' D = '+(337.5/bc).toFixed(2)+' mm ('+(stp?stp.toFixed(2)+' D steeper than flat K':'on flat K')+')<br>';
- out+='<strong>Tear lens:</strong> '+f(tl)+' D &nbsp;·&nbsp; <strong>Spectacle sphere at cornea:</strong> '+f(vs,0.01)+' D<br>';
- out+='<strong>Trial lens power:</strong> '+f(pw)+' D<br>';
- out+='<strong>Expected residual astigmatism:</strong> about '+Math.abs(ra).toFixed(2)+' D (if refractive and corneal astigmatism share the same axis)';
- if(Math.abs(ra)>0.75)out+='<br><span class="calc-warn">Residual astigmatism over 0.75 D: consider a front-surface toric or a soft toric lens.</span>';
+ r.bc=bc.toFixed(2)+' D = '+(337.5/bc).toFixed(2)+' mm<br><small>'+(stp?stp.toFixed(2)+' D steeper than flat K':'on flat K')+'</small>';
+ r.tl=f(tl)+' D';r.vs=f(vs,0.01)+' D';r.pw='<strong>'+f(pw)+' D</strong>';r.ra='about '+Math.abs(ra).toFixed(2)+' D';
+ r.short='BC '+(337.5/bc).toFixed(2)+' mm, '+f(pw)+' D';
+ r.warn=Math.abs(ra)>0.75?'Residual astigmatism over 0.75 D: consider a front-surface toric or a soft toric lens.':'';
+ return r;
+}
+function rgpCalc(){
+ var d=num('rVd')/1000;
+ var R=rgpEye(num('rR_k1'),num('rR_k2'),num('rR_s'),num('rR_c'),d),L=rgpEye(num('rL_k1'),num('rL_k2'),num('rL_s'),num('rL_c'),d);
+ var out=both(R,L,[['Keratometry (flat / steep)','k'],['Corneal cylinder','cc'],['Base curve','bc'],['Tear lens','tl'],['Spectacle sphere at cornea','vs'],['Trial lens power','pw'],['Expected residual astigmatism','ra']]);
+ var w=[];if(R.warn)w.push('<strong>Right eye:</strong> '+R.warn);if(L.warn)w.push('<strong>Left eye:</strong> '+L.warn);
+ if(w.length)out+='<p class="calc-warn" style="margin:8px 0 0;">'+w.join('<br>')+'</p>';
+ out+='<p class="cl-sum"><strong>Trial lenses:</strong> OD '+R.short+' &nbsp;·&nbsp; OS '+L.short+'</p><p style="font-size:13px;margin:4px 0 0;">Residual astigmatism assumes refractive and corneal astigmatism share the same axis.</p>';
  document.getElementById('rOut').innerHTML=out;
-});
+}
+on(['rR_k1','rR_k2','rR_s','rR_c','rL_k1','rL_k2','rL_s','rL_c','rVd'],rgpCalc);
+function copyR(pairs,fn){pairs.forEach(function(p){document.getElementById(p[1]).value=document.getElementById(p[0]).value;});fn();}
+document.getElementById('sCopy').addEventListener('click',function(){copyR([['sR_s','sL_s'],['sR_c','sL_c'],['sR_a','sL_a']],softCalc);});
+document.getElementById('rCopy').addEventListener('click',function(){copyR([['rR_k1','rL_k1'],['rR_k2','rL_k2'],['rR_s','rL_s'],['rR_c','rL_c']],rgpCalc);});
 var kD=document.getElementById('kD'),kR=document.getElementById('kR');
 function kshow(){document.getElementById('kOut').innerHTML='<strong>'+(parseFloat(kD.value)||0).toFixed(2)+' D</strong> = <strong>'+(parseFloat(kR.value)||0).toFixed(2)+' mm</strong>';}
 kD.addEventListener('input',function(){var v=parseFloat(kD.value);if(v>0)kR.value=(337.5/v).toFixed(2);kshow();});
 kR.addEventListener('input',function(){var v=parseFloat(kR.value);if(v>0)kD.value=(337.5/v).toFixed(2);kshow();});
 kshow();
 })();</script>
-<nav class="me-series calc-strip" aria-label="Eye calculators"><p><span class="fa fa-calculator" aria-hidden="true"></span> <strong>Eye calculators</strong> &middot; <a href="eye-calculators.html">see all</a></p><div><a href="eye-calculators.html">All calculators</a><a href="refraction-calculators.html">Refraction</a><a href="contact-lens-calculator.html" class="on" aria-current="page">Contact lens</a><a href="spectacle-transposition-tool.html">Transposition &amp; vertex</a><a href="visual-acuity-conversion-chart.html">VA conversion</a><a href="iol-formula-comparison.html">SRK II</a><a href="low-vision-aids-calculator.html">Low vision aids</a><a href="visual-disability-certificate-calculator.html">Disability certificate</a><a href="lricalculator.html">LRI</a><a href="biostatistics-for-ophthalmologists.html">2 × 2 table</a></div></nav>
+<nav class="me-series calc-strip" aria-label="Eye calculators"><p><span class="fa fa-calculator" aria-hidden="true"></span> <strong>Eye calculators</strong> &middot; <a href="eye-calculators.html">see all</a></p><div><a href="eye-calculators.html">All calculators</a><a href="refraction-calculators.html">Refraction</a><a href="contact-lens-calculator.html" class="on" aria-current="page">Contact lens</a><a href="spectacle-transposition-tool.html">Transposition &amp; vertex</a><a href="visual-acuity-conversion-chart.html">VA conversion</a><a href="iol-formula-comparison.html">SRK II</a><a href="low-vision-aids-calculator.html">Low vision aids</a><a href="visual-disability-certificate-calculator.html">Disability certificate</a><a href="lricalculator.html">LRI</a><a href="biostatistics-for-ophthalmologists.html">2 × 2 table</a><a href="refractive-surgery-calculator.html">Refractive surgery</a><a href="rop-screening-calculator.html">ROP screening</a><a href="hydroxychloroquine-dose-calculator.html">Hydroxychloroquine</a><a href="intraocular-gas-calculator.html">Intraocular gas</a><a href="sia-toric-calculator.html">SIA and toric</a><a href="sample-size-calculator.html">Sample size</a></div></nav>
 <h3 class="mt-4" style="color: var(--brand-accent);">Key sources</h3>
 <ul style="font-size:14px;"><li>American Academy of Ophthalmology. Basic and Clinical Science Course, Section 3: Clinical Optics and Vision Rehabilitation (current edition), chapter on contact lenses</li><li>Phillips AJ, Speedwell L. Contact Lenses. 6th ed. Elsevier; 2018</li><li>Bennett ES, Henry VA. Clinical Manual of Contact Lenses. 5th ed. Wolters Kluwer; 2019</li></ul>
 
@@ -436,7 +494,7 @@ kshow();
   <h6>Start exploring</h6>
   <div class="rs-tiles">
     <a href="start-here.html"><span class="fa fa-compass"></span><b>Start here</b><small>New reader? Begin here</small></a>
-    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 319 pages</small></a>
+    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 329 pages</small></a>
     <a href="desk-reference.html"><span class="fa fa-clipboard"></span><b>Desk reference</b><small>Charts, doses, calculators</small></a>
     <a href="mock-tests.html"><span class="fa fa-pencil-square-o"></span><b>Mock tests</b><small>Free, timed, explained</small></a>
   </div>
@@ -456,29 +514,29 @@ kshow();
 <div class="rs-box categories">
   <h6>Subspecialties <small>pages</small></h6>
   <ul class="rs-list rs-subs">
-    <li><a href="cornea.html">Cornea</a> <span class="rs-sep">&middot;</span> <a href="refractive-surgery-residents.html">Refractive</a><a class="rs-n" href="resident-learning-dashboard.html?s=C" title="See all 32 pages in the Learning Dashboard">32</a></li>
-    <li><a href="lens.html">Lens &amp; Cataract</a><a class="rs-n" href="resident-learning-dashboard.html?s=L" title="See all 35 pages in the Learning Dashboard">35</a></li>
-    <li><a href="glaucoma.html">Glaucoma</a><a class="rs-n" href="resident-learning-dashboard.html?s=G" title="See all 29 pages in the Learning Dashboard">29</a></li>
-    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 56 pages in the Learning Dashboard">56</a></li>
+    <li><a href="cornea.html">Cornea</a> <span class="rs-sep">&middot;</span> <a href="refractive-surgery-residents.html">Refractive</a><a class="rs-n" href="resident-learning-dashboard.html?s=C" title="See all 33 pages in the Learning Dashboard">33</a></li>
+    <li><a href="lens.html">Lens &amp; Cataract</a><a class="rs-n" href="resident-learning-dashboard.html?s=L" title="See all 37 pages in the Learning Dashboard">37</a></li>
+    <li><a href="glaucoma.html">Glaucoma</a><a class="rs-n" href="resident-learning-dashboard.html?s=G" title="See all 28 pages in the Learning Dashboard">28</a></li>
+    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 60 pages in the Learning Dashboard">60</a></li>
     <li><a href="uvea.html">Uvea</a><a class="rs-n" href="resident-learning-dashboard.html?s=U" title="See all 22 pages in the Learning Dashboard">22</a></li>
-    <li><a href="neurophthalmology.html">Neuro-ophthalmology</a><a class="rs-n" href="resident-learning-dashboard.html?s=N" title="See all 29 pages in the Learning Dashboard">29</a></li>
-    <li><a href="pediatricophthalmology.html">Paediatrics</a> <span class="rs-sep">&middot;</span> <a href="strabismus.html">Strabismus</a><a class="rs-n" href="resident-learning-dashboard.html?s=P" title="See all 30 pages in the Learning Dashboard">30</a></li>
+    <li><a href="neurophthalmology.html">Neuro-ophthalmology</a><a class="rs-n" href="resident-learning-dashboard.html?s=N" title="See all 30 pages in the Learning Dashboard">30</a></li>
+    <li><a href="pediatricophthalmology.html">Paediatrics</a> <span class="rs-sep">&middot;</span> <a href="strabismus.html">Strabismus</a><a class="rs-n" href="resident-learning-dashboard.html?s=P" title="See all 33 pages in the Learning Dashboard">33</a></li>
     <li><a href="oculoplasty.html">Oculoplasty &amp; Orbit</a><a class="rs-n" href="resident-learning-dashboard.html?s=O" title="See all 18 pages in the Learning Dashboard">18</a></li>
     <li><a href="oculartrauma.html">Ocular Trauma</a><a class="rs-n" href="resident-learning-dashboard.html?s=T" title="See all 9 pages in the Learning Dashboard">9</a></li>
-    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 25 pages in the Learning Dashboard">25</a></li>
-    <li><a href="basicsciences.html">Basic Sciences</a><a class="rs-n" href="resident-learning-dashboard.html?s=B" title="See all 38 pages in the Learning Dashboard">38</a></li>
-    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 87 pages in the Learning Dashboard">87</a></li>
+    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 27 pages in the Learning Dashboard">27</a></li>
+    <li><a href="basicsciences.html">Basic Sciences</a><a class="rs-n" href="resident-learning-dashboard.html?s=B" title="See all 39 pages in the Learning Dashboard">39</a></li>
+    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 90 pages in the Learning Dashboard">90</a></li>
   </ul>
   <p class="rs-k">Browse by type</p>
   <div class="rs-chips">
-    <a href="resident-learning-dashboard.html?u=H">High-yield <i>109</i></a>
-    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>143</i></a>
+    <a href="resident-learning-dashboard.html?u=H">High-yield <i>111</i></a>
+    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>147</i></a>
     <a href="resident-learning-dashboard.html?u=K">Classifications <i>48</i></a>
-    <a href="resident-learning-dashboard.html?u=I">Imaging <i>42</i></a>
-    <a href="resident-learning-dashboard.html?u=S">Surgical <i>51</i></a>
-    <a href="resident-learning-dashboard.html?u=E">Emergencies <i>25</i></a>
-    <a href="resident-learning-dashboard.html?u=A">Calculators <i>20</i></a>
-    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>35</i></a>
+    <a href="resident-learning-dashboard.html?u=I">Imaging <i>43</i></a>
+    <a href="resident-learning-dashboard.html?u=S">Surgical <i>54</i></a>
+    <a href="resident-learning-dashboard.html?u=E">Emergencies <i>26</i></a>
+    <a href="resident-learning-dashboard.html?u=A">Calculators <i>26</i></a>
+    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>36</i></a>
   </div>
 </div>
 <div class="rs-box">

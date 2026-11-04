@@ -8,7 +8,7 @@
     ["retinal-vein-occlusion.html", "Retinal vein occlusion made practical"],
     ["diplopia-approach.html", "Approach to diplopia: three-step test"],
     ["hydroxychloroquine-screening.html", "Hydroxychloroquine screening"],
-    ["viva-hot-seat.html", "Viva Hot Seat: 700 examiner questions"]
+    ["viva-hot-seat.html", "Viva Hot Seat: 861 examiner questions"]
   ];
   function ready(fn) { if (document.readyState !== "loading") fn(); else document.addEventListener("DOMContentLoaded", fn); }
   ready(function () {

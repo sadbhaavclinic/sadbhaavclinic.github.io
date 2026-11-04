@@ -1,18 +1,11 @@
-Sadbhaav / RPC Rounds - COMPLETE update (3 Nov 2026)
-This set holds every change since 2 Nov, including the fact-check and the DME/British spelling pass.
-It replaces all earlier zips.
+Sadbhaav / RPC Rounds - update of 4 Nov 2026
+This holds only the files changed after the COMPLETE set (3 Nov).
 
 Copy each file into the folder shown. Replace the existing file if asked.
 Do NOT replace whole folders.
 
-  section-themes.css   ->  css/
-  revise.js            ->  js/
-  rpc-sidebar.js       ->  js/
-  site-extras.js       ->  js/
-  flashcard-review.js  ->  js/
-  flashcards.json      ->  js/
-  search-index.json    ->  site-search/
-  books.json           ->  book-carousel/
+  rpc-sidebar.js      ->  js/
+  search-index.json   ->  site-search/
 
-Pages zip -> main (root) folder. It includes sitemap.xml, manifest.webmanifest, sw.js and offline.html.
-Images zip -> images/ folder. Copy the files in; do not replace the folder.
+Pages zip   -> main (root) folder (includes sitemap.xml).
+Images zip  -> images/ folder (20 new share images for the new pages).
