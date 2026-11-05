@@ -1,4 +1,4 @@
-Sadbhaav November 2026 update (5 Nov): 1 support file
+Sadbhaav update (5 Nov, third): 1 support file
 Copy the file into the folder shown, replacing the old file. Do NOT replace whole folders.
 
   search-index.json    ->  site-search/search-index.json
