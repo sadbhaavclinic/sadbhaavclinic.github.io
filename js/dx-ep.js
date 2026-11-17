@@ -1,0 +1,54 @@
+/* RPC Rounds Diagnostics Lab: simulated electrophysiology reports (ISCEV-style ERG, EOG, PERG, VEP, mfERG). Teaching simulation only.
+   c.kind: 'erg' | 'eog' | 'vep' | 'perg' | 'mferg' ; c.R / c.L: per-eye scale factors (1 = normal) and delays (ms). */
+var DXE=(function(){
+ function gam(t,tp,k){if(t<=0)return 0;var u=t/tp;return Math.pow(u,k)*Math.exp(k*(1-u))}
+ function rng(seed){var s=seed>>>0||1;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+ var N={rod:{b:250,tb:90},mix:{a:260,b:470,ta:16,tb:46},cone:{a:35,b:125,ta:14,tb:30},flick:{amp:105,t:27}};
+ function E(e){var d={rod:1,a:1,b:1,ca:1,cb:1,fl:1,ops:1,dr:0,dc:0,noise:1};for(var k in (e||{}))d[k]=e[k];return d}
+ function wave(type,e,t,r){var v=0,n=(r()-0.5)*4*e.noise;
+  if(type==='rod'){v=N.rod.b*e.rod*gam(t-12,N.rod.tb+e.dr-12,3.5)}
+  if(type==='mix'){var ta=N.mix.ta+e.dr*0.3,tb=N.mix.tb+e.dr*0.4;v=-N.mix.a*e.a*gam(t-1,ta-1,4)+N.mix.b*e.b*gam(t-9,tb-9,3.2);if(t>18&&t<46)v+=e.ops*28*Math.sin((t-18)*2*Math.PI/7.2)*Math.sin((t-18)/28*Math.PI)}
+  if(type==='cone'){var ta2=N.cone.ta+e.dc*0.4,tb2=N.cone.tb+e.dc;v=-N.cone.a*e.ca*gam(t-1,ta2-1,4)+N.cone.b*e.cb*gam(t-7,tb2-7,4)-N.cone.b*e.cb*0.3*gam(t-7,(tb2-7)*2.4,4)}
+  if(type==='flick'){var ph=(t-(N.flick.t+e.dc))/33.3*2*Math.PI;v=N.flick.amp*e.fl*0.5*(Math.cos(ph)+0.15*Math.cos(2*ph))}
+  return v+n}
+ function panel(x,X,Y,W,H,title,type,c,span,yr){x.fillStyle='#fff';x.fillRect(X,Y,W,H);x.strokeStyle='#d5e3f3';x.strokeRect(X,Y,W,H);x.fillStyle='#1b2a3a';x.font='bold 12px Arial,sans-serif';x.fillText(title,X+6,Y+14);
+  var y0=Y+H*0.55,sy=(H*0.42)/yr,sx=W/span;x.strokeStyle='#eef2f7';x.beginPath();x.moveTo(X,y0);x.lineTo(X+W,y0);x.stroke();
+  x.fillStyle='#8a96a3';x.font='10px Arial,sans-serif';x.fillText(span+' ms',X+W-36,Y+H-4);x.fillText(Math.round(yr)+' µV',X+4,Y+H*0.13+12);
+  [['N',E({noise:0}),'#9aa6b2',[4,3]],['R',E(c.R),'#b3261e',[]],['L',E(c.L),'#1D4E89',[]]].forEach(function(z){var r=rng((c.seed||3)+z[0].charCodeAt(0));x.strokeStyle=z[2];x.setLineDash(z[3]);x.lineWidth=z[0]==='N'?1:1.5;x.beginPath();for(var px=0;px<=W;px++){var t=px/sx,v=wave(type,z[1],t,r),yy=y0-v*sy;yy=Math.max(Y+18,Math.min(Y+H-2,yy));if(px)x.lineTo(X+px,yy);else x.moveTo(X+px,yy)}x.stroke();x.setLineDash([])})}
+ function header(x,W,c,t){x.fillStyle='#1b2a3a';x.font='bold 15px Arial,sans-serif';x.fillText(t+' · SIMULATED TEACHING REPORT',16,22);x.font='13px Arial,sans-serif';x.fillStyle='#33414f';x.fillText('Age: '+(c.age||'')+'   '+(c.note||''),16,42);
+  x.fillStyle='#b3261e';x.fillRect(W-260,14,14,3);x.fillStyle='#33414f';x.font='12px Arial,sans-serif';x.fillText('Right eye',W-242,20);x.fillStyle='#1D4E89';x.fillRect(W-170,14,14,3);x.fillStyle='#33414f';x.fillText('Left eye',W-152,20);x.strokeStyle='#9aa6b2';x.setLineDash([4,3]);x.beginPath();x.moveTo(W-260,34);x.lineTo(W-246,34);x.stroke();x.setLineDash([]);x.fillText('Typical normal',W-242,38)}
+ function table(x,X,Y,rows){x.font='12px Arial,sans-serif';rows.forEach(function(r,i){var yy=Y+i*18;r.forEach(function(cell,j){var cx=X+[0,215,275,330,500][j];x.fillStyle=(j>0&&j<3&&typeof cell==='object')?'#b3261e':(i===0?'#1D4E89':'#1b2a3a');x.font=(i===0||(typeof cell==='object'))?'bold 12px Arial,sans-serif':'12px Arial,sans-serif';x.fillText(typeof cell==='object'?cell.v:cell,cx,yy)})})}
+ function fl(v,lo,hi,d){var s=v.toFixed(d||0);return(v<lo||v>hi)?{v:s}:s}
+ function erg(c){var W=1060,H=560,cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;var x=cv.getContext('2d');x.scale(2,2);x.fillStyle='#fff';x.fillRect(0,0,W,H);header(x,W,c,'Full-field ERG (ISCEV standard)');
+  panel(x,16,56,250,200,'DA 0.01 (rod response)','rod',c,150,300);panel(x,276,56,250,200,'DA 3.0 (combined rod-cone)','mix',c,100,520);panel(x,536,56,250,200,'LA 3.0 (single-flash cone)','cone',c,80,150);panel(x,796,56,250,200,'LA 30 Hz flicker','flick',c,100,80);
+  var R=E(c.R),L=E(c.L),row=function(lab,f,lo,hi,d){return[lab,fl(f(R),lo,hi,d),fl(f(L),lo,hi,d),lo+'–'+hi]};
+  table(x,24,290,[['Measure','Right','Left','Typical range'],row('DA 0.01 b-wave (µV)',function(e){return N.rod.b*e.rod},150,350),row('DA 0.01 b peak time (ms)',function(e){return N.rod.tb+e.dr},75,110),row('DA 3.0 a-wave (µV)',function(e){return N.mix.a*e.a},170,350),row('DA 3.0 b-wave (µV)',function(e){return N.mix.b*e.b},320,620),row('DA 3.0 b:a ratio',function(e){return e.a>0.02?(N.mix.b*e.b)/(N.mix.a*e.a):0},1.4,2.6,2),row('LA 3.0 a-wave (µV)',function(e){return N.cone.a*e.ca},20,55),row('LA 3.0 b-wave (µV)',function(e){return N.cone.b*e.cb},85,180),row('LA 3.0 b peak time (ms)',function(e){return N.cone.tb+e.dc},27,34),row('30 Hz flicker amplitude (µV)',function(e){return N.flick.amp*e.fl},65,150),row('30 Hz flicker peak time (ms)',function(e){return N.flick.t+e.dc},24,31)]);
+  notes(x,640,290,c);foot(x,W,H);return out(cv,'ERG')}
+ function notes(x,X,Y,c){x.fillStyle='#1D4E89';x.font='bold 13px Arial,sans-serif';x.fillText('Notes',X,Y);x.fillStyle='#1b2a3a';x.font='12px Arial,sans-serif';var yy=Y+18;(c.notes||['Pupils dilated; 20 min dark adaptation; DTL electrodes.']).forEach(function(t){var w=t.split(' '),l='';w.forEach(function(s){if(x.measureText(l+s).width>380){x.fillText(l,X,yy);yy+=16;l=''}l+=s+' '});x.fillText(l,X,yy);yy+=20})}
+ function foot(x,W,H){x.fillStyle='#8a96a3';x.font='11px Arial,sans-serif';x.fillText('RPC Rounds Diagnostics Lab · simulation for teaching; values in red are outside the typical range',16,H-8)}
+ function out(cv,t){return'<img src="'+cv.toDataURL('image/png')+'" alt="Simulated '+t+' report" style="display:block;width:100%;min-width:640px;height:auto">'}
+ function eog(c){var W=1060,H=460,cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;var x=cv.getContext('2d');x.scale(2,2);x.fillStyle='#fff';x.fillRect(0,0,W,H);header(x,W,c,'Electro-oculogram (EOG)');
+  var X=40,Y=70,PW=600,PH=300;x.strokeStyle='#d5e3f3';x.strokeRect(X,Y,PW,PH);x.fillStyle='#33414f';x.font='11px Arial,sans-serif';x.fillText('Dark (15 min)',X+80,Y+PH+16);x.fillText('Light (15 min)',X+380,Y+PH+16);x.fillStyle='rgba(30,40,60,0.06)';x.fillRect(X,Y,PW/2,PH);
+  var R=E(c.R),L=E(c.L),ar=function(e){return e.arden||1.9};[['N',{arden:2.0},'#9aa6b2',[4,3]],['R',R,'#b3261e',[]],['L',L,'#1D4E89',[]]].forEach(function(z){var a=ar(z[1]);x.strokeStyle=z[2];x.setLineDash(z[3]);x.lineWidth=z[0]==='N'?1:2;x.beginPath();for(var m=0;m<=30;m+=0.25){var base=1-0.15*Math.min(1,m/12)+(m>15?0:0),v=m<15?base-0.05*Math.sin(m/15*Math.PI):0.82+(a*0.82-0.82)*Math.sin(Math.min(1,(m-15)/9)*Math.PI/2)-(m>24?(m-24)*0.03*(a-1):0),px=X+m/30*PW,py=Y+PH-v/2.2*PH;if(m)x.lineTo(px,py);else x.moveTo(px,py)}x.stroke();x.setLineDash([])});
+  x.fillStyle='#33414f';x.fillText('Relative amplitude',X-30,Y-8);
+  table(x,680,90,[['Measure','Right','Left','Typical'],['Arden ratio (light peak / dark trough)',fl(ar(R),1.65,9,2),fl(ar(L),1.65,9,2),'≥ 1.80']]);
+  notes(x,680,150,c);foot(x,W,H);return out(cv,'EOG')}
+ function evoked(c,kind){var W=1060,H=440,cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;var x=cv.getContext('2d');x.scale(2,2);x.fillStyle='#fff';x.fillRect(0,0,W,H);header(x,W,c,kind==='vep'?'Pattern-reversal VEP':'Pattern ERG (PERG)');
+  var R=E(c.R),L=E(c.L),span=kind==='vep'?250:150;
+  function Gs(t,m,w){return Math.exp(-Math.pow((t-m)/w,2))}function wv(e,t){if(kind==='vep'){var p=100+(e.lat||0),A=(e.amp==null?1:e.amp)*12;return -A*0.5*Gs(t,75+(e.lat||0)*0.8,11)+A*Gs(t,p,13)-A*0.7*Gs(t,p+36,18)}var a50=(e.p50==null?1:e.p50)*3,a95=(e.n95==null?1:e.n95)*5;return -0.8*Gs(t,35,7)+a50*Gs(t,50+(e.lat||0),9)-a95*Gs(t,95+(e.lat||0),22)}
+  var X=40,Y=70,PW=600,PH=260;x.strokeStyle='#d5e3f3';x.strokeRect(X,Y,PW,PH);var y0=Y+PH/2,yr=kind==='vep'?20:8,sy=(PH*0.45)/yr;x.strokeStyle='#eef2f7';x.beginPath();x.moveTo(X,y0);x.lineTo(X+PW,y0);x.stroke();
+  [['N',{},'#9aa6b2',[4,3]],['R',R,'#b3261e',[]],['L',L,'#1D4E89',[]]].forEach(function(z){var r=rng((c.seed||4)+z[0].charCodeAt(0));x.strokeStyle=z[2];x.setLineDash(z[3]);x.lineWidth=z[0]==='N'?1:2;x.beginPath();for(var px=0;px<=PW;px++){var t=px/PW*span,v=wv(z[1],t)+(z[0]==='N'?0:(r()-0.5)*(kind==='vep'?0.5:0.12)),yy=y0-v*sy;if(px)x.lineTo(X+px,yy);else x.moveTo(X+px,yy)}x.stroke();x.setLineDash([])});
+  x.fillStyle='#8a96a3';x.font='10px Arial,sans-serif';x.fillText('0',X,Y+PH+12);x.fillText(span+' ms',X+PW-30,Y+PH+12);x.fillText('positive up',X+4,Y+12);
+  var rows=kind==='vep'?[['Measure','Right','Left','Typical'],['P100 latency (ms)',fl(100+(R.lat||0),90,115),fl(100+(L.lat||0),90,115),'90–115'],['P100 amplitude (µV)',fl(12*(R.amp==null?1:R.amp),5,25,1),fl(12*(L.amp==null?1:L.amp),5,25,1),'5–25']]:
+   [['Measure','Right','Left','Typical'],['P50 amplitude (µV)',fl(3*(R.p50==null?1:R.p50),1.8,6,1),fl(3*(L.p50==null?1:L.p50),1.8,6,1),'1.8–6'],['N95 amplitude (µV)',fl(5*(R.n95==null?1:R.n95),3.5,10,1),fl(5*(L.n95==null?1:L.n95),3.5,10,1),'3.5–10'],['N95:P50 ratio',fl((5*(R.n95==null?1:R.n95))/(3*(R.p50==null?1:R.p50)+0.01),1.1,2.5,2),fl((5*(L.n95==null?1:L.n95))/(3*(L.p50==null?1:L.p50)+0.01),1.1,2.5,2),'1.1–2.5']];
+  table(x,680,90,rows);notes(x,680,180,c);foot(x,W,H);return out(cv,kind.toUpperCase())}
+ function mferg(c){var W=1060,H=540,cv=document.createElement('canvas');cv.width=W*2;cv.height=H*2;var x=cv.getContext('2d');x.scale(2,2);x.fillStyle='#fff';x.fillRect(0,0,W,H);header(x,W,c,'Multifocal ERG (61 hexagons)');
+  ['R','L'].forEach(function(eye,ei){var e=c[eye]||{},rings=e.rings||[1,1,1,1,1],X0=40+ei*440,Y0=70,cx=X0+190,cy=Y0+190,r=rng((c.seed||5)+ei);x.fillStyle='#1b2a3a';x.font='bold 13px Arial,sans-serif';x.fillText(eye==='R'?'Right eye trace array':'Left eye trace array',X0,Y0-6);
+   var hexes=[[0,0,0]];for(var ring=1;ring<=4;ring++){for(var k=0;k<6;k++){for(var j=0;j<ring;j++){var a1=k*Math.PI/3,a2=(k+1)*Math.PI/3,px=ring*Math.cos(a1)+j*(Math.cos(a2)-Math.cos(a1)),py=ring*Math.sin(a1)+j*(Math.sin(a2)-Math.sin(a1));hexes.push([px,py,ring])}}}
+   hexes.forEach(function(h){var hx=cx+h[0]*44,hy=cy-h[1]*44,amp=rings[h[2]]*(h[2]===0?1.6:1);x.strokeStyle=eye==='R'?'#b3261e':'#1D4E89';x.lineWidth=1.2;x.beginPath();for(var t=0;t<=60;t+=1.5){var v=-0.3*gam(t,15,3)+1*gam(t,30,4)-0.4*gam(t,45,4),pxx=hx-15+t/2,pyy=hy-v*amp*20+(r()-0.5)*1.2;if(t)x.lineTo(pxx,pyy);else x.moveTo(pxx,pyy)}x.stroke()});
+   x.fillStyle='#33414f';x.font='12px Arial,sans-serif';x.fillText('Ring ratios (to normal): '+rings.map(function(v,i){return'R'+(i+1)+' '+v.toFixed(2)}).join('  '),X0,Y0+395)});
+  notes(x,40,H-46,c);foot(x,W,H);return out(cv,'mfERG')}
+ function render(c){var k=c.kind||'erg';return k==='eog'?eog(c):k==='vep'||k==='perg'?evoked(c,k):k==='mferg'?mferg(c):erg(c)}
+ return{render:render}
+})();
+if(typeof module!=='undefined')module.exports=DXE;
