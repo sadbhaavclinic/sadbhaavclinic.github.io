@@ -16,6 +16,46 @@
     "featured": false
   },
   {
+    "title": "FICO Decoded",
+    "subtitle": "Basic Science, Optics & Clinical Ophthalmology: 3,336 original MCQs for the ICO examinations",
+    "cover": "images/fico-decoded-cover.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HQZ5ZC13?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
+    "title": "OKAP & ABO Decoded",
+    "subtitle": "3,721 original MCQs for the OKAP and ABO Written Qualifying Examination",
+    "cover": "images/okap-abo-decoded-cover.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HRWNZWJL?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
+    "title": "FEBO Decoded",
+    "subtitle": "European Board of Ophthalmology Diploma: 3,721 original MCQs",
+    "cover": "images/febo-decoded-cover.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HRWWWGK3?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
+    "title": "FRCOphth Part 1 Decoded",
+    "subtitle": "Basic Sciences & Investigations: 3,484 original SBAs with explanations",
+    "cover": "images/frcophth-decoded-part1.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HQ4VCV5W?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
+    "title": "FRCOphth Part 2 Written Decoded",
+    "subtitle": "Clinical Ophthalmology: 4,725 original SBAs with explanations",
+    "cover": "images/frcophth-decoded-part2.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HQ4V5XZK?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
     "title": "Kingdom of Sight",
     "subtitle": "A Story-Based Journey Through Eye Anatomy, Physiology & Disease",
     "cover": "images/cobeye.jpg",

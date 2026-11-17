@@ -3013,5 +3013,150 @@
   "title": "RPC Rounds for Medical Students: Ophthalmology for MBBS, Mapped to the CBME Curriculum",
   "url": "medical-students.html",
   "desc": "Free ophthalmology for MBBS students: short pages mapped to every CBME competency, practical exam help, flip cards, three mock tests and an Anki deck."
+ },
+ {
+  "title": "Diabetic Retinopathy Grading and Follow-up Calculator (ICDR Scale with Macular Oedema)",
+  "url": "diabetic-retinopathy-grading-follow-up-calculator.html",
+  "desc": "Tick the fundus findings to get the International Clinical DR grade, macular oedema status, follow-up interval, treatment pointers and the next review date."
+ },
+ {
+  "title": "Glaucoma Staging and Progression Rate Calculator: Hodapp-Parrish-Anderson Stage and MD Slope",
+  "url": "glaucoma-staging-progression-calculator.html",
+  "desc": "Stage a 24-2 field with the Hodapp-Parrish-Anderson criteria, then enter serial MD values to get the rate of progression in dB per year and a projection."
+ },
+ {
+  "title": "Eye Emergency Drug Dose Calculator: Acetazolamide, Mannitol, Glycerol, Steroids, Antivirals and Paediatric Drops",
+  "url": "eye-emergency-drug-dose-calculator.html",
+  "desc": "Weight-based doses for eye emergencies: acetazolamide, mannitol, glycerol, IV methylprednisolone, prednisolone, acyclovir and safe drop strengths in children."
+ },
+ {
+  "title": "Steroid Eye Drop Taper Schedule Maker: Printable Week-by-Week Plan in English, Gujarati and Hindi",
+  "url": "steroid-eye-drop-taper-schedule-maker.html",
+  "desc": "Make a printable steroid eye drop taper: choose the drop, eye, start date, starting frequency and step length, and print it in English, Gujarati or Hindi."
+ },
+ {
+  "title": "Anti-VEGF Injection Planner: Loading Doses, Treat-and-Extend Intervals and a Printable Schedule",
+  "url": "anti-vegf-injection-planner.html",
+  "desc": "Plan anti-VEGF injections: loading dose dates, treat-and-extend steps by disease activity, maximum intervals by drug, and a printable patient schedule."
+ },
+ {
+  "title": "Keratometry Converter: Corneal Radius (mm) to Dioptres, Mean K, Cylinder and Device Comparison",
+  "url": "keratometry-radius-diopter-converter.html",
+  "desc": "Convert corneal radius in mm to dioptres and back with any keratometric index, get mean K and corneal cylinder, and check agreement between two keratometry readings."
+ },
+ {
+  "title": "Medical Certificates in Eye Practice in India: Sick Leave, Fitness, Medico-Legal Injury Reports and Other Forms",
+  "url": "medical-certificates-eye-practice.html",
+  "desc": "Certificates in eye practice in India: sick leave, fitness to resume, medico-legal eye injury reports, school and job forms, wording and record keeping."
+ },
+ {
+  "title": "Eye Clinic Counselling Phrasebook: English, Gujarati and Hindi Phrases for Examination, Drops and Surgery",
+  "url": "eye-counselling-phrasebook-english-gujarati-hindi.html",
+  "desc": "Ready phrases in English, Gujarati (with Roman letters) and Hindi for eye examination, dilating drops, eye drop use, surgery, bad news and follow-up in the eye OPD."
+ },
+ {
+  "title": "Eye Referral Letter Templates: Physician Fitness, Neurology, Retina, Cornea, Ward Replies, School Letters",
+  "url": "eye-referral-letter-templates.html",
+  "desc": "Copy-ready eye letter templates: physician fitness, urgent neurology, retina and cornea referrals, ward replies, retinoblastoma and school letters."
+ },
+ {
+  "title": "Online Eye Consultations in India: Telemedicine Practice Guidelines, What Can Be Prescribed and When to See the Patient",
+  "url": "teleophthalmology-telemedicine-guidelines-india.html",
+  "desc": "Online eye consultations in India: the 2020 Telemedicine Practice Guidelines, consent, prescription lists, e-prescriptions and red flags needing a visit."
+ },
+ {
+  "title": "Infection Control in the Eye Clinic and Theatre: Tonometers, Drops, Sterilisation, Endophthalmitis Clusters and Waste",
+  "url": "eye-clinic-infection-control-sterilisation-checklist.html",
+  "desc": "Infection control for eye OPDs and theatres: hand hygiene, tonometer disinfection, multi-dose drops, sterilisation checks, endophthalmitis clusters, waste."
+ },
+ {
+  "title": "Eye ICD-10 Diagnosis Codes and ICD-10-PCS Procedure Codes: Searchable List for Ophthalmology",
+  "url": "eye-icd-10-pcs-codes.html",
+  "desc": "Searchable ophthalmology codes: 1,938 diagnosis entries (3,755 ICD-10-CM codes with WHO ICD-10 categories) and 1,254 ICD-10-PCS eye procedure codes, by category."
+ },
+ {
+  "title": "Today in the Eye OPD: A Daily Clinical Case with Questions for Students and Residents",
+  "url": "today-in-the-eye-opd-daily-case.html",
+  "desc": "A new eye OPD case every day for medical students, optometry students and residents: a short story, two questions with explanations, and a link to learn more."
+ },
+ {
+  "title": "Optometry Mock Test in Gujarati: 30 MCQs for Diploma and B.Optom Students (ઓપ્ટોમેટ્રી મોક ટેસ્ટ)",
+  "url": "optometry-mock-test-gujarati.html",
+  "desc": "Free 30-question optometry mock test in Gujarati for diploma and B.Optom students: refraction, contact lenses, dispensing, binocular vision and referral."
+ },
+ {
+  "title": "Optometry Mock Test in Hindi: 30 MCQs for Diploma and B.Optom Students (ऑप्टोमेट्री मॉक टेस्ट)",
+  "url": "optometry-mock-test-hindi.html",
+  "desc": "Free 30-question optometry mock test in Hindi for diploma and B.Optom students: refraction, contact lenses, dispensing, binocular vision and referral."
+ },
+ {
+  "title": "Can Doctors Dispense Medicines in India? Self-Dispensing Rules for Clinics: Schedule K, Pharmacy Act, Register and Labels",
+  "url": "doctor-self-dispensing-medicines-rules-india.html",
+  "desc": "Rules for doctors who supply medicines to their own patients in India: Schedule K entry 5, Pharmacy Act section 42, labels, register, storage, limits and case law."
+ },
+ {
+  "title": "Eye Care for Actors, Models and Content Creators: Stage Lights, Coloured Contact Lenses, Lash Extensions, Lash Serums and Makeup",
+  "url": "eye-care-actors-models-content-creators.html",
+  "desc": "Eye care for actors, models and creators: bright lights, coloured and costume contact lenses, lash extensions and serums, eye makeup, tear sticks and on-set safety."
+ },
+ {
+  "title": "Eye Care for Athletes: Protective Eyewear, Contact Lenses in Sport, LASIK vs SMILE vs PRK, Concussion and Returning to Play",
+  "url": "eye-care-for-athletes-sports-vision.html",
+  "desc": "Eye care for athletes: high-risk sports, protective eyewear standards, pickleball injuries, contact lenses, LASIK vs SMILE vs PRK, concussion and return to play."
+ },
+ {
+  "title": "Eye Care for Gamers and Esports Players: Digital Eye Strain, Dry Eye, Blue Light Myths, VR Headsets and Screen Setup",
+  "url": "eye-care-for-gamers-esports-digital-eye-strain.html",
+  "desc": "Eye care for gamers and esports players: digital eye strain, dry eye, blue light myths, VR headsets, myopia in young gamers, and the best screen setup."
+ },
+ {
+  "title": "Flying, Scuba Diving and High Altitude with Eye Conditions: Gas Bubbles, Eye Surgery, Pilots, Divers and Mountaineers",
+  "url": "eyes-flying-diving-high-altitude.html",
+  "desc": "Flying, scuba diving and high altitude after eye surgery or with eye conditions: gas bubbles, pilot eye standards, diving, altitude retinopathy and snow blindness."
+ },
+ {
+  "title": "Red Light Therapy for Myopia in Children: How It Works, What the Evidence Shows and the Safety Debate",
+  "url": "red-light-therapy-myopia-children.html",
+  "desc": "Repeated low-level red light therapy for myopia in children: how it is used, trial results, rebound, device safety concerns, and how it compares with other options."
+ },
+ {
+  "title": "Solar Eclipse Eye Safety: How to Watch the 2 August 2027 Total Eclipse Without Damaging Your Eyes",
+  "url": "solar-eclipse-eye-safety-2027.html",
+  "desc": "How to watch the 2 August 2027 total solar eclipse safely: ISO 12312-2 eclipse glasses, camera and telescope filters, children, and signs of eye damage."
+ },
+ {
+  "title": "FICO Decoded: ICO Exam Question Bank with 3,336 MCQs (Basic Science, Optics and Clinical)",
+  "url": "fico-decoded.html",
+  "desc": "FICO Decoded by Dr Dhaval Patel: 3,336 original MCQs for the ICO examinations and FICO, every option explained, 4 mock exams. Try free questions and a sample mock."
+ },
+ {
+  "title": "OKAP and ABO Decoded: OKAP and Board Written Exam Question Bank with 3,721 MCQs",
+  "url": "okap-abo-decoded.html",
+  "desc": "OKAP & ABO Decoded by Dr Dhaval Patel: 3,721 original MCQs for the OKAP and ABO Written Qualifying Exam, BCSC-aligned, 4 mock exams. Try free questions."
+ },
+ {
+  "title": "FEBO Decoded: European Board of Ophthalmology Diploma Question Bank with 3,721 MCQs",
+  "url": "febo-decoded.html",
+  "desc": "FEBO Decoded by Dr Dhaval Patel: 3,721 original MCQs for the European Board of Ophthalmology Diploma, every option explained, 4 mock exams. Try free questions."
+ },
+ {
+  "title": "The Decoded Series: Ophthalmology Exam Question Banks for OKAT, FRCOphth, FICO, OKAP, ABO and FEBO",
+  "url": "decoded-series-ophthalmology-exam-books.html",
+  "desc": "The Decoded series by Dr Dhaval Patel: original ophthalmology MCQ banks for OKAT, FRCOphth, ICO and FICO, OKAP and ABO, and FEBO, with free sample mocks."
+ },
+ {
+  "title": "FICO Decoded Free Sample Mock: 50 ICO Basic Science and Clinical Sciences Questions from the Book",
+  "url": "fico-decoded-sample-mock-test.html",
+  "desc": "Free 50-question ICO and FICO sample mock taken from FICO Decoded Mock Examination 1: 25 basic science and 25 clinical questions, timed, with explanations."
+ },
+ {
+  "title": "OKAP and ABO Decoded Free Sample Mock: 50 Board-Style Questions from the Book",
+  "url": "okap-abo-decoded-sample-mock-test.html",
+  "desc": "Free 50-question OKAP and ABO WQE sample mock taken from OKAP & ABO Decoded Mock Examination 1, across all BCSC sections, timed, with explanations."
+ },
+ {
+  "title": "FEBO Decoded Free Sample Mock: 50 EBO Diploma Questions from the Book",
+  "url": "febo-decoded-sample-mock-test.html",
+  "desc": "Free 50-question EBO Diploma (FEBO) sample mock taken from FEBO Decoded Mock Examination 1, across the whole curriculum, timed, with explanations."
  }
 ]

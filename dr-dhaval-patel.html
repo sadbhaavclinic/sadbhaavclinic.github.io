@@ -43,6 +43,8 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css?v=20261106">
     <link rel="stylesheet" href="css/section-themes.css?v=20261106">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/clinic-refresh.css?v=20261117">
 
     <!-- Fontawesome Kit (loaded once — remove the cdnjs link above if you keep this) -->
     <script src="https://kit.fontawesome.com/8d5cac4b15.js" crossorigin="anonymous" defer></script>
@@ -214,7 +216,7 @@
 </script>
   </head>
 
-  <body class="theme-clinic">
+  <body class="theme-clinic refresh">
 
     <div class="wrap">
       <div class="container">
@@ -253,7 +255,6 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="index.html" title="Home Page" class="nav-link">Home</a></li>
             <li class="nav-item"><a href="aboutus.html" title="About us" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="gallery.html" title="Gallery" class="nav-link">Gallery</a></li>
             <li class="nav-item dropdown active">
               <a href="eyedepartment.html" title="Eye Department" class="nav-link dropdown-toggle" id="eyeNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Eye</a>
               <div class="dropdown-menu" aria-labelledby="eyeNavDropdown">
@@ -343,11 +344,17 @@
 
             <li class="nav-item"><a href="patientzone.html" title="Patients' Zone" class="nav-link">Patients' Zone</a></li>
             <li class="nav-item"><a href="ophthalmology.html" title="RPC Rounds: ophthalmology blog for doctors" class="nav-link">RPC Rounds <small class="rpc-for">for doctors</small></a></li>
-            <li class="nav-item"><a href="testimonials.html" title="Testimonials" class="nav-link">Testimonials</a></li>
-              <li class="nav-item"><a href="faq.html" title="FAQ" class="nav-link">FAQ</a></li>
-              <li class="nav-item"><a href="cashless-facilities.html" title="Cashless Facilities" class="nav-link">Cashless</a></li>
-            <li class="nav-item"><a href="contactus.html" title="Contact us" class="nav-link">Contact</a></li>
-            <li class="nav-item cta"><a href="https://api.whatsapp.com/send?phone=917016912180&text=Hello%20Dr.%20Dhaval%2C%20I%20would%20like%20to%20book%20an%20eye%20appointment." target="_blank" rel="noopener" class="nav-link" onclick="gtag('event','book_appointment_click',{'department':'eye','click_location':'nav'});"><span>Book Appointment</span></a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="moreNavDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" aria-labelledby="moreNavDropdown">
+                <a class="dropdown-item" href="gallery.html">Gallery</a>
+                <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                <a class="dropdown-item" href="faq.html">FAQ</a>
+                <a class="dropdown-item" href="cashless-facilities.html">Cashless</a>
+                <a class="dropdown-item" href="contactus.html">Contact</a>
+              </div>
+            </li>
+            <li class="nav-item cta cr-cta"><a href="https://api.whatsapp.com/send?phone=917016912180&text=Hello%20Dr.%20Dhaval%2C%20I%20would%20like%20to%20book%20an%20eye%20appointment." target="_blank" rel="noopener" class="nav-link" onclick="gtag('event','book_appointment_click',{'department':'eye','click_location':'nav'});"><span>Book Appointment</span></a></li>
           </ul>
         </div>
       </div>
@@ -361,10 +368,13 @@
             <p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="aboutus.html">About Us <i class="fa fa-chevron-right"></i></a></span> <span>Dr. Dhaval Patel <i class="fa fa-chevron-right"></i></span></p>
             <h1 class="mb-0 bread">Dr. Dhaval Patel, MD (AIIMS)</h1>
             <h2 class="mb-0 bread h3">Eye surgeon, author and teacher</h2>
+          <div class="cr-hero-actions"><a class="cr-btn cr-btn-primary" href="https://api.whatsapp.com/send?phone=917016912180&amp;text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">Book on WhatsApp</a><a class="cr-btn cr-btn-ghost" href="tel:+917016912180">Call +91 70169 12180</a></div>
           </div>
         </div>
       </div>
     </section>
+<div class="cr-trust"><div class="container"><div class="cr-trust-grid"><div class="cr-trust-item"><span class="fa fa-user-md" aria-hidden="true"></span><div><b>AIIMS-trained</b><span>MD Ophthalmology, AIIMS New Delhi</span></div></div><div class="cr-trust-item"><span class="fa fa-eye" aria-hidden="true"></span><div><b>25,000+</b><span>cataract surgeries performed</span></div></div><div class="cr-trust-item"><span class="fa fa-star" aria-hidden="true"></span><div><b>4.9 on Google</b><span>from 536+ patient reviews</span></div></div><div class="cr-trust-item"><span class="fa fa-credit-card" aria-hidden="true"></span><div><b>Cashless</b><span>with major insurers and TPAs</span></div></div></div></div></div>
+
 
     <section class="ftco-section intl-page">
       <div class="container">
@@ -385,7 +395,7 @@
 <tr><th scope="row">Qualification</th><td>MBBS (Baroda Medical College, 2010); MD Ophthalmology (Dr. Rajendra Prasad Centre for Ophthalmic Sciences, AIIMS New Delhi, 2014)</td></tr>
 <tr><th scope="row">Surgery</th><td>More than 25,000 cataract surgeries; more than 500 LASIK procedures</td></tr>
 <tr><th scope="row">Teaching</th><td>Phaco trainer to more than 35 young surgeons from India and abroad; author of the RPC Rounds blog</td></tr>
-<tr><th scope="row">Books</th><td>More than 35 titles, including iNotes, Ophthalmonics, Ophthalmology Explorer, <a href="okat-decoded.html">OKAT Decoded</a> (10,200 MCQs) and <a href="frcophth-decoded.html">FRCOphth Decoded</a> (8,209 SBAs)</td></tr>
+<tr><th scope="row">Books</th><td>More than 35 titles, including iNotes, Ophthalmonics, Ophthalmology Explorer, <a href="okat-decoded.html">OKAT Decoded</a> (10,200 MCQs) <a href="frcophth-decoded.html">FRCOphth Decoded</a> (8,209 SBAs), <a href="fico-decoded.html">FICO Decoded</a> (3,336 MCQs), <a href="okap-abo-decoded.html">OKAP &amp; ABO Decoded</a> (3,721 MCQs) and <a href="febo-decoded.html">FEBO Decoded</a> (3,721 MCQs)</td></tr>
 <tr><th scope="row">Research</th><td>28 publications on <a href="https://www.researchgate.net/profile/Dhaval-Patel-60" target="_blank" rel="noopener">ResearchGate</a></td></tr>
 <tr><th scope="row">Practice</th><td><a href="index.html">Sadbhaav Eye &amp; Dental Clinic</a>, Motera, Ahmedabad, Gujarat, India (since July 2017)</td></tr>
 </tbody></table></div>
@@ -406,6 +416,9 @@
 <ul>
 <li><a href="okat-decoded.html"><strong>OKAT Decoded</strong></a>: 10,200 original MCQs for the AIOS-OKAT exam in three volumes</li>
 <li><a href="frcophth-decoded.html"><strong>FRCOphth Decoded</strong></a>: Part 1 Basic Sciences &amp; Investigations (3,484 SBAs) and Part 2 Written Clinical Ophthalmology (4,725 SBAs)</li>
+<li><a href="fico-decoded.html"><strong>FICO Decoded</strong></a>: 3,336 original MCQs for the International Council of Ophthalmology examinations (basic science, optics and clinical)</li>
+<li><a href="okap-abo-decoded.html"><strong>OKAP &amp; ABO Decoded</strong></a>: 3,721 original MCQs for the OKAP and the ABO Written Qualifying Examination</li>
+<li><a href="febo-decoded.html"><strong>FEBO Decoded</strong></a>: 3,721 original MCQs for the European Board of Ophthalmology Diploma</li>
 <li><a href="https://www.amazon.in/dp/B0HGV8T2K5?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>Kingdom of Sight</strong></a>: A Story-Based Journey Through Eye Anatomy, Physiology &amp; Disease</li><li><a href="https://www.amazon.in/dp/B0HJ1Q47XS?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>Ophthalmology Explorer</strong></a>: A High-Yield Clinical Reference for Ophthalmology Residents, Fellows &amp; Board Exams</li><li><a href="https://www.amazon.in/dp/B0HJ8GB9WY?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>OphthalMIND</strong></a>: The ophthalmology you studied, and ophthalmology you didn&#x27;t?</li><li><a href="https://www.amazon.in/dp/B0HGLGNJ4N?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>Most Commons in Ophthalmology</strong></a>: 5001 Most Commons facts in Ophthalmology</li><li><a href="https://www.amazon.in/dp/B0HKHK1PW2?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>The Eye Court - Ophthal Adalat</strong></a>: Courtroom drama approach to ophthalmology diagnosis</li><li><a href="https://www.amazon.in/dp/B0HGSXCV7L?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>Ophthalmonics</strong></a>: Ophthalmology mnemonics, a readers favorite</li><li><a href="https://www.amazon.in/dp/B0HKJZTYJF?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>Ophthal GITA</strong></a>: A Complete Course in Ophthalmology, in Verse</li><li><a href="https://www.amazon.in/dp/B0HJTS5WP2?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>iNotes 2027: Lens</strong></a>: Ophthalmology Postgraduate Exam Notes</li><li><a href="https://www.amazon.in/dp/B0HJT7FTPW?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>iNotes 2027: Glaucoma</strong></a>: Ophthalmology Postgraduate Exam Notes</li><li><a href="https://www.amazon.in/dp/B0HJSZGK5Y?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>iNotes 2027: Cornea and Refractive</strong></a>: Ophthalmology Postgraduate Exam Notes</li><li><a href="https://www.amazon.in/dp/B0HJT7PGT4?tag=dhavalb20-21" target="_blank" rel="noopener sponsored"><strong>iNotes 2027: Basic Science &amp; Optics</strong></a>: Ophthalmology Postgraduate Exam Notes</li>
 </ul>
 <h4 class="mt-3" style="font-size:18px;">For patients and general readers</h4>
@@ -417,7 +430,7 @@
 <p><strong>Buying from outside India?</strong> The links above go to Amazon India. Kindle editions can usually be found on your own country's Amazon store by searching the book title and "Dhaval Patel".</p>
 
 <h3 class="intl-h">Teaching: RPC Rounds</h3>
-<p><a href="ophthalmology.html">RPC Rounds</a> is a free ophthalmology blog for residents and fellows, with more than 420 pages covering the whole syllabus. Good places to start:</p>
+<p><a href="ophthalmology.html">RPC Rounds</a> is a free ophthalmology blog for residents and fellows, with more than 450 pages covering the whole syllabus. Good places to start:</p>
 <ul>
 <li><a href="start-here.html">Start Here</a>, a guide for new readers</li>
 <li><a href="revise-ophthalmology.html">Revise Ophthalmology</a>, a 189-topic syllabus checklist that saves your progress</li>
@@ -549,6 +562,9 @@
               <ul class="list-unstyled">
                 <li><a href="okat-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OKAT Decoded (3 volumes)</a></li>
                 <li><a href="frcophth-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FRCOphth Decoded (Part 1 &amp; 2)</a></li>
+                <li><a href="fico-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FICO Decoded (ICO exams)</a></li>
+                <li><a href="okap-abo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OKAP &amp; ABO Decoded</a></li>
+                <li><a href="febo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FEBO Decoded</a></li>
                 <li><a href="mykindlebooks.html#ophthalmology-books"><span class="fa fa-chevron-right mr-2"></span>For Ophthalmology Residents</a></li>
                 <li><a href="mykindlebooks.html"><span class="fa fa-chevron-right mr-2"></span>See All My Books</a></li>
               </ul>
