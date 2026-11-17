@@ -625,3 +625,8 @@ html.big-text .text p,html.big-text .text li,html.big-text .text td,html.big-tex
   body:has(#sadbhaav-sticky-bar) #sadbhaav-search-btn{bottom:76px!important}
 }
 .topbar-intl{white-space:nowrap}
+
+/* Reader-type line under titles */
+.rpc-aud{font-size:13.5px;color:#5f6b7a;margin:-6px 0 10px}
+.rpc-aud a{color:#1D4E89}
+@media print{.rpc-aud{display:none}}
