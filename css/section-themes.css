@@ -630,3 +630,20 @@ html.big-text .text p,html.big-text .text li,html.big-text .text td,html.big-tex
 .rpc-aud{font-size:13.5px;color:#5f6b7a;margin:-6px 0 10px}
 .rpc-aud a{color:#1D4E89}
 @media print{.rpc-aud{display:none}}
+
+/* Checkboxes and radio buttons inside tools must not stretch to full width */
+.dr-tool input[type=checkbox],.dr-tool input[type=radio],.dt-row input[type=checkbox],.dt-row input[type=radio]{width:auto!important;flex:0 0 auto;padding:0;margin-top:4px}
+
+/* Phones: keep table columns readable; wide tables scroll sideways instead of squeezing */
+@media (max-width:700px){
+ .text table th,.text table td,.dr-tool table th,.dr-tool table td,.intl-page table th,.intl-page table td,section .container table th,section .container table td{min-width:118px}
+ .text table td:first-child,.text table th:first-child{min-width:104px}
+ .rpc-tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:1rem}
+ .rpc-tscroll>table{margin-bottom:0}
+}
+
+.dr-out{overflow-x:auto}
+
+/* Phone menu button: readable on the dark blog header, also after scrolling */
+.theme-blog .navbar-toggler{color:#fff!important;border-color:rgba(255,255,255,.55)!important}
+.theme-blog .ftco-navbar-light.scrolled .navbar-toggler{color:#1D4E89!important;border-color:rgba(29,78,137,.45)!important}

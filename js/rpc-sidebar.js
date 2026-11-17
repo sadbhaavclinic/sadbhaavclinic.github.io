@@ -3,12 +3,12 @@
    Each item: [page file, short title]. Nothing else on the site needs changing. */
 (function () {
   var NEW = [
-    ["saved-pages.html", "My Saved Pages"],
-    ["emr-software-eye-clinic-paper-vs-electronic.html", "EMR for Eye Clinics"],
-    ["eye-clinic-medical-emergencies-crash-cart.html", "Emergencies in the Eye Clinic"],
-    ["informed-consent-eye-surgery-practice.html", "Informed Consent in Eye Practice"],
-    ["medical-records-retention-clinic.html", "Medical Records and Retention"],
-    ["starting-eye-clinic-india-registrations-licences.html", "Registrations for a Small Clinic"]
+    ["eye-drop-chart-maker.html", "Eye Drop Chart Maker"],
+    ["eye-surgery-consent-form-generator.html", "Consent Form Generator"],
+    ["cataract-surgery-estimate-iol-choice-form.html", "Surgery Estimate and Lens Choice"],
+    ["eye-clinic-registers-logs-printable.html", "Clinic Registers and Logs"],
+    ["medicine-dispensing-label-printer.html", "Medicine Label Printer"],
+    ["spectacle-prescription-generator.html", "Spectacle Prescription"]
   ];
   function ready(fn) { if (document.readyState !== "loading") fn(); else document.addEventListener("DOMContentLoaded", fn); }
   ready(function () {

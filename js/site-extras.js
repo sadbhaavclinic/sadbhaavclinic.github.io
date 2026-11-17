@@ -91,3 +91,8 @@
   if(anchor)anchor.insertAdjacentElement('afterend',d);else text.insertBefore(d,text.firstChild);
  });
 })();
+
+/* Wrap content tables so wide ones scroll sideways on phones */
+(function(){function go(){[].forEach.call(document.querySelectorAll('table'),function(t){if(t.closest('.table-responsive,.rpc-tscroll,nav,footer,.navbar'))return;var p=t.parentElement;if(p&&/(auto|scroll)/.test(getComputedStyle(p).overflowX))return;var w=document.createElement('div');w.className='rpc-tscroll';p.insertBefore(w,t);w.appendChild(t);});}
+ if(document.readyState!=='loading')go();else document.addEventListener('DOMContentLoaded',go);
+ if(window.MutationObserver){var tm;new MutationObserver(function(){clearTimeout(tm);tm=setTimeout(go,150);}).observe(document.documentElement,{childList:true,subtree:true});}})();
