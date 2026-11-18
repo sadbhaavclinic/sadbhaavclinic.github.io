@@ -647,3 +647,56 @@ html.big-text .text p,html.big-text .text li,html.big-text .text td,html.big-tex
 /* Phone menu button: readable on the dark blog header, also after scrolling */
 .theme-blog .navbar-toggler{color:#fff!important;border-color:rgba(255,255,255,.55)!important}
 .theme-blog .ftco-navbar-light.scrolled .navbar-toggler{color:#1D4E89!important;border-color:rgba(29,78,137,.45)!important}
+
+/* Footer social links with platform names (18 Nov 2026) */
+.ftco-footer-social.soc-named{display:flex;flex-wrap:wrap;gap:8px;padding:0}
+.ftco-footer-social.soc-named li{margin:0}
+.ftco-footer-social.soc-named li a{width:auto;height:auto;display:inline-flex;align-items:center;gap:7px;padding:6px 12px;border-radius:20px;font-size:13px;line-height:1.2;color:#fff!important;text-decoration:none}
+.ftco-footer-social.soc-named li a span.soc-ico{position:static;transform:none;font-size:15px;width:16px;text-align:center}
+.ftco-footer-social.soc-named li a span.soc-name{position:static;transform:none;font-size:13px}
+
+/* Language switch (English / Gujarati) */
+.lang-switch{margin:14px 0 0;font-size:14px;display:inline-flex;gap:0;border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.7);background:rgba(0,0,0,.25)}
+.lang-switch a,.lang-switch span{padding:5px 14px;color:#fff!important;text-decoration:none;line-height:1.4}
+.lang-switch [aria-current="true"]{background:#fff;color:#6B2A12!important;font-weight:600}
+.lang-switch a:hover{background:rgba(255,255,255,.2)}
+
+/* Home page: callback form and map */
+.home-visit{background:#FFF8F2}
+.home-visit h2{font-size:26px;margin-bottom:8px}
+.home-visit .cb-form{background:#fff;border:1px solid #F0DCCB;border-radius:10px;padding:20px}
+.home-visit .cb-form label{font-weight:600;font-size:14px;margin-bottom:4px}
+.home-visit .cb-form .cb-row{display:flex;gap:12px;flex-wrap:wrap}
+.home-visit .cb-form .cb-row>div{flex:1 1 180px}
+.home-visit .cb-note{font-size:12.5px;color:#6b5a50;margin:8px 0 0}
+.home-visit .cb-btn{background:#C9530C;color:#fff;border:0;border-radius:24px;padding:10px 22px;font-weight:600;width:100%;margin-top:6px}
+.home-visit .cb-btn:hover{background:#A9440A}
+.home-visit .visit-map iframe{border-radius:10px;width:100%;height:260px;border:0}
+.home-visit .visit-list{list-style:none;padding:0;margin:12px 0}
+.home-visit .visit-list li{padding:6px 0 6px 28px;position:relative;font-size:14.5px;border-bottom:1px dashed #F0DCCB}
+.home-visit .visit-list li .fa{position:absolute;left:4px;top:10px;color:#C9530C;width:16px;text-align:center}
+.home-visit .visit-btn{display:inline-block;margin-top:8px;border:1px solid #C9530C;color:#C9530C!important;border-radius:24px;padding:7px 18px;font-weight:600}
+
+/* Area pages: travel guide */
+.area-travel th{white-space:nowrap;width:30%}
+/* Home page equipment list */
+.equip-list{list-style:none;padding:0;margin:6px 0 10px}
+.equip-list li{font-size:14px;line-height:1.45;margin-bottom:4px}
+.lang-switch.ls-light{border-color:#E3C6AE;background:#fff;margin:0 0 14px}
+.lang-switch.ls-light a{color:#6B2A12!important}
+.lang-switch.ls-light [aria-current="true"]{background:#C9530C;color:#fff!important}
+.lang-switch.ls-light a:hover{background:#FBEFE6}
+/* Phones: let clinic heroes grow so buttons and the language switch are not hidden under the trust strip */
+@media (max-width:767px){
+ body.theme-clinic.refresh .hero-wrap .slider-text{height:auto!important;min-height:0!important;padding:96px 0 64px}
+ body.theme-clinic.refresh .hero-wrap-2 .slider-text{padding:84px 0 56px}
+ body.theme-clinic.refresh .hero-wrap .slider-text .col-md-9,body.theme-clinic.refresh .hero-wrap .slider-text .col-md-12{margin-bottom:0!important}
+ body.theme-clinic.refresh .hero-wrap{height:auto!important;min-height:0!important}
+ body.theme-clinic.refresh .hero-wrap .overlay{height:100%!important}
+ body.theme-clinic.refresh .cr-hero-actions .cr-btn{padding:9px 16px;font-size:14px}
+}
+@media (max-width:767px){
+ html body.theme-clinic.refresh .hero-wrap.hero-wrap-2,html body.theme-clinic.refresh .hero-wrap.hero-wrap-2 .slider-text{height:auto!important;min-height:0!important}
+ html body.theme-clinic.refresh .hero-wrap.hero-wrap-2 .slider-text{padding:84px 0 56px}
+ html body.theme-clinic.refresh .hero-wrap.hero-wrap-2 .overlay{height:100%!important}
+}
