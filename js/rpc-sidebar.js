@@ -1,30 +1,10 @@
-/* RPC Rounds sidebar helper.
-   To update "New on RPC Rounds", edit the NEW list below (newest first, max ~6).
-   Each item: [page file, short title]. Nothing else on the site needs changing. */
+/* RPC Rounds sidebar helper: highlights the current page or section in the sidebar and top menu. */
 (function () {
-  var NEW = [
-    ["perimetry-practice-visual-field-interpretation.html", "Visual Field Practice"],
-    ["oct-practice-interpretation.html", "OCT Practice"],
-    ["corneal-topography-practice-interpretation.html", "Topography Practice"],
-    ["ffa-icg-angiography-practice-interpretation.html", "FFA and ICG Practice"],
-    ["biometry-printout-practice-interpretation.html", "Biometry Practice"],
-    ["bscan-ultrasound-practice-interpretation.html", "B-Scan Practice"]
-  ];
   function ready(fn) { if (document.readyState !== "loading") fn(); else document.addEventListener("DOMContentLoaded", fn); }
   ready(function () {
     var side = document.querySelector(".rpc-side");
     if (!side) return;
     var here = (location.pathname.split("/").pop() || "index.html").replace(/\.html$/, "") + ".html";
-
-    var ul = document.getElementById("rpc-new");
-    if (ul) {
-      ul.innerHTML = "";
-      NEW.forEach(function (n) {
-        if (n[0] === here) return;
-        var li = document.createElement("li"), a = document.createElement("a");
-        a.href = n[0]; a.textContent = n[1]; li.appendChild(a); ul.appendChild(li);
-      });
-    }
 
     // Highlight the section the reader is in: the current page, or the hub in the breadcrumb.
     var targets = [here];

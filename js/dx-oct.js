@@ -5,7 +5,7 @@ var DXO=(function(){
  function G(x,c,w){return Math.exp(-Math.pow((x-c)/w,2))}
  function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
  /* ---------- macular B-scan model (x in mm, -3..3, + = nasal; depths in µm) ---------- */
- function layers(x,c){var f=c.fovea||0,xx=x-f,pit=G(xx,0,0.45)*(c.pit==null?1:c.pit),ring=G(Math.abs(xx),1.1,1.3),nas=x>0?x:0;
+ function layers(x,c){var f=c.fovea||0,xx=x-f,pit=(c.pitSharp?Math.exp(-Math.pow(Math.abs(xx)/c.pitSharp,4)):G(xx,0,0.45))*(c.pit==null?1:c.pit),ring=G(Math.abs(xx),1.1,1.3),nas=x>0?x:0;
   var th={RNFL:(8+22*nas/3)*(1-pit),GCL:46*(1-pit)*ring+4,IPL:36*(1-pit)*(0.6+0.4*ring)+3,INL:34*(1-pit*0.95)*(0.7+0.3*ring),OPL:24*(1-pit*0.6)+2,ONL:58+42*pit,IS:24,OS:22,IZ:10,RPE:20};
   (c.mods||[]).forEach(function(m){if(m.t==='inner'){var g=zone(x,m);['RNFL','GCL','IPL','INL'].forEach(function(k){th[k]*=1+(m.k-1)*g})}
    if(m.t==='onl'){var g2=zone(x,m);th.ONL*=1+(m.k-1)*g2}
@@ -25,13 +25,13 @@ var DXO=(function(){
    var srf=0,sub=[];M.forEach(function(m){if(m.t==='srf'||m.t==='shrm'||m.t==='vit'){var hh=dome(x,m);if(hh>0)sub.push([m.t,hh,m.c]);srf+=hh}});
    var photoBot=rpeTop-srf;
    /* EZ/ONL loss zones */
-   var ezLoss=0,rpeLoss=0;M.forEach(function(m){if(m.t==='ez')ezLoss=Math.max(ezLoss,zone(x,m)*(m.k||1));if(m.t==='ga'){var z=zone(x,m);ezLoss=Math.max(ezLoss,z);rpeLoss=Math.max(rpeLoss,z)}});
-   var outer=(th.IS+th.OS+th.IZ)*(1-0.85*ezLoss),onl=th.ONL*(1-(M.some(function(m){return m.t==='ga'})?0.75*rpeLoss:0.35*ezLoss));
+   var ezLoss=0,rpeLoss=0,ezThin=0;M.forEach(function(m){if(m.t==='ez'){var ze=zone(x,m)*(m.k||1);ezLoss=Math.max(ezLoss,ze);if(m.thin)ezThin=Math.max(ezThin,ze)}if(m.t==='ga')ezThin=Math.max(ezThin,zone(x,m));if(m.t==='ga'){var z=zone(x,m);ezLoss=Math.max(ezLoss,z);rpeLoss=Math.max(rpeLoss,z)}});
+   var outer=(th.IS+th.OS+th.IZ)*(1-0.85*ezThin),onl=th.ONL*(1-(M.some(function(m){return m.t==='ga'})?0.75*rpeLoss:0.35*ezThin));
    /* intraretinal fluid extra thickness */
    var cyst=[];M.forEach(function(m){if(m.t==='cysts')m.list.forEach(function(q){var hh=dome(x,{x:q[0],w:q[1],h:q[2]});if(hh>0)cyst.push([q[3]||'INL',hh])})});
-   var ex0={};cyst.forEach(function(q){ex0[q[0]]=Math.max(ex0[q[0]]||0,q[1]*1.05)});var E=0;Object.keys(ex0).forEach(function(k){E+=ex0[k]});var extra={INL:E*0.4,OPL:E*0.3,ONL:E*0.3};
+   var ex0={};M.forEach(function(m){if(m.t==='cysts')m.list.forEach(function(q){var L=q[3]||'INL',hs=q[2]*1.05*G(x,q[0],q[1]*1.25);ex0[L]=Math.max(ex0[L]||0,hs)})});var E=0;Object.keys(ex0).forEach(function(k){E+=ex0[k]});var extra={INL:E*0.4,OPL:E*0.3,ONL:E*0.3};
    /* hole */
-   var hole=0,holeW=0,lam=0;M.forEach(function(m){if(m.t==='hole'){holeW=m.w;if(Math.abs(x-(c.fovea||0))<m.w*1.25)hole=1}if(m.t==='lamellar'&&Math.abs(x-(c.fovea||0))<m.w)lam=1-Math.abs(x-(c.fovea||0))/m.w});
+   var hole=0,holeW=0,lam=0;M.forEach(function(m){if(m.t==='hole'){holeW=m.w;if(Math.abs(x-(c.fovea||0))<m.w*1.25)hole=1}if(m.t==='lamellar'&&Math.abs(x-(c.fovea||0))<m.w)lam=1-Math.pow(Math.abs(x-(c.fovea||0))/m.w,3)});var lamM=M.filter(function(m){return m.t==='lamellar'})[0],lx=Math.abs(x-(c.fovea||0));
    var seq=[['IS',outer*0.45],['ELM',3],['ONL',onl+(extra.ONL||0)],['OPL',th.OPL+(extra.OPL||0)],['INL',th.INL+(extra.INL||0)],['IPL',th.IPL],['GCL',th.GCL],['RNFL',th.RNFL]];
    /* build depth -> material list going up from photoBot */
    var bands=[],y=photoBot;
@@ -48,18 +48,20 @@ var DXO=(function(){
      M.forEach(function(m){if(m.t==='hyaloid'){var hz=m.y0+(m.curve||0)*x*x;if(Math.abs(z-hz)<3&&(m.x0==null||(x>m.x0&&x<m.x1)))v=150}
       if(m.t==='operculum'&&Math.abs(x-(c.fovea||0))<m.w&&z>m.y&&z<m.y+m.h)v=150});
      if(vmt){var vy=ilm-((Math.abs(x-(c.fovea||0))<vmt.w*1.2)?0:200);if(Math.abs(x-(c.fovea||0))>vmt.w*0.15){var hy=ilm-4-Math.pow(Math.max(0,Math.abs(x-(c.fovea||0))-vmt.w*0.15),0.7)*120;if(Math.abs(z-hy)<2.5)v=170}}
-     if(erm&&z>ilm-6)v=230}
-    else if(z<photoBot&&!(hole&&Math.abs(x-(c.fovea||0))<holeW*(0.45+0.8*(z-ilm)/(photoBot-ilm)))){v=REF.vit;for(var i=0;i<bands.length;i++){var b=bands[i];if(z>=b[1]&&z<b[2]){v=REF[b[0]];if(b[0]==='OS')v=REF.OS*(1-0.9*ezLoss);break}}
+     if(lamM&&lamM.lhep&&lx>lamM.w*0.7&&lx<lamM.w*2.4&&z>ilm-24*Math.sin(Math.PI*(lx-lamM.w*0.7)/(lamM.w*1.7)))v=125;
+     if(erm){var gap=(Math.sin(x*5.3+0.7)>0.55)?6:0,top=ilm-6-gap-(erm.th||8);if(z>top&&z<ilm-gap)v=245}}
+    else if(z<photoBot&&!(hole&&Math.abs(x-(c.fovea||0))<holeW*(0.45+0.8*(z-ilm)/(photoBot-ilm)))){v=REF.vit;for(var i=0;i<bands.length;i++){var b=bands[i];if(z>=b[1]&&z<b[2]){v=REF[b[0]];if(b[0]==='OS')v=REF.OS*(1-0.9*ezLoss);if(b[0]==='IS'||b[0]==='ELM')v=REF[b[0]]*(1-0.6*ezLoss);break}}
      if(Math.abs(z-ilm)<4)v=Math.max(v,230);
+     if(lamM&&lx>lamM.w*0.55&&lx<lamM.w*1.9){var Lo=bands.filter(function(b){return b[0]==='OPL'})[0];if(Lo&&z>Lo[1]+(Lo[2]-Lo[1])*0.35&&z<Lo[2]+6)v=10}
      /* cysts */
-     cyst.forEach(function(q){var L=bands.filter(function(b){return b[0]===q[0]})[0];if(L){var mid=(L[1]+L[2])/2;if(Math.abs(z-mid)<q[1]/2)v=8}});
+     cyst.forEach(function(q){var L=bands.filter(function(b){return b[0]===q[0]})[0];if(L){var mid=Math.max((L[1]+L[2])/2,ilm+12+q[1]/2);if(Math.abs(z-mid)<q[1]/2&&z>ilm+10&&z<photoBot-8)v=8}});
      /* exudates */
      M.forEach(function(m){if(m.t==='hex'){m.list.forEach(function(q){var L=bands.filter(function(b){return b[0]==='OPL'})[0];if(L&&Math.abs(x-q)<0.05&&Math.abs(z-L[1])<9)v=250})}
       if(m.t==='schisis'){var L2=bands.filter(function(b){return b[0]===(m.layer||'ONL')})[0];if(L2&&zone(x,m)>0.5&&z>L2[1]&&z<L2[2]){v=(Math.abs(Math.sin(x*60))<0.25)?150:10}}
       if(m.t==='hyper'&&zone(x,m)>0){var L3=bands.filter(function(b){return(m.L||['RNFL','GCL','IPL','INL']).indexOf(b[0])>=0});L3.forEach(function(b){if(z>=b[1]&&z<b[2])v=Math.min(250,v+(m.v||90)*zone(x,m))})}});
      if(c.pseudo&&z>photoBot-10)v=Math.max(v,60)}
     else if(z<photoBot){v=REF.vit}
-    else if(z<rpeTop){v=REF.vit;var acc=photoBot;for(var j=sub.length-1;j>=0;j--){}sub.forEach(function(s){if(s[0]==='srf')v=10;if(s[0]==='shrm'&&z>rpeTop-s[1])v=s[2]||170;if(s[0]==='vit'&&z>rpeTop-s[1])v=s[2]||200})}
+    else if(z<rpeTop){v=REF.vit;var acc=photoBot;for(var j=sub.length-1;j>=0;j--){}if(sub.some(function(s){return s[0]==='srf'}))v=10;sub.forEach(function(s){if(s[0]==='shrm'&&z>rpeTop-s[1])v=s[2]||190;if(s[0]==='vit'&&z>rpeTop-s[1])v=s[2]||200})}
     else if(z<bm-th.RPE+0.01&&ped>0&&z<rpeTop+th.RPE){v=REF.RPE*(1-0.9*rpeLoss)}
     else if(z<bm-th.RPE){v=pedC}
     else if(z<bm){v=REF.RPE*(1-0.9*rpeLoss);if(c.dls&&ped>0)v=REF.RPE}
@@ -82,7 +84,7 @@ var DXO=(function(){
   var nas=(c.eye==='L'?-1:1),dx=X+S/2+nas*S*(mode==='disc'?0:0.33),dy=Y+S/2,fx=X+S/2-(mode==='disc'?nas*S*0.33:0),fy=Y+S/2;
   ctx.strokeStyle='rgba(20,20,20,.9)';ctx.lineWidth=2.4;[[-1,1],[1,1],[-1,-1],[1,-1]].forEach(function(q){ctx.beginPath();ctx.moveTo(dx,dy);ctx.bezierCurveTo(dx-nas*S*0.15,dy+q[1]*S*0.3,fx-nas*S*0.05,fy+q[1]*S*0.32,fx-nas*S*0.45,fy+q[1]*S*0.16);ctx.stroke()});
   ctx.lineWidth=1.2;ctx.strokeStyle='rgba(30,30,30,.8)';for(var i=0;i<6;i++){ctx.beginPath();ctx.moveTo(dx,dy);ctx.lineTo(dx+nas*S*0.25*Math.cos(i),dy+S*0.25*Math.sin(i*1.7));ctx.stroke()}
-  ctx.fillStyle='#bdbdbd';ctx.beginPath();ctx.ellipse(dx,dy,S*0.07,S*0.085,0,0,7);ctx.fill();ctx.fillStyle='#e8e8e8';ctx.beginPath();ctx.ellipse(dx,dy,S*0.07*(c.cd||0.4),S*0.085*(c.cdv||c.cd||0.4),0,0,7);ctx.fill();
+  if(c.ppa){ctx.fillStyle='#d9d9d9';ctx.beginPath();ctx.ellipse(dx-nas*S*0.045,dy,S*0.085,S*0.1,0,0,7);ctx.fill()}var tq=c.tiltDisc?0.6:1;ctx.fillStyle='#bdbdbd';ctx.beginPath();ctx.ellipse(dx,dy,S*0.07*tq,S*0.085,c.tiltDisc?nas*0.35:0,0,7);ctx.fill();ctx.fillStyle='#e8e8e8';ctx.beginPath();ctx.ellipse(dx,dy,S*0.07*(c.cd||0.4),S*0.085*(c.cdv||c.cd||0.4),0,0,7);ctx.fill();
   ctx.fillStyle='rgba(0,0,0,.35)';ctx.beginPath();ctx.arc(fx,fy,S*0.06,0,7);ctx.fill();
   (c.slo||[]).forEach(function(s){ctx.fillStyle=s.col||'rgba(230,230,200,.8)';for(var i=0;i<(s.n||12);i++){var a=i*2.399,rr=S*(s.r||0.1)*Math.sqrt((i+0.5)/(s.n||12));ctx.beginPath();ctx.arc(fx+(s.dx||0)*S+rr*Math.cos(a),fy+(s.dy||0)*S+rr*Math.sin(a),s.sz||2,0,7);ctx.fill()}});
   ctx.restore();return{dx:dx,dy:dy,fx:fx,fy:fy}}
@@ -143,7 +145,7 @@ var DXO=(function(){
   var all=Math.round(vals.reduce(function(s,q){return s+q[1]},0)/vals.length),nAll=nm(0,360);
   var D=c.disc||{};txt(ctx,'Average RNFL thickness: '+all+' µm',470,330,{b:1});ctx.fillStyle=col(all,nAll);ctx.fillRect(700,319,22,14);
   [['Rim area',(D.rim||1.25).toFixed(2)+' mm²'],['Disc area',(D.disc||1.9).toFixed(2)+' mm²'],['Average C/D ratio',(D.cd||0.45).toFixed(2)],['Vertical C/D ratio',(D.vcd||D.cd||0.42).toFixed(2)],['Cup volume',(D.cv||0.12).toFixed(2)+' mm³'],['RNFL symmetry (with fellow eye)',D.sym||'88%']].forEach(function(l,i){txt(ctx,l[0],470,356+i*20);txt(ctx,l[1],740,356+i*20,{a:'right'})});
-  [['#bfe5c2','Within normal'],['#f7e38a','Borderline (<5%)'],['#f2b8b2','Outside normal (<1%)']].forEach(function(l,i){ctx.fillStyle=l[0];ctx.fillRect(470+i*95,488,12,10);txt(ctx,l[1],485+i*95,497,{s:9.5})});
+  [['#bfe5c2','Within normal'],['#f7e38a','Borderline (<5%)'],['#f2b8b2','Outside normal (<1%)']].forEach(function(l,i){ctx.fillStyle=l[0];ctx.fillRect(452+i*100,488,12,10);txt(ctx,l[1],467+i*100,497,{s:9})});
   txt(ctx,'RPC Rounds Diagnostics Lab · simulation for teaching',W-14,H-6,{a:'right',s:10,c:'#555'});return cv}
  /* ---------- ganglion cell report ---------- */
  var GN=[['ST',84],['S',84],['SN',85],['IN',84],['I',82],['IT',83]];

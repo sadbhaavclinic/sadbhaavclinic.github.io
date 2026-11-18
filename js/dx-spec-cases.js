@@ -81,7 +81,7 @@ var DXSC=[
  q:'After a glaucoma drainage device, the count fell by about 30% in 2 years. What should be checked?',o:['Tube position: tube touching or close to the cornea; consider repositioning into the sulcus or pars plana','Nothing; this is expected and harmless','Stop all glaucoma drops','Laser the tube'],a:0,
  steps:['Progressive, faster-than-expected cell loss.','Tubes in the anterior chamber, especially close to the cornea, increase loss.','Check with gonioscopy or AS-OCT for tube–cornea touch.','Reposition the tube into the sulcus or pars plana if needed.'],
  pearl:'Sulcus tube placement reduces endothelial loss compared with anterior chamber placement.'},
-{id:'s21',cat:'Normal and counts',title:'Poor-quality image',fields:[{eye:'R',age:72,seed:25,cd:2480,cv:22,hex:78,cct:550,blur:3.2,warn:'Low image quality: cell borders unclear'}],
+{id:'s21',cat:'Normal and counts',title:'Poor-quality image',fields:[{eye:'R',age:72,seed:25,cd:2480,cv:22,hex:78,cct:550,blur:7,warn:'Low image quality: cell borders unclear'}],
  q:'The image is blurred and the analysis looks unusually perfect. What should you do?',o:['Repeat the capture (and check corneal clarity); do not rely on these numbers','Accept the numbers','Report as polymegathism','Report as Fuchs dystrophy'],a:0,
  steps:['Cell borders are blurred; the software may misplace them.','Unusually high HEX and low CV can be artefacts of automatic analysis.','Corneal oedema, scars or poor fixation degrade images.','Repeat, use manual or centre-method counting, and check that enough cells (ideally 75–100+) were analysed.'],
  pearl:'Check the cell borders the software drew before trusting any count.'},

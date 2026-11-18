@@ -9,8 +9,8 @@ var DXT=(function(){
    if(c.is)k+=c.is*(-y/3)*0.5;
    if(cone)k+=cone.amp*G(Math.pow(x-cone.x,2)+Math.pow(y-cone.y,2),cone.w||1.4);
    if(c.pmd)k+=c.pmd.amp*G(Math.pow(y-(c.pmd.y||-2.6),2),0.9)*G(x*x,3.2)+c.pmd.amp*0.6*G(Math.pow(rad-2.9,2),0.5)/(1+Math.exp(3*(y-0.6)))-c.pmd.amp*0.35*G(y*y,1.3)*G(x*x,2);
-   if(c.oz){var dx=x-(c.oz.dx||0),dy=y-(c.oz.dy||0),q=Math.sqrt(dx*dx+dy*dy),R=c.oz.r||3;k+=c.oz.d*(q<R?-(1-Math.pow(q/R,4)):0)+Math.abs(c.oz.d)*0.45*(c.oz.d>0?1:-1)*G(Math.pow(q-R-0.4,2),0.6);}
-   if(c.island)k+=c.island*G(x*x+y*y,0.7);
+   if(c.oz){var dx=x-(c.oz.dx||0),dy=y-(c.oz.dy||0),q=Math.sqrt(dx*dx+dy*dy),R=c.oz.r||3;k+=c.oz.d*(q<R?-(1-Math.pow(q/R,4)):0)+Math.abs(c.oz.d)*(c.oz.ring||0.45)*(c.oz.d>0?1:-1)*G(Math.pow(q-R-0.4,2),0.6);}
+   if(c.island)k+=c.island*G(x*x+y*y,0.9);
    if(c.flatSup)k-=c.flatSup*G(Math.pow(y-2.8,2),1.2);
    if(c.ptg)k-=c.ptg*G(Math.pow(x-(c.ptgSide||3.5),2),1.2)*G(y*y,2.2);
    irr.forEach(function(b){k+=b[2]*G(Math.pow(x-b[0],2)+Math.pow(y-b[1],2),b[3])});

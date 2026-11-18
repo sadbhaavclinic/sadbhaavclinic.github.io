@@ -19,7 +19,7 @@ var DXI=(function(){
   serr:function(){return P('M0 -6 L60 -3 L62 0 L60 3 L0 6Z')+(function(){var s='';for(var x=6;x<58;x+=4)s+=L('M'+x+' -4 L'+x+' 4',0.6);return s})()},
   ilm:function(){return P('M0 -3 L50 -1.5 L58 -5 L62 -4 L56 0 L62 4 L58 5 L50 1.5 L0 3Z')},
   scissorStraight:function(){return P('M0 -6 L58 -1 L60 0 L0 0Z')+P('M0 0 L60 0 L58 1 L0 6Z')},
-  scissorCurved:function(){return P('M0 -6 Q34 -6 58 6 L60 7 Q34 0 0 0Z')+P('M0 0 Q34 0 60 7 L57 9 Q34 6 0 6Z')},
+  bluntCurved:function(){return P('M0 -7 Q32 -7 52 3 Q60 7 55 10 Q34 1 0 0Z')+P('M0 0 Q34 1 55 10 Q58 13 50 12 Q32 7 0 7Z')},scissorCurved:function(){return P('M0 -6 Q34 -6 58 6 L60 7 Q34 0 0 0Z')+P('M0 0 Q34 0 60 7 L57 9 Q34 6 0 6Z')},
   scissorAngled:function(){return P('M0 -5 L24 -2 L56 -20 L58 -18 L28 2 L0 0Z')+P('M0 0 L28 2 L59 -17 L57 -14 L28 5 L0 5Z')},
   blunt:function(){return P('M0 -7 L56 -3 Q64 0 56 3 L0 7Z')+L('M0 0 L58 0',0.8)},
   needleCurved:function(){return P('M0 -6 Q36 -6 56 4 Q60 8 56 9 Q36 2 0 2Z')+P('M0 2 Q36 2 56 9 Q50 10 34 7 L0 6Z')},
@@ -63,7 +63,8 @@ var DXI=(function(){
   caliper:function(){return''}
  };
  function tipAt(name,x,y,s,rot){return'<g transform="translate('+x+' '+y+') rotate('+(rot||0)+') scale('+(s||1)+')">'+(TIP[name]||TIP.plain)()+'</g>'}
- function inset(name,lab){return'<g><circle cx="770" cy="140" r="112" fill="#ffffff" stroke="#c9d6e6" stroke-width="2"/><clipPath id="ci"><circle cx="770" cy="140" r="110"/></clipPath><g clip-path="url(#ci)">'+tipAt(name,700,150,2.4)+'</g><text x="770" y="275" text-anchor="middle" font-size="14" fill="#5f6b7a" font-family="Arial">'+(lab||'Tip, magnified')+'</text></g>'}
+ function inset(name,lab){return'<g><circle cx="770" cy="140" r="112" fill="#ffffff" stroke="#c9d6e6" stroke-width="2"/><clipPath id="ci"><circle cx="770" cy="140" r="110"/></clipPath><g clip-path="url(#ci)">'+tipAt(name,700,150,2.4)+'</g>'+capT(lab||'Tip, magnified')+'</g>'}
+ function capT(t){var a=[t];if(t.length>30){var w=t.split(' '),l1='';while(w.length&&(l1+w[0]).length<=30)l1+=w.shift()+' ';a=[l1.trim(),w.join(' ')]}return a.map(function(s,i){return'<text x="770" y="'+(268+i*16)+'" text-anchor="middle" font-size="14" fill="#5f6b7a" font-family="Arial">'+s+'</text>'}).join('')}
  /* ---------- whole instruments ---------- */
  function forceps(f){var y=150,s='';s+=P('M60 '+(y-3)+' Q66 '+(y-8)+' 90 '+(y-11)+' L330 '+(y-20)+' L560 '+(y-6)+' L600 '+(y-4)+' L600 '+(y-1)+' L560 '+(y-2)+' L330 '+(y-12)+' L90 '+(y-4)+'Z');s+=P('M60 '+(y+3)+' Q66 '+(y+8)+' 90 '+(y+11)+' L330 '+(y+20)+' L560 '+(y+6)+' L600 '+(y+4)+' L600 '+(y+1)+' L560 '+(y+2)+' L330 '+(y+12)+' L90 '+(y+4)+'Z');
   s+=knurl(200,320,y-14,8)+knurl(200,320,y+14,8);if(f.lock)s+=L('M380 '+(y-14)+' L380 '+(y+14),1.4);s+=tipAt(f.tip,598,y,1,0);return s+inset(f.tip)}

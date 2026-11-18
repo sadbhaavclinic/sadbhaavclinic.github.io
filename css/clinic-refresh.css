@@ -137,3 +137,19 @@ body.theme-clinic.refresh .wrap-about .row>.col-lg-6{flex:0 0 100%;max-width:100
 @media (max-width:767.98px){body.theme-clinic.refresh .cr-trust-item b{font-size:15px}body.theme-clinic.refresh .cr-trust-item span{font-size:12px}body.theme-clinic.refresh .cr-trust-item .fa{flex-basis:34px;height:34px;font-size:15px}}
 body.theme-clinic.refresh{font-weight:400}body.theme-clinic.refresh p,body.theme-clinic.refresh li,body.theme-clinic.refresh td{font-weight:400;color:#3A2E28}
 body.theme-clinic .block-18 .text .number-plus{font-size:inherit;display:inline;font-weight:inherit;color:inherit}body.theme-clinic .block-18 .text strong.number{display:inline}
+
+/* 18 Nov 2026: light text on dark or coloured blocks (the rule above makes all p/li/td dark) */
+body.theme-clinic.refresh .ftco-footer p,body.theme-clinic.refresh .ftco-footer li,
+body.theme-clinic.refresh .ftco-appointment p,body.theme-clinic.refresh .ftco-appointment li,
+body.theme-clinic.refresh .intl-contact p,body.theme-clinic.refresh .intl-contact li,
+body.theme-clinic.refresh .ftco-intro .intro p,body.theme-clinic.refresh .ftco-intro .intro li,
+body.theme-clinic.refresh .hero-wrap p,body.theme-clinic.refresh .wrap p,
+body.theme-clinic.refresh .bg-dark p,body.theme-clinic.refresh .bg-primary p,body.theme-clinic.refresh .bg-secondary p,
+body.theme-clinic.refresh .text-white p,body.theme-clinic.refresh p.text-white{color:rgba(255,255,255,.9)}
+body.theme-clinic.refresh .ftco-appointment .services .text p{color:rgba(255,255,255,.88)}
+body.theme-clinic.refresh .ftco-intro .intro a:not(.btn){color:#fff;text-decoration:underline}
+body.theme-clinic.refresh .ftco-intro .intro h2,body.theme-clinic.refresh .ftco-intro .intro h3{color:#fff}
+body.theme-clinic.refresh .intl-contact a:not(.intl-mail):not(.btn){color:#fff}
+body.theme-clinic.refresh .sadbhaav-wa-btn{background:#128C7E!important;color:#fff!important}
+body.theme-clinic.refresh .journey-note,body.theme-clinic.refresh .faq-question span{color:#6b6b6b}
+body.theme-clinic.refresh .ftco-appointment h2 a,body.theme-clinic.refresh .ftco-appointment h3 a{color:#fff!important;text-decoration:underline}

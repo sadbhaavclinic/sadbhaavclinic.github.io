@@ -29,9 +29,9 @@ var DXP=(function(){
   blindspot:function(p){return function(x,y){var d=Math.sqrt(Math.pow(x-15,2)+y*y);return d<=p.r?p.db:0}},
   /* neuro: field side in visual-field terms. temporalR/L = temporal hemifield of right/left eye. side 'L' = left half of each eye's field */
   vhalf:function(p){return function(x,y,eye){var fx=eye==='L'?-x:x; /* fx: screen x (left negative) */
-   var side=p.side==='L'?fx<0:fx>0;if(!side)return 0;if(p.quad==='sup'&&y<0)return 0;if(p.quad==='inf'&&y>0)return 0;
+   var side=p.side==='L'?fx<0:fx>0;if(!side)return 0;if(p.quad==='sup'&&y<0)return 0;if(p.quad==='inf'&&y>0)return 0;if(p.quad==='infdense'&&y>0)return p.db*0.4;if(p.quad==='inf'&&y>0)return 0;
    if(p.spare&&Math.sqrt(x*x+y*y)<=p.spare)return 0;var g=p.incong&&eye===p.incongEye?p.incong:1;return p.db*g}},
-  bitemp:function(p){return function(x,y,eye){var fx=eye==='L'?-x:x,temporal=eye==='L'?fx<0:fx>0;if(!temporal)return 0;if(p.quad==='sup'&&y<0)return 0;return p.db*(p.quad==='supdense'&&y<0?0.45:1)}},
+  bitemp:function(p){return function(x,y,eye){var fx=eye==='L'?-x:x,temporal=eye==='L'?fx<0:fx>0;if(!temporal)return 0;if(p.quad==='sup'&&y<0)return 0;if(p.quad==='inf'&&y>0)return 0;if(p.quad==='infdense'&&y>0)return p.db*0.3;return p.db*(p.quad==='supdense'&&y<0?0.45:1)}},
   junction:function(p){return function(x,y,eye){if(eye===p.eye){var e=Math.sqrt(x*x+y*y);return e<=p.r?p.db:p.db*0.5}var fx=eye==='L'?-x:x,temporal=eye==='L'?fx<0:fx>0;return(temporal&&y>0)?p.db2:0}},
   lid:function(p){return function(x,y){return y>=(p.y||15)?p.db*(y>=21?1:0.7):0}},
   rim:function(p){return function(x,y){var e=Math.sqrt(x*x+y*y);return e>=(p.r||24)?p.db:0}},

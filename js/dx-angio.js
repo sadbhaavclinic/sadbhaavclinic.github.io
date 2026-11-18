@@ -65,7 +65,7 @@ var DXA=(function(){
    if(l.t==='block')clus(ctx,c,x,y,l.r,'0,0,0',0.8,true,Math.round(x*11+y*5+80),0);
    if(l.t==='window'){var a=icg?0.15:cl(bg*1.25*(1-0.6*T.late),0,0.95);blob(ctx,c,x,y,l.r,g(1),a,true)}
    if(l.t==='drusen')(l.list||[]).forEach(function(q){blob(ctx,c,q[0],q[1],q[2]||0.12,g(1),icg?0.05:cl(bg*0.9+0.25*T.late,0,0.9),true)});
-   if(l.t==='ped'){var a2=icg?(l.icg==null?0.05:l.icg):(0.15+0.75*sm(20,400,t));blob(ctx,c,x,y,l.r,g(1),a2*(icg?1:1),true)}
+   if(l.t==='ped'){var a2=icg?(l.icg==null?0.05:l.icg):(0.7+0.3*sm(15,240,t));blob(ctx,c,x,y,l.r,g(1),a2*(icg?1:1),true)}
    if(l.t==='stain'){blob(ctx,c,x,y,l.r,g(1),icg?0.1:(0.1+0.6*sm(30,600,t)),true)}
    if(l.t==='hypo')(l.list||[]).forEach(function(q){blob(ctx,c,q[0],q[1],q[2]||0.25,'0,0,0',icg?0.75*sm(60,600,t):0.0,true)});
    if(l.t==='hyperperm'&&icg)(l.list||[]).forEach(function(q){blob(ctx,c,q[0],q[1],q[2]||0.8,g(1),0.45*sm(120,600,t)*(1-0.4*sm(900,1800,t)),false)});
