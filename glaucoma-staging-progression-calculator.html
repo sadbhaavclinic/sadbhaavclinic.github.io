@@ -204,6 +204,7 @@
 <style id="nav-fit">@media (min-width:992px) and (max-width:1199.98px){#ftco-navbar.rpc-nav .navbar-nav>.nav-item>.nav-link{padding-left:6px!important;padding-right:6px!important;font-size:13px!important}#ftco-navbar.rpc-nav .opt-for{display:none}#ftco-navbar.rpc-nav .navbar-brand{font-size:15px!important}}</style>
 <script>try{if(localStorage.getItem("rpc-theme")==="dark")document.documentElement.setAttribute("data-theme","dark")}catch(e){}</script>
 <link rel="stylesheet" href="css/reader.css?v=20261116">
+<style id="rpc-linkfix">.text .dr-note a,.text .dr-flag a,.text .vh-ans a,.text figcaption a,.text dd a,.text th a,.text .qc-today a,.text .fl-photo-content a,.text>a,.text div>a:not([class]){color:var(--brand-secondary);text-decoration:underline;font-weight:500}</style>
 </head>
   <body class="theme-blog">
 
@@ -286,12 +287,17 @@
                 <a class="dropdown-item" href="mock-tests.html">Free Timed Mock Tests</a>
                 <a class="dropdown-item" href="spot-the-diagnosis.html">Spot the Diagnosis (226 cases)</a>
                 <a class="dropdown-item" href="viva-hot-seat.html">Viva Hot Seat (123 stations)</a>
+                <a class="dropdown-item" href="ophthalmology-osce-stations.html">OSCE Spot Stations (87 stations)</a>
+                <a class="dropdown-item" href="ophthalmology-practical-exam-case-kit.html">MS/DNB Practical Case Kit</a>
+                <a class="dropdown-item" href="ophthalmology-theory-short-notes.html">Theory Short Notes</a>
                 <a class="dropdown-item" href="diagnostics-lab.html">Diagnostics Lab (fields, OCT, FFA and more)</a>
                 <a class="dropdown-item" href="ophthalmic-instruments-atlas.html">Instruments Atlas (viva)</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="aios-okat-exam-guide.html">AIOS-OKAT Exam Guide</a>
                 <a class="dropdown-item" href="ophthalmology-exams-abroad.html">Exams Abroad (UK, US, Gulf, ICO)</a>
                 <a class="dropdown-item" href="decoded-series-ophthalmology-exam-books.html">Decoded Question Banks</a>
+                <a class="dropdown-item" href="which-exam-book-chooser.html">Which Book for Which Exam?</a>
+                <a class="dropdown-item" href="learn-ophthalmology-differently-books.html">Cases, Puzzles &amp; Verse Books</a>
                 <a class="dropdown-item" href="ophthalmology-thesis-topics.html">Thesis Topics</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="eyeriddles.html">Eye Riddles</a>
@@ -306,6 +312,7 @@
                 <a class="dropdown-item" href="optometry.html">Optometrists (B.Optom)</a>
                 <a class="dropdown-item" href="medical-students.html">MBBS Students</a>
                 <a class="dropdown-item" href="eye-health-guides-for-patients.html">Patients &amp; Families</a>
+                <a class="dropdown-item" href="international-students-ophthalmology-optometry.html">International Students (UK, US, ANZ)</a>
                 <div class="dropdown-divider"></div>
                 <h6 class="dropdown-header">Clinic toolkit</h6>
                 <a class="dropdown-item" href="desk-reference.html">Clinic Desk Reference</a>
@@ -358,6 +365,7 @@
 <style>.cx-grid{display:flex;flex-wrap:wrap;gap:10px 14px}.cx-grid>div{flex:1 1 160px;min-width:140px}.cx-chk input{width:auto!important;margin:0 6px 0 0;vertical-align:-2px}.cx-chk label{display:inline;font-weight:400;margin:0}.cx-chk{margin:4px 0}.cx-res{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px}.cx-res th,.cx-res td{border:1px solid #d5e3f3;padding:6px 8px;background:#fff;text-align:left;vertical-align:top}.cx-res th{background:#eef4fb;width:42%}.cx-ok{color:#1e7b3a;font-weight:600}.cx-bad{color:#b3261e;font-weight:600}.cx-mid{color:#9a5b00;font-weight:600}.cx-btn{border:1px solid #1D4E89;background:#1D4E89;color:#fff;border-radius:4px;padding:6px 12px;font-size:14px;cursor:pointer;margin:8px 8px 0 0}@media print{body *{visibility:hidden}.cx-print,.cx-print *{visibility:visible}.cx-print{position:absolute;left:0;top:0;width:100%}}</style><p class="lead">Two tools in one. First, stage a Humphrey 24-2 or 30-2 field using the Hodapp-Parrish-Anderson (HPA) criteria. Second, enter mean deviation (MD) values from serial reliable fields to calculate the rate of progression and project the MD over the patient's expected lifetime, which helps decide how aggressive treatment should be.</p><h3 class="mt-4" style="color: var(--brand-accent);" id="hpa">1. Field severity (HPA)</h3><div class="dr-tool dr-note"><div class="cx-grid"><div><label for="gMD">Mean deviation (dB)</label><input id="gMD" type="number" step="0.01" value="-4.5"></div><div><label for="g5">Points below 5% on pattern deviation</label><input id="g5" type="number" step="1" value="10"></div><div><label for="g1">Points below 1% on pattern deviation</label><input id="g1" type="number" step="1" value="4"></div><div style="flex:2 1 260px;"><label for="gC">Central 5 degrees (4 central points)</label><select id="gC"><option value="0">All points 15 dB or more</option><option value="1">A point below 15 dB in one hemifield only</option><option value="2">Points below 15 dB in both hemifields, or any point at 0 dB</option></select></div></div><div class="dr-out" id="gOut"></div></div><h3 class="mt-4" style="color: var(--brand-accent);" id="rate">2. Rate of progression (MD slope)</h3><p>Enter at least three reliable fields, ideally five or more over two or more years. Use the patient's age at each test.</p><div class="dr-tool dr-note"><div id="gRows"></div><button type="button" class="cx-btn" id="gAdd">Add a field</button><div class="cx-grid" style="margin-top:8px;"><div><label for="gNow">Current age (years)</label><input id="gNow" type="number" value="62"></div><div><label for="gLE">Expected lifespan (years)</label><input id="gLE" type="number" value="85"></div></div><div class="dr-out" id="rOut"></div></div><script>(function(){function $(i){return document.getElementById(i)}function n(i){var v=parseFloat($(i).value);return isNaN(v)?null:v}function hpa(){var md=n("gMD"),p5=n("g5"),p1=n("g1"),c=+$("gC").value,st=0,why=[];if(md!==null&&md<-12){st=2;why.push("MD worse than -12 dB")}else if(md!==null&&md<=-6){st=Math.max(st,1);why.push("MD -6 to -12 dB")}if(p5!==null&&p5>37){st=2;why.push("more than half the points (over 37) below 5%")}else if(p5!==null&&p5>18){st=Math.max(st,1);why.push("19 to 37 points below 5%")}if(p1!==null&&p1>20){st=2;why.push("more than 20 points below 1%")}else if(p1!==null&&p1>=10){st=Math.max(st,1);why.push("10 to 20 points below 1%")}if(c==2){st=2;why.push("central involvement in both hemifields or a 0 dB point")}else if(c==1){st=Math.max(st,1);why.push("central point below 15 dB in one hemifield")}var L=["Early defect","Moderate defect","Severe defect"],C=["cx-ok","cx-mid","cx-bad"];$("gOut").innerHTML="<table class=\"cx-res\"><tr><th>HPA stage</th><td><span class=\""+C[st]+"\">"+L[st]+"</span></td></tr><tr><th>Deciding criteria</th><td>"+(why.length?why.join("; "):"all criteria within early limits")+"</td></tr></table>"}["gMD","g5","g1","gC"].forEach(function(i){$(i).addEventListener("input",hpa);$(i).addEventListener("change",hpa)});hpa();var R=[[56,-1.2],[58,-1.9],[60,-2.6],[62,-3.4]];function row(a,m,k){return "<div class=\"cx-grid\" style=\"margin-bottom:6px;\"><div><label>Age at field "+(k+1)+"</label><input type=\"number\" step=\"0.1\" class=\"ra\" value=\""+a+"\"></div><div><label>MD (dB)</label><input type=\"number\" step=\"0.01\" class=\"rm\" value=\""+m+"\"></div></div>"}function draw(){$("gRows").innerHTML=R.map(function(x,k){return row(x[0],x[1],k)}).join("");[].forEach.call($("gRows").querySelectorAll("input"),function(e){e.addEventListener("input",rate)});rate()}$("gAdd").addEventListener("click",function(){R=[].map.call($("gRows").querySelectorAll(".cx-grid"),function(g){return [g.querySelector(".ra").value,g.querySelector(".rm").value]});R.push(["",""]);draw()});function rate(){var A=[],M=[];[].forEach.call($("gRows").querySelectorAll(".cx-grid"),function(g){var a=parseFloat(g.querySelector(".ra").value),m=parseFloat(g.querySelector(".rm").value);if(!isNaN(a)&&!isNaN(m)){A.push(a);M.push(m)}});if(A.length<3){$("rOut").innerHTML="<p>Enter at least three fields.</p>";return}var k=A.length,ma=A.reduce(function(s,x){return s+x},0)/k,mm=M.reduce(function(s,x){return s+x},0)/k,sxy=0,sxx=0;for(var i=0;i<k;i++){sxy+=(A[i]-ma)*(M[i]-mm);sxx+=(A[i]-ma)*(A[i]-ma)}if(sxx===0){$("rOut").innerHTML="<p>Ages must differ.</p>";return}var b=sxy/sxx,a0=mm-b*ma,now=n("gNow")||A[k-1],le=n("gLE")||85,mdNow=a0+b*now,mdEnd=a0+b*le,span=A[k-1]-A[0];var cat=b>=-0.5?["Slow","cx-ok"]:b>=-1?["Moderate","cx-mid"]:b>=-2?["Fast","cx-bad"]:["Catastrophic","cx-bad"],yrs=b<0?((-20-mdNow)/b):null;$("rOut").innerHTML="<table class=\"cx-res\"><tr><th>Rate of progression</th><td><span class=\""+cat[1]+"\">"+b.toFixed(2)+" dB per year ("+cat[0]+")</span></td></tr><tr><th>Follow-up span</th><td>"+span.toFixed(1)+" years, "+k+" fields"+(span<2||k<5?" <span class=\"cx-mid\">(estimate is less reliable; aim for 5 or more fields over 2 or more years)</span>":"")+"</td></tr><tr><th>Estimated MD now (age "+now+")</th><td>"+mdNow.toFixed(1)+" dB</td></tr><tr><th>Projected MD at age "+le+"</th><td><b>"+mdEnd.toFixed(1)+" dB</b>"+(mdEnd<-20?" <span class=\"cx-bad\">severe loss likely within lifetime: consider stepping up treatment</span>":"")+"</td></tr>"+(yrs!==null&&yrs>0?"<tr><th>Years until MD reaches -20 dB at this rate</th><td>"+yrs.toFixed(1)+"</td></tr>":"")+"</table>"}["gNow","gLE"].forEach(function(i){$(i).addEventListener("input",rate)});draw()})();</script><h3 class="mt-4" style="color: var(--brand-accent);" id="use">How to use the result</h3><ul><li>MD slope is influenced by cataract; pattern-based or VFI trend analysis on the perimeter is less affected. Use both.</li><li>Commonly used bands: slower than -0.5 dB/year slow, -0.5 to -1 moderate, -1 to -2 fast, faster than -2 catastrophic.</li><li>What matters is whether the patient will reach functional loss in their lifetime: a slow rate in a young patient can still be dangerous.</li><li>Confirm progression with repeat fields and OCT before changing treatment; then revise the <a href="target-iop-glaucoma.html">target IOP</a>.</li></ul><p class="text-muted" style="font-size:13px;">For learning and quick checks only. Confirm any result that changes treatment against your own examination, current guidelines and local protocols.</p><h3 class="mt-4" style="color: var(--brand-accent);">Key sources</h3><ul style="font-size:14px;"><li>Hodapp E, Parrish RK II, Anderson DR. Clinical Decisions in Glaucoma. Mosby; 1993</li><li>Chauhan BC, Garway-Heath DF, Goni FJ, et al. Practical recommendations for measuring rates of visual field change in glaucoma. Br J Ophthalmol. 2008;92:569-573</li><li>European Glaucoma Society. Terminology and Guidelines for Glaucoma. 5th ed. 2020</li></ul>
 <nav class="me-series calc-strip" aria-label="Eye calculators"><p><span class="fa fa-calculator" aria-hidden="true"></span> <strong>Eye calculators</strong> &middot; <a href="eye-calculators.html">see all</a></p><div><a href="eye-calculators.html">All calculators</a><a href="iol-power-calculator-srkt-holladay-hoffer-haigis.html">IOL power</a><a href="refraction-calculators.html">Refraction</a><a href="contact-lens-calculator.html">Contact lens</a><a href="spectacle-transposition-tool.html">Transposition &amp; vertex</a><a href="visual-acuity-conversion-chart.html">VA conversion</a><a href="iol-formula-comparison.html">SRK II</a><a href="low-vision-aids-calculator.html">Low vision aids</a><a href="visual-disability-certificate-calculator.html">Disability certificate</a><a href="lricalculator.html">LRI</a><a href="biostatistics-for-ophthalmologists.html">2 × 2 table</a><a href="refractive-surgery-calculator.html">Refractive surgery</a><a href="rop-screening-calculator.html">ROP screening</a><a href="hydroxychloroquine-dose-calculator.html">Hydroxychloroquine</a><a href="intraocular-gas-calculator.html">Intraocular gas</a><a href="sia-toric-calculator.html">SIA and toric</a><a href="sample-size-calculator.html">Sample size</a><a href="diabetic-retinopathy-grading-follow-up-calculator.html">DR grading</a><a href="glaucoma-staging-progression-calculator.html" class="on" aria-current="page">Glaucoma staging</a><a href="eye-emergency-drug-dose-calculator.html">Emergency doses</a><a href="steroid-eye-drop-taper-schedule-maker.html">Steroid taper</a><a href="anti-vegf-injection-planner.html">Anti-VEGF planner</a><a href="keratometry-radius-diopter-converter.html">Keratometry</a><a href="eye-icd-10-pcs-codes.html">ICD and PCS codes</a></div></nav>
 
+<div class="dr-note rpc-dxlink" style="font-size:15px;padding:10px 14px"><span class="fa fa-flask mr-1" aria-hidden="true"></span><b>Practise reading the tests:</b> try the simulated cases on <a href="biometry-printout-practice-interpretation.html" style="color:var(--brand-secondary,#1D4E89);text-decoration:underline;font-weight:500">biometry printouts</a> in the <a href="diagnostics-lab.html" style="color:var(--brand-secondary,#1D4E89);text-decoration:underline;font-weight:500">Diagnostics Lab</a>, with learn, quiz and test modes and step-by-step explanations.</div>
 <div class="rpc-cta" style="background:#fdf6ee;border-left:4px solid var(--brand-accent);padding:16px 20px;margin:28px 0;border-radius:4px;">
   <p style="margin:0;font-size:14.5px;">📘 <strong>Want more exam-ready material?</strong> See <a href="https://www.amazon.in/dp/B0HGLGNJ4N?tag=dhavalb20-21" target="_blank" rel="noopener"><em>Most Commons in Ophthalmology</em></a> on Kindle, or browse all <a href="mykindlebooks.html">my books</a>.</p>
 </div>
@@ -388,18 +396,16 @@
 </div><!-- .col-md-8 -->
 <div class="col-lg-3 sidebar pl-lg-5">
 <aside class="rpc-side" aria-label="Explore RPC Rounds">
-<script async src="https://cse.google.com/cse.js?cx=8ff4eb218d78bd195"></script>
-<div class="rs-search"><div class="gcse-search" enableAutoComplete="true"></div></div>
 <div class="rs-box rs-start">
   <h6>Start exploring</h6>
   <div class="rs-tiles">
     <a href="start-here.html"><span class="fa fa-compass"></span><b>Start here</b><small>New reader? Begin here</small></a>
-    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 534 pages</small></a>
+    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 558 pages</small></a>
     <a href="desk-reference.html"><span class="fa fa-clipboard"></span><b>Desk reference</b><small>Charts, doses, calculators</small></a>
     <a href="mock-tests.html"><span class="fa fa-pencil-square-o"></span><b>Mock tests</b><small>Free, timed, explained</small></a>
   </div>
 </div>
-<a class="sidebar-okat sidebar-dec" href="decoded-series-ophthalmology-exam-books.html" aria-label="The Decoded series of exam books by Dr Dhaval Patel">
+<a class="sidebar-okat sidebar-dec sidebar-learn" href="learn-ophthalmology-differently-books.html" aria-label="Four books that teach ophthalmology differently, by Dr Dhaval Patel"> <div class="so-covers"><img src="images/sherlocks-eye-clinic-thumb.jpg" alt="" width="200" height="320" loading="lazy"><img src="images/eye-court-ophthal-adalat-thumb.jpg" alt="" width="200" height="320" loading="lazy"><img src="images/ophthalmind-thumb.jpg" alt="" width="200" height="320" loading="lazy"></div> <strong>New: learn ophthalmology differently</strong> <span>Detective cases, courtroom trials, 1,188 puzzles and ophthalmology in verse. Free samples inside.</span><br> <em>See the four books &rarr;</em> </a> <a class="sidebar-okat sidebar-dec" href="decoded-series-ophthalmology-exam-books.html" aria-label="The Decoded series of exam books by Dr Dhaval Patel">
   <div class="so-covers"><img src="images/fico-decoded-thumb.jpg" alt="" width="200" height="320" loading="lazy"><img src="images/okap-abo-decoded-thumb.jpg" alt="" width="200" height="320" loading="lazy"><img src="images/febo-decoded-thumb.jpg" alt="" width="200" height="320" loading="lazy"></div>
   <strong>New: FICO, OKAP &amp; ABO, FEBO Decoded</strong>
   <span>Question banks for the ICO, US board and European board exams, plus FRCOphth Part 1 and 2. Every option explained.</span><br>
@@ -417,26 +423,26 @@
     <li><a href="cornea.html">Cornea</a> <span class="rs-sep">&middot;</span> <a href="refractive-surgery-residents.html">Refractive</a><a class="rs-n" href="resident-learning-dashboard.html?s=C" title="See all 57 pages in the Learning Dashboard">57</a></li>
     <li><a href="lens.html">Lens &amp; Cataract</a><a class="rs-n" href="resident-learning-dashboard.html?s=L" title="See all 56 pages in the Learning Dashboard">56</a></li>
     <li><a href="glaucoma.html">Glaucoma</a><a class="rs-n" href="resident-learning-dashboard.html?s=G" title="See all 42 pages in the Learning Dashboard">42</a></li>
-    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 81 pages in the Learning Dashboard">81</a></li>
+    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 82 pages in the Learning Dashboard">82</a></li>
     <li><a href="uvea.html">Uvea</a><a class="rs-n" href="resident-learning-dashboard.html?s=U" title="See all 26 pages in the Learning Dashboard">26</a></li>
     <li><a href="neurophthalmology.html">Neuro-ophthalmology</a><a class="rs-n" href="resident-learning-dashboard.html?s=N" title="See all 40 pages in the Learning Dashboard">40</a></li>
     <li><a href="pediatricophthalmology.html">Paediatrics</a> <span class="rs-sep">&middot;</span> <a href="strabismus.html">Strabismus</a><a class="rs-n" href="resident-learning-dashboard.html?s=P" title="See all 48 pages in the Learning Dashboard">48</a></li>
     <li><a href="oculoplasty.html">Oculoplasty &amp; Orbit</a><a class="rs-n" href="resident-learning-dashboard.html?s=O" title="See all 26 pages in the Learning Dashboard">26</a></li>
     <li><a href="oculartrauma.html">Ocular Trauma</a><a class="rs-n" href="resident-learning-dashboard.html?s=T" title="See all 13 pages in the Learning Dashboard">13</a></li>
-    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 76 pages in the Learning Dashboard">76</a></li>
-    <li><a href="basicsciences.html">Basic Sciences</a><a class="rs-n" href="resident-learning-dashboard.html?s=B" title="See all 45 pages in the Learning Dashboard">45</a></li>
-    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 179 pages in the Learning Dashboard">179</a></li>
+    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 79 pages in the Learning Dashboard">79</a></li>
+    <li><a href="basicsciences.html">Basic Sciences</a><a class="rs-n" href="resident-learning-dashboard.html?s=B" title="See all 46 pages in the Learning Dashboard">46</a></li>
+    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 198 pages in the Learning Dashboard">198</a></li>
   </ul>
   <p class="rs-k">Browse by type</p>
   <div class="rs-chips">
-    <a href="resident-learning-dashboard.html?u=H">High-yield <i>181</i></a>
-    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>256</i></a>
+    <a href="resident-learning-dashboard.html?u=H">High-yield <i>187</i></a>
+    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>272</i></a>
     <a href="resident-learning-dashboard.html?u=K">Classifications <i>59</i></a>
-    <a href="resident-learning-dashboard.html?u=I">Imaging <i>51</i></a>
+    <a href="resident-learning-dashboard.html?u=I">Imaging <i>52</i></a>
     <a href="resident-learning-dashboard.html?u=S">Surgical <i>112</i></a>
     <a href="resident-learning-dashboard.html?u=E">Emergencies <i>29</i></a>
     <a href="resident-learning-dashboard.html?u=A">Calculators <i>51</i></a>
-    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>70</i></a>
+    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>73</i></a>
   </div>
 </div>
 <div class="rs-box">
@@ -525,6 +531,7 @@
              <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Empanelment</h2>
               <ul class="list-unstyled">
+                <li><a href="cashless-facilities.html#gic"><span class="fa fa-chevron-right mr-2"></span>GIC cashless insurance</a></li>
                 <li><a href="https://www.ongcindia.com/wps/wcm/connect/ongcindia/home/"><span class="fa fa-chevron-right mr-2"></span>ONGC</a></li>            
               </ul>
               <h2 class="ftco-heading-2">Ophthalmology Blog</h2>
@@ -539,6 +546,10 @@
                 <li><a href="okap-abo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OKAP &amp; ABO Decoded</a></li>
                 <li><a href="febo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FEBO Decoded</a></li>
                 <li><a href="optom-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OptomDecoded (optometry)</a></li>
+                <li><a href="sherlocks-eye-clinic.html"><span class="fa fa-chevron-right mr-2"></span>Sherlock’s Eye Clinic (case files)</a></li>
+                <li><a href="eye-court-ophthal-adalat.html"><span class="fa fa-chevron-right mr-2"></span>The Eye Court (differentials)</a></li>
+                <li><a href="ophthalmind.html"><span class="fa fa-chevron-right mr-2"></span>OphthalMIND (puzzles)</a></li>
+                <li><a href="ophthal-gita.html"><span class="fa fa-chevron-right mr-2"></span>Ophthal GITA (in verse)</a></li>
                 <li><a href="mykindlebooks.html#ophthalmology-books"><span class="fa fa-chevron-right mr-2"></span>For Ophthalmology Residents</a></li>
                 <li><a href="mykindlebooks.html"><span class="fa fa-chevron-right mr-2"></span>See All My Books</a></li>
               </ul>
@@ -609,5 +620,6 @@
 <script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){});});}</script>
 <script src="js/site-extras.js?v=20261106" defer></script>
 <script src="js/reader.js?v=20261116" defer></script>
+<script src="js/amazon-store.js?v=20261123" defer></script>
 </body>
 </html>

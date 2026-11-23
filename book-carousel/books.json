@@ -8,6 +8,14 @@
     "featured": true
   },
   {
+    "title": "Sherlock’s Eye Clinic",
+    "subtitle": "179 detective-style ophthalmology case files",
+    "cover": "images/sherlocks-eye-clinic-cover.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0GX2SPV68?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": true
+  },
+  {
     "title": "The Microbial Underworld",
     "subtitle": "A Story Based Journey Through Microbiology and Infectious Diseases",
     "cover": "images/cobmicro.jpg",
@@ -249,8 +257,8 @@
   },
   {
     "title": "OphthalMIND",
-    "subtitle": "The ophthalmology you studied, and ophthalmology you didn't?",
-    "cover": "images/ophthalmind.jpg",
+    "subtitle": "1,188 puzzles: the ophthalmology you studied, and the ophthalmology you didn’t",
+    "cover": "images/ophthalmind-cover.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJ8GB9WY?tag=dhavalb20-21",
     "category": "Ophthalmology Students",
     "featured": true
@@ -264,9 +272,9 @@
     "featured": true
   },
   {
-    "title": "The Eye Court - Ophthal Adalat",
-    "subtitle": "Courtroom drama approach to ophthalmology diagnosis",
-    "cover": "images/theeyecourt.jpg",
+    "title": "The Eye Court: Ophthal Adalat",
+    "subtitle": "160 differential diagnoses tried in a courtroom",
+    "cover": "images/eye-court-ophthal-adalat-cover.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKHK1PW2?tag=dhavalb20-21",
     "category": "Ophthalmology Students",
     "featured": true
@@ -289,11 +297,11 @@
   },
   {
     "title": "Ophthal GITA",
-    "subtitle": "A Complete Course in Ophthalmology, in Verse",
-    "cover": "images/ophthalgita.jpg",
+    "subtitle": "A complete course in ophthalmology, in verse",
+    "cover": "images/ophthal-gita-cover.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HKJZTYJF?tag=dhavalb20-21",
     "category": "Ophthalmology Students",
-    "featured": false
+    "featured": true
   },
   {
     "title": "iNotes 2027: Lens",

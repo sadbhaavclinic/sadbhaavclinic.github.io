@@ -652,7 +652,7 @@
  {
   "title": "Intravitreal & Intracameral Drug Doses: Antibiotics, Antivirals, Anti-VEGF",
   "url": "ivdosage.html",
-  "desc": "Checked intravitreal, intracameral, intrastromal and subconjunctival doses: vancomycin, ceftazidime, voriconazole, ganciclovir, faricimab, aflibercept 8 mg."
+  "desc": "Checked intravitreal, intracameral, intrastromal (intracorneal) and subconjunctival doses: vancomycin, ceftazidime, voriconazole, natamycin, ganciclovir, clindamycin, methotrexate, faricimab, aflibercept 8 mg."
  },
  {
   "title": "Intravitreal Implants: Ozurdex, Iluvien, Yutiq, Susvimo & Encelto",
@@ -3608,5 +3608,125 @@
   "title": "Which Book for Which Exam? OKAT, MS/DNB, FICO, FRCOphth, OKAP, ABO, FEBO and Optometry",
   "url": "which-exam-book-chooser.html",
   "desc": "Choose your ophthalmology or optometry exam (AIOS-OKAT, MS/DNB, ICO, FRCOphth, OKAP, ABO, FEBO, NBEO, OCANZ, OEBC) and see the matching question bank, what it contains and the free practice available on RPC Rounds."
+ },
+ {
+  "title": "OKAP Study Plan: A 24-Week Schedule Across the 13 BCSC Sections",
+  "url": "okap-study-plan.html",
+  "desc": "A practical 24-week OKAP study plan for ophthalmology residents: exam format, what each of the 13 BCSC sections tests, a week-by-week schedule, how to use practice questions, and tips by PGY year."
+ },
+ {
+  "title": "ABO Written Qualifying Exam (WQE) Study Plan: A 20-Week Schedule Weighted by the Content Outline",
+  "url": "abo-written-qualifying-exam-study-plan.html",
+  "desc": "A 20-week study plan for the American Board of Ophthalmology Written Qualifying Exam: format, how to weight your time by the content outline, how board questions are written, and moving on to the oral exam."
+ },
+ {
+  "title": "NBEO on a Budget: A 16-Week Part I ABS Study Plan for Optometry Students",
+  "url": "nbeo-study-plan-on-a-budget.html",
+  "desc": "How to prepare for the NBEO optometry boards without overspending: Part I ABS, Part II PAM and Part III PEPS explained, a 16-week Part I study plan, multiple-response question tips and which resources are worth paying for."
+ },
+ {
+  "title": "Ophthalmology Rotation Guide for Medical Students: Eye Exam, Consults, Drop Colors and the Match",
+  "url": "ophthalmology-rotation-guide-medical-students.html",
+  "desc": "A survival guide for medical students on an ophthalmology rotation: the eye exam in order, presenting consults, common consults, drop cap colors, emergencies, what to read and a short guide to the SF Match."
+ },
+ {
+  "title": "Part 1 FRCOphth: Exam Format, 14-Week Revision Plan and High-Yield Facts by Topic",
+  "url": "frcophth-part-1-high-yield.html",
+  "desc": "Part 1 FRCOphth guide for UK and international candidates: two 90-question online papers, a 14-week revision plan, and high-yield facts in anatomy, embryology, physiology, pathology, genetics, pharmacology, optics and statistics."
+ },
+ {
+  "title": "RCOphth Refraction Certificate: Station-by-Station Guide to Retinoscopy, Subjective Refraction, Binocular Balance and Lens Neutralisation",
+  "url": "refraction-certificate-guide.html",
+  "desc": "How to pass the Royal College of Ophthalmologists Refraction Certificate: the 10 OSCE stations, retinoscopy routine, sphere and cylinder refinement, binocular balance, lens neutralisation, common errors and a six-week plan."
+ },
+ {
+  "title": "UK Optometry OSCE (Scheme for Registration): Station Types, Marking and Practice Routines",
+  "url": "uk-optometry-osce-guide.html",
+  "desc": "How to prepare for the College of Optometrists Scheme for Registration OSCE: 17 five-minute stations, the four station categories, how communication and objectives are marked, referral urgency and practice stations."
+ },
+ {
+  "title": "RANZCO Exams Guide: Ophthalmic Sciences, OBCK, Ophthalmic Pathology and RACE Preparation",
+  "url": "ranzco-exams-guide.html",
+  "desc": "A guide to the Royal Australian and New Zealand College of Ophthalmologists training exams: COPEM, anatomy, optics, physiology, OBCK, ophthalmic pathology and RACE, with a preparation plan and resources."
+ },
+ {
+  "title": "For International Students: Ophthalmology and Optometry Exam Guides for the USA, UK, Canada, Australia and New Zealand",
+  "url": "international-students-ophthalmology-optometry.html",
+  "desc": "Free exam guides and study plans for ophthalmology and optometry students outside India: OKAP, ABO, NBEO, FRCOphth Part 1, Refraction Certificate, UK optometry OSCE, RANZCO and more, with free mock tests."
+ },
+ {
+  "title": "UKMLA and PLAB Ophthalmology: Eye Conditions by Presentation, Red Flags, Referral Urgency and Practice Questions",
+  "url": "ukmla-ophthalmology.html",
+  "desc": "Ophthalmology for the UK Medical Licensing Assessment (UKMLA AKT and PLAB): eye conditions by presentation with key features, first steps and referral urgency, plus practice questions."
+ },
+ {
+  "title": "Ophthalmology for Medical Students: The RCOphth Core Curriculum as a Revision Checklist",
+  "url": "ophthalmology-for-medical-students-core-curriculum.html",
+  "desc": "The Royal College of Ophthalmologists undergraduate core curriculum as a revision checklist: conditions by presentation (red eye, gradual and sudden vision loss, double vision), brief topics and clinical skills, with tips."
+ },
+ {
+  "title": "Direct Ophthalmoscopy for Medical Students: Technique, How to Present and a Practice Gallery of Fundus Drawings",
+  "url": "direct-ophthalmoscopy-practice.html",
+  "desc": "Learn direct ophthalmoscopy: step-by-step technique, how to present findings, and a practice gallery of original fundus drawings (normal, diabetic and hypertensive retinopathy, papilloedema, optic atrophy, CRAO, CRVO, glaucoma)."
+ },
+ {
+  "title": "Eye OSCE Stations for Medical Students: Acuity, Pupils, Eye Movements, Fields, Fundoscopy, Red Eye History and Explaining Cataract Surgery",
+  "url": "eye-osce-stations-medical-students.html",
+  "desc": "Seven eye OSCE stations for medical school finals and the UKMLA: candidate instructions, mark-sheet checklists and likely examiner questions for acuity, pupils, eye movements, visual fields, fundoscopy, red eye history and explaining cataract surgery."
+ },
+ {
+  "title": "USMLE Ophthalmology High-Yield: Visual Pathway, Pupils, Drugs, Systemic Disease and Eye Emergencies",
+  "url": "usmle-ophthalmology-high-yield.html",
+  "desc": "High-yield ophthalmology for USMLE Step 1 and Step 2 CK: visual pathway lesions, pupils and cranial nerves, glaucoma drug mechanisms, eye signs of systemic disease, emergencies and practice questions."
+ },
+ {
+  "title": "Working as an Ophthalmologist in the UK: GMC Registration, Job Routes, Portfolio Pathway and FRCOphth for International Doctors",
+  "url": "working-as-ophthalmologist-in-uk.html",
+  "desc": "Guide for international ophthalmologists moving to the UK: GMC registration, clinical fellow, SAS and training routes, the Portfolio Pathway (formerly CESR) to the Specialist Register, College sponsorship and where FRCOphth exams fit."
+ },
+ {
+  "title": "US Ophthalmology Residency for International Medical Graduates: Steps, Match Data and Realistic Alternatives",
+  "url": "us-ophthalmology-residency-for-international-graduates.html",
+  "desc": "An honest guide for international medical graduates applying to US ophthalmology residency: ECFMG and USMLE, US clinical experience, research, SF Match, match data and alternative routes."
+ },
+ {
+  "title": "UK vs US Eye Guidelines Compared: NICE and NHS vs AAO and ADA for Glaucoma, Diabetic Retinopathy, Cataract and AMD",
+  "url": "nice-vs-aao-eye-guidelines-compared.html",
+  "desc": "Side-by-side tables of UK (NICE, NHS screening) and US (AAO Preferred Practice Patterns, ADA) guidance for glaucoma and ocular hypertension, diabetic retinopathy screening, cataract and AMD."
+ },
+ {
+  "title": "Part 2 FRCOphth Oral Exam: Structured Viva and OSCE Format, Marking, 12-Week Plan and Sample Viva Questions",
+  "url": "frcophth-part-2-oral-guide.html",
+  "desc": "Guide to the Part 2 FRCOphth Oral: five 10-minute structured viva stations, six OSCE stations, how passing works, international centres, a 12-week preparation plan and sample viva questions."
+ },
+ {
+  "title": "Ophthalmology Fellowship Application Kit: CV Structure, Portfolio Checklist, Cover Letter and Interview Questions",
+  "url": "ophthalmology-fellowship-application-kit.html",
+  "desc": "A practical kit for ophthalmology fellowship applications in the UK, US, Australia or at home: CV structure, portfolio checklist, cover letter outline, common interview questions and a timeline."
+ },
+ {
+  "title": "Sherlock’s Eye Clinic: 179 Detective-Style Ophthalmology Case Files (Free Sample Cases)",
+  "url": "sherlocks-eye-clinic.html",
+  "desc": "Sherlock’s Eye Clinic by Dr Dhaval Patel: 179 ophthalmology cases told as detective stories, with clues in stages, a deduction pause, Holmes’s reveal and Watson’s management notes. Read two free cases."
+ },
+ {
+  "title": "OphthalMIND: 1,188 Ophthalmology Puzzles for PG Exams and Quizzes (Free Sample Puzzles)",
+  "url": "ophthalmind.html",
+  "desc": "OphthalMIND by Dr Dhaval Patel: 1,188 ophthalmology puzzles (case-crackers, sequences, match-the-pairs, odd-one-out) across 15 chapters, plus ophthalmology in history and culture. Try 10 free puzzles."
+ },
+ {
+  "title": "The Eye Court (Ophthal Adalat): 160 Courtroom-Style Ophthalmology Differential Diagnosis Cases (Free Sample Trial)",
+  "url": "eye-court-ophthal-adalat.html",
+  "desc": "The Eye Court (Ophthal Adalat) by Dr Dhaval Patel: 160 ophthalmology differential diagnoses tried in court, with prosecution, defence, witness signs, MCQ traps, verdict and management. Read a full free trial."
+ },
+ {
+  "title": "Ophthal GITA: A Complete Course in Ophthalmology, in Verse (Free Sample Verses)",
+  "url": "ophthal-gita.html",
+  "desc": "Ophthal GITA by Dr Dhaval Patel: the whole of ophthalmology in 18 chapters of verse, in the manner of the Bhagavad Gita, with red-flag verses, 108 clinical dilemmas and appendices. Read free sample verses."
+ },
+ {
+  "title": "Learn Ophthalmology Differently: Detective Cases, Courtroom Trials, Puzzles and Verse (4 Books with Free Samples)",
+  "url": "learn-ophthalmology-differently-books.html",
+  "desc": "Four books by Dr Dhaval Patel that teach ophthalmology reasoning in new ways: Sherlock’s Eye Clinic, The Eye Court, OphthalMIND and Ophthal GITA. Compare them and try free samples."
  }
 ]
