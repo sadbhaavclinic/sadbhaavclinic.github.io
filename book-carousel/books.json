@@ -1,5 +1,13 @@
 [
   {
+    "title": "OptomDecoded: Comprehensive Optometry",
+    "subtitle": "Licensing exam edition: 5,885 original MCQs, 150 OSCE stations and 800 viva questions",
+    "cover": "images/optom-decoded-cover.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HSMNPPMD?tag=dhavalb20-21",
+    "category": "Optometrists",
+    "featured": true
+  },
+  {
     "title": "The Microbial Underworld",
     "subtitle": "A Story Based Journey Through Microbiology and Infectious Diseases",
     "cover": "images/cobmicro.jpg",

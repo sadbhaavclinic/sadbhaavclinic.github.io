@@ -3373,5 +3373,240 @@
   "title": "સદ્ભાવ આઈ એન્ડ ડેન્ટલ ક્લિનિક, મોટેરા, અમદાવાદ (ગુજરાતી)",
   "url": "index-gujarati.html",
   "desc": "Gujarati home page: doctors, eye and dental treatments, equipment, timings, map and callback request."
+ },
+ {
+  "title": "Ophthalmic Examination Lenses: 90D to 20D, Gonioscopy and Laser Lenses Compared",
+  "url": "ophthalmic-examination-lenses.html",
+  "desc": "Slit-lamp, BIO, gonioscopy and laser lenses compared: field, magnification, laser spot factors, pros and cons, and India and US prices."
+ },
+ {
+  "title": "Indirect Ophthalmoscopy and Scleral Depression: Technique, Lens Choice and Pitfalls",
+  "url": "indirect-ophthalmoscopy-scleral-depression.html",
+  "desc": "How to do binocular indirect ophthalmoscopy and scleral depression: set-up, holding the 20D, a systematic sequence, depressing each quadrant, who needs it and common pitfalls."
+ },
+ {
+  "title": "Slit-Lamp Examination: Systematic Technique, Illumination Methods and Grading Scales",
+  "url": "slit-lamp-examination-technique.html",
+  "desc": "A systematic slit-lamp examination for residents: set-up, a routine that misses nothing, illumination methods, measuring with the beam, van Herick, SUN cells and flare, and the Seidel test."
+ },
+ {
+  "title": "Eye Clinic Equipment Buying Guide (India): What to Buy First, Price Ranges and Questions to Ask",
+  "url": "eye-clinic-equipment-buying-guide.html",
+  "desc": "Setting up an eye clinic in India: equipment by stage from slit lamp to OCT, indicative price ranges, refurbished vs new, service contracts and the questions to ask before you buy."
+ },
+ {
+  "title": "OCT, Fundus Cameras and Ultra-Widefield Imaging Compared: Which Device for Which Clinic",
+  "url": "ophthalmic-imaging-devices-compared.html",
+  "desc": "OCT (spectral-domain vs swept-source), fundus cameras and ultra-widefield imaging (Optos vs Clarus) compared: what each shows, main models, scan speeds, costs and which to buy first."
+ },
+ {
+  "title": "Tonometers Compared: Goldmann, Perkins, iCare, Tono-Pen and Non-Contact, With Disinfection",
+  "url": "tonometers-compared.html",
+  "desc": "Goldmann, Perkins, iCare rebound, Tono-Pen, non-contact and Schiotz tonometers compared: principle, when to use each, agreement with Goldmann, prism disinfection and which to buy."
+ },
+ {
+  "title": "Hertel Exophthalmometry: Technique, Normal Indian Values and Pitfalls",
+  "url": "hertel-exophthalmometry.html",
+  "desc": "How to measure proptosis with the Hertel exophthalmometer, normal values in Indian adults, when a reading misleads, other exophthalmometers and uses in thyroid eye disease and trauma."
+ },
+ {
+  "title": "Contrast Sensitivity Testing: Pelli-Robson, Mars and Grating Charts, Normal Values and Uses",
+  "url": "contrast-sensitivity-testing.html",
+  "desc": "Contrast sensitivity explained: Pelli-Robson, Mars, grating and low-contrast charts, how to test and score, normal values by age, and uses in cataract, optic neuritis, glaucoma and low vision."
+ },
+ {
+  "title": "OptomDecoded: Optometry Licensing Exam Question Bank with 5,885 MCQs, 150 OSCE Stations and 800 Viva Questions",
+  "url": "optom-decoded.html",
+  "desc": "OptomDecoded by Dr Dhaval Patel: 5,885 original optometry MCQs, 150 OSCE stations and 800 viva questions for NBEO, OCANZ, OEBC, UK and India."
+ },
+ {
+  "title": "OptomDecoded Free Sample Mock 1: 50 Optometry Licensing Exam MCQs from the Book",
+  "url": "optom-decoded-sample-mock-test-1.html",
+  "desc": "Free 50-question optometry licensing sample mock from OptomDecoded Mock Test 1, timed, with explanations and pearls."
+ },
+ {
+  "title": "OptomDecoded Free Sample Mock 2: 50 Optometry Licensing Exam MCQs from the Book",
+  "url": "optom-decoded-sample-mock-test-2.html",
+  "desc": "Free 50-question optometry licensing sample mock from OptomDecoded Mock Test 2, timed, with explanations and pearls."
+ },
+ {
+  "title": "OptomDecoded Free Sample Mock 3: 50 Optometry Licensing Exam MCQs from the Book",
+  "url": "optom-decoded-sample-mock-test-3.html",
+  "desc": "Free 50-question optometry licensing sample mock from OptomDecoded Mock Test 3, timed, with explanations and pearls."
+ },
+ {
+  "title": "OptomDecoded Free Sample Mock 4: 50 Optometry Licensing Exam MCQs from the Book",
+  "url": "optom-decoded-sample-mock-test-4.html",
+  "desc": "Free 50-question optometry licensing sample mock from OptomDecoded Mock Test 4, timed, with explanations and pearls."
+ },
+ {
+  "title": "Landmark Trials in AMD: TAP to Faricimab, AREDS and Geographic Atrophy",
+  "url": "landmark-trials-amd.html",
+  "desc": "Landmark trials in age-related macular degeneration explained: PDT, ranibizumab, bevacizumab, aflibercept, brolucizumab, faricimab, PCV, AREDS and complement inhibitors for geographic atrophy."
+ },
+ {
+  "title": "Landmark Trials in Retinal Vein Occlusion: CVOS, BVOS, SCORE, BRAVO, CRUISE and Beyond",
+  "url": "landmark-trials-retinal-vein-occlusion.html",
+  "desc": "Landmark trials in central and branch retinal vein occlusion: CVOS and BVOS laser, SCORE triamcinolone, ranibizumab, aflibercept, dexamethasone implant and bevacizumab head-to-head trials."
+ },
+ {
+  "title": "Landmark Trials in Diabetic Retinopathy and DME: DRS, ETDRS, DRCR Protocols and Anti-VEGF",
+  "url": "landmark-trials-diabetic-retinopathy.html",
+  "desc": "Landmark trials in diabetic retinopathy and diabetic macular oedema: DRS, ETDRS, DRVS, DCCT, UKPDS, RESTORE, RISE and RIDE, VIVID and VISTA, steroid implants, PANORAMA and the DRCR Retina Network protocols."
+ },
+ {
+  "title": "Landmark Trials in Vitreoretinal Surgery and Macular Disease: EVS, Silicone Study, PIVOT, CSCR and Myopic CNV",
+  "url": "landmark-trials-vitreoretinal-macula.html",
+  "desc": "Landmark trials in vitreoretinal surgery, endophthalmitis and macular disease: EVS, Silicone Study, PIVOT, EVIAN, MIVI-TRUST, RADIANCE, MYRROR, PLACE, VICI and the voretigene gene therapy trial."
+ },
+ {
+  "title": "Landmark Trials in Glaucoma: OHTS, EMGT, AGIS, UKGTS, LiGHT, TVT and EAGLE",
+  "url": "landmark-trials-glaucoma.html",
+  "desc": "Landmark glaucoma trials explained: OHTS, EGPS, EMGT, CNTGS, AGIS, CIGTS, UKGTS, LiGHT, TVT, PTVT, ABC and AVB, EAGLE and ZAP, with numbers, viva traps and where each stands today."
+ },
+ {
+  "title": "Landmark Trials in Cornea, Ocular Surface and Cataract: HEDS, SCUT, MUTT, Cornea Donor Study and ESCRS",
+  "url": "landmark-trials-cornea-cataract.html",
+  "desc": "Landmark trials in cornea, ocular surface and cataract surgery: CCTS, Cornea Donor Study, HEDS, SCUT, MUTT I and II, DREAM, the ESCRS endophthalmitis study, PREMED and FACT."
+ },
+ {
+  "title": "Landmark Trials in Uveitis and Ocular Oncology: MUST, VISUAL, SYCAMORE, POINT, FAST and COMS",
+  "url": "landmark-trials-uveitis-oncology.html",
+  "desc": "Landmark trials in uveitis and ocular oncology: HURON, MUST, VISUAL I and II, SYCAMORE, POINT, MERIT, FAST, intravitreal treatment for toxoplasmosis and the Collaborative Ocular Melanoma Study."
+ },
+ {
+  "title": "Landmark Trials in Paediatric Ophthalmology: CRYO-ROP, ETROP, BEAT-ROP, PEDIG, IATS, LAMP and CHAMP",
+  "url": "landmark-trials-paediatric-strabismus.html",
+  "desc": "Landmark trials in paediatric ophthalmology and strabismus: CRYO-ROP, STOP-ROP, ETROP, BEAT-ROP, RAINBOW, PEDIG amblyopia studies, IATS, CITT and the LAMP, CHAMP and ATOM myopia trials."
+ },
+ {
+  "title": "Landmark Trials in Neuro-Ophthalmology: ONTT, IONDT, IIHTT, Steroids in Trauma and Giant Cell Arteritis",
+  "url": "landmark-trials-neuro-ophthalmology.html",
+  "desc": "Landmark trials in neuro-ophthalmology: ONTT, IONDT, IIHTT, NASCIS II, IONTS and CRASH for steroids in trauma, TABUL for giant cell arteritis diagnosis and GiACTA for tocilizumab."
+ },
+ {
+  "title": "Cataract OSCE Stations: 19 Spot Stations on Biometry, Complications, Devices and Theatre Events",
+  "url": "osce-cataract.html",
+  "desc": "Cataract OSCE practice: 19 spot stations with model answers on biometry, IOL formulas, wound burn, IFIS, LIDRS, IOL opacification, dysphotopsia, CME, anaesthesia, femto-laser, toric IOLs, OVDs, phaco fluidics and endophthalmitis."
+ },
+ {
+  "title": "Glaucoma OSCE Stations: 10 Spot Stations on Discs, Fields, OCT, Gonioscopy, Blebs and Drainage Devices",
+  "url": "osce-glaucoma.html",
+  "desc": "Glaucoma OSCE practice: 10 spot stations with model answers on the glaucomatous disc, Humphrey fields, RNFL OCT, gonioscopy, pachymetry, trabeculectomy blebs, drainage devices, acute angle closure, lasers and congenital glaucoma."
+ },
+ {
+  "title": "Retina OSCE Stations: 10 Spot Stations on OCT, Fundus Pictures, B-scan, Injections and Tamponade",
+  "url": "osce-retina.html",
+  "desc": "Retina OSCE practice: 10 spot stations with model answers on wet AMD OCT, macular holes, CRAO, CRVO, diabetic retinopathy grading, retinal tears, B-scan, intravitreal injections, gas and silicone oil tamponade, and ROP screening."
+ },
+ {
+  "title": "Cornea and External Eye OSCE Stations: 10 Spot Stations on Keratitis, Topography, Dry Eye, Grafts and Chemical Injury",
+  "url": "osce-cornea-external-eye.html",
+  "desc": "Cornea and external eye OSCE practice: 10 spot stations with model answers on corneal scraping, fungal and Acanthamoeba keratitis, herpes simplex, keratoconus topography, cross-linking, dry eye tests, graft rejection, keratoplasty types and chemical injury."
+ },
+ {
+  "title": "Uveitis OSCE Stations: 8 Spot Stations on KPs, Hypopyon, Synechiae, Toxoplasmosis, CMV, VKH and Biologic Safety",
+  "url": "osce-uveitis.html",
+  "desc": "Uveitis OSCE practice: 8 spot stations with model answers on keratic precipitates, hypopyon, posterior synechiae, SUN grading, toxoplasma retinochoroiditis, CMV retinitis, VKH angiography and screening before biologics."
+ },
+ {
+  "title": "Neuro-Ophthalmology OSCE Stations: 10 Spot Stations on Fields, Pupils, Hess Charts, Papilloedema and GCA",
+  "url": "osce-neuro-ophthalmology.html",
+  "desc": "Neuro-ophthalmology OSCE practice: 10 spot stations with model answers on bitemporal hemianopia, RAPD, Horner syndrome tests, Hess charts, fourth nerve palsy, papilloedema, myasthenia, colour vision, optic atrophy and giant cell arteritis."
+ },
+ {
+  "title": "Paediatric and Strabismus OSCE Stations: 10 Spot Stations on Cover Tests, Stereotests, Cycloplegia, Leukocoria and Amblyopia",
+  "url": "osce-paediatric-strabismus.html",
+  "desc": "Paediatric ophthalmology and strabismus OSCE practice: 10 spot stations with model answers on cover tests, Hirschberg and Krimsky, stereotests, Worth four-dot, cycloplegic drugs, leukocoria and retinoblastoma, amblyopia, Duane syndrome and paediatric cataract."
+ },
+ {
+  "title": "Oculoplasty and Orbit OSCE Stations: 10 Spot Stations on Ptosis, Lacrimal Tests, Orbital Fractures, Lid Tumours and Thyroid Eye Disease",
+  "url": "osce-oculoplasty-orbit.html",
+  "desc": "Oculoplasty and orbit OSCE practice: 10 spot stations with model answers on ptosis measurement, Hertel exophthalmometry, syringing and probing, Jones dye tests, orbital floor fractures, chalazion instruments, eyelid BCC, thyroid eye disease, orbital cellulitis and orbital implants."
+ },
+ {
+  "title": "Ophthalmology OSCE Stations: 87 Spot Stations by Subspecialty with Model Answers",
+  "url": "ophthalmology-osce-stations.html",
+  "desc": "Free ophthalmology OSCE practice: 87 original spot stations on cataract, glaucoma, retina, cornea, uveitis, neuro-ophthalmology, paediatrics and oculoplasty, each with model answers."
+ },
+ {
+  "title": "Starting a Private Eye Practice in India: Model, Location, Money, Staff, Pricing and Ethical Growth",
+  "url": "starting-private-eye-practice-india.html",
+  "desc": "A step-by-step guide to starting a private eye practice in India: choosing a model, location and space, capital and running costs, staff, services and prices, insurance and PM-JAY, and ethical growth under the NMC 2026 advertising guidelines."
+ },
+ {
+  "title": "Near Point of Accommodation and Convergence (NPA and NPC): Methods, Normal Values, Uses and Pitfalls",
+  "url": "near-point-accommodation-convergence-npa-npc.html",
+  "desc": "How to measure near point of accommodation and near point of convergence: push-up, push-down, minus lens and RAF rule, Hofstetter norms, CI and concussion cut-offs, uses, common errors and fixes."
+ },
+ {
+  "title": "Artificial Tears: Ingredients, Preservatives and Which Drop for Which Patient",
+  "url": "artificial-tears-guide.html",
+  "desc": "How to choose artificial tears: polymers, hyaluronic acid, lipids and osmoprotectants, BAK and other preservatives, preservative-free options, which drop suits which patient, and the 2026 study of drops for screen users."
+ },
+ {
+  "title": "Lumps and Bumps on the Eye: Pinguecula, Cysts, Concretions, Axenfeld Loops and the Red Flags",
+  "url": "lumps-and-bumps-on-the-eye.html",
+  "desc": "A guide to lumps on the white of the eye and lids: pinguecula, pterygium, conjunctival cyst, concretions, nerve loop of Axenfeld, naevus, phlycten and dermoid, and the red flags of OSSN, melanoma and lymphoma."
+ },
+ {
+  "title": "Eye Myths and Facts: Glasses, Screens, Kajal, Carrots, Cataract and Squint",
+  "url": "eye-myths-and-facts.html",
+  "desc": "Common eye myths answered for patients and families: do glasses weaken the eyes, does reading in dim light harm, are blue-light glasses useful, is kajal safe, must a cataract ripen, and do children outgrow a squint."
+ },
+ {
+  "title": "Cataract Long Case for MS and DNB Practicals: History, Examination, Presentation and Viva Questions",
+  "url": "practical-exam-case-cataract.html",
+  "desc": "How to take, examine and present a cataract long case in the MS or DNB ophthalmology practical exam, with a model presentation, differential diagnosis, work-up, surgical plan and the questions examiners ask next."
+ },
+ {
+  "title": "Glaucoma Long Case for MS and DNB Practicals: History, Examination, Presentation and Viva Questions",
+  "url": "practical-exam-case-glaucoma.html",
+  "desc": "How to take, examine and present a glaucoma long case in the MS or DNB ophthalmology practical exam: history, gonioscopy, disc and field assessment, model presentation, staging, treatment plan and viva questions."
+ },
+ {
+  "title": "Retinal Detachment Long Case for MS and DNB Practicals: History, Fundus Drawing, Presentation and Viva Questions",
+  "url": "practical-exam-case-retinal-detachment.html",
+  "desc": "How to take, examine and present a rhegmatogenous retinal detachment long case in the MS or DNB practical exam: history, indirect ophthalmoscopy, fundus drawing, Lincoff rules, PVR grading, surgical choice and viva questions."
+ },
+ {
+  "title": "Corneal Ulcer Case for MS and DNB Practicals: History, Examination, Scraping, Presentation and Viva Questions",
+  "url": "practical-exam-case-corneal-ulcer.html",
+  "desc": "How to take, examine and present a microbial keratitis (corneal ulcer) case in the MS or DNB practical exam: history, measuring the ulcer, bacterial versus fungal signs, corneal scraping, treatment and viva questions."
+ },
+ {
+  "title": "Squint Case for MS and DNB Practicals: Esotropia and Exotropia History, Orthoptic Examination, Presentation and Viva Questions",
+  "url": "practical-exam-case-squint.html",
+  "desc": "How to take, examine and present a concomitant squint (esotropia or exotropia) case in the MS or DNB practical exam: history, cover tests, prism measurement, refraction, amblyopia, surgical plan and viva questions."
+ },
+ {
+  "title": "Ptosis Case for MS and DNB Practicals: History, Lid Measurements, Presentation and Viva Questions",
+  "url": "practical-exam-case-ptosis.html",
+  "desc": "How to take, examine and present a ptosis case in the MS or DNB practical exam: congenital versus acquired, MRD1, levator function, Bell phenomenon, myasthenia tests, surgical choice and viva questions."
+ },
+ {
+  "title": "Proptosis Case for MS and DNB Practicals: History, Exophthalmometry, Presentation and Viva Questions",
+  "url": "practical-exam-case-proptosis.html",
+  "desc": "How to take, examine and present a proptosis case in the MS or DNB practical exam: history, axial and non-axial displacement, Hertel exophthalmometry, optic nerve function, thyroid eye disease, imaging and viva questions."
+ },
+ {
+  "title": "MS and DNB Ophthalmology Practical Exam: Free Case Kit for Long and Short Cases",
+  "url": "ophthalmology-practical-exam-case-kit.html",
+  "desc": "Free MS and DNB ophthalmology practical exam kit: how the day runs, a presentation frame, and seven case kits (cataract, glaucoma, retinal detachment, corneal ulcer, squint, ptosis, proptosis) with model presentations and viva questions."
+ },
+ {
+  "title": "MS and DNB Ophthalmology Theory: 40 Most-Asked Short Notes with Model Answer Outlines",
+  "url": "ophthalmology-theory-short-notes.html",
+  "desc": "40 most-asked MS and DNB ophthalmology theory topics with model answer outlines: keratoconus, cross-linking, DMEK, PCR, endophthalmitis, angle closure, trabeculectomy, anti-VEGF, ROP, VKH, optic neuritis, amblyopia, thyroid eye disease and more."
+ },
+ {
+  "title": "Wet-Lab Drills for Ophthalmology Residents: 8 Step-by-Step Exercises with Self-Check Lists",
+  "url": "wet-lab-drills-ophthalmology.html",
+  "desc": "Eight step-by-step wet-lab drills for ophthalmology residents: microscope control, clear corneal incision, scleral tunnel, capsulorhexis, hydrodissection, groove and chop, IOL injection and corneal suturing, each with faults, fixes and a self-check list."
+ },
+ {
+  "title": "Which Book for Which Exam? OKAT, MS/DNB, FICO, FRCOphth, OKAP, ABO, FEBO and Optometry",
+  "url": "which-exam-book-chooser.html",
+  "desc": "Choose your ophthalmology or optometry exam (AIOS-OKAT, MS/DNB, ICO, FRCOphth, OKAP, ABO, FEBO, NBEO, OCANZ, OEBC) and see the matching question bank, what it contains and the free practice available on RPC Rounds."
  }
 ]

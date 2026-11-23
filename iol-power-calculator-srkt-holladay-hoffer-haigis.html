@@ -354,10 +354,65 @@
             <div class="text pl-8">
 
 <p class="text-muted" style="font-size:13px;margin-top:-10px;margin-bottom:20px;"><span class="fa fa-refresh mr-1"></span>Last updated: November 2026</p>
-<div class="key60" role="note"><p class="key60-h"><span class="fa fa-clock-o mr-1" aria-hidden="true"></span>Key points in 60 seconds</p><ul><li>Five published formulas side by side: SRK/T, Holladay 1, Hoffer Q, Haigis and SRK II (teaching).</li><li>Shows the suggested IOL power for your target and the expected refraction for nearby powers.</li><li>Suggests a toric IOL when corneal astigmatism, after the incision, is at least 1.00 D with-the-rule or oblique, or 0.75 D against-the-rule.</li><li>Flags unusual biometry, differences between eyes, long eyes and previous refractive surgery; gives the sulcus power.</li><li>For learning and cross-checking: use Barrett, Kane or EVO online and your biometer for the final decision.</li></ul></div>
+<div class="key60" role="note"><p class="key60-h"><span class="fa fa-clock-o mr-1" aria-hidden="true"></span>Key points in 60 seconds</p><ul><li>A two-eye report laid out like an optical biometry printout: biometric values, keratometry and four formulas for each eye side by side.</li><li>Each formula shows a table of IOL powers with the expected refraction, the row closest to your target highlighted, and the emmetropic IOL power.</li><li>Checks the two eyes against each other (axial length within 0.3 mm, mean K within 0.9 D).</li><li>Suggests a toric IOL when corneal astigmatism, after the incision, is at least 1.00 D with-the-rule or oblique, or 0.75 D against-the-rule.</li><li>Flags unusual biometry, differences between eyes, long eyes and previous refractive surgery; gives the sulcus power.</li><li>For learning and cross-checking: use Barrett, Kane or EVO online and your biometer for the final decision.</li></ul></div>
 
-<p class="lead">This calculator works out IOL power with five published formulas side by side: SRK/T, Holladay 1, Hoffer Q, Haigis and SRK II. It suggests the power closest to your target, shows the expected refraction for nearby powers, flags unusual biometry, gives the sulcus power, and tells you when a toric IOL should be preferred.</p><div class="dr-flag"><p><b>Use it to learn and to cross-check, not as your only calculation.</b> Newer formulas such as Barrett Universal II, Kane, EVO and Hill-RBF are more accurate in most eyes, but their equations are not published, so they cannot be reproduced here. Use them on their official websites (links below) and in your biometer.</p></div>
-<style>.cx-grid{display:flex;flex-wrap:wrap;gap:10px 14px}.cx-grid>div{flex:1 1 160px;min-width:140px}.cx-chk input{width:auto!important;margin:0 6px 0 0;vertical-align:-2px}.cx-chk label{display:inline;font-weight:400;margin:0}.cx-chk{margin:4px 0}.cx-res{width:100%;border-collapse:collapse;margin-top:6px;font-size:14.5px}.cx-res th,.cx-res td{border:1px solid #d5e3f3;padding:6px 8px;background:#fff;text-align:left;vertical-align:top}.cx-res th{background:#eef4fb;width:42%}.cx-ok{color:#1e7b3a;font-weight:600}.cx-bad{color:#b3261e;font-weight:600}.cx-mid{color:#9a5b00;font-weight:600}.cx-btn{border:1px solid #1D4E89;background:#1D4E89;color:#fff;border-radius:4px;padding:6px 12px;font-size:14px;cursor:pointer;margin:8px 8px 0 0}@media print{body *{visibility:hidden}.cx-print,.cx-print *{visibility:visible}.cx-print{position:absolute;left:0;top:0;width:100%}}</style><div class="dr-tool dr-note cx-print" id="iolcalc"><p style="margin-top:0"><b>Enter biometry for the eye to be operated.</b> Results update as you type. Nothing is stored or sent.</p><div class="cx-grid"><div><label for="ioAL">Axial length (mm)</label><input id="ioAL" type="number" step="0.01" value="23.50" placeholder="" inputmode="decimal"></div><div><label for="ioK1">K1 flat (D)</label><input id="ioK1" type="number" step="0.01" value="43.50" placeholder="" inputmode="decimal"></div><div><label for="ioAx1">K1 axis (&deg;)</label><input id="ioAx1" type="number" step="1" value="180" placeholder="" inputmode="decimal"></div><div><label for="ioK2">K2 steep (D)</label><input id="ioK2" type="number" step="0.01" value="44.50" placeholder="" inputmode="decimal"></div><div><label for="ioACD">ACD, epithelium to lens (mm)</label><input id="ioACD" type="number" step="0.01" value="3.20" placeholder="" inputmode="decimal"></div></div><div class="cx-grid"><div><label for="ioA">A-constant (SRK/T)</label><input id="ioA" type="number" step="0.01" value="119.00" placeholder="" inputmode="decimal"></div><div><label for="ioTgtSel">Target refraction</label><select id="ioTgtSel"><option value="0">Plano (0.00)</option><option value="-0.25">-0.25 (slightly myopic)</option><option value="-0.5">-0.50</option><option value="-1.0">-1.00 (mini-monovision)</option><option value="-1.5">-1.50 (monovision near eye)</option><option value="-2.5">-2.50 (reading without glasses)</option></select></div><div><label for="ioTgt">Or type a target (D)</label><input id="ioTgt" type="number" step="0.25" value="" placeholder="e.g. -0.75" inputmode="decimal"></div></div><details style="margin-top:8px"><summary style="cursor:pointer;font-weight:600;color:#1D4E89">Toric planning: incision and surgically induced astigmatism</summary><div class="cx-grid" style="margin-top:6px"><div><label for="ioSIA">SIA (D)</label><input id="ioSIA" type="number" step="0.01" value="0.30" placeholder="" inputmode="decimal"></div><div><label for="ioInc">Incision meridian (&deg;)</label><input id="ioInc" type="number" step="1" value="180" placeholder="" inputmode="decimal"></div></div><p style="font-size:13px;margin:4px 0 0">For a temporal incision in the right eye use 180&deg;, left eye 0&deg; (or your own meridian). Use your own measured SIA if you know it.</p></details><details style="margin-top:8px"><summary style="cursor:pointer;font-weight:600;color:#1D4E89">More options: other eye, age, long eyes, Haigis constants</summary><div class="cx-grid" style="margin-top:6px"><div><label for="ioOAL">Other eye axial length (mm)</label><input id="ioOAL" type="number" step="0.01" value="" placeholder="" inputmode="decimal"></div><div><label for="ioOK">Other eye mean K (D)</label><input id="ioOK" type="number" step="0.01" value="" placeholder="" inputmode="decimal"></div><div><label for="ioAge">Age (years)</label><input id="ioAge" type="number" step="1" value="" placeholder="" inputmode="decimal"></div></div><div class="cx-grid"><div><label for="ioA0">Haigis a0 (optional)</label><input id="ioA0" type="number" step="0.001" value="" placeholder="estimated from A" inputmode="decimal"></div><div><label for="ioA1">Haigis a1</label><input id="ioA1" type="number" step="0.001" value="" placeholder="0.4" inputmode="decimal"></div><div><label for="ioA2">Haigis a2</label><input id="ioA2" type="number" step="0.001" value="" placeholder="0.1" inputmode="decimal"></div></div><p class="cx-chk"><input type="checkbox" id="ioWK"><label for="ioWK">Apply the Wang-Koch axial length adjustment for long eyes (above 25 mm, optical biometry)</label></p><p class="cx-chk"><input type="checkbox" id="ioPost"><label for="ioPost">Previous corneal refractive surgery (LASIK, PRK, SMILE, RK)</label></p></details><div class="dr-out" id="ioOut" style="margin-top:10px"></div><p><button type="button" class="cx-btn" id="ioCopy">Copy summary for notes</button><button type="button" class="cx-btn" id="ioPrint">Print result</button></p><p style="font-size:12.5px;color:#5f6b7a;margin:0">For learning and cross-checking only. Base surgical decisions on your biometer's software and validated online calculators, with lens constants optimised for your IOL.</p></div><script>/* RPC Rounds multi-formula IOL engine: SRK/T, Holladay 1, Hoffer Q, Haigis, SRK II. Published formulas only. */
+<p class="lead">Enter the biometry for both eyes and this calculator lays out a report in the familiar two-eye format of an optical biometry printout: axial length, ACD, lens thickness, CCT, white-to-white and keratometry for each eye, then SRK/T, Holladay 1, Hoffer Q and Haigis tables of IOL power against expected refraction. It flags unusual or unequal biometry, gives the sulcus power, checks whether a toric IOL is preferred, and prints on one page.</p><div class="dr-flag"><p><b>Use it to learn and to cross-check, not as your only calculation.</b> Newer formulas such as Barrett Universal II, Kane, EVO and Hill-RBF are more accurate in most eyes, but their equations are not published, so they cannot be reproduced here. Use them on their official websites (links below) and in your biometer.</p></div>
+<style>
+.bx-wrap{border:1px solid #c9d6e3;border-radius:6px;background:#fff;font-size:13.5px;color:#1f2d3d;margin:14px 0}
+.bx-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;background:#1D4E89;color:#fff;padding:8px 12px;border-radius:6px 6px 0 0}
+.bx-head b{font-size:15px;letter-spacing:.3px}.bx-head input{background:#fff;border:0;border-radius:3px;padding:2px 6px;font-size:13px;width:150px}
+.bx-set{display:flex;flex-wrap:wrap;gap:8px 14px;padding:8px 12px;background:#f4f8fc;border-bottom:1px solid #d5e3f3}
+.bx-set label{font-size:12px;color:#4A5868;display:block;margin:0}.bx-set input,.bx-set select{width:110px;padding:2px 4px;font-size:13px;border:1px solid #b9c9da;border-radius:3px}
+.bx-set .bx-wide input{width:190px}.bx-chk{font-size:12.5px;align-self:end}.bx-chk input{width:auto!important;margin-right:4px;vertical-align:-2px}
+.bx-eyes{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.bx-eye{padding:8px 10px;border-right:1px solid #d5e3f3}.bx-eye:last-child{border-right:0}
+.bx-eh{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:15px;padding:4px 8px;border-radius:4px;margin-bottom:6px}
+.bx-od .bx-eh{background:#e8f1fb;color:#1D4E89}.bx-os .bx-eh{background:#eaf6ef;color:#1e6b3a}
+.bx-eh select{font-size:12px;font-weight:400;padding:1px 3px}
+.bx-sec{font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:#5f6b7a;margin:8px 0 3px;font-weight:700}
+.bx-m{width:100%;border-collapse:collapse}.bx-m td{border-bottom:1px solid #eef2f6;padding:2px 4px;white-space:nowrap}
+.bx-m td:first-child{color:#4A5868;width:38%}.bx-m input{width:70px;padding:1px 4px;font-size:13px;border:1px solid #c9d6e3;border-radius:3px;text-align:right}
+.bx-m .ax{width:56px}.bx-m .ro{font-weight:600}
+.bx-f{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.bx-fb{border:1px solid #d5e3f3;border-radius:4px;overflow:hidden}.bx-fb.bx-sug{border-color:#7bb38c}
+.bx-ft{background:#f4f8fc;padding:3px 6px;font-weight:700;font-size:12.5px;display:flex;justify-content:space-between}.bx-sug .bx-ft{background:#eaf6ef}
+.bx-fc{font-size:11px;color:#5f6b7a;padding:1px 6px}
+.bx-p{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}.bx-p th{font-size:11px;color:#5f6b7a;font-weight:600;padding:1px 6px;text-align:right}
+.bx-p td{padding:1px 6px;text-align:right;font-size:13px}.bx-p tr.hit td{background:#fff3c4;font-weight:700}
+.bx-fe{border-top:1px solid #eef2f6;padding:2px 6px;font-size:12px}
+.bx-warn{border-left:4px solid #c77700;background:#fff8ec;padding:6px 10px;margin:8px 0;font-size:13px}.bx-warn ul{margin:2px 0 0 16px;padding:0}
+.bx-tor{font-size:12.5px;margin-top:6px;border:1px solid #d5e3f3;border-radius:4px;padding:5px 7px;background:#fbfdff}
+.bx-foot{padding:6px 12px;border-top:1px solid #d5e3f3;font-size:12px;color:#5f6b7a}
+.bx-btn{border:1px solid #1D4E89;background:#1D4E89;color:#fff;border-radius:4px;padding:5px 11px;font-size:13px;cursor:pointer;margin:6px 6px 0 0}.bx-btn.bx-g{background:#fff;color:#1D4E89}
+.cx-ok{color:#1e7b3a;font-weight:600}.cx-bad{color:#b3261e;font-weight:600}.cx-mid{color:#9a5b00;font-weight:600}
+@media(max-width:760px){.bx-eyes{grid-template-columns:1fr}.bx-eye{border-right:0;border-bottom:1px solid #d5e3f3}}
+@media(max-width:420px){.bx-f{grid-template-columns:1fr}}
+@media print{body *{visibility:hidden}#iolcalc,#iolcalc *{visibility:visible}#iolcalc{position:absolute;left:0;top:0;width:100%;font-size:11px}#iolcalc .bx-noprint{display:none}.bx-eyes{grid-template-columns:1fr 1fr!important}#iolcalc input,#iolcalc select{border:0!important;background:transparent!important}}
+</style>
+<div class="bx-wrap" id="iolcalc">
+<div class="bx-head"><b>Biometry and IOL calculation</b><span><input id="bxName" type="text" placeholder="Patient name or ID (optional)" aria-label="Patient name or ID"> &nbsp;<span id="bxDate"></span></span></div>
+<div class="bx-set">
+ <div class="bx-wide"><label for="bxModel">IOL model</label><input id="bxModel" type="text" value="" placeholder="e.g. hydrophobic acrylic, 1-piece"></div>
+ <div><label for="ioA">A-constant (SRK/T)</label><input id="ioA" type="number" step="0.01" value="119.00" inputmode="decimal"></div>
+ <div><label for="ioA0">Haigis a0</label><input id="ioA0" type="number" step="0.001" value="" placeholder="from A" inputmode="decimal"></div>
+ <div><label for="ioA1">a1</label><input id="ioA1" type="number" step="0.001" value="" placeholder="0.4" inputmode="decimal"></div>
+ <div><label for="ioA2">a2</label><input id="ioA2" type="number" step="0.001" value="" placeholder="0.1" inputmode="decimal"></div>
+ <div><label for="ioSIA">SIA (D)</label><input id="ioSIA" type="number" step="0.01" value="0.30" inputmode="decimal"></div>
+ <div><label for="bxIncSite">Incision</label><select id="bxIncSite"><option value="temporal">Temporal</option><option value="superior">Superior</option><option value="custom">Custom meridian</option></select></div>
+ <div id="bxIncWrap" style="display:none"><label for="ioInc">Meridian (&deg;)</label><input id="ioInc" type="number" step="1" value="" inputmode="decimal"></div>
+ <div><label for="ioAge">Age (years)</label><input id="ioAge" type="number" step="1" value="" inputmode="decimal"></div>
+ <div class="bx-chk"><input type="checkbox" id="ioWK"><label for="ioWK" style="display:inline">Wang-Koch for AL &gt; 25 mm</label></div>
+ <div class="bx-chk"><input type="checkbox" id="ioPost"><label for="ioPost" style="display:inline">Previous LASIK, PRK, SMILE or RK</label></div>
+</div>
+<div class="bx-eyes">
+ <div class="bx-eye bx-od" data-eye="od"></div>
+ <div class="bx-eye bx-os" data-eye="os"></div>
+</div>
+<div class="bx-foot"><span id="bxNote"></span>
+ <div class="bx-noprint"><button type="button" class="bx-btn" id="ioPrint">Print report</button><button type="button" class="bx-btn bx-g" id="ioCopy">Copy summary for notes</button><button type="button" class="bx-btn bx-g" id="bxCopyEye">Copy right-eye values to left</button><button type="button" class="bx-btn bx-g" id="bxClear">Clear both eyes</button></div>
+ <p style="margin:6px 0 0">For learning and cross-checking only. Base surgical decisions on your biometer's software and validated online calculators, with lens constants optimised for your IOL. Nothing is stored or sent.</p></div>
+</div>
+<script>
 var IOLF=(function(){
  var V=12;
  function consts(A){var acd=0.62467*A-68.747, sf=0.5663*A-65.6, pacd=(sf+3.595)/0.9704;var c={A:A,acd:acd,sf:sf,pacd:pacd,a1:0.4,a2:0.1,a0:0};
@@ -385,80 +440,88 @@ var IOLF=(function(){
  return {consts:consts,F:F,refFor:refFor,WK:WK};
 })();
 if(typeof module!=='undefined')module.exports=IOLF;
-
 (function(){
-function $(i){return document.getElementById(i)}function v(i){var x=parseFloat(($(i)||{}).value);return isNaN(x)?NaN:x}
-function f2(x){return (x>0?'+':'')+x.toFixed(2)}function p2(x){return x.toFixed(2)}
-var ORDER=['srkt','hol1','hq','haigis','srk2'];
-function rec(L){if(L<22)return{k:['hq','haigis'],t:'Short eye (below 22 mm): Hoffer Q and Haigis usually do best among these; also check Barrett Universal II or Kane online.'};
- if(L<=24.5)return{k:['srkt','hol1','hq','haigis'],t:'Average eye (22 to 24.5 mm): all four modern formulas perform similarly; Barrett Universal II and Kane are slightly more accurate.'};
- if(L<=26)return{k:['srkt','hol1','haigis'],t:'Medium-long eye (24.5 to 26 mm): SRK/T, Holladay 1 and Haigis perform well.'};
- return{k:['srkt','haigis'],t:'Long eye (above 26 mm): SRK/T and Haigis do best here; Holladay 1 and Hoffer Q tend to leave a hyperopic surprise unless the Wang-Koch adjustment is used. Barrett, Kane or EVO are preferred.'};}
+var EYES={od:{n:'OD',full:'Right eye',d:{AL:'23.50',ACD:'3.20',LT:'4.50',CCT:'540',WTW:'11.9',K1:'43.50',K1A:'180',K2:'44.50',T:'0'}},
+          os:{n:'OS',full:'Left eye',d:{AL:'23.45',ACD:'3.18',LT:'4.52',CCT:'545',WTW:'11.9',K1:'43.60',K1A:'5',K2:'44.40',T:'0'}}};
+var ORDER=['srkt','hol1','hq','haigis'];
+function $(i){return document.getElementById(i)}
+function num(i){var e=$(i);if(!e)return NaN;var x=parseFloat(e.value);return isNaN(x)?NaN:x}
+function f2(x){return (x>0?'+':(x<0?'':' '))+x.toFixed(2)}
 function axisNorm(a){a=a%180;if(a<0)a+=180;return a}
 function vec(c,ax){var t=2*ax*Math.PI/180;return [c*Math.cos(t),c*Math.sin(t)]}
-function unvec(x,y){var c=Math.sqrt(x*x+y*y);var ax=Math.atan2(y,x)*90/Math.PI;return [c,axisNorm(ax)]}
+function unvec(x,y){var c=Math.sqrt(x*x+y*y);return [c,axisNorm(Math.atan2(y,x)*90/Math.PI)]}
 function orient(ax){ax=axisNorm(ax);if(ax>=60&&ax<=120)return'WTR';if(ax<=30||ax>=150)return'ATR';return'oblique'}
 function sulcus(P){if(P>27.5)return P-1.5;if(P>17.5)return P-1.0;if(P>9.5)return P-0.5;return P}
-var TS=[1.0,1.5,2.25,3.0,3.75,4.5,5.25,6.0];
-function calc(){
- var L=v('ioAL'),K1=v('ioK1'),K2=v('ioK2'),A=v('ioA'),ACD=v('ioACD'),T=v('ioTgt');var out=$('ioOut'),warn=[];
- if(isNaN(T)){T=parseFloat($('ioTgtSel').value)}
- if(!(L>14&&L<40)||!(K1>30&&K1<60)||!(K2>30&&K2<60)||!(A>110&&A<125)){out.innerHTML='<p class="cx-bad">Enter axial length (mm), both K readings (D) and the A-constant to calculate.</p>';return}
- var K=(K1+K2)/2,c=IOLF.consts(A);
- if($('ioA0').value!==''&&!isNaN(v('ioA0'))){c.a0=v('ioA0');c.a1=isNaN(v('ioA1'))?0.4:v('ioA1');c.a2=isNaN(v('ioA2'))?0.1:v('ioA2');c.a0est=false}
- // warnings
- if($('ioPost').checked)warn.push('<span class="cx-bad">Previous LASIK, PRK, SMILE or RK: standard formulas give a hyperopic surprise. Do not use these results; use the <a href="post-refractive-iol-calculation.html">post-refractive methods</a> and the ASCRS post-refractive calculator.</span>');
- var age=v('ioAge');if(age>0&&age<10)warn.push('<span class="cx-bad">Child under 10: eye growth changes the target. See <a href="paediatric-cataract-iol-power-calculation.html">paediatric IOL power</a> for undercorrection targets.</span>');
- if(L<21||L>26.5)warn.push('Axial length '+L.toFixed(2)+' mm is outside 21 to 26.5 mm: confirm the scan quality and the other eye.');
- if(K<41||K>47)warn.push('Mean K '+K.toFixed(2)+' D is outside 41 to 47 D: repeat keratometry and check for previous surgery, keratoconus or contact lens warpage.');
- if(isNaN(ACD))warn.push('No ACD entered: Haigis needs the measured anterior chamber depth (corneal epithelium to lens).');else if(ACD<2.2||ACD>4.2)warn.push('ACD '+ACD.toFixed(2)+' mm is unusual: check the measurement.');
- var oL=v('ioOAL'),oK=v('ioOK');
- if(!isNaN(oL)&&Math.abs(oL-L)>0.3)warn.push('<span class="cx-mid">Axial lengths differ by '+Math.abs(oL-L).toFixed(2)+' mm between eyes (more than 0.3 mm): re-measure both eyes unless anisometropia explains it.</span>');
- if(!isNaN(oK)&&Math.abs(oK-K)>0.9)warn.push('<span class="cx-mid">Mean K differs by '+Math.abs(oK-K).toFixed(2)+' D between eyes (more than 0.9 D): re-measure.</span>');
- if(Math.abs(K2-K1)>6)warn.push('Corneal cylinder above 6 D: check for keratoconus or a measurement error.');
- var wk=$('ioWK').checked&&L>25;
- if(L>25&&!$('ioWK').checked)warn.push('Long eye: consider ticking the Wang-Koch axial length adjustment (for SRK/T, Holladay 1, Hoffer Q and Haigis with optical biometry).');
- // formula results
- var r=rec(L),rows='',sumTxt=[];
- ORDER.forEach(function(k){var F=IOLF.F[k];var Lk=L;if(wk&&IOLF.WK[k])Lk=IOLF.WK[k][0]*L+IOLF.WK[k][1];
-  var P=F.f(Lk,K,c,T,ACD);var isR=r.k.indexOf(k)>-1;
-  if(isNaN(P)){rows+='<tr><th>'+F.n+'</th><td colspan="3">Not available (missing ACD or values out of range)</td></tr>';return}
-  var base=Math.round(P*2)/2,opts=[];for(var d=-1;d<=1;d+=0.5){var I=base+d;opts.push([I,IOLF.refFor(F.f,Lk,K,c,I,ACD)])}
-  var best=opts.slice().sort(function(a,b){var da=Math.abs(a[1]-T)+(a[1]>T?0.06:0),db=Math.abs(b[1]-T)+(b[1]>T?0.06:0);return da-db})[0];
-  rows+='<tr'+(isR?' style="background:#f1f8f2"':'')+'><th>'+F.n+(isR?' <span class="cx-ok" title="Suits this axial length">&#10003;</span>':'')+(k=='srk2'?' <span style="font-weight:400;font-size:12.5px">(teaching only)</span>':'')+(wk&&IOLF.WK[k]?' <span style="font-weight:400;font-size:12.5px">(AL '+Lk.toFixed(2)+')</span>':'')+'</th><td>'+p2(P)+' D</td><td><b>'+best[0].toFixed(1)+' D</b> &rarr; '+f2(best[1])+' D</td><td style="font-size:13px">'+opts.map(function(o){return '<span style="white-space:nowrap">'+o[0].toFixed(1)+' &rarr; '+f2(o[1])+'</span>'}).join('<br>')+'</td></tr>';
-  if(k!=='srk2')sumTxt.push(F.n+' '+best[0].toFixed(1)+' D ('+f2(best[1])+')');});
- var html='<style>#ioOut .cx-res th{width:auto}@media(max-width:600px){#ioOut .cx-res{font-size:13px}#ioOut .cx-res th,#ioOut .cx-res td{padding:5px}}</style><div style="overflow-x:auto"><table class="cx-res"><tr><th>Formula</th><td><b>Exact power for target '+f2(T)+' D</b></td><td><b>Suggested IOL &rarr; expected refraction</b></td><td><b>Nearby powers</b></td></tr>'+rows+'</table></div>';
- html+='<p style="margin:8px 0 0;font-size:14px">'+r.t+' Mean K '+K.toFixed(2)+' D. Constants used: A '+A.toFixed(2)+'; SRK/T ACD '+c.acd.toFixed(2)+'; Holladay SF '+c.sf.toFixed(2)+'; Hoffer pACD '+c.pacd.toFixed(2)+'; Haigis a0 '+c.a0.toFixed(2)+(c.a0est?' (estimated from A)':'')+', a1 '+c.a1+', a2 '+c.a2+'.</p>';
- // sulcus
- var chosen=Math.round(IOLF.F.srkt.f(L,K,c,T,ACD)*2)/2;
- html+='<p style="font-size:14px">If the lens must go in the <b>sulcus</b> (3-piece IOL), reduce the bag power: for about '+chosen.toFixed(1)+' D in the bag, use about '+sulcus(chosen).toFixed(1)+' D in the sulcus (optic capture in the bag: no change). See <a href="sulcus-iol-power-adjustment.html">sulcus IOL power</a>.</p>';
+function rec(L){if(L<22)return['hq','haigis'];if(L<=24.5)return['srkt','hol1','hq','haigis'];if(L<=26)return['srkt','hol1','haigis'];return['srkt','haigis']}
+function recTxt(L){if(L<22)return'Short eye: Hoffer Q and Haigis usually do best of these.';if(L<=24.5)return'Average eye: the four formulas perform similarly.';if(L<=26)return'Medium-long eye: SRK/T, Holladay 1 and Haigis perform well.';return'Long eye: SRK/T and Haigis do best; consider Wang-Koch and a slightly myopic target.'}
+function row(lbl,id,unit,val,extra){return '<tr><td>'+lbl+'</td><td><input id="'+id+'" type="number" step="any" value="'+val+'" inputmode="decimal" aria-label="'+lbl+'"> '+unit+(extra||'')+'</td></tr>'}
+function buildEye(k){var E=EYES[k],p='bx'+k,d=E.d;
+ var h='<div class="bx-eh"><span>'+E.n+' <span style="font-weight:400;font-size:12.5px">'+E.full+'</span></span><select id="'+p+'Lens" aria-label="Lens status"><option>Phakic</option><option>Pseudophakic</option><option>Aphakic</option></select></div>';
+ h+='<div class="bx-sec">Biometric values</div><table class="bx-m">'+row('AL',p+'AL','mm',d.AL)+row('ACD',p+'ACD','mm',d.ACD,' <span style="font-size:11px;color:#5f6b7a">(epithelium)</span>')+row('LT',p+'LT','mm',d.LT)+row('CCT',p+'CCT','&micro;m',d.CCT)+row('WTW',p+'WTW','mm',d.WTW)+'</table>';
+ h+='<div class="bx-sec">Keratometry</div><table class="bx-m">'+row('K1 (flat)',p+'K1','D',d.K1,' @ <input id="'+p+'K1A" class="ax" type="number" step="1" value="'+d.K1A+'" inputmode="decimal" aria-label="K1 axis">&deg;')
+  +'<tr><td>K2 (steep)</td><td><input id="'+p+'K2" type="number" step="any" value="'+d.K2+'" inputmode="decimal" aria-label="K2 (steep)"> D @ <span class="ro" id="'+p+'K2A"></span>&deg;</td></tr>'
+  +'<tr><td>&Delta;K</td><td class="ro" id="'+p+'DK"></td></tr><tr><td>Mean K (SE)</td><td class="ro" id="'+p+'MK"></td></tr></table>';
+ h+='<div class="bx-sec">Target refraction</div><table class="bx-m">'+row('Target',p+'T','D',d.T)+'</table>';
+ h+='<div class="bx-sec">IOL calculation</div><div id="'+p+'Out"></div>';
+ return h}
+['od','os'].forEach(function(k){document.querySelector('.bx-eye[data-eye="'+k+'"]').innerHTML=buildEye(k)});
+var dt=new Date();$('bxDate').textContent=dt.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+function incMeridian(k){var s=$('bxIncSite').value;if(s==='custom'){return num('ioInc')}if(s==='superior')return 90;return k==='od'?180:0}
+function eyeData(k){var p='bx'+k;return{L:num(p+'AL'),ACD:num(p+'ACD'),K1:num(p+'K1'),K1A:num(p+'K1A'),K2:num(p+'K2'),T:num(p+'T')}}
+var summary={};
+function calcEye(k,c,warnG){var p='bx'+k,e=eyeData(k),out=$(p+'Out'),warn=[];summary[k]='';
+ var K1=e.K1,K2=e.K2,L=e.L;var a2=isNaN(e.K1A)?NaN:axisNorm(e.K1A+90);$(p+'K2A').textContent=isNaN(a2)?'–':(Math.round(a2)||180);
+ if(!(K1>30&&K1<60)||!(K2>30&&K2<60)){$(p+'DK').textContent='–';$(p+'MK').textContent='–'}else{var cyl=Math.abs(K2-K1),st=K2>=K1?a2:e.K1A;$(p+'DK').textContent='-'+cyl.toFixed(2)+' D @ '+(isNaN(st)?'–':((Math.round(axisNorm(st))||180)+'°'));$(p+'MK').textContent=((K1+K2)/2).toFixed(2)+' D ('+(337.5/((K1+K2)/2)).toFixed(2)+' mm)'}
+ if(!(L>14&&L<40)||!(K1>30&&K1<60)||!(K2>30&&K2<60)){out.innerHTML='<p style="color:#5f6b7a;font-size:12.5px">Enter AL and both K readings for this eye.</p>';return null}
+ var T=isNaN(e.T)?0:e.T,K=(K1+K2)/2,ACD=e.ACD;
+ if($('ioPost').checked)warn.push('<span class="cx-bad">Previous corneal refractive surgery: standard formulas give a hyperopic surprise. Do not use these results; see <a href="post-refractive-iol-calculation.html">post-refractive methods</a>.</span>');
+ if(L<21||L>26.5)warn.push('AL '+L.toFixed(2)+' mm is outside 21–26.5 mm: confirm the scan.');
+ if(K<41||K>47)warn.push('Mean K '+K.toFixed(2)+' D is outside 41–47 D: repeat keratometry.');
+ if(isNaN(ACD))warn.push('No ACD: Haigis needs measured ACD.');else if(ACD<2.2||ACD>4.2)warn.push('ACD '+ACD.toFixed(2)+' mm is unusual.');
+ if(Math.abs(K2-K1)>6)warn.push('Corneal cylinder above 6 D: check for keratoconus or error.');
+ var wk=$('ioWK').checked&&L>25;if(L>25&&!$('ioWK').checked)warn.push('Long eye: consider the Wang-Koch adjustment.');
+ var r=rec(L),html='<div class="bx-f">',emme={};
+ ORDER.forEach(function(fk){var F=IOLF.F[fk];var Lk=L;if(wk&&IOLF.WK[fk])Lk=IOLF.WK[fk][0]*L+IOLF.WK[fk][1];
+  var cst=fk==='srkt'?'A '+c.A.toFixed(2):fk==='hol1'?'SF '+c.sf.toFixed(2):fk==='hq'?'pACD '+c.pacd.toFixed(2):'a0 '+c.a0.toFixed(2)+' a1 '+c.a1+' a2 '+c.a2;
+  var P=F.f(Lk,K,c,T,ACD),P0=F.f(Lk,K,c,0,ACD),isR=r.indexOf(fk)>-1;
+  html+='<div class="bx-fb'+(isR?' bx-sug':'')+'"><div class="bx-ft"><span>'+F.n+'</span>'+(isR?'<span class="cx-ok" title="Suits this axial length">&#10003;</span>':'')+'</div><div class="bx-fc">'+cst+(wk&&IOLF.WK[fk]?' · AL '+Lk.toFixed(2):'')+'</div>';
+  if(isNaN(P)){html+='<p style="padding:3px 6px;font-size:12px;color:#5f6b7a">Not available'+(fk==='haigis'?' (needs ACD)':'')+'</p></div>';return}
+  var base=Math.round(P*2)/2,rows=[];for(var dd=-1.5;dd<=1.5001;dd+=0.5){var I=base+dd;rows.push([I,IOLF.refFor(F.f,Lk,K,c,I,ACD)])}
+  var best=rows.slice().sort(function(a,b){var da=Math.abs(a[1]-T)+(a[1]>T?0.06:0),db=Math.abs(b[1]-T)+(b[1]>T?0.06:0);return da-db})[0];
+  html+='<table class="bx-p"><tr><th>IOL (D)</th><th>Ref (D)</th></tr>'+rows.map(function(o){return'<tr'+(o[0]===best[0]?' class="hit"':'')+'><td>'+o[0].toFixed(1)+'</td><td>'+(isNaN(o[1])?'–':f2(o[1]))+'</td></tr>'}).join('')+'</table>';
+  html+='<div class="bx-fe">Emme. IOL: <b>'+P0.toFixed(2)+'</b> D</div></div>';
+  emme[fk]=best;});
+ html+='</div><p style="font-size:12px;margin:4px 0 0">'+recTxt(L)+' Highlighted row: power closest to target '+f2(T)+' D.</p>';
+ var keys=Object.keys(emme).filter(function(x){return r.indexOf(x)>-1});if(keys.length>1){var ps=keys.map(function(x){return emme[x][0]});var spread=Math.max.apply(null,ps)-Math.min.apply(null,ps);if(spread>0.5)warn.push('<span class="cx-mid">Suited formulas differ by '+spread.toFixed(1)+' D: re-check biometry.</span>')}
+ var ch=emme.srkt?emme.srkt[0]:NaN;if(!isNaN(ch))html+='<p style="font-size:12px;margin:3px 0 0">Sulcus (3-piece, no optic capture): about '+sulcus(ch).toFixed(1)+' D for '+ch.toFixed(1)+' D in the bag.</p>';
  // toric
- var a1=v('ioAx1');var a2=isNaN(a1)?NaN:axisNorm(a1+90);var cyl=Math.abs(K2-K1);var steep=K2>=K1?a2:a1;
- var tor='',torTxt='';
- if(isNaN(a1)){tor='<p>Enter the flat K axis to get a toric IOL suggestion.</p>'}else{
-  var S=v('ioSIA');if(isNaN(S))S=0;var inc=v('ioInc');var cv=vec(cyl,steep),x=cv[0],y=cv[1];
+ if(!isNaN(e.K1A)){var cylA=Math.abs(K2-K1),steep=K2>=K1?a2:axisNorm(e.K1A),S=num('ioSIA'),inc=incMeridian(k),cv=vec(cylA,steep),x=cv[0],y=cv[1];
   if(S>0&&!isNaN(inc)){var sv=vec(S,axisNorm(inc+90));x+=sv[0];y+=sv[1]}
-  var net=unvec(x,y),nc=net[0],nax=Math.round(net[1])%180,o=orient(nax);var lim=o==='ATR'?0.75:1.0;
-  var iolCyl=nc*1.46,step=TS.reduce(function(a,b){return Math.abs(b-iolCyl)<Math.abs(a-iolCyl)?b:a});
-  tor='<table class="cx-res"><tr><th>Anterior corneal astigmatism</th><td>'+cyl.toFixed(2)+' D, steep axis '+(Math.round(steep)%180||180)+'&deg; ('+orient(steep)+')</td></tr>'
-   +'<tr><th>Expected after incision (SIA '+(S>0&&!isNaN(inc)?S.toFixed(2)+' D at '+Math.round(inc)+'&deg;':'not entered')+')</th><td>'+nc.toFixed(2)+' D, steep axis '+(nax||180)+'&deg; ('+o+')</td></tr>';
-  if(nc>=lim){torTxt=' Toric IOL preferred: '+o+' '+nc.toFixed(2)+' D at '+(nax||180)+' deg (approx IOL cyl '+iolCyl.toFixed(2)+' D); confirm with Barrett Toric.';tor+='<tr><th>Suggestion</th><td><span class="cx-ok">Toric IOL preferred.</span> '+o+' astigmatism of '+nc.toFixed(2)+' D is at or above the '+lim.toFixed(2)+' D threshold'+(o==='ATR'?' (lower for against-the-rule, because the back of the cornea adds against-the-rule astigmatism)':'')+'. Approximate IOL-plane cylinder '+iolCyl.toFixed(2)+' D (nearest common step about '+step.toFixed(2)+' D). Align the toric axis at about '+(nax||180)+'&deg;. Confirm model and axis with the <a href="https://www.ascrs.org/tools/barrett-toric-calculator" target="_blank" rel="noopener">Barrett Toric calculator</a> or the manufacturer\'s calculator, which include posterior corneal astigmatism.</td></tr>';}
-  else if(nc>=lim-0.25){torTxt=' Borderline astigmatism '+nc.toFixed(2)+' D '+o+'.';tor+='<tr><th>Suggestion</th><td><span class="cx-mid">Borderline.</span> Consider a toric IOL (lowest power) or limbal relaxing incisions, especially for '+(o==='ATR'?'against-the-rule':'oblique')+' astigmatism or a premium (multifocal or EDOF) lens. See <a href="lricalculator.html">LRI calculator</a>.</td></tr>'}
-  else tor+='<tr><th>Suggestion</th><td>Non-toric IOL is reasonable (below the '+lim.toFixed(2)+' D threshold for '+o+' astigmatism).</td></tr>';
-  tor+='</table><p style="font-size:13px;margin-top:4px">Toric rule used: prefer a toric IOL when corneal astigmatism is at least 1.00 D with-the-rule or oblique, or at least 0.75 D against-the-rule. IOL-plane cylinder is estimated as corneal cylinder &times; 1.46 (varies with ACD and IOL power). See <a href="posterior-corneal-astigmatism.html">posterior corneal astigmatism</a> and <a href="toric-iol-pearls.html">toric IOL pearls</a>.</p>';
- }
- html+='<h4 class="h6 mt-3">Toric IOL check</h4>'+tor;
- if(warn.length)html='<div style="border-left:4px solid #c77700;background:#fff8ec;padding:8px 12px;margin-bottom:10px;font-size:14px"><b>Check before using:</b><ul style="margin:4px 0 0 18px;padding:0">'+warn.map(function(w){return'<li>'+w+'</li>'}).join('')+'</ul></div>'+html;
+  var net=unvec(x,y),nc=net[0],nax=Math.round(net[1])%180||180,o=orient(nax),lim=o==='ATR'?0.75:1.0,iolCyl=nc*1.46;
+  var tt='<div class="bx-tor"><b>Toric check:</b> corneal '+cylA.toFixed(2)+' D @ '+(Math.round(steep)%180||180)+'&deg;; after incision '+nc.toFixed(2)+' D @ '+nax+'&deg; ('+o+'). ';
+  if(nc>=lim){tt+='<span class="cx-ok">Toric IOL preferred</span> (IOL-plane cylinder about '+iolCyl.toFixed(2)+' D, axis about '+nax+'&deg;). Confirm with the Barrett Toric calculator.';summary[k+'t']=' Toric: '+nc.toFixed(2)+' D @ '+nax+' ('+o+').'}
+  else if(nc>=lim-0.25){tt+='<span class="cx-mid">Borderline</span>: low-power toric or <a href="lricalculator.html">LRIs</a>.'}else tt+='Non-toric IOL reasonable.';
+  html+=tt+'</div>';}
+ if(warn.length)html='<div class="bx-warn"><b>Check:</b><ul>'+warn.map(function(w){return'<li>'+w+'</li>'}).join('')+'</ul></div>'+html;
  out.innerHTML=html;
- window._ioSummary='IOL calculation (RPC Rounds, for cross-checking): AL '+L.toFixed(2)+' mm, K1 '+K1.toFixed(2)+' / K2 '+K2.toFixed(2)+' D, ACD '+(isNaN(ACD)?'-':ACD.toFixed(2))+' mm, A '+A.toFixed(2)+', target '+f2(T)+' D. '+sumTxt.join('; ')+'.'+torTxt;
-}
-['ioAL','ioK1','ioK2','ioAx1','ioA','ioACD','ioTgt','ioTgtSel','ioSIA','ioInc','ioOAL','ioOK','ioAge','ioA0','ioA1','ioA2','ioWK','ioPost'].forEach(function(i){var e=$(i);if(e){e.addEventListener('input',calc);e.addEventListener('change',calc)}});
-$('ioTgtSel').addEventListener('change',function(){$('ioTgt').value=''});
-$('ioCopy').addEventListener('click',function(){var t=window._ioSummary||'';try{navigator.clipboard.writeText(t);this.textContent='Copied'}catch(e){window.prompt('Copy this summary',t)}});
+ summary[k]=EYES[k].n+': AL '+L.toFixed(2)+', K '+K1.toFixed(2)+'/'+K2.toFixed(2)+', ACD '+(isNaN(ACD)?'-':ACD.toFixed(2))+', target '+f2(T)+'; '+Object.keys(emme).map(function(x){return IOLF.F[x].n+' '+emme[x][0].toFixed(1)+' ('+f2(emme[x][1])+')'}).join(', ')+'.'+(summary[k+'t']||'');
+ return{L:L,K:K};}
+function calc(){var A=num('ioA');if(!(A>110&&A<125)){$('bxNote').innerHTML='<span class="cx-bad">Enter an A-constant between 110 and 125.</span>';return}
+ var c=IOLF.consts(A);if($('ioA0').value!==''&&!isNaN(num('ioA0'))){c.a0=num('ioA0');c.a1=isNaN(num('ioA1'))?0.4:num('ioA1');c.a2=isNaN(num('ioA2'))?0.1:num('ioA2');c.a0est=false}
+ summary.odt='';summary.ost='';var od=calcEye('od',c),os=calcEye('os',c),notes=[];
+ var age=num('ioAge');if(age>0&&age<10)notes.push('<span class="cx-bad">Child under 10: see <a href="paediatric-cataract-iol-power-calculation.html">paediatric IOL power</a> for undercorrection targets.</span>');
+ if(od&&os){var dl=Math.abs(od.L-os.L),dk=Math.abs(od.K-os.K);if(dl>0.3)notes.push('<span class="cx-mid">AL differs by '+dl.toFixed(2)+' mm between eyes (more than 0.3 mm): re-measure unless anisometropia explains it.</span>');if(dk>0.9)notes.push('<span class="cx-mid">Mean K differs by '+dk.toFixed(2)+' D between eyes (more than 0.9 D): re-measure.</span>');if(dl<=0.3&&dk<=0.9)notes.push('<span class="cx-ok">Interocular check passed</span> (AL difference '+dl.toFixed(2)+' mm, K difference '+dk.toFixed(2)+' D).')}
+ notes.push('Constants: A '+c.A.toFixed(2)+', SRK/T ACD '+c.acd.toFixed(2)+', Holladay SF '+c.sf.toFixed(2)+', Hoffer pACD '+c.pacd.toFixed(2)+', Haigis a0 '+c.a0.toFixed(2)+(c.a0est?' (estimated from A)':'')+'.');
+ $('bxNote').innerHTML=notes.join(' ');}
+document.getElementById('iolcalc').addEventListener('input',calc);document.getElementById('iolcalc').addEventListener('change',calc);
+$('bxIncSite').addEventListener('change',function(){$('bxIncWrap').style.display=this.value==='custom'?'':'none'});
 $('ioPrint').addEventListener('click',function(){window.print()});
+$('ioCopy').addEventListener('click',function(){var t='Biometry and IOL calculation (RPC Rounds, for cross-checking)'+($('bxModel').value?' · IOL '+$('bxModel').value:'')+' · A '+num('ioA')+'. '+[summary.od,summary.os].filter(Boolean).join(' ');try{navigator.clipboard.writeText(t);this.textContent='Copied'}catch(e){window.prompt('Copy this summary',t)}});
+$('bxCopyEye').addEventListener('click',function(){['AL','ACD','LT','CCT','WTW','K1','K2','T'].forEach(function(f){$('bxos'+f).value=$('bxod'+f).value});var a=num('bxodK1A');$('bxosK1A').value=isNaN(a)?'':Math.round(axisNorm(180-a))||180;calc()});
+$('bxClear').addEventListener('click',function(){['od','os'].forEach(function(k){['AL','ACD','LT','CCT','WTW','K1','K1A','K2'].forEach(function(f){$('bx'+k+f).value=''});$('bx'+k+'T').value='0'});calc()});
 calc();
 })();
-</script><h3 class="mt-4" style="color: var(--brand-accent);" id="official">Official online calculators for newer formulas</h3><ul><li>Barrett Universal II, free on the <a href="https://www.apacrs.org/" target="_blank" rel="noopener">APACRS website</a> (Calculators section), and the <a href="https://www.ascrs.org/tools/barrett-toric-calculator" target="_blank" rel="noopener">Barrett Toric calculator</a></li><li><a href="https://www.iolformula.com/" target="_blank" rel="noopener">Kane formula</a></li><li><a href="https://www.evoiolcalculator.com/" target="_blank" rel="noopener">EVO formula</a></li><li><a href="https://iolcalc.ascrs.org/" target="_blank" rel="noopener">ASCRS post-refractive IOL calculator</a></li><li>Also see our page of <a href="iolcalculators.html">IOL and toric IOL calculators</a>.</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="read">How to read the results</h3><ul><li><b>Exact power</b> is the unrounded power for your target.</li><li><b>Suggested IOL</b> is the available power (in 0.5 D steps) whose expected refraction is closest to the target, leaning slightly myopic when two are equally close.</li><li><b>Nearby powers</b> show the expected spectacle refraction for 1.0 D either side, so you can choose for monovision or a second lens model.</li><li>A green tick marks the formulas that suit this axial length. If they disagree by more than 0.5 D, re-check the biometry before choosing.</li><li>The <b>copy summary</b> button gives a one-line note for your EMR or case sheet.</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="which">Which formula for which eye</h3><div class="table-responsive"><table class="table table-bordered table-sm"><thead><tr><th>Axial length</th><th>Formulas that perform well (among these five)</th><th>Notes</th></tr></thead><tbody><tr><td><b>Below 22 mm (short)</b></td><td>Hoffer Q, Haigis</td><td>Small errors in ELP matter most; Barrett and Kane are preferred where available</td></tr><tr><td><b>22 to 24.5 mm (average)</b></td><td>SRK/T, Holladay 1, Hoffer Q, Haigis</td><td>All similar; optimise your lens constant</td></tr><tr><td><b>24.5 to 26 mm</b></td><td>SRK/T, Holladay 1, Haigis</td><td></td></tr><tr><td><b>Above 26 mm (long)</b></td><td>SRK/T, Haigis</td><td>Holladay 1 and Hoffer Q tend to leave hyperopia unless the Wang-Koch adjustment is applied; consider a slightly myopic target</td></tr><tr><td><b>After LASIK, PRK or RK</b></td><td>None of these</td><td>Use post-refractive methods (Barrett True-K, Haigis-L, Shammas) on the ASCRS calculator</td></tr></tbody></table></div>
+</script><h3 class="mt-4" style="color: var(--brand-accent);" id="official">Official online calculators for newer formulas</h3><ul><li>Barrett Universal II, free on the <a href="https://www.apacrs.org/" target="_blank" rel="noopener">APACRS website</a> (Calculators section), and the <a href="https://www.ascrs.org/tools/barrett-toric-calculator" target="_blank" rel="noopener">Barrett Toric calculator</a></li><li><a href="https://www.iolformula.com/" target="_blank" rel="noopener">Kane formula</a></li><li><a href="https://www.evoiolcalculator.com/" target="_blank" rel="noopener">EVO formula</a></li><li><a href="https://iolcalc.ascrs.org/" target="_blank" rel="noopener">ASCRS post-refractive IOL calculator</a></li><li>Also see our page of <a href="iolcalculators.html">IOL and toric IOL calculators</a>.</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="read">How to read the results</h3><ul><li>Each formula box lists IOL powers in 0.5 D steps with the <b>expected spectacle refraction</b> (Ref). The <b>highlighted row</b> is the power whose refraction is closest to your target, leaning slightly myopic when two are equally close.</li><li><b>Emme. IOL</b> is the exact power for a plano result, as on biometer printouts.</li><li>A green tick and border mark the formulas that suit this axial length. If they disagree by more than 0.5 D, the report warns you to re-check the biometry.</li><li>The footer checks the <b>two eyes against each other</b>: axial lengths within 0.3 mm and mean K within 0.9 D, unless anisometropia or disease explains the difference.</li><li><b>Print report</b> gives a one-page sheet for the case file; <b>Copy summary</b> gives a one-line note for your EMR. SRK II is no longer shown, as it is not used for planning.</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="which">Which formula for which eye</h3><div class="table-responsive"><table class="table table-bordered table-sm"><thead><tr><th>Axial length</th><th>Formulas that perform well (among these five)</th><th>Notes</th></tr></thead><tbody><tr><td><b>Below 22 mm (short)</b></td><td>Hoffer Q, Haigis</td><td>Small errors in ELP matter most; Barrett and Kane are preferred where available</td></tr><tr><td><b>22 to 24.5 mm (average)</b></td><td>SRK/T, Holladay 1, Hoffer Q, Haigis</td><td>All similar; optimise your lens constant</td></tr><tr><td><b>24.5 to 26 mm</b></td><td>SRK/T, Holladay 1, Haigis</td><td></td></tr><tr><td><b>Above 26 mm (long)</b></td><td>SRK/T, Haigis</td><td>Holladay 1 and Hoffer Q tend to leave hyperopia unless the Wang-Koch adjustment is applied; consider a slightly myopic target</td></tr><tr><td><b>After LASIK, PRK or RK</b></td><td>None of these</td><td>Use post-refractive methods (Barrett True-K, Haigis-L, Shammas) on the ASCRS calculator</td></tr></tbody></table></div>
 <p>See also <a href="iol-formula-comparison.html">SRK II, SRK/T, Hoffer Q and Holladay 1 compared</a> and <a href="biometry-checklist.html">the biometry checklist</a>.</p><h3 class="mt-4" style="color: var(--brand-accent);" id="toric">Toric IOL: when the calculator suggests one</h3><ul><li>A toric IOL is suggested when corneal astigmatism, after allowing for your incision, is <b>1.00 D or more with-the-rule or oblique</b>, or <b>0.75 D or more against-the-rule</b>. The lower against-the-rule threshold allows for posterior corneal astigmatism, which adds against-the-rule cylinder that front-surface keratometry misses.</li><li>Between 0.25 D below the threshold and the threshold, it suggests a borderline decision: a low-power toric or limbal relaxing incisions.</li><li>The IOL-plane cylinder is estimated as about 1.46 times the corneal cylinder. Always confirm the toric model and axis with the Barrett Toric or manufacturer's calculator, which include posterior corneal astigmatism and your actual IOL.</li><li>Check that keratometry from two devices agrees in magnitude and axis before ordering a toric lens (use the <a href="keratometry-radius-diopter-converter.html">keratometry tools</a>).</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="constants">Lens constants</h3><ul><li>Enter the <b>A-constant for SRK/T</b> from the lens box, the manufacturer, or better, an optimised constant from IOLCon or your own outcomes. See the <a href="iol-a-constant-reference.html">A-constant reference</a>.</li><li>Holladay surgeon factor, Hoffer pACD and SRK/T ACD constant are converted from the A-constant using the standard Retzlaff and Holladay relationships.</li><li>For Haigis, enter optimised a0, a1 and a2 for your lens if you have them. Otherwise a0 is estimated from the A-constant (with a1 = 0.4 and a2 = 0.1) so that Haigis matches SRK/T in an average eye; this is an approximation.</li><li>Optical biometry constants differ from ultrasound (applanation) constants by about 0.3 to 0.4 in the A-constant.</li></ul><h3 class="mt-4" style="color: var(--brand-accent);" id="formulas">The formulas in brief</h3><div class="table-responsive"><table class="table table-bordered table-sm"><thead><tr><th>Formula</th><th>Year and type</th><th>Predicts lens position from</th></tr></thead><tbody><tr><td><b>SRK II</b></td><td>1988, regression</td><td>Axial length band (not used for planning today)</td></tr><tr><td><b>SRK/T</b></td><td>1990, theoretical with regression</td><td>Axial length and K (corneal height)</td></tr><tr><td><b>Holladay 1</b></td><td>1988, theoretical</td><td>Axial length and K, with surgeon factor</td></tr><tr><td><b>Hoffer Q</b></td><td>1993, theoretical</td><td>Axial length and K, with pACD</td></tr><tr><td><b>Haigis</b></td><td>1999, theoretical</td><td>Measured ACD and axial length, with three constants</td></tr></tbody></table></div>
 <h3 class="mt-4" style="color: var(--brand-accent);" id="sources">Key sources</h3><ul style="font-size:14px;"><li>Retzlaff JA, Sanders DR, Kraff MC. Development of the SRK/T intraocular lens implant power calculation formula. J Cataract Refract Surg. 1990;16:333-340 (and erratum)</li><li>Holladay JT, et al. A three-part system for refining intraocular lens power calculations. J Cataract Refract Surg. 1988;14:17-24</li><li>Hoffer KJ. The Hoffer Q formula: a comparison of theoretic and regression formulas. J Cataract Refract Surg. 1993;19:700-712; errata 1994 and 2007</li><li>Haigis W, et al. Comparison of immersion ultrasound biometry and partial coherence interferometry for intraocular lens calculation according to Haigis. Graefes Arch Clin Exp Ophthalmol. 2000;238:765-773</li><li>Wang L, Shirayama M, Ma XJ, Kohnen T, Koch DD. Optimizing intraocular lens power calculations in eyes with axial lengths above 25.0 mm. J Cataract Refract Surg. 2011;37:2018-2027</li><li>Koch DD, et al. Contribution of posterior corneal astigmatism to total corneal astigmatism. J Cataract Refract Surg. 2012;38:2080-2087</li><li>Melles RB, Holladay JT, Chang WJ. Accuracy of intraocular lens calculation formulas. Ophthalmology. 2018;125:169-178</li></ul>
 
@@ -470,7 +533,7 @@ calc();
   <div class="author-box-photo mr-3" style="background-image: url('images/dhaval.jpg');" aria-hidden="true"></div>
   <div class="author-box-text">
     <p class="mb-1"><strong>Written and medically reviewed by Dr. Dhaval Patel</strong>, MD (Ophthalmology, AIIMS New Delhi) · <a href="editorial-policy.html">Editorial policy</a></p>
-    <p class="mb-1">Consultant, Cataract & Refractive Surgery — among a small number of AIIMS-trained ophthalmologists practicing in Gujarat. <a href="dr-dhaval-patel.html">Read full credentials &amp; experience</a> or view his <a href="https://www.researchgate.net/profile/Dhaval-Patel-60" target="_blank" rel="noopener">28 publications on ResearchGate</a>.</p>
+    <p class="mb-1">Consultant, Cataract & Refractive Surgery — among a small number of AIIMS-trained ophthalmologists practising in Gujarat. <a href="dr-dhaval-patel.html">Read full credentials &amp; experience</a> or view his <a href="https://www.researchgate.net/profile/Dhaval-Patel-60" target="_blank" rel="noopener">28 publications on ResearchGate</a>.</p>
  <p class="mb-1" style="font-size:13.5px;">📚 Also the author of <a href="okat-decoded.html">OKAT Decoded</a>, <a href="frcophth-decoded.html">FRCOphth Decoded</a>, <a href="fico-decoded.html">FICO Decoded</a>, <a href="okap-abo-decoded.html">OKAP &amp; ABO Decoded</a>, <a href="febo-decoded.html">FEBO Decoded</a> and other <a href="mykindlebooks.html#ophthalmology-books">high-yield ophthalmology exam-prep books</a> used by residents and PG aspirants.</p>
   </div>
 </div>
@@ -498,7 +561,7 @@ calc();
   <h6>Start exploring</h6>
   <div class="rs-tiles">
     <a href="start-here.html"><span class="fa fa-compass"></span><b>Start here</b><small>New reader? Begin here</small></a>
-    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 487 pages</small></a>
+    <a href="resident-learning-dashboard.html"><span class="fa fa-th-large"></span><b>Learning dashboard</b><small>Filter all 534 pages</small></a>
     <a href="desk-reference.html"><span class="fa fa-clipboard"></span><b>Desk reference</b><small>Charts, doses, calculators</small></a>
     <a href="mock-tests.html"><span class="fa fa-pencil-square-o"></span><b>Mock tests</b><small>Free, timed, explained</small></a>
   </div>
@@ -518,29 +581,29 @@ calc();
 <div class="rs-box categories">
   <h6>Subspecialties <small>pages</small></h6>
   <ul class="rs-list rs-subs">
-    <li><a href="cornea.html">Cornea</a> <span class="rs-sep">&middot;</span> <a href="refractive-surgery-residents.html">Refractive</a><a class="rs-n" href="resident-learning-dashboard.html?s=C" title="See all 51 pages in the Learning Dashboard">51</a></li>
-    <li><a href="lens.html">Lens &amp; Cataract</a><a class="rs-n" href="resident-learning-dashboard.html?s=L" title="See all 53 pages in the Learning Dashboard">53</a></li>
-    <li><a href="glaucoma.html">Glaucoma</a><a class="rs-n" href="resident-learning-dashboard.html?s=G" title="See all 36 pages in the Learning Dashboard">36</a></li>
-    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 72 pages in the Learning Dashboard">72</a></li>
-    <li><a href="uvea.html">Uvea</a><a class="rs-n" href="resident-learning-dashboard.html?s=U" title="See all 24 pages in the Learning Dashboard">24</a></li>
-    <li><a href="neurophthalmology.html">Neuro-ophthalmology</a><a class="rs-n" href="resident-learning-dashboard.html?s=N" title="See all 37 pages in the Learning Dashboard">37</a></li>
-    <li><a href="pediatricophthalmology.html">Paediatrics</a> <span class="rs-sep">&middot;</span> <a href="strabismus.html">Strabismus</a><a class="rs-n" href="resident-learning-dashboard.html?s=P" title="See all 44 pages in the Learning Dashboard">44</a></li>
-    <li><a href="oculoplasty.html">Oculoplasty &amp; Orbit</a><a class="rs-n" href="resident-learning-dashboard.html?s=O" title="See all 22 pages in the Learning Dashboard">22</a></li>
+    <li><a href="cornea.html">Cornea</a> <span class="rs-sep">&middot;</span> <a href="refractive-surgery-residents.html">Refractive</a><a class="rs-n" href="resident-learning-dashboard.html?s=C" title="See all 57 pages in the Learning Dashboard">57</a></li>
+    <li><a href="lens.html">Lens &amp; Cataract</a><a class="rs-n" href="resident-learning-dashboard.html?s=L" title="See all 56 pages in the Learning Dashboard">56</a></li>
+    <li><a href="glaucoma.html">Glaucoma</a><a class="rs-n" href="resident-learning-dashboard.html?s=G" title="See all 42 pages in the Learning Dashboard">42</a></li>
+    <li><a href="retina.html">Retina &amp; Vitreous</a><a class="rs-n" href="resident-learning-dashboard.html?s=R" title="See all 81 pages in the Learning Dashboard">81</a></li>
+    <li><a href="uvea.html">Uvea</a><a class="rs-n" href="resident-learning-dashboard.html?s=U" title="See all 26 pages in the Learning Dashboard">26</a></li>
+    <li><a href="neurophthalmology.html">Neuro-ophthalmology</a><a class="rs-n" href="resident-learning-dashboard.html?s=N" title="See all 40 pages in the Learning Dashboard">40</a></li>
+    <li><a href="pediatricophthalmology.html">Paediatrics</a> <span class="rs-sep">&middot;</span> <a href="strabismus.html">Strabismus</a><a class="rs-n" href="resident-learning-dashboard.html?s=P" title="See all 48 pages in the Learning Dashboard">48</a></li>
+    <li><a href="oculoplasty.html">Oculoplasty &amp; Orbit</a><a class="rs-n" href="resident-learning-dashboard.html?s=O" title="See all 26 pages in the Learning Dashboard">26</a></li>
     <li><a href="oculartrauma.html">Ocular Trauma</a><a class="rs-n" href="resident-learning-dashboard.html?s=T" title="See all 13 pages in the Learning Dashboard">13</a></li>
-    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 69 pages in the Learning Dashboard">69</a></li>
+    <li><a href="opticslectures.html">Optics &amp; Refraction</a><a class="rs-n" href="resident-learning-dashboard.html?s=X" title="See all 76 pages in the Learning Dashboard">76</a></li>
     <li><a href="basicsciences.html">Basic Sciences</a><a class="rs-n" href="resident-learning-dashboard.html?s=B" title="See all 45 pages in the Learning Dashboard">45</a></li>
-    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 171 pages in the Learning Dashboard">171</a></li>
+    <li><a href="misc.html">General &amp; Mixed</a><a class="rs-n" href="resident-learning-dashboard.html?s=Z" title="See all 179 pages in the Learning Dashboard">179</a></li>
   </ul>
   <p class="rs-k">Browse by type</p>
   <div class="rs-chips">
-    <a href="resident-learning-dashboard.html?u=H">High-yield <i>162</i></a>
-    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>220</i></a>
-    <a href="resident-learning-dashboard.html?u=K">Classifications <i>56</i></a>
-    <a href="resident-learning-dashboard.html?u=I">Imaging <i>49</i></a>
-    <a href="resident-learning-dashboard.html?u=S">Surgical <i>111</i></a>
+    <a href="resident-learning-dashboard.html?u=H">High-yield <i>181</i></a>
+    <a href="resident-learning-dashboard.html?u=V">Viva prep <i>256</i></a>
+    <a href="resident-learning-dashboard.html?u=K">Classifications <i>59</i></a>
+    <a href="resident-learning-dashboard.html?u=I">Imaging <i>51</i></a>
+    <a href="resident-learning-dashboard.html?u=S">Surgical <i>112</i></a>
     <a href="resident-learning-dashboard.html?u=E">Emergencies <i>29</i></a>
     <a href="resident-learning-dashboard.html?u=A">Calculators <i>51</i></a>
-    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>56</i></a>
+    <a href="resident-learning-dashboard.html?u=Q">Quizzes <i>70</i></a>
   </div>
 </div>
 <div class="rs-box">
@@ -642,6 +705,7 @@ calc();
                 <li><a href="fico-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FICO Decoded (ICO exams)</a></li>
                 <li><a href="okap-abo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OKAP &amp; ABO Decoded</a></li>
                 <li><a href="febo-decoded.html"><span class="fa fa-chevron-right mr-2"></span>FEBO Decoded</a></li>
+                <li><a href="optom-decoded.html"><span class="fa fa-chevron-right mr-2"></span>OptomDecoded (optometry)</a></li>
                 <li><a href="mykindlebooks.html#ophthalmology-books"><span class="fa fa-chevron-right mr-2"></span>For Ophthalmology Residents</a></li>
                 <li><a href="mykindlebooks.html"><span class="fa fa-chevron-right mr-2"></span>See All My Books</a></li>
               </ul>
