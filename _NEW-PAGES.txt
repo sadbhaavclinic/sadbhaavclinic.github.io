@@ -1,12 +1,37 @@
-NEW PAGES in this upload (24):
+51 new pages (all other files are updated existing pages):
+
 abo-written-qualifying-exam-study-plan.html
+caring-for-parent-after-eye-surgery.html
+diabetes-eye-action-plan.html
 direct-ophthalmoscopy-practice.html
+eye-care-while-travelling.html
 eye-court-ophthal-adalat.html
 eye-osce-stations-medical-students.html
+eye-symptom-checker.html
+eyes-and-ageing-whats-normal.html
 frcophth-part-1-high-yield.html
 frcophth-part-2-oral-guide.html
+how-often-eye-check-adults.html
 international-students-ophthalmology-optometry.html
 learn-ophthalmology-differently-books.html
+living-with-one-eye.html
+md-ophthalmology-theory-questions-basic-sciences.html
+md-ophthalmology-theory-questions-community-ophthalmology.html
+md-ophthalmology-theory-questions-cornea.html
+md-ophthalmology-theory-questions-glaucoma.html
+md-ophthalmology-theory-questions-instruments-investigations.html
+md-ophthalmology-theory-questions-lens-cataract.html
+md-ophthalmology-theory-questions-neuro-ophthalmology.html
+md-ophthalmology-theory-questions-ocular-oncology.html
+md-ophthalmology-theory-questions-ocular-trauma.html
+md-ophthalmology-theory-questions-oculoplasty-orbit.html
+md-ophthalmology-theory-questions-optics-refraction.html
+md-ophthalmology-theory-questions-retina.html
+md-ophthalmology-theory-questions-strabismus-paediatrics.html
+md-ophthalmology-theory-questions-systemic-disease.html
+md-ophthalmology-theory-questions-uvea.html
+medicines-that-affect-eyes.html
+natural-remedies-for-eyes-evidence.html
 nbeo-study-plan-on-a-budget.html
 nice-vs-aao-eye-guidelines-compared.html
 okap-study-plan.html
@@ -15,13 +40,14 @@ ophthalmind.html
 ophthalmology-fellowship-application-kit.html
 ophthalmology-for-medical-students-core-curriculum.html
 ophthalmology-rotation-guide-medical-students.html
+pregnancy-and-your-eyes.html
+questions-before-eye-surgery.html
 ranzco-exams-guide.html
 refraction-certificate-guide.html
+screens-children-family-plan.html
 sherlocks-eye-clinic.html
 uk-optometry-osce-guide.html
 ukmla-ophthalmology.html
 us-ophthalmology-residency-for-international-graduates.html
 usmle-ophthalmology-high-yield.html
 working-as-ophthalmologist-in-uk.html
-
-All other .html files here replace existing pages. Copy everything into the site root (same folder as index.html). sitemap.xml also goes in the root.
