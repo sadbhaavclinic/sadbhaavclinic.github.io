@@ -154,14 +154,6 @@ body.theme-clinic.refresh .sadbhaav-wa-btn{background:#128C7E!important;color:#f
 body.theme-clinic.refresh .journey-note,body.theme-clinic.refresh .faq-question span{color:#6b6b6b}
 body.theme-clinic.refresh .ftco-appointment h2 a,body.theme-clinic.refresh .ftco-appointment h3 a{color:#fff!important;text-decoration:underline}
 
-/* 24 Nov 2026: banner photos with words printed in them (banner-2, banner-3, banner-4).
-   The photo is shown blurred in a layer under the overlay so only the page heading is read. */
-body.theme-clinic.refresh .hero-wrap[style*="banner-2."],body.theme-clinic.refresh .hero-wrap[style*="banner-3."],body.theme-clinic.refresh .hero-wrap[style*="banner-4."]{position:relative;overflow:hidden}
-body.theme-clinic.refresh .hero-wrap[style*="banner-2."]::before,body.theme-clinic.refresh .hero-wrap[style*="banner-3."]::before,body.theme-clinic.refresh .hero-wrap[style*="banner-4."]::before{content:"";position:absolute;top:-30px;right:-30px;bottom:-30px;left:-30px;background-image:inherit;background-size:cover;background-position:left center;filter:blur(16px) saturate(.8);z-index:0}
-body.theme-clinic.refresh .hero-wrap[style*="banner-2."] .overlay,body.theme-clinic.refresh .hero-wrap[style*="banner-3."] .overlay,body.theme-clinic.refresh .hero-wrap[style*="banner-4."] .overlay{z-index:1;background:linear-gradient(100deg,rgba(60,22,8,.90) 0%,rgba(80,32,14,.80) 50%,rgba(91,36,16,.70) 100%)!important}
-body.theme-clinic.refresh .hero-wrap[style*="banner-2."] .container,body.theme-clinic.refresh .hero-wrap[style*="banner-3."] .container,body.theme-clinic.refresh .hero-wrap[style*="banner-4."] .container{position:relative;z-index:2}
-body.theme-clinic.refresh .hero-wrap[style*="banner-2."] h1,body.theme-clinic.refresh .hero-wrap[style*="banner-3."] h1,body.theme-clinic.refresh .hero-wrap[style*="banner-4."] h1{text-shadow:0 2px 10px rgba(0,0,0,.35)}
-
 /* 24 Nov 2026 (b): counters, contrast, visit and directions panels, reviewed line */
 body.theme-clinic .ftco-counter .text strong.cnum{font-weight:600;font-size:30px;color:#fff;display:inline}
 body.theme-clinic .ftco-counter .block-18 .text span{color:#FFF6EC!important;font-weight:500;opacity:1}

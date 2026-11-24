@@ -700,3 +700,18 @@ html.big-text .text p,html.big-text .text li,html.big-text .text td,html.big-tex
  html body.theme-clinic.refresh .hero-wrap.hero-wrap-2 .slider-text{padding:84px 0 56px}
  html body.theme-clinic.refresh .hero-wrap.hero-wrap-2 .overlay{height:100%!important}
 }
+
+/* 24 Nov 2026: title bar drawn in CSS (replaces the title-card picture at the top of blog pages; the picture stays for social-media previews) */
+.rpc-titlebar{position:relative;overflow:hidden;border-radius:14px;padding:18px 22px;margin:0 0 14px;min-height:88px;display:flex;flex-direction:column;justify-content:center;color:#fff;background:linear-gradient(135deg,#0f2747 0%,#1d4f8a 100%)}
+.rpc-titlebar::after{content:"";position:absolute;right:-60px;top:50%;width:240px;height:240px;transform:translateY(-50%);border-radius:50%;background:radial-gradient(circle,#0b1d36 0 22px,transparent 23px),repeating-radial-gradient(circle,transparent 0 14px,rgba(170,205,255,.38) 14px 15px);opacity:.9}
+.rpc-titlebar span{position:relative;z-index:1;display:block;line-height:1.35}
+.rpc-titlebar-k{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-left:3px solid #9cc3ff;padding-left:10px}
+.rpc-titlebar-s{font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.88;padding-left:13px;margin-top:2px;max-width:70%}
+.theme-optom .rpc-titlebar{background:linear-gradient(135deg,#0b4a46 0%,#14807a 100%)}
+.theme-optom .rpc-titlebar::after{background:radial-gradient(circle,#073431 0 22px,transparent 23px),repeating-radial-gradient(circle,transparent 0 14px,rgba(160,235,225,.38) 14px 15px)}
+.theme-optom .rpc-titlebar-k{border-left-color:#8fe3d8}
+.theme-ug .rpc-titlebar{background:linear-gradient(135deg,#341a5c 0%,#6a3fa0 100%)}
+.theme-ug .rpc-titlebar::after{background:radial-gradient(circle,#24103f 0 22px,transparent 23px),repeating-radial-gradient(circle,transparent 0 14px,rgba(215,190,255,.38) 14px 15px)}
+.theme-ug .rpc-titlebar-k{border-left-color:#d3b6ff}
+@media (max-width:575.98px){.rpc-titlebar{min-height:72px;padding:14px 16px}.rpc-titlebar::after{width:170px;height:170px;right:-50px}}
+@media print{.rpc-titlebar{display:none}}
