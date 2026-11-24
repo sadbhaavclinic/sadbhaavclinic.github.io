@@ -460,14 +460,14 @@ function orient(ax){ax=axisNorm(ax);if(ax>=60&&ax<=120)return'WTR';if(ax<=30||ax
 function sulcus(P){if(P>27.5)return P-1.5;if(P>17.5)return P-1.0;if(P>9.5)return P-0.5;return P}
 function rec(L){if(L<22)return['hq','haigis'];if(L<=24.5)return['srkt','hol1','hq','haigis'];if(L<=26)return['srkt','hol1','haigis'];return['srkt','haigis']}
 function recTxt(L){if(L<22)return'Short eye: Hoffer Q and Haigis usually do best of these.';if(L<=24.5)return'Average eye: the four formulas perform similarly.';if(L<=26)return'Medium-long eye: SRK/T, Holladay 1 and Haigis perform well.';return'Long eye: SRK/T and Haigis do best; consider Wang-Koch and a slightly myopic target.'}
-function row(lbl,id,unit,val,extra){return '<tr><td>'+lbl+'</td><td><input id="'+id+'" type="number" step="any" value="'+val+'" inputmode="decimal" aria-label="'+lbl+'"> '+unit+(extra||'')+'</td></tr>'}
+function row(lbl,id,unit,val,extra,st){return '<tr><td>'+lbl+'</td><td><input id="'+id+'" type="number" step="'+(st||'any')+'" value="'+val+'" inputmode="decimal" aria-label="'+lbl+'"> '+unit+(extra||'')+'</td></tr>'}
 function buildEye(k){var E=EYES[k],p='bx'+k,d=E.d;
  var h='<div class="bx-eh"><span>'+E.n+' <span style="font-weight:400;font-size:12.5px">'+E.full+'</span></span><select id="'+p+'Lens" aria-label="Lens status"><option>Phakic</option><option>Pseudophakic</option><option>Aphakic</option></select></div>';
- h+='<div class="bx-sec">Biometric values</div><table class="bx-m">'+row('AL',p+'AL','mm',d.AL)+row('ACD',p+'ACD','mm',d.ACD,' <span style="font-size:11px;color:#5f6b7a">(epithelium)</span>')+row('LT',p+'LT','mm',d.LT)+row('CCT',p+'CCT','&micro;m',d.CCT)+row('WTW',p+'WTW','mm',d.WTW)+'</table>';
- h+='<div class="bx-sec">Keratometry</div><table class="bx-m">'+row('K1 (flat)',p+'K1','D',d.K1,' @ <input id="'+p+'K1A" class="ax" type="number" step="1" value="'+d.K1A+'" inputmode="decimal" aria-label="K1 axis">&deg;')
-  +'<tr><td>K2 (steep)</td><td><input id="'+p+'K2" type="number" step="any" value="'+d.K2+'" inputmode="decimal" aria-label="K2 (steep)"> D @ <span class="ro" id="'+p+'K2A"></span>&deg;</td></tr>'
+ h+='<div class="bx-sec">Biometric values</div><table class="bx-m">'+row('AL',p+'AL','mm',d.AL,'','0.01')+row('ACD',p+'ACD','mm',d.ACD,' <span style="font-size:11px;color:#5f6b7a">(epithelium)</span>','0.01')+row('LT',p+'LT','mm',d.LT,'','0.01')+row('CCT',p+'CCT','&micro;m',d.CCT,'','1')+row('WTW',p+'WTW','mm',d.WTW,'','0.01')+'</table>';
+ h+='<div class="bx-sec">Keratometry</div><table class="bx-m">'+row('K1 (flat)',p+'K1','D',d.K1,' @ <input id="'+p+'K1A" class="ax" type="number" step="1" value="'+d.K1A+'" inputmode="decimal" aria-label="K1 axis">&deg;','0.01')
+  +'<tr><td>K2 (steep)</td><td><input id="'+p+'K2" type="number" step="0.01" value="'+d.K2+'" inputmode="decimal" aria-label="K2 (steep)"> D @ <span class="ro" id="'+p+'K2A"></span>&deg;</td></tr>'
   +'<tr><td>&Delta;K</td><td class="ro" id="'+p+'DK"></td></tr><tr><td>Mean K (SE)</td><td class="ro" id="'+p+'MK"></td></tr></table>';
- h+='<div class="bx-sec">Target refraction</div><table class="bx-m">'+row('Target',p+'T','D',d.T)+'</table>';
+ h+='<div class="bx-sec">Target refraction</div><table class="bx-m">'+row('Target',p+'T','D',d.T,'','0.25')+'</table>';
  h+='<div class="bx-sec">IOL calculation</div><div id="'+p+'Out"></div>';
  return h}
 ['od','os'].forEach(function(k){document.querySelector('.bx-eye[data-eye="'+k+'"]').innerHTML=buildEye(k)});
