@@ -304,38 +304,6 @@
     "featured": true
   },
   {
-    "title": "iNotes 2027: Lens",
-    "subtitle": "Ophthalmology Postgraduate Exam Notes",
-    "cover": "images/inoteslens.jpg",
-    "amazonUrl": "https://www.amazon.in/dp/B0HJTS5WP2?tag=dhavalb20-21",
-    "category": "Ophthalmology Students",
-    "featured": false
-  },
-  {
-    "title": "iNotes 2027: Glaucoma",
-    "subtitle": "Ophthalmology Postgraduate Exam Notes",
-    "cover": "images/inotesglaucoma.jpg",
-    "amazonUrl": "https://www.amazon.in/dp/B0HJT7FTPW?tag=dhavalb20-21",
-    "category": "Ophthalmology Students",
-    "featured": false
-  },
-  {
-    "title": "iNotes 2027: Cornea and Refractive",
-    "subtitle": "Ophthalmology Postgraduate Exam Notes",
-    "cover": "images/inotescornea.jpg",
-    "amazonUrl": "https://www.amazon.in/dp/B0HJSZGK5Y?tag=dhavalb20-21",
-    "category": "Ophthalmology Students",
-    "featured": false
-  },
-  {
-    "title": "iNotes 2027: Basic Science & Optics",
-    "subtitle": "Ophthalmology Postgraduate Exam Notes",
-    "cover": "images/inotesbasicscience.jpg",
-    "amazonUrl": "https://www.amazon.in/dp/B0HJT7PGT4?tag=dhavalb20-21",
-    "category": "Ophthalmology Students",
-    "featured": false
-  },
-  {
     "title": "The Eyes Know First",
     "subtitle": "How Your Eyes Warn You Before Your Body Does",
     "cover": "images/theeyes.jpg",
@@ -349,6 +317,78 @@
     "cover": "images/cobradio.jpg",
     "amazonUrl": "https://www.amazon.in/dp/B0HJQ896R8?tag=dhavalb20-21",
     "category": "Medical Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Basic Science & Optics",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesbasicscience.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HJT7PGT4?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Cornea & Refractive",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotescornea.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HJSZGK5Y?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Lens",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inoteslens.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HJTS5WP2?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Glaucoma",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesglaucoma.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B0HJT7FTPW?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Retina",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesretina.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B072Q8TKCR?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Uvea",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesuvea.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B08D6V8QRR?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Strabismus",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesstrabismus.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B071FY3RM4?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Neuro-Ophthalmology",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (third edition, fully revised for 2027)",
+    "cover": "images/inotesneuro.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B072M7HX9N?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
+    "featured": false
+  },
+  {
+    "title": "iNotes 2027: Instruments & Investigations",
+    "subtitle": "Ophthalmology Postgraduate Exam Notes (second edition, fully revised for 2027)",
+    "cover": "images/inotesinstruments.jpg",
+    "amazonUrl": "https://www.amazon.in/dp/B071WH2PRJ?tag=dhavalb20-21",
+    "category": "Ophthalmology Students",
     "featured": false
   }
 ]
